@@ -1,0 +1,11 @@
+key "XF86VendorHome" chvt 1
+key "Ctrl+Alt+t" urxvt
+key "KP_Up" aumix -v -5
+key "KP_Prior" aumix -v +5
+key "Pause" xkill
+key "Ctrl+Alt+k" xkill
+key "XF86KbdLightOnOff" "Ctrl+Shift+L"
+#key "Mode_switch" xdotool key Aacute
+#key "KP_Enter" paf
+#key "KP_Enter" xkill
+#key "KP_Up" Ctrl+a

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000014_eztv" version="0.3.0">
+  <title>EZTV</title>
+  <released_time>2011-10-19 11:31:46</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>eztv.py</filename>
+  <classname>EZTVPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000014_eztv/0.3.0/</download_url>
+  <website_url>http://eztv.it/</website_url>
+  <icon_url>http://eztv.it/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

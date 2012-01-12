@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000024_tntvillage" version="0.2.0">
+  <title>TNTVillage</title>
+  <released_time>2011-10-20 06:12:13</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>tntvillage.py</filename>
+  <classname>TNTVillagePlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000024_tntvillage/0.2.0/</download_url>
+  <website_url>http://forum.tntvillage.scambioetico.org/tntforum/</website_url>
+  <icon_url>http://forum.tntvillage.scambioetico.org/favicon.ico</icon_url>
+  <require_auth>true</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

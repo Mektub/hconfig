@@ -1,0 +1,117 @@
+[begin] (Menu)
+[exec] (xterm) {xterm}
+[separator]
+[submenu] (Applications)
+ [submenu] (Accessories)
+     [exec] (ADesk Bar) {adeskbar}
+     [exec] (Archive Manager) {file-roller }
+     [exec] (Calculator) {gcalctool}
+     [exec] (Catfish) {catfish}
+     [exec] (File Manager) {pcmanfm }
+     [exec] (KFontView) {kfontview  }
+     [exec] (KJobViewer) {kjobviewer --all --show  }
+     [exec] (KPager) {kpager}
+     [exec] (KdeprintFax) {kdeprintfax -caption "KdeprintFax"   }
+     [exec] (Krusader) {krusader -caption "Krusader"    }
+     [exec] (LXTerminal) {lxterminal}
+     [exec] (Leafpad) {leafpad }
+     [exec] (Parcellite) {parcellite}
+     [exec] (Root Terminal) {gksu -l gnome-terminal}
+     [exec] (Terminator) {terminator}
+     [exec] (Yapan) {yapan}
+     [exec] (Zim Desktop Wiki) {zim}
+     [exec] (gDevilspie) {gdevilspie}
+     [exec] (gVim) {gvim }
+     [exec] (qtFM) {qtfm}
+ [end] # (Accessories)
+ [submenu] (Archlinux)
+     [exec] (KDEmod Bugtracker) {xdg-open http://www.kdemod.ath.cx/bugs}
+     [exec] (KDEmod Forums) {xdg-open http://www.kdemod.ath.cx/bbs/}
+     [exec] (KDEmod Website) {xdg-open http://www.kdemod.ath.cx}
+ [end] # (Archlinux)
+ [submenu] (Graphics)
+     [exec] (GNU Image Manipulation Program) {gimp-2.6 }
+     [exec] (Geeqie) {geeqie -r }
+     [exec] (Mirage) {mirage }
+ [end] # (Graphics)
+ [submenu] (Internet)
+     [exec] (Avahi SSH Server Browser) {/usr/bin/bssh}
+     [exec] (Avahi VNC Server Browser) {/usr/bin/bvnc}
+     [exec] (Chromium) {chromium }
+     [exec] (Dropbox) {/opt/dropbox/dropboxd}
+     [exec] (FileZilla) {filezilla}
+     [exec] (Firefox) {firefox }
+     [exec] (Firefox - Safe Mode) {firefox -safe-mode }
+     [exec] (JDownloader) {/usr/bin/jdownloader}
+     [exec] (KNetAttach) {knetattach}
+     [exec] (Konqueror) {kfmclient openProfile webbrowsing}
+     [exec] (Links) {xlinks -g}
+     [exec] (Midori) {midori }
+     [exec] (Pidgin Internet Messenger) {pidgin}
+     [exec] (Thunderbird) {thunderbird}
+     [exec] (Transmission) {transmission-gtk }
+     [exec] (Wicd) {/usr/bin/wicd-client}
+     [exec] (gFTP) {gftp }
+ [end] # (Internet)
+ [submenu] (Office)
+     [exec] (AbiWord) {abiword}
+     [exec] (Foxit Reader) {foxitreader }
+     [exec] (Gnumeric) {gnumeric }
+ [end] # (Office)
+ [submenu] (Programming)
+     [exec] (Conky GUI) {/usr/bin/conkygui}
+     [exec] (Geany) {geany }
+     [exec] (Qt Assistant) {/usr/bin/assistant}
+     [exec] (Qt Designer) {/usr/bin/designer}
+     [exec] (Qt Linguist) {/usr/bin/linguist}
+ [end] # (Programming)
+ [submenu] (Science & Math)
+     [exec] (Gnumeric) {gnumeric }
+ [end] # (Science & Math)
+ [submenu] (Sound & Video)
+     [exec] (Cheese) {cheese}
+     [exec] (GNOME MPlayer) {gnome-mplayer }
+     [exec] (Radio Tray) {radiotray}
+     [exec] (SMPlayer) {smplayer }
+     [exec] (UMPlayer) {umplayer }
+     [exec] (VLC media player) {vlc }
+     [exec] (Xfburn) {xfburn}
+ [end] # (Sound & Video)
+ [submenu] (System Tools)
+     [exec] (Avahi Zeroconf Browser) {/usr/bin/avahi-discover}
+     [exec] (Bulk Rename) {/usr/lib/Thunar/ThunarBulkRename }
+     [exec] (Disk Utility) {palimpsest}
+     [exec] (File Manager - Super User Mode) {xdg_menu_su konqueror --profile filemanagement}
+     [exec] (GParted) {gksu /usr/sbin/gparted }
+     [exec] (Htop) {xterm -e htop}
+     [exec] (KSysGuard) {ksysguard }
+     [exec] (Konsole) {konsole}
+     [exec] (Network Tools) {gnome-nettool}
+     [exec] (Oracle VM VirtualBox) {VirtualBox }
+     [exec] (System Profiler and Benchmark) {hardinfo}
+     [exec] (Terminal) {Terminal}
+     [exec] (Terminal Program - Super User Mode) {konsole --type su}
+     [exec] (Thunar File Manager) {Thunar }
+     [exec] (Wakka) {xdg-su -c wakka}
+ [end] # (System Tools)
+[end] # (Applications)
+[separator]
+[config] (Configuration)
+                [workspaces] (Workspace)
+                [submenu] (System Styles) {Choose a style...}
+                        [stylesdir] (/usr/share/blackbox/styles)
+			[stylesdir] (/usr/share/fluxbox/styles)
+			[stylesdir] (/usr/share/openbox/styles)
+                [end]
+                [submenu] (User Styles) {Choose a style...}
+                        [stylesdir] (~/.blackbox/styles)
+			[stylesdir] (~/.fluxbox/styles)
+			[stylesdir] (~/.openbox/styles)
+                [end]
+        [separator]
+        [exec] (Run Command) {bbrun -a -w}
+        [exec] (Lock Screen) {xlock}
+        [restart] (Restart) {}
+        [exit] (Logout)
+[end]
+    [end]

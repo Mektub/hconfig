@@ -1,0 +1,12 @@
+session.styleFile:	/usr/share/fluxbox/styles/BlueFlux
+fbdesk.textAlpha:	0
+fbdesk.textBackground:	white
+fbdesk.snapX:	5
+fbdesk.textColor:	black
+fbdesk.iconAlpha:	255
+fbdesk.snapY:	5
+fbdesk.doubleClickInterval:	200
+fbdesk.lockPositions:	false
+fbdesk.textPlacement:	Bottom
+fbdesk.iconFile:	~/.fluxbox/fbdesk.icons
+fbdesk.font:	fixed

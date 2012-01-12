@@ -1,0 +1,429 @@
+# Bookmarks file for gFTP. Copyright (C) 1998-2003 Brian Masney
+# <masneyb@gftp.org>. Warning: Any comments that you add to this file WILL be
+# overwritten
+# Note: The passwords contained inside this file are scrambled. This algorithm
+# is not secure. This is to avoid your password being easily remembered by
+# someone standing over your shoulder while you're editing this file. Prior to
+# this, all passwords were stored in plaintext.
+
+[Gnome/Gnome]
+hostname=ftp.gnome.org
+port=21
+protocol=FTP
+remote directory=/pub
+local directory=/root/Work
+username=anonymous
+password=@EMAIL@
+account=
+
+[Gnome/Download GnomeORG]
+hostname=download.gnome.org
+port=21
+protocol=FTP
+remote directory=/pub/
+local directory=/root/Work
+username=anonymous
+password=@EMAIL@
+account=
+
+[Gnome/Gnome latest at gnome.org]
+hostname=tutankhamon.acc.umu.se
+port=0
+protocol=FTP
+remote directory=/pub/GNOME/stable/latest/sources/
+local directory=/maxtor/Rawhide
+username=anonymous
+password=
+account=
+
+[Kde Portugal/Kde UC]
+hostname=ftp.dei.uc.pt
+port=21
+protocol=FTP
+remote directory=/pub/kde
+local directory=/maxtor/Rawhide
+username=anonymous
+password=@EMAIL@
+account=
+
+[Kde Portugal/KDE 3]
+hostname=ftp.dei.uc.pt
+port=21
+protocol=FTP
+remote directory=/pub/kde/stable/3.0
+local directory=/maxtor/Rawhide
+username=anonymous
+password=
+account=
+
+[Portugas/Universidade do Minho]
+hostname=ftp.di.uminho.pt
+port=0
+protocol=FTP
+remote directory=/pub
+local directory=/maxtor/Rawhide
+username=anonymous
+password=
+account=
+
+[Portugas/DarkStar Portugal]
+hostname=darkstar.ist.utl.pt
+port=0
+protocol=FTP
+remote directory=/pub
+local directory=/maxtor/Rawhide
+username=anonymous
+password=
+account=
+
+[Portugas/Dei.PT (Coimbra) PUB]
+hostname=ftp.dei.uc.pt
+port=21
+protocol=FTP
+remote directory=/pub
+local directory=/home/john/Work
+username=anonymous
+password=@EMAIL@
+account=
+
+[Portugas/Eq.uc.pt]
+hostname=ftp.eq.uc.pt
+port=0
+protocol=FTP
+remote directory=
+local directory=
+username=anonymous
+password=@EMAIL@
+account=
+
+[Portugas/Ftp.fct.unl.pt (gentoo)]
+hostname=ftp.fct.unl.pt
+port=21
+protocol=FTP
+remote directory=/.1/linux/sunsite/distributions/gentoo
+local directory=/root/Work
+username=anonymous
+password=@EMAIL@
+account=
+
+[Portugas/Ucoimbra]
+hostname=coral.eq.uc.pt
+port=0
+protocol=FTP
+remote directory=/pub/software/Linux
+local directory=/root/Work
+username=anonymous
+password=
+account=
+
+[Portugas/Telepac FTP]
+hostname=bbking.telepac.pt
+port=21
+protocol=FTP
+remote directory=/
+local directory=/root/Work
+username=anonymous
+password=@EMAIL@
+account=
+
+[Portugas/Kernel.org Portugal]
+hostname=ftp.pt.kernel.org
+port=21
+protocol=FTP
+remote directory=/pub/mirrors/kernel.org/linux
+local directory=/root/Work
+username=anonymous
+password=
+account=
+
+[Portugas/Univ Porto (Knoppix)]
+hostname=chefax.fe.up.pt
+port=21
+protocol=FTP
+remote directory=/pub/knoppix
+local directory=/media/maxtor/Iso
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[Portugas/UA.pt]
+hostname=ftp.ua.pt
+port=0
+protocol=FTP
+remote directory=/
+local directory=/root/Work
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[Portugas/TUX]
+hostname=tux.cprm.net
+port=21
+protocol=FTP
+remote directory=/pub
+local directory=/maxtor/Rawhide
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[Fedora/FC3 Updates at IP]
+hostname=ftp.ip.pt
+port=21
+protocol=FTP
+remote directory=/.disk2/fedora/updates/3/i386
+local directory=/maxtor/Rawhide
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[Fedora/Fedora at Clix]
+hostname=redhat.clix.pt
+port=21
+protocol=FTP
+remote directory=/.disk2/fedora
+local directory=/maxtor/Rawhide
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[Fedora/Fedora at IP]
+hostname=ftp.ip.pt
+port=21
+protocol=FTP
+remote directory=/pub/fedora/development/i386/Fedora/RPMS
+local directory=/maxtor/Rawhide
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[Fedora/Mharris]
+hostname=people.redhat.com
+port=0
+protocol=FTP
+remote directory=/mharris
+local directory=/root/Work
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[Fedora/SourceForge]
+hostname=download.sourceforge.net
+port=21
+protocol=FTP
+remote directory=/pub/sourceforge
+local directory=/maxtor/Rawhide
+username=anonymous
+password=
+account=
+
+[Fedora/Fedora Extras FC6]
+hostname=download.fedora.redhat.com
+port=0
+protocol=HTTP
+remote directory=/pub/fedora/linux/extras/6/i386//
+local directory=/root/Work
+username=anonymous
+password=
+account=
+
+[OpenSuse/OpenSuse DE]
+hostname=ftp-1.gwdg.de
+port=0
+protocol=FTP
+remote directory=/pub
+local directory=/store
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[OpenSuse/IST,utl (Opensuse)]
+hostname=ftp.isr.ist.utl.pt
+port=0
+protocol=HTTP
+remote directory=/pub/opensuse
+local directory=/root/Work
+username=
+password=
+account=
+
+[Distributions+Mirrors/Nvidia]
+hostname=download.nvidia.com
+port=21
+protocol=FTP
+remote directory=/
+local directory=/maxtor/Rawhide
+username=anonymous
+password=
+account=
+
+[Distributions+Mirrors/Distributions]
+hostname=ibiblio.org
+port=21
+protocol=FTP
+remote directory=/pub/linux/distributions
+local directory=/root/Work
+username=anonymous
+password=
+account=
+
+[Distributions+Mirrors/Ibiblio - Distributions]
+hostname=ibiblio.org
+port=21
+protocol=FTP
+remote directory=/pub/linux/distributions
+local directory=/root/Work
+username=anonymous
+password=$YiY}YEY}Iy]AYUYyYEQAYiY}YaYyYe]aIy]A]Q
+account=
+
+[Distributions+Mirrors/Sunsite Mirrors ALL]
+hostname=sunsite.auc.dk
+port=21
+protocol=FTP
+remote directory=/mirrors
+local directory=/home/john/Work
+username=anonymous
+password=
+account=
+
+[Lunar Pages et alia/DomainDirect]
+hostname=ftp.hosting.domaindirect.com
+port=0
+protocol=FTP
+remote directory=
+local directory=/w/mydocs
+username=joaopena.com
+password=$MYMeYUYqYe]M
+account=
+
+[LunarPages HTML]
+hostname=valkanos.lunarpages.com
+port=0
+protocol=FTP
+remote directory=/public_html
+local directory=/opt/MyDocs/MyWebs/Web_Lunar_Server
+username=joaop2
+password=$MYMeQUYqYe]MMYMe
+account=
+refresh_files=1
+
+[Lunar Pages et alia/LunarPages  FTP]
+hostname=valkanos.lunarpages.com
+port=0
+protocol=FTP
+remote directory=/public_ftp
+local directory=/opt/MyDocs/MyWebs/Web_Lunar_Server
+username=joaop2
+password=$MYMeQUYqYe]MMYMe
+account=
+
+[Lunar Pages et alia/Netcabo Home Page]
+hostname=pwp.netcabo.pt
+port=0
+protocol=FTP
+remote directory=/
+local directory=/w/mydocs
+username=joao-pena
+password=$MYMeYUYqYe]M
+account=
+
+[LOCAL/Toshiba John]
+hostname=toshiba
+port=21
+protocol=FTP
+remote directory=/
+local directory=/root
+username=john
+password=$MYMeYUYqYe]M
+account=
+
+[LOCAL/Toshiba-wl John]
+hostname=toshiba-wl
+port=21
+protocol=FTP
+remote directory=/
+local directory=/root
+username=john
+password=$MYMeYUYqYe]M
+account=
+
+[LOCAL/DNS323]
+hostname=dns323
+port=22
+protocol=SSH2
+remote directory=/mnt/HD_a2/home/john
+local directory=/root/Work
+username=john
+password=$MYMeYUYqYe]M
+account=
+
+[LOCAL/Johnix]
+hostname=johnix
+port=21
+protocol=FTP
+remote directory=/
+local directory=/root/Work
+username=john
+password=$MYMeYUYqYe]M
+account=
+
+[LOCAL/ASUS WL-500gp]
+hostname=asus
+port=0
+protocol=FTP
+remote directory=/tmp/local/john
+local directory=/root/Work
+username=john
+password=$MYMeYUYqYe]M
+account=
+
+[KissRecorder]
+hostname=kiss
+port=0
+protocol=FTP
+remote directory=/
+local directory=/root/Work
+username=anonymous
+password=@EMAIL@
+account=
+
+[Freeshells]
+hostname=freeshells.ch
+port=22
+protocol=SSH2
+remote directory=/home/johnbina
+local directory=/root/Work
+username=johnbina
+password=
+account=
+
+[Sdf-EU.org]
+hostname=sdf-eu.org
+port=22
+protocol=SSH2
+remote directory=/arpa/j/johnbina
+local directory=/root/Work
+username=johnbina
+password=
+account=
+
+[Feital]
+hostname=feital.no-ip.org
+port=22
+protocol=FTP
+remote directory=/C:/Documents and Settings/Maria
+local directory=/root/Work
+username=maria
+password=$Yq]UYE
+account=
+
+[Hfeital]
+hostname=hfeital
+port=0
+protocol=FTP
+remote directory=/home/John
+local directory=/root/Work
+username=john
+password=$MYMeYUYqYe]M
+account=
+

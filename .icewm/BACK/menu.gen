@@ -1,0 +1,274 @@
+menu "KDE" folder {
+	menu "Development" folder {
+		prog "Qt Designer" - /usr/bin/designer
+		prog "Qt Assistant" - /usr/bin/assistant
+		prog "Qt Linguist" - /usr/bin/linguist
+	}
+	menu "Shells" folder {
+		prog "Konqueror" - /usr/bin/konqueror
+		prog "Krusader" - /usr/local/bin/krusader
+	}
+	menu "Office" folder {
+		prog "Kpilot" - /usr/bin/kpilot
+		prog "Korganizer" - /usr/bin/korganizer
+		prog "Kandy" - /usr/bin/kandy
+	}
+	menu "Internet" folder {
+		prog "Korn" - /usr/bin/korn
+		prog "Knode" - /usr/bin/knode
+		prog "Konqueror" - /usr/bin/konqueror
+		prog "IRC client" - /usr/bin/ksirc
+		prog "PPP log viewer" - /usr/bin/kppplogview
+		prog "Bookmarks editor" - /usr/bin/keditbookmarks
+		prog "Kppp" - /usr/bin/kppp
+		prog "Kmail" - /usr/bin/kmail
+	}
+	menu "System utils" folder {
+		prog "KDE control center" - /usr/bin/kcontrol
+		prog "KMenuEdit" - /usr/bin/kmenuedit
+		prog "Kdf" - /usr/bin/kdf
+		prog "KwikDisk" - /usr/bin/kwikdisk
+		prog "Kcron" - /usr/bin/kcron
+		prog "Konsole" - /usr/bin/konsole
+		prog "KSysGuard" - /usr/bin/ksysguard
+		prog "Kpersonalizer" - /usr/bin/kpersonalizer
+	}
+	menu "Games" folder {
+		prog "Kandalf's tips" - /usr/bin/ktip
+	}
+	menu "Editors" folder {
+		prog "Kedit" - /usr/bin/kedit
+		prog "Kate" - /usr/bin/kate
+		prog "Kwrite" - /usr/bin/kwrite
+	}
+	menu "Graphics" folder {
+		prog "Fax viewer" - /usr/bin/kfax
+		prog "Screen capture" - /usr/bin/ksnapshot
+		prog "Screen ruler" - /usr/bin/kruler
+		prog "Image viewer" - /usr/bin/kuickshow
+		prog "DVI viewer" - /usr/bin/kdvi
+		prog "Image viewer" - /usr/bin/kview
+		prog "Paint" - /usr/bin/kpaint
+		prog "PS-PDF viewer" - /usr/bin/kghostview
+		prog "Color editor" - /usr/bin/kcoloredit
+		prog "Icon editor" - /usr/bin/kiconedit
+		prog "Color chooser" - /usr/bin/kcolorchooser
+	}
+	menu "Multimedia" folder {
+		prog "aRts builder" - /usr/bin/artsbuilder
+		prog "Kaboodle" - /usr/bin/kaboodle
+		prog "Kmid" - /usr/bin/kmid
+		prog "Noatun" - /usr/bin/noatun
+		prog "aRts control" - /usr/bin/artscontrol
+		prog "K3B" - /usr/bin/k3b
+		prog "Mixer" - /usr/bin/kmix
+		prog "CD player" - /usr/bin/kscd
+	}
+	menu "User utils" folder {
+		prog "Ark" - /usr/bin/ark
+		prog "Kjots" - /usr/bin/kjots
+		prog "Kpassword" - /usr/bin/kdepasswd
+		prog "Klipper" - /usr/bin/klipper
+		prog "KAdressBook" - /usr/bin/kaddressbook
+		prog "KJobView" - /usr/bin/kjobviewer
+		prog "Kcalc" - /usr/bin/kcalc
+		prog "Kfloppy" - /usr/bin/kfloppy
+		prog "KCharSelect" - /usr/bin/kcharselect
+		prog "Kdict" - /usr/bin/kdict
+		prog "Kfax" - /usr/bin/kdeprintfax
+		prog "KHexEdit" - /usr/bin/khexedit
+	}
+}
+menu "GNOME" folder {
+	menu "Development" folder {
+		prog "Glade" - /usr/bin/glade-2
+	}
+	menu "Shells" folder {
+		prog "Nautilus" - /usr/bin/nautilus
+	}
+	menu "Graphics" folder {
+		prog "Postscipt viewer" - /usr/bin/ggv
+	}
+	menu "System utils" folder {
+		prog "GNOME terminal" - /usr/bin/gnome-terminal
+		prog "Bugbuddy" - /usr/bin/bug-buddy
+		prog "GNOME system monitor" - /usr/bin/gnome-system-monitor
+		prog "GDM configurator" - /usr/sbin/gdmconfig
+		prog "GNOME top" - /usr/local/bin/gtop
+		prog "GConf configurator" - /usr/bin/gconf-editor
+	}
+	menu "Office" folder {
+		prog "Gnumeric" - /usr/bin/gnumeric
+	}
+	menu "Editors" folder {
+		prog "GNOME editor" - /usr/bin/gedit
+	}
+	menu "Internet" folder {
+		prog "gFTP" - /usr/local/bin/gftp
+		prog "Epiphany" - /usr/bin/epiphany
+		prog "Gabber" - /usr/bin/gabber
+		prog "Gaim" - /usr/bin/gaim
+		prog "GnomeMeeting" - /usr/bin/gnomemeeting
+		prog "Galeon" - /usr/bin/galeon
+	}
+	menu "Multimedia" folder {
+		prog "CD player" - /usr/bin/gnome-cd
+		prog "Sound recorder" - /usr/bin/gnome-sound-recorder
+		prog "Sound mixer" - /usr/bin/gnome-volume-control
+	}
+	menu "User utils" folder {
+		prog "GNOME search" - /usr/bin/gnome-search-tool
+		prog "File Roller" - /usr/bin/file-roller
+		prog "Calculator" - /usr/bin/gnome-calculator
+		prog "Floppy formatter" - /usr/bin/gfloppy
+		prog "Character map" - /usr/bin/gnome-character-map
+	}
+	prog "Yelp" - /usr/bin/yelp
+}
+menu "XFce4" folder {
+	menu "XFFM" folder {
+		prog "XFFM - Trash" - /usr/bin/xftrash4
+		prog "XFFM" - /usr/bin/xffm
+		prog "XFFM - Search" - /usr/bin/xfglob4
+		prog "XFFM - Bookmarks" - /usr/bin/xfbook4
+		prog "XFFM - Home" - /usr/bin/xftree4
+		prog "XFFM - Samba" - /usr/bin/xfsamba4
+		prog "XFFM - Filesystems" - /usr/bin/xffstab4
+		prog "XFFM - Applications" - /usr/bin/xfapps4
+	}
+	prog "XFtips" - /usr/bin/xfce4-tips
+	prog "XFce taskbar manager" - /usr/bin/xftaskbar4
+	prog "XFdiff" - /usr/bin/xfdiff4
+	prog "XFterm" - /usr/bin/xfterm4
+	prog "XFce settings manager" - /usr/bin/xfce-setting-show
+	prog "XFlock" - /usr/bin/xflock4
+	prog "XFrun" - /usr/bin/xfrun4
+	prog "XFabout" - /usr/bin/xfce4-about
+	prog "XFhelp" - /usr/bin/xfhelp4
+}
+menu "Console" folder {
+	menu "System utils" folder {
+		prog "Partition editor" - /usr/X11R6/bin/xterm -e /sbin/parted
+	}
+	menu "Editors" folder {
+		prog "VIM" - /usr/X11R6/bin/xterm -e /usr/bin/vim
+	}
+	menu "Internet" folder {
+		prog "Mutt" - /usr/X11R6/bin/xterm -e /usr/bin/mutt
+		prog "FTP" - /usr/X11R6/bin/xterm -e /usr/bin/ftp
+		prog "LFTP" - /usr/X11R6/bin/xterm -e /usr/bin/lftp
+		prog "Telnet" - /usr/X11R6/bin/xterm -e /usr/bin/telnet
+		prog "Lynx" - /usr/X11R6/bin/xterm -e /usr/bin/lynx
+	}
+	menu "Development" folder {
+		prog "GDB" - /usr/X11R6/bin/xterm -e /usr/bin/gdb
+	}
+	menu "Shells" folder {
+		prog "Python" - /usr/X11R6/bin/xterm -e /usr/bin/python
+		prog "Expect shell" - /usr/X11R6/bin/xterm -e /usr/bin/expect
+		prog "Lua" - /usr/X11R6/bin/xterm -e /usr/local/bin/lua
+		prog "Guile" - /usr/X11R6/bin/xterm -e /usr/bin/guile
+		prog "Tclsh" - /usr/X11R6/bin/xterm -e /usr/bin/tclsh
+		prog "Wish" - /usr/bin/wish
+	}
+	menu "Games" folder {
+		prog "GNUchess" - /usr/X11R6/bin/xterm -e /usr/bin/gnuchess
+	}
+	menu "Graphics" folder {
+		prog "Gphoto" - /usr/X11R6/bin/xterm -e /usr/bin/gphoto2
+	}
+	menu "Multimedia" folder {
+		prog "Aumix" - /usr/X11R6/bin/xterm -e /usr/bin/aumix
+		prog "ALSA mixer" - /usr/X11R6/bin/xterm -e /usr/bin/alsamixer
+	}
+	prog "Info" - /usr/X11R6/bin/xterm -e /usr/bin/info
+}
+menu "System utils" folder {
+	prog "GKrellM" - /usr/bin/gkrellm
+	prog "USBview" - /usr/bin/usbview
+}
+menu "Terminals" folder {
+	prog "Xterm" - /usr/bin/xterm
+	prog "Konsole" - /usr/bin/konsole
+	prog "GNOME terminal" - /usr/bin/gnome-terminal
+	prog "Xvt" - /usr/X11R6/bin/rxvt.old
+	prog "Rdesktop" - /usr/bin/rdesktop
+	prog "XFterm" - /usr/bin/xfterm4
+}
+menu "Editors" folder {
+	prog "BlueFish" - /usr/bin/bluefish
+	prog "NEdit" - /usr/X11R6/bin/nedit
+	prog "GVIM" - /usr/X11R6/bin/gvim
+	prog "Yudit" - /usr/bin/yudit
+}
+menu "Internet" folder {
+	prog "Dillo" - /usr/bin/dillo
+	prog "Mozilla" - /usr/bin/mozilla
+	prog "Netscape" - /usr/bin/netscape
+	prog "X-Chat" - /usr/bin/xchat
+	prog "Opera" - /usr/bin/opera
+}
+menu "Development" folder {
+	prog "XFdiff" - /usr/bin/xfdiff4
+}
+menu "Shells" folder {
+	prog "Wish" - /usr/bin/wish
+	prog "XFFM" - /usr/bin/xffm
+	prog "TixWish" - /usr/bin/tixwish
+	prog "Expect shell" - /usr/bin/expectk
+	prog "TuxCmd" - /root/bin/tuxcmd
+	prog "DFM" - /usr/X11R6/bin/dfm
+}
+menu "Games" folder {
+	prog "Tux Racer" - /usr/bin/tuxracer
+	prog "FreeCiv" - /usr/bin/civserver
+}
+menu "Graphics" folder {
+	prog "QIV" - /usr/bin/qiv
+	prog "The GIMP" - /usr/bin/gimp
+	prog "Acroread" - /usr/bin/acroread
+	prog "ChBg" - /usr/local/bin/chbg
+	prog "XSane" - /usr/bin/xsane
+	prog "GQview" - /usr/bin/gqview
+	prog "Gtkam" - /usr/bin/gtkam
+}
+menu "Multimedia" folder {
+	prog "GXine" - /usr/bin/gxine
+	prog "ALSA player" - /usr/bin/alsaplayer
+	prog "XMMS" - /usr/bin/xmms
+	prog "AVIplay" - /usr/bin/aviplay
+	prog "Xcdroast" - /usr/bin/xcdroast
+	prog "XINE" - /usr/bin/xine
+	prog "GMplayer" - /usr/bin/gmplayer
+	prog "Xaumix" - /usr/bin/xaumix
+	prog "GRIP" - /usr/bin/grip
+}
+menu "Emulators" folder {
+	prog "Bochs" - /usr/X11R6/bin/xterm -e /usr/bin/bochs
+}
+menu "Office" folder {
+	prog "GnuCash" - /usr/bin/gnucash
+	prog "AbiWord" - /usr/bin/AbiWord-2.0
+}
+menu "Amusement" folder {
+	prog "Xeyes" - /usr/X11R6/bin/xeyes
+}
+menu "User utils" folder {
+	prog "ObConf" - /usr/bin/obconf
+	prog "IcePref" - /usr/X11R6/bin/icepref
+	prog "GTK theme switcher" - /root/bin/gtk-theme-switch
+}
+menu "X11" folder {
+	prog "Xeyes" - /usr/X11R6/bin/xeyes
+	prog "Xbitmap" - /usr/X11R6/bin/bitmap
+	prog "Xcalc" - /usr/X11R6/bin/xcalc
+	prog "Xfontsel" - /usr/X11R6/bin/xfontsel
+	prog "Xterm" - /usr/bin/xterm
+	prog "Xkill" - /usr/X11R6/bin/xkill
+	prog "Xclipboard" - /usr/X11R6/bin/xclipboard
+	prog "Xclock" - /usr/X11R6/bin/xclock
+	prog "Xconsole" - /usr/X11R6/bin/xconsole
+	prog "Xmag" - /usr/X11R6/bin/xmag
+	prog "Xload" - /usr/X11R6/bin/xload
+}
+menufile Toolbar toolbar toolbar

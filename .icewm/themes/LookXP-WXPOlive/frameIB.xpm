@@ -1,0 +1,14 @@
+/* XPM */
+static char * frameIB_xpm[] = {
+"5 4 7 1",
+" 	c None",
+".	c #DEE2C6",
+"+	c #DEE3C5",
+"@	c #D7DBC2",
+"#	c #D8DCC2",
+"$	c #BFC3B0",
+"%	c #B6BDAB",
+"...++",
+"@@@##",
+"$$$$$",
+"%%%%%"};

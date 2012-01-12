@@ -1,0 +1,8 @@
+[Desktop Entry]
+NoDisplay=true
+Name=FF John
+Exec=firefox -P John
+X-Zim-AppType=web_browser
+Version=1.0
+Type=Application
+

@@ -1,0 +1,23 @@
+/* XPM */
+static char *acroread_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 14 3 1",
+"  c red",
+". c white",
+"X c None",
+/* pixels */
+"XXXXXX XXXXXXXXX",
+"XXXXX . XXXXXXXX",
+"XXXXX   XXXXXXXX",
+"XXXXXX  XXXXXXXX",
+"XXXXXX  XXXXXXXX",
+"XXXXXX . XXXXXXX",
+"XXXXX ...     XX",
+"XXXXX ..    .. X",
+"XXXXX    XXX  XX",
+"XXXX  XXXXXXXXXX",
+"XXX  XXXXXXXXXXX",
+"X   XXXXXXXXXXXX",
+"X . XXXXXXXXXXXX",
+"X  XXXXXXXXXXXXX"
+};

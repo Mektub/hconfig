@@ -1,0 +1,13 @@
+[app] (name=fbrun)
+  [Position]	(CENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[app] (name=Firefox)
+  [Workspace]	{2}
+[end]
+[app] (name=fbpager) (class=FbPager)
+  [Workspace]	{1}
+  [Jump]	{yes}
+  [Layer]	{10}
+  [Close]	{yes}
+[end]

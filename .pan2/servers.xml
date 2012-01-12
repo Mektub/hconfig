@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<server-properties>
+  <server id="1">
+    <host>news.gmane.org</host>
+    <port>119</port>
+    <username></username>
+    <password></password>
+    <expire-articles-n-days-old>93</expire-articles-n-days-old>
+    <connection-limit>4</connection-limit>
+    <newsrc>newsrc-1</newsrc>
+    <rank>1</rank>
+  </server>
+  <server id="2">
+    <host>nntp.aioe.org</host>
+    <port>119</port>
+    <username></username>
+    <password></password>
+    <expire-articles-n-days-old>93</expire-articles-n-days-old>
+    <connection-limit>4</connection-limit>
+    <newsrc>newsrc-2</newsrc>
+    <rank>1</rank>
+  </server>
+</server-properties>

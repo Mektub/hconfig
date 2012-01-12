@@ -1,0 +1,11 @@
+accounts: 7
+cpu_uname: x86_64
+kcoresize: 140737486262272
+kernel: 2.6.39-ARCH
+method: machine-update version 0.31
+name: archabit64
+os: Linux
+uniqueid: 716960244
+uptime_1:  20:02:19 up 1 day,  7:44, 10 users,  load average: 0.03, 0.06, 0.05
+uptime_2: runlevel (to lvl 3)                    Fri Jul  1 12:17 - 20:02 (1+07:44)   
+users: 0

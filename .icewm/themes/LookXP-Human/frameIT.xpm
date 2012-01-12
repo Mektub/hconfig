@@ -1,0 +1,12 @@
+/* XPM */
+static char * frameIT_xpm[] = {
+"1 4 5 1",
+" 	c None",
+".	c #000000",
+"+	c #FFFFFD",
+"@	c #F7F6F4",
+"#	c #F6F5F1",
+".",
+"+",
+"@",
+"#"};

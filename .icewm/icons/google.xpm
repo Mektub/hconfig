@@ -1,0 +1,39 @@
+/* XPM */
+static char *google[] = {
+/* width height num_colors chars_per_pixel */
+"    45    16       16            1",
+/* colors */
+"` c #040204",
+". c #4d784d",
+"# c #ae2a1c",
+"a c #a58e63",
+"b c #e0bc35",
+"c c #c05444",
+"d c #1e4daf",
+"e c #3d61a7",
+"f c #61b461",
+"g c #afb2b0",
+"h c #70787b",
+"i c #d98963",
+"j c #742e24",
+"k c #7ea5df",
+"l c #4779d2",
+"m c #6a8fcc",
+/* pixels */
+"```mllemm``````````````````````````ff.```````",
+"``leedeeddk````````````````````````gf.```````",
+"`mdd```kedg````````````````````````ff.```````",
+"kee`````g````ic#ig````bbbb````gkgmmff.``ccci`",
+"mdm`````````ccccc#c`bbbbbbb``llllllff.`iccc#c",
+"ldg````````icc``c##gbag`bbbake`kedhff.icc`i##",
+"lda````````i#g```c#aba```bbhld``lddff.i#cccca",
+"ede````lmmlc#a```c#abh```bbaeda`ldeff.c#acg``",
+"eddk``mkmdec#j```c#abaa``bbheddmld`ff.c##````",
+"eddeh```mdec##c``c#gbia``baa`eeld``ff.a##c```",
+"`mdddemmede`c##c##j`aaabbba```mldehf..h#####c",
+"```eeeedl````ajca`````aaa```mlldddd`aka`cjjc`",
+"```````````````````````````kle``edd``````````",
+"```````````````````````````mdm```ld``````````",
+"```````````````````````````eddm`mde``````````",
+"```````````````````````````eddeeee```````````"
+};

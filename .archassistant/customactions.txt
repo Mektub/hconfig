@@ -1,0 +1,6 @@
+konsole --noclose -e pacman -Syu;pacman -Syu via Konsole;
+konsole --noclose -e pacman -Scc;pacman -Scc via Konsole;
+gtkpacman;gtkpacman;
+kpopassistant;kpopassistant;
+qgrubedit;qgrubedit;
+emma;emma;

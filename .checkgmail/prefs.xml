@@ -1,0 +1,20 @@
+<opt archive_as_read="1"
+     atomfeed_address="mail.google.com/mail/feed/atom"
+     delay="80000"
+     error_icon="/opt/MyDocs/Icons/Johns/error_16x16.xpm"
+     gmail_command=" firefox %u"
+     language="English"
+     mail_icon="/opt/MyDocs/Icons/Linux2/mail11.shinyfeet.com.gif"
+     nomail_command=""
+     notify_command="aplay /opt/MyDocs/Sounds/OhOh.wav"
+     passwd="4ffYkN7JENkaZzvRM9OS+ehneHm34hWlWUYdZGYauSPXH5wj7r1pw1CkUkhCrP4v"
+     popup_delay="30000"
+     save_passwd="1"
+     show_popup_delay="250"
+     time_24="1"
+     use_custom_error_icon="1"
+     use_custom_mail_icon="1"
+     user="jotapena@gmail.com">
+  <label_delay Facebook="300"
+               Foruns="80" />
+</opt>

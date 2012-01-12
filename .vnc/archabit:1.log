@@ -1,0 +1,22 @@
+15/02/09 16:19:38 Xvnc version TightVNC-1.3.9
+15/02/09 16:19:38 Copyright (C) 2000-2007 TightVNC Group
+15/02/09 16:19:38 Copyright (C) 1999 AT&T Laboratories Cambridge
+15/02/09 16:19:38 All Rights Reserved.
+15/02/09 16:19:38 See http://www.tightvnc.com/ for information on TightVNC
+15/02/09 16:19:38 Desktop name 'X' (archabit:1)
+15/02/09 16:19:38 Protocol versions supported: 3.3, 3.7, 3.8, 3.7t, 3.8t
+15/02/09 16:19:38 Listening for VNC connections on TCP port 5901
+15/02/09 16:19:38 Listening for HTTP connections on TCP port 5801
+15/02/09 16:19:38   URL http://archabit:5801
+xrdb:  "Xft.hintstyle" on line 16 overrides entry on line 13
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "Generic Event Extension" missing on display ":1.0".
+Xlib:  extension "Generic Event Extension" missing on display ":1.0".
+Xlib:  extension "Generic Event Extension" missing on display ":1.0".
+
+(RoxDaSilva:31243): Gtk-WARNING **: Error loading icon from file '/usr/share/icons/hicolor/scalable/apps/roxterm.svg':
+	Couldn't recognize the image file format for file '/usr/share/icons/hicolor/scalable/apps/roxterm.svg'
+RoxDaSilva: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.0.
+Cannot open display.
+IceWM: using /root/.icewm for private configuration files
+IceWM: Can't open display: :1. X must be running and $DISPLAY set.

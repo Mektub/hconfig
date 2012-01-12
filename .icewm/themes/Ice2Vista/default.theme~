@@ -1,0 +1,33 @@
+ThemeDescription="Kristall color 03"
+ThemeAuthor="Michell Schimanski <m.schimanski@tu-bs.de> - modified by Marco Puszina <marco@hackerwelt.de>"
+#---------------------------------------------------------------
+# Tipo de Tema
+#---------------------------------------------------------------
+Look=metal
+#---------------------------------------------------------------
+# Tamanho Da Barra de titulos e outras coisitas
+#---------------------------------------------------------------
+TitleBarHeight=21
+TitleBarCentered=1
+TitleButtonsLeft="s"
+TitleButtonsRight="xmi"
+TitleButtonsSupported="xmis"
+#---------------------------------------------------------------
+# Frescuras do Tema
+#---------------------------------------------------------------
+BorderSizeX=2
+BorderSizeY=2
+CornerSizeX=23
+CornerSizeY=23
+DlgBorderSizeX=4
+DlgBorderSizeY=4
+#---------------------------------------------------------------
+# Cores
+#---------------------------------------------------------------
+ColorActiveTitleBarText="rgb:00/00/00"
+ColorNormalTitleBarText="rgb:6A/6A/6A"
+ColorNormalMenuItemText="rgb:DE/DE/DE"
+#---------------------------------------------------------------
+# Images Q Vao Usar Degrade..ou seja la come q se escreve isso...
+#---------------------------------------------------------------
+Gradients="taskbuttonactive.xpm menusel.xpm taskbarbg.xpm menubg.xpm"

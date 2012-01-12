@@ -1,0 +1,37 @@
+/* XPM */
+static char *kopete_xpm[] = {
+/* width height num_colors chars_per_pixel */
+"    22    22        8            1",
+/* colors */
+"` c #0c0e1e",
+". c #5099e8",
+"# c #e0a540",
+"a c #d16845",
+"b c #3b5fb4",
+"c c #c3d4d1",
+"d c #4bd859",
+"e c #8db0e1",
+/* pixels */
+"`b.eb````````````beb``",
+"`#cc#b``````````bccca`",
+"b#####``````````a##aab",
+"b#####``````````aaa#ab",
+"b#cc#b``````````baccab",
+"`b.ebb``````````bbabb`",
+"```becceee.......b````",
+"```bccccee..e....b````",
+"```bccccee..ee...b````",
+"```bcccecc...ebbbb````",
+"```beceeee.b.ebbbb````",
+"```beeeec.bbe.bbbb````",
+"```b....e.b.....b`````",
+"```b....e....bbbb`````",
+"```bee..bb..bbbb``````",
+"``bbbbbbbbbeeb````b```",
+"`.cc.b`````bbeb`b.ceb`",
+"bdddd.``````bbbbbce..b",
+"bdddddb`````````b....b",
+"bdccd.b`````````b.ec.b",
+"`.dd.b``````````bbe.bb",
+"``bbb````````````bbbb`"
+};

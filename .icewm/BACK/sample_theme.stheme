@@ -1,0 +1,24 @@
+# Ice Sound Manager version 0.1b Sound Theme
+# The line below is necessary for Ice Sound Manager to identify this as a legitimate theme.
+# Include NO spaces at the end of the next 2 lines. Comments must be on their OWN line.
+TYPE=PhrozenSoundTheme
+ThemeName=Sample Theme
+startup=[NONE]
+shutdown=[NONE]
+restart=[NONE]
+closeAll=[NONE]
+launchApp=[NONE]
+workspaceChange=[NONE]
+windowOpen=[NONE]
+windowClose=[NONE]
+dialogOpen=[NONE]
+dialogClose=[NONE]
+windowMin=[NONE]
+windowMax=[NONE]
+windowRestore=[NONE]
+windowHide=[NONE]
+windowLower=[NONE]
+windowRollup=[NONE]
+windowSized=[NONE]
+windowMoved=[NONE]
+startMenu=[NONE]

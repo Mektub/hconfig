@@ -1,0 +1,20 @@
+
+[options]
+verbose = 0
+read_all = false
+delete = true
+message_log_syslog = true
+message_log = ~/.getmail/Log/netcabo.log
+
+[retriever]
+type = SimplePOP3SSLRetriever
+server = pop.netcabo.pt
+username = joao.pena@netcabo.pt
+port = 995
+password = saguin69
+
+[destination]
+type = MDA_external
+path = /usr/bin/procmail
+allow_root_commands = true
+unixfrom = true

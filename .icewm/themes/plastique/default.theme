@@ -1,0 +1,224 @@
+##########################################################################
+# Plastique
+#
+# A simple merger of the excellent Plastik theme for KDE and the Adisk-sm2
+# theme in the IceWM environment.
+# 
+# Credits for Plastik:
+# * Sandro Giessl
+# * Vincent Wagelaar
+# * Bernardo Hung
+# * kde style "dotNET";
+# * Some code adopted from the "Keramik" kde style. Thanks!
+# * Toolbar images borrowed from SilverXP theme
+# * Shadow adapted from adisk-sm2
+# * Refurbished by PastorEd 
+# * Background iceplastique.jpg was inspired from a wallpaper by George Wyatt
+#   as found on http://www.kde-look.org
+# * the icon in the background is from the excellent Plastique icon set from
+#   David Vignoni (http://www.icon-king.com)
+#
+# * Special thanks to Kocil and the team at Vector Linux for their support
+#   and the layout of this file (much better organized than most theme files
+#   I've seen)
+
+
+# Theme author
+ThemeAuthor="Adisk, tweaked by PastorEd"
+
+# Theme description
+ThemeDescription="tweaked theme to resemble KDE Plastik"
+
+Gradients="workspacebuttonbg.xpm workspacebuttonactive.xpm taskbarbg.xpm dialogbg.xpm taskbuttonbg.xpm taskbuttonactive.xpm taskbuttonminimized.xpm buttonA.xpm buttonI.xpm toolbuttonbg.xpm"
+
+###########################################################
+# General Look-and-Feel settings
+###########################################################
+
+Look=gtk
+TrayDrawBevel=0
+
+
+###########################################################
+# Title Bar Setup
+###########################################################
+
+#  title buttons (x=close,m=max,i=min,h=hide,r=rollup,s=sysmenu,d=depth)
+TitleButtonsLeft="s"
+TitleButtonsRight="xmi"
+TitleButtonsSupported="sxmi"
+TitleBarHeight=20
+# TitleBarJustify=50
+# TitleBarCentered=1
+# TitleBarHorzOffset=0 # [-128-128]
+# TitleBarVertOffset=0 # [-128-128]
+# TitleBarJoinLeft=0 # 0/1
+# TitleBarJoinRight=0 # 0/1
+
+ShowMenuButtonIcon=1 # 0/1
+
+###########################################################
+# Border Setup
+###########################################################
+
+# Horizontal window border
+BorderSizeX=20 # 0-128
+
+# Veritical window border
+BorderSizeY=16 # 0-128
+
+# Resize corner width
+CornerSizeX=16 # 0-64
+
+# Resize corner height
+CornerSizeY=16 # 0-64
+
+# Horizontal dialog window border
+DlgBorderSizeX=20 # 0-128
+
+# Vertical dialog window border
+DlgBorderSizeY=16 # 0-128
+
+ScrollBarX=16 # [0-64]
+ScrollBarY=16 # [0-64]
+
+###########################################################
+# Taskbar Preferences
+###########################################################
+
+ShowTaskBar=1 # 0/1
+TaskBarDoubleHeight=0 # 0/1
+TaskBarAtTop=1 # 0/1
+
+#  Background of the taskbar
+ColorDefaultTaskBar="rgb:ef/ef/ef"
+
+TaskBarShowStartMenu=1 # 0/1
+#TaskBarShowWindowListMenu=0 # 0/1
+#TaskBarShowShowDesktopButton=1 # 0/1
+
+TaskBarShowClock=1 # 0/1
+TaskBarClockLeds=0
+TimeFormat=" %l:%M"
+#TimeFormatAlt=""
+#DateFormat="%c"
+
+TaskBarShowCPUStatus=1 # 0/1
+# TaskBarCPUSamples=20 # [2-1000] 
+
+TaskBarShowNetStatus=1 # 0/1
+
+# TaskBarShowAPMStatus=0 # 0/1
+# TaskBarShowAPMTime=1 # 0/1
+# List of battery names (directories) in /proc/acpi/battery to ignore.
+# AcpiIgnoreBatteries=""
+
+# TaskBarShowMailboxStatus=1 # 0/1
+# TaskBarMailboxStatusBeepOnNewMail=0 # 0/1
+# TaskBarMailboxStatusCountMessages=0 # 0/1
+
+TaskBarShowWorkspaces=1 # 0/1
+# TaskBarWorkspacesLeft=1 # 0/1
+# WorkspaceNames=" Main ", " Inet  ", " Dev  " 
+
+TaskBarShowWindows=0 # 0/1
+TaskBarShowAllWindows=0 # 0/1
+TaskBarShowWindowIcons=0 # 0/1
+
+TaskBarShowTray=1 # 0/1
+TrayDrawBevel=0 # 0/1
+TrayShowAllWindows=1 # 0/1
+
+EnableAddressBar=0 # 0/1
+ShowAddressBar=0 # 0/1
+
+ColorClock=""  # leave blank for transparency
+ColorClockText="rgb:00/00/00"
+
+###########################################################
+# Background
+###########################################################
+
+
+# Desktop wallpaper image
+DesktopBackgroundImage="iceplastique.jpg"
+
+# Color to use for transparent applications
+DesktopTransparencyColor=""
+
+# Image to use for transparent applications
+DesktopTransparencyImage="iceplastique.jpg"
+
+#  Show application icon over menu button
+ShowMenuButtonIcon=1 # 0/1
+#  Menu icon size
+MenuIconSize=16 # [8-128]
+
+###########################################################
+# Colors
+###########################################################
+
+
+# Color of normal workspace button text
+ColorNormalWorkspaceButtonText="rgb:00/00/00"
+
+# Color of active workspace button text
+ColorActiveWorkspaceButtonText="rgb:00/00/00"
+
+# Color of normal workspace button
+ColorNormalWorkspaceButton=""
+
+# Color of active workspace button
+ColorActiveWorkspaceButton=""
+
+ColorNormalTitleBarText="#dedfde"
+ColorNormalTitleBarShadow="#42454a"
+
+ColorActiveTitleBarShadow="#213c5a"
+
+
+########################################################### 
+# Font Specification                                       
+###########################################################
+#TitleFontName           =    "-misc-fixed-bold-r-normal-*-13-*-*-*-*-*-*-*"
+TitleFontNameXft	=    "helvetica:size=14,sans-serif:size=14:bold"
+
+MenuFontName            =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+MinimizedWindowFontName =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+QuickSwitchFontName     =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+ListBoxFontName         =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+StatusFontName          =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+InputFontName           =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+ToolTipFontName         =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+ToolButtonFontName      =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+ActiveButtonFontName    =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+NormalButtonFontName    =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+ActiveTaskBarFontName   =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+NormalTaskBarFontName   =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+FxFontName              =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+LabelFontName           =    "-misc-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+ApmFontName             =    "-*-helvetica-medium-r-normal-*-12-*-*-*-*-*-*-*"
+ClockFontName           =    "-*-helvetica-medium-r-normal-*-14-*-*-*-*-*-*-*"
+
+#TitleFontName="-*-verdana-bold-r-normal-*-13-*-*-*-p-*-koi8-r"
+#TitleFontNameXft="verdana:size=10:bold"
+#MenuFontName="-*-verdana-normal-r-normal-*-13-*-*-*-p-*-koi8-r"
+#MenuFontNameXft="verdana:size=10"
+#StatusFontName="-*-verdana-medium-r-normal-*-13-*-*-*-p-*-koi8-r"
+#StatusFontNameXft="verdana:size=10"
+#QuickSwitchFontName="-*-verdana-medium-r-normal-*-13-*-*-*-p-*-koi8-r"
+#QuickSwitchFontNameXft="verdana:size=10"
+#NormalButtonFontName="-*-verdana-medium-r-normal-*-11-*-*-*-p-*-koi8-r"
+#NormalButtonFontNameXft="verdana:size=9"
+#ActiveButtonFontName="-*-verdana-bold-r-normal-*-11-*-*-*-p-*-koi8-r"
+#ActiveButtonFontNameXft="verdana:size=9:bold"
+#NormalTaskBarFontName="-*-verdana-medium-r-normal-*-13-*-*-*-p-*-koi8-r"
+#NormalTaskBarFontNameXft="verdna:size=10"
+#ActiveTaskBarFontName="-*-verdana-bold-r-normal-*-11-*-*-*-p-*-koi8-r"
+#ActiveTaskBarFontNameXft="verdana:size=9:bold"
+#ClockFontName="-*-sans-bold-r-*-*-*-160-*-*-*-*-*-*"
+ColorClockText="rgb:00/00/00"
+
+ClockFontNameXft           =    "lucida:size=14:bold,sans-serif:size=14:bold"
+
+

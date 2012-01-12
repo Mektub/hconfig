@@ -1,0 +1,174 @@
+[13:35:56] * message: Account 'News - Gmane': Connecting to NNTP server: news.gmane.org...
+[13:35:56] NNTP< 200 news.gmane.org InterNetNews NNRP server INN 2.5.1 ready (posting ok) 
+[13:35:56] NNTP> MODE READER 
+[13:35:56] NNTP< 200 news.gmane.org InterNetNews NNRP server INN 2.5.1 ready (posting ok) 
+[13:35:56] NNTP> GROUP gmane.comp.gnome.apps.pan.announce 
+[13:35:57] NNTP< 211 41 1 43 gmane.comp.gnome.apps.pan.announce 
+[13:35:57] NNTP> GROUP gmane.comp.gnome.apps.pan.devel 
+[13:35:57] NNTP< 211 1380 1 1384 gmane.comp.gnome.apps.pan.devel 
+[13:35:57] * message: getting xover 1372 - 1384 in gmane.comp.gnome.apps.pan.devel...
+[13:35:57] NNTP> XOVER 1372-1384 
+[13:35:57] NNTP< 224 Overview information for 1372-1384 follows 
+[13:35:57] NNTP< [data - 1448 bytes]
+[13:35:57] NNTP< [data - 1448 bytes]
+[13:35:57] NNTP< [data - 1349 bytes]
+[13:35:57] NNTP> XHDR newsgroups 1372-1384 
+[13:35:57] NNTP< 221 Header or metadata information for newsgroups follows (from overview) 
+[13:35:57] NNTP< . 
+[13:35:57] NNTP> XHDR to 1372-1384 
+[13:35:57] NNTP< 221 Header or metadata information for to follows (from overview) 
+[13:35:57] NNTP< . 
+[13:35:57] NNTP> XHDR cc 1372-1384 
+[13:35:58] NNTP< 221 Header or metadata information for cc follows (from overview) 
+[13:35:58] NNTP< . 
+[13:35:58] NNTP> GROUP gmane.comp.gnome.apps.pan.user 
+[13:35:58] NNTP< 211 13102 1 13115 gmane.comp.gnome.apps.pan.user 
+[13:35:58] NNTP> GROUP gmane.comp.sysutils.backup.tarsnap.user 
+[13:35:58] NNTP< 211 470 1 470 gmane.comp.sysutils.backup.tarsnap.user 
+[13:35:58] * message: getting xover 468 - 470 in gmane.comp.sysutils.backup.tarsnap.user...
+[13:35:58] NNTP> XOVER 468-470 
+[13:35:58] NNTP< 224 Overview information for 468-470 follows 
+[13:35:58] NNTP< [data - 1448 bytes]
+[13:35:58] NNTP< ap.com>	8846	116	Xref: news.gmane.org gmane.comp.sysutils.backup.tarsnap.user:470 
+[13:35:58] NNTP< . 
+[13:35:58] NNTP> XHDR newsgroups 468-470 
+[13:35:58] NNTP< 221 Header or metadata information for newsgroups follows (from overview) 
+[13:35:58] NNTP< . 
+[13:35:58] NNTP> XHDR to 468-470 
+[13:35:58] NNTP< 221 Header or metadata information for to follows (from overview) 
+[13:35:58] NNTP< . 
+[13:35:58] NNTP> XHDR cc 468-470 
+[13:35:59] NNTP< 221 Header or metadata information for cc follows (from overview) 
+[13:35:59] NNTP< . 
+[13:35:59] NNTP> GROUP gmane.comp.terminal-emulators.tmux.user 
+[13:35:59] NNTP< 211 2371 1 2371 gmane.comp.terminal-emulators.tmux.user 
+[13:35:59] * message: getting xover 2366 - 2371 in gmane.comp.terminal-emulators.tmux.user...
+[13:35:59] NNTP> XOVER 2366-2371 
+[13:35:59] NNTP< 224 Overview information for 2366-2371 follows 
+[13:35:59] NNTP< [data - 1448 bytes]
+[13:35:59] NNTP< [data - 978 bytes]
+[13:35:59] NNTP> XHDR newsgroups 2366-2371 
+[13:35:59] NNTP< 221 Header or metadata information for newsgroups follows (from overview) 
+[13:35:59] NNTP< . 
+[13:35:59] NNTP> XHDR to 2366-2371 
+[13:35:59] NNTP< 221 Header or metadata information for to follows (from overview) 
+[13:35:59] NNTP< . 
+[13:35:59] NNTP> XHDR cc 2366-2371 
+[13:36:00] NNTP< 221 Header or metadata information for cc follows (from overview) 
+[13:36:00] NNTP< . 
+[13:36:00] NNTP> GROUP gmane.comp.window-managers.pekwm.announce 
+[13:36:00] NNTP< 211 0 1 0 gmane.comp.window-managers.pekwm.announce 
+[13:36:00] ** warning: invalid article range: 1 - 0
+[13:36:00] NNTP> GROUP gmane.linux.arch.announce 
+[13:36:00] NNTP< 211 258 1 258 gmane.linux.arch.announce 
+[13:36:00] NNTP> GROUP gmane.linux.arch.devel 
+[13:36:00] NNTP< 211 16959 1 16959 gmane.linux.arch.devel 
+[13:36:00] * message: getting xover 16914 - 16959 in gmane.linux.arch.devel...
+[13:36:00] NNTP> XOVER 16914-16959 
+[13:36:00] NNTP< 224 Overview information for 16914-16959 follows 
+[13:36:00] NNTP< [data - 1448 bytes]
+[13:36:00] NNTP< [data - 1448 bytes]
+[13:36:00] NNTP< [data - 1448 bytes]
+[13:36:00] NNTP< [data - 1448 bytes]
+[13:36:00] NNTP< [data - 1448 bytes]
+[13:36:00] NNTP< [data - 1448 bytes]
+[13:36:00] NNTP< [data - 1448 bytes]
+[13:36:00] NNTP< [data - 1448 bytes]
+[13:36:00] NNTP< [data - 1429 bytes]
+[13:36:00] NNTP> XHDR newsgroups 16914-16959 
+[13:36:00] NNTP< 221 Header or metadata information for newsgroups follows (from overview) 
+[13:36:00] NNTP< . 
+[13:36:00] NNTP> XHDR to 16914-16959 
+[13:36:01] NNTP< 221 Header or metadata information for to follows (from overview) 
+[13:36:01] NNTP< . 
+[13:36:01] NNTP> XHDR cc 16914-16959 
+[13:36:01] NNTP< 221 Header or metadata information for cc follows (from overview) 
+[13:36:01] NNTP< . 
+[13:36:01] NNTP> GROUP gmane.linux.arch.general 
+[13:36:01] NNTP< 211 38894 1 38894 gmane.linux.arch.general 
+[13:36:01] * message: getting xover 38691 - 38894 in gmane.linux.arch.general...
+[13:36:01] NNTP> XOVER 38691-38894 
+[13:36:01] NNTP< 224 Overview information for 38691-38894 follows 
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:01] NNTP< [data - 5792 bytes]
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:01] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 1448 bytes]
+[13:36:02] NNTP< [data - 464 bytes]
+[13:36:02] NNTP> XHDR newsgroups 38691-38894 
+[13:36:02] NNTP< 221 Header or metadata information for newsgroups follows (from overview) 
+[13:36:02] NNTP< . 
+[13:36:02] NNTP> XHDR to 38691-38894 
+[13:36:02] NNTP< 221 Header or metadata information for to follows (from overview) 
+[13:36:02] NNTP< . 
+[13:36:02] NNTP> XHDR cc 38691-38894 
+[13:36:02] NNTP< 221 Header or metadata information for cc follows (from overview) 
+[13:36:02] NNTP< . 
+[13:36:02] NNTP> GROUP gmane.linux.arch.tur.user 
+[13:36:02] NNTP< 211 23386 1 23387 gmane.linux.arch.tur.user 
+[13:36:02] * message: getting xover 23341 - 23387 in gmane.linux.arch.tur.user...
+[13:36:02] NNTP> XOVER 23341-23387 
+[13:36:03] NNTP< 224 Overview information for 23341-23387 follows 
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 1448 bytes]
+[13:36:03] NNTP< [data - 887 bytes]
+[13:36:03] NNTP> XHDR newsgroups 23341-23387 
+[13:36:03] NNTP< 221 Header or metadata information for newsgroups follows (from overview) 
+[13:36:03] NNTP< . 
+[13:36:03] NNTP> XHDR to 23341-23387 
+[13:36:03] NNTP< 221 Header or metadata information for to follows (from overview) 
+[13:36:03] NNTP< . 
+[13:36:03] NNTP> XHDR cc 23341-23387 
+[13:36:03] NNTP< 221 Header or metadata information for cc follows (from overview) 
+[13:36:03] NNTP< . 

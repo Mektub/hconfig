@@ -1,0 +1,55 @@
+#
+# This file has three sections.
+#
+# A. A shorthand table for the most frequent groups in the xrefs.
+#    The first line tells the number of elements to follow,
+#    then one line per entry with a one-character shorthand and full name.
+#
+# B. A shorthand table for the most freqent author names.
+#    This is formatted just like the other shorthand table.
+#    (sorted by post count, so it's also a most-frequent-posters list...)
+#
+# C. The group's headers section.
+#    The first line tells the number of articles to follow,
+#    then articles which each have the following lines:
+#    1. message-id
+#    2. subject
+#    3. author
+#    4. references. This line is omitted if the Article has an empty References header.
+#    5. time-posted. This is a time_t (see http://en.wikipedia.org/wiki/Unix_time)
+#    6. xref line, server1:group1:number1 server2:group2:number2 ...
+#    7. has-attachments [parts-total-count parts-found-count] line-count
+#       If has-attachments isn't 't' (for true), fields 2 and 3 are omitted.
+#       If fields 2 and 3 are equal, the article is `complete'.
+#    8. One line per parts-found-count: part-index message-id byte-count
+#
+2	 # file format version number
+1	 # xref shorthand count
+	a	gmane.network.bit-torrent.rtorrent.devel
+2	 # author shorthand count
+	a	Jari Sundell <sundell.software@gmail.com>
+	b	Emil Muratov <gpm@hotplug.ru>
+3
+<CAH1CXAEG-NHDNyr_LAtv4kMR1wHRkkz6axW7f2FXnsgm2bmtCg@mail.gmail.com>
+	LibTorrent 0.13.0 and rTorrent 0.9.0 released
+	a
+	1323525800
+	1:a:2525 
+	f 72
+	1 <CAH1CXAEG-NHDNyr_LAtv4kMR1wHRkkz6axW7f2FXnsgm2bmtCg@mail.gmail.com> 5680
+<CAH1CXAF_oQiZA0H1SWnKTJFrFBQhg9ERVtJbhBMqOnWdL8wYrw@mail.gmail.com>
+	Re: LibTorrent 0.13.0 and rTorrent 0.9.0 released
+	a
+	<CAH1CXAEG-NHDNyr_LAtv4kMR1wHRkkz6axW7f2FXnsgm2bmtCg@mail.gmail.com> <4EE71714.2090506@hotplug.ru>
+	1323769163
+	1:a:2534 
+	f 28
+	1 <CAH1CXAF_oQiZA0H1SWnKTJFrFBQhg9ERVtJbhBMqOnWdL8wYrw@mail.gmail.com> 4745
+<4EE71714.2090506@hotplug.ru>
+	Re: LibTorrent 0.13.0 and rTorrent 0.9.0 released
+	b
+	<CAH1CXAEG-NHDNyr_LAtv4kMR1wHRkkz6axW7f2FXnsgm2bmtCg@mail.gmail.com>
+	1323767572
+	1:a:2533 
+	f 23
+	1 <4EE71714.2090506@hotplug.ru> 4190

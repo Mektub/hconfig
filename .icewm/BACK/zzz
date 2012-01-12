@@ -1,0 +1,233 @@
+menu "KDE" folder {
+	menu "Development" folder {
+		prog "Qt Designer" - designer
+		prog "Kdbg" - kdbg
+		prog "Qt Assistant" - assistant
+		prog "Qt Linguist" - linguist
+	}
+	menu "Shells" folder {
+		prog "Konqueror" - konqueror
+	}
+	menu "Office" folder {
+		prog "Kpilot" - kpilot
+		prog "Korganizer" - korganizer
+		prog "Kandy" - kandy
+	}
+	menu "Graphics" folder {
+		prog "Fax viewer" - kfax
+		prog "Screen capture" - ksnapshot
+		prog "Screen ruler" - kruler
+		prog "Image viewer" - kuickshow
+		prog "DVI viewer" - kdvi
+		prog "Image viewer" - kview
+		prog "PS-PDF viewer" - kghostview
+		prog "Color editor" - kcoloredit
+		prog "Icon editor" - kiconedit
+		prog "Color chooser" - kcolorchooser
+	}
+	menu "System utils" folder {
+		prog "KDE control center" - kcontrol
+		prog "KMenuEdit" - kmenuedit
+		prog "Kdf" - kdf
+		prog "KwikDisk" - kwikdisk
+		prog "Kcron" - kcron
+		prog "Konsole" - konsole
+		prog "KSysGuard" - ksysguard
+		prog "Kpersonalizer" - kpersonalizer
+	}
+	menu "Games" folder {
+		prog "Kandalf's tips" - ktip
+	}
+	menu "Editors" folder {
+		prog "Kedit" - kedit
+		prog "Kate" - kate
+		prog "Kwrite" - kwrite
+	}
+	menu "Internet" folder {
+		prog "Korn" - korn
+		prog "Knode" - knode
+		prog "Konqueror" - konqueror
+		prog "IRC client" - ksirc
+		prog "PPP log viewer" - kppplogview
+		prog "Bookmarks editor" - keditbookmarks
+		prog "Kppp" - /usr/bin/kppp
+		prog "Kmail" - kmail
+	}
+	menu "Multimedia" folder {
+		prog "aRts builder" - artsbuilder
+		prog "Kaboodle" - kaboodle
+		prog "Kmid" - kmid
+		prog "AmaroK" - amarok
+		prog "Noatun" - noatun
+		prog "aRts control" - artscontrol
+		prog "K3B" - k3b
+		prog "Mixer" - kmix
+		prog "CD player" - kscd
+	}
+	menu "User utils" folder {
+		prog "Ark" - ark
+		prog "Kjots" - kjots
+		prog "Kpassword" - kdepasswd
+		prog "Klipper" - klipper
+		prog "KAdressBook" - kaddressbook
+		prog "KJobView" - kjobviewer
+		prog "Kcalc" - kcalc
+		prog "Kfloppy" - kfloppy
+		prog "KCharSelect" - kcharselect
+		prog "Kdict" - kdict
+		prog "KHexEdit" - khexedit
+	}
+}
+menu "GNOME" folder {
+	menu "Development" folder {
+		prog "Glade" - glade-2
+	}
+	menu "Shells" folder {
+		prog "Nautilus" - nautilus
+	}
+	menu "Graphics" folder {
+		prog "Postscipt viewer" - ggv
+	}
+	menu "System utils" folder {
+		prog "GNOME terminal" - gnome-terminal
+		prog "Bugbuddy" - bug-buddy
+		prog "GNOME system monitor" - gnome-system-monitor
+		prog "GDM configurator" - gdmconfig
+		prog "GConf configurator" - gconf-editor
+	}
+	menu "Games" folder {
+		prog "Glines" - glines
+		prog "Gataxx" - gataxx
+		prog "Gnect" - gnect
+		prog "Gnotski" - gnotski
+		prog "Gnomine" - gnomine
+		prog "Gtetravex" - gnotravex
+		prog "Gsame" - same-gnome
+		prog "Iagno" - iagno
+		prog "Gmahjongg" - mahjongg
+		prog "GAisleRiot" - sol
+		prog "Gnibbles" - gnibbles
+		prog "Gnobots2" - gnobots2
+		prog "Gtali" - gtali
+	}
+	menu "Editors" folder {
+		prog "Gnotepad+" - gnp
+		prog "GNOME editor" - gedit
+	}
+	menu "Internet" folder {
+		prog "gFTP" - gftp
+		prog "Epiphany" - epiphany
+		prog "Gaim" - gaim
+		prog "GnomeMeeting" - gnomemeeting
+	}
+	menu "Multimedia" folder {
+		prog "CD player" - gnome-cd
+		prog "Totem" - totem
+		prog "Sound recorder" - gnome-sound-recorder
+		prog "Sound mixer" - gnome-volume-control
+	}
+	menu "User utils" folder {
+		prog "GNOME search" - gnome-search-tool
+		prog "File Roller" - file-roller
+		prog "Calculator" - gnome-calculator
+		prog "Floppy formatter" - gfloppy
+		prog "Character map" - gnome-character-map
+	}
+	prog "Yelp" - yelp
+}
+menu "Console" folder {
+	menu "System utils" folder {
+		prog "Partition editor" - xterm -e parted
+	}
+	menu "Editors" folder {
+		prog "VIM" - xterm -e vim
+	}
+	menu "Internet" folder {
+		prog "Links" - xterm -e links
+		prog "Mutt" - xterm -e mutt
+		prog "FTP" - xterm -e ftp
+		prog "LFTP" - xterm -e lftp
+		prog "Telnet" - xterm -e telnet
+		prog "Lynx" - xterm -e lynx
+	}
+	menu "Development" folder {
+		prog "GDB" - xterm -e gdb
+	}
+	menu "Shells" folder {
+		prog "Python" - xterm -e python
+		prog "TclX" - xterm -e tcl
+		prog "Guile" - xterm -e guile
+		prog "Tclsh" - xterm -e tclsh
+		prog "Wish" - wish
+	}
+	menu "Graphics" folder {
+		prog "Gphoto" - xterm -e gphoto2
+	}
+	menu "Multimedia" folder {
+		prog "Aumix" - xterm -e aumix
+		prog "ALSA mixer" - xterm -e alsamixer
+	}
+	prog "Info" - xterm -e info
+}
+menu "System utils" folder {
+	prog "GKrellM" - gkrellm
+}
+menu "Terminals" folder {
+	prog "Xterm" - xterm
+	prog "Konsole" - konsole
+	prog "GNOME terminal" - gnome-terminal
+	prog "Xvt" - rxvt
+	prog "Rdesktop" - rdesktop
+}
+menu "Editors" folder {
+	prog "NEdit" - nedit
+	prog "GVIM" - gvim
+}
+menu "Internet" folder {
+	prog "Firefox" - firefox
+	prog "Dillo" - dillo
+	prog "Mozilla" - mozilla
+	prog "X-Chat" - xchat
+	prog "FetchMailConf" - fetchmailconf
+	prog "Opera" - opera
+	prog "Thunderbird" - thunderbird
+}
+menu "Shells" folder {
+	prog "Wish" - wish
+	prog "TixWish" - tixwish
+	prog "WishX" - wishx
+	prog "DFM" - dfm
+}
+menu "Games" folder {
+	prog "Tux Racer" - tuxracer
+	prog "FreeCiv" - civserver
+}
+menu "Graphics" folder {
+	prog "The GIMP" - gimp
+	prog "Acroread" - acroread
+	prog "XSane" - xsane
+	prog "GQview" - gqview
+}
+menu "Multimedia" folder {
+	prog "GXine" - gxine
+	prog "XMMS" - xmms
+	prog "XINE" - xine
+	prog "Xaumix" - xaumix
+}
+menu "User utils" folder {
+	prog "IcePref" - icepref
+	prog "fbRun" - fbrun
+}
+menu "X11" folder {
+	prog "Xbitmap" - bitmap
+	prog "Xcalc" - xcalc
+	prog "Xfontsel" - xfontsel
+	prog "Xterm" - xterm
+	prog "Xkill" - xkill
+	prog "Xclipboard" - xclipboard
+	prog "Xclock" - xclock
+	prog "Xconsole" - xconsole
+	prog "Xmag" - xmag
+	prog "Xload" - xload
+}
+menufile Toolbar toolbar toolbar

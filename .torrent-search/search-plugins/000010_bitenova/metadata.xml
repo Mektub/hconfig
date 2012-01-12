@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000010_bitenova" version="0.1.5">
+  <title>BiteNova</title>
+  <released_time>2010-09-14 15:20:06</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>bitenova.py</filename>
+  <classname>BiteNovaPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000010_bitenova/0.1.5/</download_url>
+  <website_url>http://www.bitenova.org/</website_url>
+  <icon_url>http://www.bitenova.org/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

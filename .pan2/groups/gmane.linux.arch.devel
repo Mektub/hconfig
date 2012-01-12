@@ -1,0 +1,29 @@
+#
+# This file has three sections.
+#
+# A. A shorthand table for the most frequent groups in the xrefs.
+#    The first line tells the number of elements to follow,
+#    then one line per entry with a one-character shorthand and full name.
+#
+# B. A shorthand table for the most freqent author names.
+#    This is formatted just like the other shorthand table.
+#    (sorted by post count, so it's also a most-frequent-posters list...)
+#
+# C. The group's headers section.
+#    The first line tells the number of articles to follow,
+#    then articles which each have the following lines:
+#    1. message-id
+#    2. subject
+#    3. author
+#    4. references. This line is omitted if the Article has an empty References header.
+#    5. time-posted. This is a time_t (see http://en.wikipedia.org/wiki/Unix_time)
+#    6. xref line, server1:group1:number1 server2:group2:number2 ...
+#    7. has-attachments [parts-total-count parts-found-count] line-count
+#       If has-attachments isn't 't' (for true), fields 2 and 3 are omitted.
+#       If fields 2 and 3 are equal, the article is `complete'.
+#    8. One line per parts-found-count: part-index message-id byte-count
+#
+2	 # file format version number
+0	 # xref shorthand count
+0	 # author shorthand count
+0

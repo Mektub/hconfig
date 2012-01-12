@@ -1,0 +1,26 @@
+ThemeDescription=""
+ThemeAuthor="Wolfgang Roemer"
+Look=gtk
+
+TitleButtonsSupported="xmis"
+TitleButtonsLeft="s"
+TitleButtonsRight="xmi"
+TitleBarHeight=20
+TitleBarCentered=0
+
+RoundCorners=1
+BorderSizeX=4
+BorderSizeY=4
+CornerSizeX=24
+CornerSizeY=24
+DlgBorderSizeX=2
+DlgBorderSizeY=2
+
+ColorNormalTitleBarText=#b0b0b0
+ColorActiveTitleBarText="#ffffff"
+
+ColorNormalBorder=#a0a0a0
+ColorNormalTitleBar=#909090
+
+ColorActiveBorder=#008f8f
+ColorActiveTitleBar=#007f7f

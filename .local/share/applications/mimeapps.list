@@ -1,0 +1,36 @@
+
+[Added Associations]
+x-scheme-handler/file=exo-file-manager.desktop
+x-scheme-handler/trash=exo-file-manager.desktop
+x-scheme-handler/http=firefox.desktop;chromium-dev.desktop;userapp-Firefox-SJGP5V.desktop;
+x-scheme-handler/mailto=claws-mail.desktop;exo-mail-reader.desktop;
+text/calendar=gvim.desktop;
+audio/x-vorbis+ogg=gnome-mplayer.desktop;smplayer.desktop;
+video/x-ogm+ogg=smplayer_enqueue.desktop;smplayer.desktop;
+image/jpeg=mirage.desktop;
+text/html=userapp-Firefox-IGNKXV.desktop;userapp-Firefox-SJGP5V.desktop;
+application/x-extension-htm=userapp-Firefox-IGNKXV.desktop;userapp-Firefox-SJGP5V.desktop;
+application/x-extension-html=userapp-Firefox-IGNKXV.desktop;userapp-Firefox-SJGP5V.desktop;
+application/x-extension-shtml=userapp-Firefox-IGNKXV.desktop;userapp-Firefox-SJGP5V.desktop;
+application/xhtml+xml=userapp-Firefox-IGNKXV.desktop;userapp-Firefox-SJGP5V.desktop;
+application/x-extension-xhtml=userapp-Firefox-IGNKXV.desktop;userapp-Firefox-SJGP5V.desktop;
+application/x-extension-xht=userapp-Firefox-IGNKXV.desktop;userapp-Firefox-SJGP5V.desktop;
+x-scheme-handler/https=userapp-Firefox-SJGP5V.desktop;
+x-scheme-handler/ftp=userapp-Firefox-SJGP5V.desktop;
+x-scheme-handler/chrome=userapp-Firefox-SJGP5V.desktop;
+
+[Default Applications]
+x-scheme-handler/http=userapp-Firefox-SJGP5V.desktop
+x-scheme-handler/mailto=claws-mail.desktop
+audio/x-vorbis+ogg=gnome-mplayer.desktop
+video/x-ogm+ogg=smplayer_enqueue.desktop
+text/html=userapp-Firefox-SJGP5V.desktop
+application/x-extension-htm=userapp-Firefox-SJGP5V.desktop
+application/x-extension-html=userapp-Firefox-SJGP5V.desktop
+application/x-extension-shtml=userapp-Firefox-SJGP5V.desktop
+application/xhtml+xml=userapp-Firefox-SJGP5V.desktop
+application/x-extension-xhtml=userapp-Firefox-SJGP5V.desktop
+application/x-extension-xht=userapp-Firefox-SJGP5V.desktop
+x-scheme-handler/https=userapp-Firefox-SJGP5V.desktop
+x-scheme-handler/ftp=userapp-Firefox-SJGP5V.desktop
+x-scheme-handler/chrome=userapp-Firefox-SJGP5V.desktop

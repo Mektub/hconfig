@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000001_BTSCENE" version="0.5.1">
+  <title>BTSCENE</title>
+  <released_time>2011-10-18 21:08:38</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>BTSCENE.py</filename>
+  <classname>BTSCENETorrentPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000001_BTSCENE/0.5.1/</download_url>
+  <website_url>http://www.btscene.com/</website_url>
+  <icon_url>http://www.btscene.com/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

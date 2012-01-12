@@ -1,0 +1,710 @@
+prog "Gambas" "gambas.png" gambas
+separator
+menu "Astronomy" "folder" {
+    prog "Celestia" "celestia.png" celestia
+    prog "Xplns" "mini-Xplns.xpm" celestia
+}
+menu "Dictionaries" "folder" {
+    prog "Kdict" "kdict.png" kdict
+    prog "Kwordtrans" "kwordtrans.xpm" kwordtrans
+}
+prog "Storytalker" "celestia.png" python /usr/local/storytalker/storytalker.py
+separator
+
+menu "Applications" "folder" {
+  menu "Accessories" "redhat-accessories.png" {
+    menu "More Accessories" "redhat-accessories.png" {
+      prog "Character Selector" "kcharselect" kcharselect -caption "Character Selector" --icon kcharselect 
+      prog "KAlarm" "kalarm" kalarm -caption "KAlarm" --icon kalarm
+      prog "KArm" "karm" karm  -caption "KArm" --icon karm 
+      prog "KHexEdit" "khexedit" khexedit -caption "KHexEdit" --icon khexedit  
+      prog "KJots" "kjots" kjots  -caption "KJots" --icon kjots 
+      prog "KPager" "kpager" kpager
+      prog "KPalmDOC" "kpalmdoc" kpalmdoc
+      prog "KRegExpEditor" "" kregexpeditor
+      prog "KSig" "ksig" ksig -caption "KSig" --icon ksig 
+      prog "KTimer" "ktimer" ktimer
+      prog "Kandalf's Tips" "ktip" ktip
+      prog "Kandy" "kandy" kandy --icon kandy  -caption "Kandy"
+      prog "KonsoleKalendar" "konsolekalendar" kdialog --sorry "konsolekalendar is a command-line only program.  Please read the handbook at help:/konsolekalendar for more info."
+      prog "Simple Text Editor" "kedit" kedit  -caption "Simple Text Editor" --icon kedit  
+      prog "TNEF File Viewer" "ktnef" ktnef --icon ktnef  -caption "TNEF File Viewer"
+    }
+    prog "Archive Manager" "file-roller.png" file-roller
+    prog "Archiving Tool" "ark" ark -caption "Archiving Tool" --icon ark  
+    prog "Calculator" "gnome-calculator" gcalctool
+    prog "Character Map" "gucharmap.png" gucharmap
+    prog "Dictionary" "gdict" gnome-dictionary -a
+    prog "Galculator" "gnome-calc2.png" galculator
+    prog "KGpg" "kgpg" kgpg 
+    prog "KNotes" "knotes" knotes
+    prog "KPilot" "kpilot" kpilot
+    prog "KPilotDaemon" "kpilot.xpm" kpilotDaemon
+    prog "KdeprintFax" "kdeprintfax" kdeprintfax -caption "KdeprintFax" --icon kdeprintfax  
+    prog "Kdict" "kdict" kdict -caption "Kdict" --icon kdict 
+    prog "Klipper" "klipper" klipper
+    prog "Multi GNOME Terminal" "multi-gnome-terminal.png" multi-gnome-terminal --use-factory --start-factory-server
+    prog "NeTraverse Win4Lin Desktop" "/opt/win4lin/win4lin.xpm" /bin/win
+    prog "Print Jobs" "kjobviewer" kjobviewer --all --show --icon kjobviewer 
+    prog "Rxvt Terminal" "rterm.xpm" rxvt
+    prog "Scientific Calculator" "kcalc" kcalc  -caption "Scientific Calculator" --icon kcalc 
+    prog "Terminal" "gnome-terminal.png" gnome-terminal
+    prog "Text Editor" "gedit-icon.png" gedit 
+    prog "VNC Viewer" "vnc.png" /usr/bin/vncviewer
+    prog "Word Translator" "kwordtrans" kwordtrans
+  }
+  menu "Edutainment" "package_edutainment" {
+    prog "FlashKard" "flashkard" flashkard -caption "FlashKard" --icon flashkard 
+    prog "KBruch" "kbruch" kbruch -caption "KBruch" --icon kbruch 
+    prog "KDE Interactive Geometry" "kig" kig --icon kig  -caption "KDE Interactive Geometry"
+    prog "KEduca" "keduca" keduca
+    prog "KEduca-Editor" "keduca" keducabuilder
+    prog "KHangMan" "khangman" khangman -caption "KHangMan" --icon khangman 
+    prog "KLettres" "klettres" klettres -caption "KLettres" --icon klettres 
+    prog "KMessedWords" "kmessedwords" kmessedwords -caption "KMessedWords" --icon kmessedwords 
+    prog "KPercentage" "kpercentage" kpercentage
+    prog "KStars" "kstars" kstars -caption "KStars" --icon kstars 
+    prog "KTouch" "ktouch" ktouch -caption "KTouch" --icon ktouch 
+    prog "KVocTrain" "kvoctrain" kvoctrain
+    prog "Kalzium" "kalzium" kalzium -caption "Kalzium" --icon kalzium 
+    prog "Kiten" "kiten" kiten -caption "Kiten" --icon kiten 
+    prog "KmPlot" "kmplot" kmplot
+    prog "Kverbos" "kverbos" kverbos -caption "Kverbos" --icon kverbos 
+  }
+  menu "Games" "redhat-games.png" {
+    menu "More Games" "redhat-games.png" {
+    }
+    prog "Atlantik" "atlantik" atlantik -caption "Atlantik" --icon atlantik 
+    prog "Atlantik Designer" "atlantikdesigner" atlantikdesigner -caption "Atlantik Designer" --icon atlantikdesigner 
+    prog "Chess" "chess.png" xboard
+    prog "FreeCiv (Isometric tileset)" "freeciv.xpm" /usr/bin/civclient-wrapper
+    prog "FreeCiv Server (new game)" "freeciv.xpm" /usr/bin/civserver-wrapper
+    prog "KAsteroids" "kasteroids" kasteroids --icon kasteroids  -caption "KAsteroids"
+    prog "KAtomic" "katomic" katomic --icon katomic  -caption "KAtomic"
+    prog "KBackgammon" "kbackgammon" kbackgammon --icon kbackgammon  -caption "KBackgammon"
+    prog "KBattleship" "kbattleship" kbattleship --icon kbattleship  -caption "KBattleship"
+    prog "KBlackBox" "kblackbox" kblackbox --icon kblackbox  -caption "KBlackBox"
+    prog "KBounce" "kbounce" kbounce --icon kbounce  -caption "KBounce"
+    prog "KFoulEggs" "kfouleggs" kfouleggs -caption "KFoulEggs" --icon kfouleggs 
+    prog "KGoldrunner" "kgoldrunner" kgoldrunner
+    prog "KJumpingCube" "kjumpingcube" kjumpingcube -caption "KJumpingCube" --icon kjumpingcube 
+    prog "KMahjongg" "kmahjongg" kmahjongg --icon kmahjongg  -caption "KMahjongg"
+    prog "KMines" "kmines" kmines -caption "KMines" --icon kmines 
+    prog "KPoker" "kpoker" kpoker --icon kpoker  -caption "KPoker"
+    prog "KReversi" "kreversi" kreversi --icon kreversi  -caption "KReversi"
+    prog "KSirtet" "ksirtet" ksirtet -caption "KSirtet" --icon ksirtet 
+    prog "KSmileTris" "ksmiletris" ksmiletris -caption "KSmileTris" --icon ksmiletris 
+    prog "KSnakeRace" "ksnake" ksnake --icon ksnake  -caption "KSnakeRace"
+    prog "KSokoban" "ksokoban" ksokoban --icon ksokoban  -caption "KSokoban"
+    prog "KSpaceDuel" "kspaceduel" kspaceduel --icon kspaceduel  -caption "KSpaceDuel"
+    prog "KTron" "ktron" ktron -caption "KTron" --icon ktron 
+    prog "KWin4" "kwin4" kwin4
+    prog "Kenolaba" "kenolaba" kenolaba --icon kenolaba  -caption "Kenolaba"
+    prog "Klickety" "klickety" klickety -caption "Klickety" --icon klickety 
+    prog "Kolf" "kolf" kolf 
+    prog "Kolor Lines" "klines" klines -caption "Kolor Lines" --icon klines 
+    prog "Konquest" "konquest" konquest --icon konquest  -caption "Konquest"
+    prog "Lieutnant Skat" "lskat" lskat
+    prog "Patience" "kpat" kpat --icon kpat  -caption "Patience"
+    prog "Potato Guy" "ktuberling" ktuberling --icon ktuberling  -caption "Potato Guy" 
+    prog "SameGame" "ksame" ksame --icon ksame  -caption "SameGame"
+    prog "Shisen-Sho" "kshisen" kshisen --icon kshisen  -caption "Shisen-Sho"
+    prog "Tux Racer" "/usr/share/tuxracer/tuxracer.png" tuxracer
+  }
+  menu "Graphics" "redhat-graphics.png" {
+    menu "More Graphics Applications" "redhat-graphics.png" {
+      prog "KColorChooser" "kcolorchooser" kcolorchooser --icon kcolorchooser 
+      prog "KColorEdit" "kcoloredit" kcoloredit --icon kcoloredit  
+      prog "KIconEdit" "kiconedit" kiconedit -caption "KIconEdit" --icon kiconedit  
+      prog "KRuler" "kruler" kruler --icon kruler 
+      prog "KSnapshot" "ksnapshot" ksnapshot -caption "KSnapshot" --icon ksnapshot 
+    }
+    prog "Adobe Reader" "acroread.png" acroread
+    prog "Celestia space simulator" "celestia.png" celestia
+    prog "GQview Image Viewer" "gqview.png" gqview
+    prog "Image Viewer" "gnome-eog.png" eog 
+    prog "KDVI" "kdvi" kviewshell dvi  -caption "KDVI" --icon kdvi 
+    prog "KFax" "kfax" kfax    -caption "KFax" --icon kfax 
+    prog "KGhostView" "kghostview" kghostview  -caption "KGhostView" --icon kghostview 
+    prog "KPDF" "kpdf" kpdf --icon kpdf  -caption "KPDF"
+    prog "KPaint" "kpaint" kpaint  -caption "KPaint" --icon kpaint 
+    prog "KView" "kview" kview -caption "KView" --icon kview  
+    prog "Kooka" "scanner" kooka --icon scanner  
+    prog "Kuickshow" "kuickshow" kuickshow --icon kuickshow  -caption "Kuickshow" 
+    prog "PostScript Viewer" "gnome-ghostview.png" ggv 
+    prog "Povray Modeler" "kpovmodeler" kpovmodeler -caption "Povray Modeler" --icon kpovmodeler  
+    prog "The GIMP" "/usr/share/gimp/2.0/images/wilber-icon.png" gimp-remote-2.0 
+    prog "gThumb Image Viewer" "gthumb.png" gthumb
+    prog "gtKam" "/usr/share/gtkam/pixmaps/camera.xpm" gtkam
+  }
+  menu "Internet" "redhat-internet.png" {
+    menu "More Internet Applications" "redhat-internet.png" {
+      prog "KNewsTicker" "knewsticker" appletproxy knewsticker.desktop
+      prog "KPPP - Log Viewer" "kppp" kppplogview
+      prog "Konqueror" "konqueror" kfmclient openProfile webbrowsing
+      prog "Korn" "korn" korn  -caption "Korn" --icon korn  
+    }
+    prog "Browse Mirrored Websites" "/usr/share/httrack/icons/webhttrack.xpm" webhttrack browse
+    prog "DC Gui" "/usr/share/pixmaps/dcgui-48.png" /usr/local/bin/dcgui-qt
+    prog "Dillo Web Browser" "dillo.png" dillo
+    prog "Email" "redhat-email.png" launchmail
+    prog "Firefox Web Browser" "firefox.png" firefox
+    prog "Gaim Internet Messenger" "gaim.png" gaim
+    prog "Galeon Web Browser" "galeon" galeon
+    prog "Gtk-Gnutella" "gtk-gnutella.png" gtk-gnutella
+    prog "IRC" "xchat.png" xchat
+    prog "Jabber Instant Messaging (Gabber)" "gabber.png" gabber
+    prog "KGet" "kget" kget -caption "KGet" --icon kget 
+    prog "KMail" "kmail" kmail -caption "KMail" --icon kmail 
+    prog "KNode" "knode" knode -caption "KNode" --icon knode 
+    prog "KPPP" "kppp" kppp --icon kppp 
+    prog "KSirc" "ksirc" ksirc --icon ksirc 
+    prog "NmapFE" "icon-network" nmapfe
+    prog "Putty Terminal Client" "putty.png" putty
+    prog "Remote Desktop Connection" "krdc" krdc -caption "Remote Desktop Connection" --icon krdc 
+    prog "Thunderbird Email" "thunderbird-icon.png" mozilla-thunderbird
+    prog "Video Conferencing" "gnomemeeting-logo-icon.png" gnomemeeting
+    prog "Web Browser" "redhat-web-browser.png" htmlview 
+    prog "WebHTTrack Website Copier" "/usr/share/httrack/icons/webhttrack.xpm" webhttrack
+    prog "Yahoo! Messenger" "/opt/ymessenger/bin/yahoo_gnome.png" /opt/ymessenger/bin/ymessenger
+    prog "aLinkCreator" "alc.xpm" alc
+    prog "aMule" "amule.xpm" amule
+    prog "gFTP" "gftp.png" gftp
+    prog "wxCas" "wxcas.xpm" wxcas
+    prog "xmule" "xmule.xpm" xmule
+  }
+  menu "Office" "redhat-office.png" {
+    menu "More Office Applications" "redhat-office.png" {
+    }
+    prog "Address Manager" "kaddressbook" kaddressbook 
+    prog "Conglomerate XML Editor" "conglomerate-icon-16.png" conglomerate 
+    prog "GnuCash" "gnucash/gnucash-icon.png" gnucash
+    prog "Gnumeric Spreadsheet" "gnome-gnumeric.png" gnumeric 
+    prog "KOrganizer" "korganizer" korganizer
+    prog "Kontact" "kontact" kontact
+    prog "MlView XML Editor" "mlview.png" mlv 
+    prog "Rubrica Addressbook" "rubrica.png" rubrica
+  }
+  menu "Other" "gnome-applications.png" {
+    prog "ALSA Audio Mixer" "gnome-alsamixer/gnome-alsamixer-icon.png" gnome-alsamixer
+    prog "ALSA Player" "alsaplayer.png" alsaplayer
+    prog "Add/Remove Applications" "system-config-packages.png" /usr/bin/system-config-packages
+    prog "Adobe Reader" "acroread.png" acroread
+    prog "Archive Manager" "file-roller.png" file-roller
+    prog "Audio Player" "xmms.xpm" xmms -e 
+    prog "Authentication" "user_auth.png" /usr/bin/system-config-authentication
+    prog "Bootloader" "system-config-boot.png" /usr/bin/system-config-boot
+    prog "Browse Mirrored Websites" "/usr/share/httrack/icons/webhttrack.xpm" webhttrack browse
+    prog "Bug Report Tool" "bug-buddy.png" bug-buddy
+    prog "CD Player" "gnome-cd.png" gnome-cd
+    prog "CD Writer" "gtoaster.png" /usr/bin/gtoaster
+    prog "Calculator" "gnome-calculator" gcalctool
+    prog "CamStream" "camstream.png" camstream
+    prog "Celestia" "celestia" celestia
+    prog "Celestia space simulator" "celestia.png" celestia
+    prog "Character Map" "gucharmap.png" gucharmap
+    prog "Chess" "chess.png" xboard
+    prog "Cleanup CrossOver" "/opt/crossover/support/cleanup_crossover.xpm" /opt/crossover/bin/cleanup_crossover.sh
+    prog "Configuration Editor" "gconf-editor.png" gconf-editor
+    prog "Conglomerate XML Editor" "conglomerate-icon-16.png" conglomerate 
+    prog "DC Gui" "/usr/share/pixmaps/dcgui-48.png" /usr/local/bin/dcgui-qt
+    prog "DVD Player" "ogle.png" ogle
+    prog "DVD Ripper and Encoder" "/usr/lib/perl5/site_perl/5.8.3/Video/DVDRip/icon.xpm" dvdrip
+    prog "Date & Time" "system-config-date.png" /usr/bin/system-config-date
+    prog "Dictionary" "gdict" gnome-dictionary -a
+    prog "Dillo Web Browser" "dillo.png" dillo
+    prog "Disk Management" "disks.png" usermount
+    prog "Display" "system-config-display.png" /usr/bin/system-config-display
+    prog "Domain Name System" "system-config-bind.png" /usr/bin/system-config-bind
+    prog "Email" "redhat-email.png" launchmail
+    prog "Ethereal Network Analyzer" "ethereal.png" ethereal
+    prog "Firefox Web Browser" "firefox.png" firefox
+    prog "Firestarter Firewall Tool" "firestarter.png" firestarter
+    prog "Floppy Formatter" "kfloppy" kfloppy -caption "Floppy Formatter" --icon kfloppy 
+    prog "FreeCiv (Isometric tileset)" "freeciv.xpm" /usr/bin/civclient-wrapper
+    prog "FreeCiv Server (new game)" "freeciv.xpm" /usr/bin/civserver-wrapper
+    prog "GKrellM System Monitor" "gkrellm.png" gkrellm
+    prog "GQview Image Viewer" "gqview.png" gqview
+    prog "GXine Movie Player" "gxine.png" gxine
+    prog "Gaim Internet Messenger" "gaim.png" gaim
+    prog "Galculator" "gnome-calc2.png" galculator
+    prog "Galeon Web Browser" "galeon" galeon
+    prog "Glade Interface Designer" "glade-2.png" glade-2 
+    prog "GnuCash" "gnucash/gnucash-icon.png" gnucash
+    prog "Gnumeric Spreadsheet" "gnome-gnumeric.png" gnumeric 
+    prog "Grip" "gripicon.png" grip
+    prog "Gtk-Gnutella" "gtk-gnutella.png" gtk-gnutella
+    prog "HTTP" "system-config-httpd.png" system-config-httpd
+    prog "Hardware Browser" "hwbrowser.png" hwbrowser
+    prog "Helix Player" "hxplay.png" hxplay
+    prog "IRC" "xchat.png" xchat
+    prog "Image Viewer" "gnome-eog.png" eog 
+    prog "Internet Configuration Wizard" "neat.png" /usr/bin/internet-druid
+    prog "Internet Explorer" "/opt/cxoffice/support/dotwine/fake_windows/Windows/Icons/9d75_iexplore.-32528.xpm" /opt/cxoffice/bin/wine  "C://Program Files//Internet Explorer//IEXPLORE.EXE"
+    prog "Jabber Instant Messaging (Gabber)" "gabber.png" gabber
+    prog "K3b" "k3b.png" k3b 
+    prog "KDirStat - Directory Statistics" "kdirstat.png" kdirstat -caption "KDirStat - Directory Statistics" --icon kdirstat.png 
+    prog "Kernel Tuning" "system-config-proc.xpm" system-config-proc
+    prog "Keyboard" "system-config-keyboard.png" /usr/bin/system-config-keyboard
+    prog "Kickstart" "system-config-kickstart.png" /usr/sbin/system-config-kickstart
+    prog "Language" "system-config-language.png" /usr/bin/system-config-language
+    prog "Login Screen" "gdm.xpm" gdmsetup
+    prog "Manpage Editor" "/usr/share/icons/manedit.xpm" manedit
+    prog "Memory Profiler" "memprof.png" memprof
+    prog "Microsoft FrontPage" "/opt/cxoffice/support/dotwine/fake_windows/Windows/Icons/ae84_misc.9.xpm" /opt/cxoffice/bin/wine  "C:/Program Files/Microsoft Office/Office/FRONTPG.EXE"
+    prog "Microsoft Outlook" "/opt/cxoffice/support/dotwine/fake_windows/Windows/Icons/ae84_outicon.0.xpm" /opt/cxoffice/bin/wine  "C:/Program Files/Microsoft Office/Office/OUTLOOK.EXE"
+    prog "MlView XML Editor" "mlview.png" mlv 
+    prog "Movie Player" "mplayer.xpm" gmplayer 
+    prog "Multi GNOME Terminal" "multi-gnome-terminal.png" multi-gnome-terminal --use-factory --start-factory-server
+    prog "Music Player" "rhythmbox.png" rhythmbox
+    prog "NFS" "system-config-nfs.png" /usr/bin/system-config-nfs
+    prog "NeTraverse Win4Lin Desktop" "/opt/win4lin/win4lin.xpm" /bin/win
+    prog "Nedit" "nedit" nedit 
+    prog "Network" "neat.png" /usr/bin/system-config-network
+    prog "Network Device Control" "neat-control.xpm" /usr/bin/system-control-network
+    prog "NmapFE" "icon-network" nmapfe
+    prog "ObConf" "openbox.png" obconf
+    prog "Office Documentation" "/opt/cxoffice/support/cxdoc.xpm" /opt/cxoffice/bin/launchurl  file:///opt/cxoffice/doc/index.html
+    prog "Office Setup" "/opt/cxoffice/support/crossover.xpm" sh  -c "/opt/cxoffice/bin/cxsetup"
+    prog "Plugin Documentation" "/opt/crossover/support/documentation.xpm" /opt/crossover/bin/launchurl  file:///opt/crossover/doc/index.html
+    prog "PostScript Viewer" "gnome-ghostview.png" ggv 
+    prog "Printer System Switcher" "switch-printer.png" /usr/bin/redhat-switch-printer
+    prog "Printing" "printer.png" /usr/bin/printconf-gui
+    prog "Putty Terminal Client" "putty.png" putty
+    prog "QTParted" "qtparted.xpm" kdesu /usr/sbin/qtparted
+    prog "Qt Designer" "designer" designer
+    prog "RealPlayer 10" "realplay.png" realplay
+    prog "Red Hat Network" "up2date.png" /usr/bin/up2date
+    prog "Red Hat Network Alert Icon" "applet-busy.png" rhn-applet-gui
+    prog "Red Hat Network Configuration" "up2date.png" /usr/bin/up2date-config
+    prog "Reset CrossOver Office" "/opt/cxoffice/support/cxreset.xpm" /opt/cxoffice/bin/cxreset
+    prog "Root Password" "system-config-rootpassword.png" /usr/bin/system-config-rootpassword
+    prog "Rubrica Addressbook" "rubrica.png" rubrica
+    prog "Rxvt Terminal" "rterm.xpm" rxvt
+    prog "Samba" "system-config-samba.png" /usr/bin/system-config-samba
+    prog "Security Level" "system-config-securitylevel.png" /usr/bin/system-config-securitylevel
+    prog "Services" "system-config-services.png" /usr/bin/system-config-services
+    prog "Simulate Windows Reboot" "/opt/cxoffice/support/cxreboot.xpm" /opt/cxoffice/bin/cxreboot
+    prog "Sound Juicer CD Ripper" "sound-juicer.png" sound-juicer
+    prog "Sound Recorder" "gnome-grecord.png" gnome-sound-recorder
+    prog "Soundcard Detection" "system-config-soundcard.png" /usr/bin/system-config-soundcard
+    prog "Synaptic Package Manager" "/usr/share/synaptic/pixmaps/synaptic_48x48.png" /usr/bin/synaptic
+    prog "System Logs" "system-logviewer.png" /usr/bin/system-logviewer
+    prog "System Monitor" "procman.png" gnome-system-monitor
+    prog "Terminal" "konsole" konsole
+    prog "Text Editor" "gedit-icon.png" gedit 
+    prog "The GIMP" "/usr/share/gimp/2.0/images/wilber-icon.png" gimp-remote-2.0 
+    prog "Thunderbird Email" "thunderbird-icon.png" mozilla-thunderbird
+    prog "Totem Movie Player" "media-player-48.png" totem
+    prog "Tux Racer" "/usr/share/tuxracer/tuxracer.png" tuxracer
+    prog "Users and Groups" "system-config-users.png" /usr/bin/system-config-users
+    prog "VNC Viewer" "vnc.png" /usr/bin/vncviewer
+    prog "Vi IMproved" "gvim" gvim -f 
+    prog "Video Conferencing" "gnomemeeting-logo-icon.png" gnomemeeting
+    prog "Volume Control" "gnome-mixer.png" gnome-volume-control
+    prog "Web Browser" "redhat-web-browser.png" htmlview 
+    prog "WebHTTrack Website Copier" "/usr/share/httrack/icons/webhttrack.xpm" webhttrack
+    prog "Word Translator" "kwordtrans" kwordtrans
+    prog "X-CD-Roast" "/usr/lib/xcdroast-0.98/icons/xcdricon.png" /usr/bin/xcdroast
+    prog "Yahoo! Messenger" "/opt/ymessenger/bin/yahoo_gnome.png" /opt/ymessenger/bin/ymessenger
+    prog "aLinkCreator" "alc.xpm" alc
+    prog "aMule" "amule.xpm" amule
+    prog "emelFM2" "emelfm2/icon_emelfm2_064.png" emelfm2
+    prog "gFTP" "gftp.png" gftp
+    prog "gThumb Image Viewer" "gthumb.png" gthumb
+    prog "gtKam" "/usr/share/gtkam/pixmaps/camera.xpm" gtkam
+    prog "wxCas" "wxcas.xpm" wxcas
+    prog "xmule" "xmule.xpm" xmule
+  }
+  menu "Preferences" "folder" {
+    menu "Accessibility" "accessibility-directory.png" {
+      prog "Accessibility" "accessibility-directory.png" gnome-accessibility-keyboard-properties
+    }
+    menu "More Preferences" "redhat-preferences.png" {
+      menu "Sawfish window manager" "sawfish-group.png" {
+      }
+      prog "Change Password" "password" kdepasswd
+      prog "Configure the Panel" "kcmkicker" kcmshell --icon kcmkicker kicker_config kcmtaskbar
+      prog "Control Center" "kcontrol" kcontrol -caption "Control Center" --icon kcontrol 
+      prog "Desktop Settings Wizard" "kpersonalizer" kpersonalizer -caption "Desktop Settings Wizard" --icon kpersonalizer 
+      prog "Desktop Switching Tool" "switchdesk.png" switchdesk
+      prog "Mail Transport Agent Switcher" "switchmail.png" /usr/bin/system-switch-mail
+      prog "Menu Editor" "kmenuedit" kmenuedit
+      prog "NeTraverse Win4Lin Administration" "/opt/win4lin/server.xpm" /opt/win4lin/bin/mini-installer skipintro
+      prog "Screensaver" "xscreensaver.xpm" xscreensaver-demo
+      prog "Wallet Management Tool" "kwalletmanager" kwalletmanager 
+    }
+    prog "About Myself" "user_icon.png" userinfo
+    prog "Control Center" "control-center2.png" gnome-control-center
+    prog "Login Photo" "login-photo.png" gdmphotosetup
+    prog "Password" "password.png" userpasswd
+  }
+  menu "Programming" "redhat-programming.png" {
+    menu "More Programming Tools" "redhat-programming.png" {
+      prog "Cervisia" "cervisia" cervisia -caption "Cervisia" --icon cervisia  
+      prog "KBabel" "kbabel" kbabel --icon kbabel  -caption "KBabel" 
+      prog "KBabel - Catalog Manager" "catalogmanager" catalogmanager --icon catalogmanager  -caption "KBabel - Catalog Manager" 
+      prog "KBabel - Dictionary" "kbabeldict" kbabeldict --icon kbabeldict  -caption "KBabel - Dictionary"
+      prog "KCachegrind" "kcachegrind" kcachegrind -caption "KCachegrind" --icon kcachegrind  
+      prog "KUIViewer" "kuiviewer" kuiviewer --icon kuiviewer  -caption "KUIViewer"
+      prog "Kompare" "kompare" kompare -caption "Kompare" --icon kompare  -o 
+      prog "Umbrello" "umbrello" umbrello -caption "Umbrello" --icon umbrello 
+    }
+    prog "Bug Report Tool" "bug-buddy.png" bug-buddy
+    prog "Glade Interface Designer" "glade-2.png" glade-2 
+    prog "Manpage Editor" "/usr/share/icons/manedit.xpm" manedit
+    prog "Memory Profiler" "memprof.png" memprof
+    prog "Nedit" "nedit" nedit 
+    prog "Qt Designer" "designer" designer
+    prog "Vi IMproved" "gvim" gvim -f 
+    prog "kjscmd" "konsole" kjscmd --exec
+  }
+  menu "Sound & Video" "redhat-sound_video.png" {
+    menu "More Sound & Video Applications" "redhat-sound_video.png" {
+      prog "KMid" "kmid" kmid 
+      prog "aRts Builder" "artsbuilder" artsbuilder -caption "aRts Builder"
+      prog "aRts Control Tool" "artscontrol" artscontrol -caption "aRts Control Tool"
+    }
+    prog "ALSA Audio Mixer" "gnome-alsamixer/gnome-alsamixer-icon.png" gnome-alsamixer
+    prog "ALSA Player" "alsaplayer.png" alsaplayer
+    prog "Audio Player" "xmms.xpm" xmms -e 
+    prog "CD Player" "gnome-cd.png" gnome-cd
+    prog "CamStream" "camstream.png" camstream
+    prog "DVD Player" "ogle.png" ogle
+    prog "DVD Ripper and Encoder" "/usr/lib/perl5/site_perl/5.8.3/Video/DVDRip/icon.xpm" dvdrip
+    prog "GXine Movie Player" "gxine.png" gxine
+    prog "Grip" "gripicon.png" grip
+    prog "Helix Player" "hxplay.png" hxplay
+    prog "K3b" "k3b.png" k3b 
+    prog "KAudioCreator" "kaudiocreator" kaudiocreator
+    prog "KMix" "kmix" kmix -caption "KMix" --icon kmix 
+    prog "KRec" "krec" krec --icon krec  -caption "KRec"
+    prog "Kaboodle" "kaboodle" kaboodle --icon kaboodle  -caption "Kaboodle" 
+    prog "KsCD" "kscd" kscd -caption "KsCD" --icon kscd 
+    prog "Movie Player" "mplayer.xpm" gmplayer 
+    prog "Music Player" "rhythmbox.png" rhythmbox
+    prog "Noatun" "noatun" noatun --icon noatun  -caption "Noatun" 
+    prog "RealPlayer 10" "realplay.png" realplay
+    prog "Sound Juicer CD Ripper" "sound-juicer.png" sound-juicer
+    prog "Sound Recorder" "gnome-grecord.png" gnome-sound-recorder
+    prog "Totem Movie Player" "media-player-48.png" totem
+    prog "Volume Control" "gnome-mixer.png" gnome-volume-control
+  }
+  menu "System Tools" "redhat-system_tools.png" {
+    menu "More System Tools" "redhat-system_tools.png" {
+      prog "File Manager - Super User Mode" "kfm" konqueror
+      prog "KDat" "kdat" kdat --icon kdat  -caption "KDat"
+      prog "KDiskFree" "kdf" kdf -caption "KDiskFree"
+      prog "KwikDisk" "kwikdisk" kwikdisk -caption "KwikDisk"
+      prog "Terminal Program - Super User Mode" "konsole" kdesu konsole
+    }
+    prog "Archive Manager" "file-roller.png" file-roller
+    prog "Authentication" "user_auth.png" /usr/bin/system-config-authentication
+    prog "CD Writer" "gtoaster.png" /usr/bin/gtoaster
+    prog "Configuration Editor" "gconf-editor.png" gconf-editor
+    prog "Desktop Sharing" "krfb" krfb -caption "Desktop Sharing" --icon krfb 
+    prog "Disk Management" "disks.png" usermount
+    prog "Firestarter Firewall Tool" "firestarter.png" firestarter
+    prog "Floppy Formatter" "kfloppy" kfloppy -caption "Floppy Formatter" --icon kfloppy 
+    prog "GKrellM System Monitor" "gkrellm.png" gkrellm
+    prog "Hardware Browser" "hwbrowser.png" hwbrowser
+    prog "Internet Configuration Wizard" "neat.png" /usr/bin/internet-druid
+    prog "KDE System Guard" "ksysguard" ksysguard 
+    prog "KDirStat - Directory Statistics" "kdirstat.png" kdirstat -caption "KDirStat - Directory Statistics" --icon kdirstat.png 
+    prog "Kernel Tuning" "system-config-proc.xpm" system-config-proc
+    prog "Kickstart" "system-config-kickstart.png" /usr/sbin/system-config-kickstart
+    prog "Konqueror" "konqueror" kfmclient openURL  application/x-webarchive
+    prog "Multi GNOME Terminal" "multi-gnome-terminal.png" multi-gnome-terminal --use-factory --start-factory-server
+    prog "Network Device Control" "neat-control.xpm" /usr/bin/system-control-network
+    prog "NmapFE" "icon-network" nmapfe
+    prog "Printer System Switcher" "switch-printer.png" /usr/bin/redhat-switch-printer
+    prog "QTParted" "qtparted.xpm" kdesu /usr/sbin/qtparted
+    prog "Red Hat Network" "up2date.png" /usr/bin/up2date
+    prog "Red Hat Network Alert Icon" "applet-busy.png" rhn-applet-gui
+    prog "Red Hat Network Configuration" "up2date.png" /usr/bin/up2date-config
+    prog "Root Password" "system-config-rootpassword.png" /usr/bin/system-config-rootpassword
+    prog "Rxvt Terminal" "rterm.xpm" rxvt
+    prog "Screen Resize & Rotate" "randr" krandrtray
+    prog "Synaptic Package Manager" "/usr/share/synaptic/pixmaps/synaptic_48x48.png" /usr/bin/synaptic
+    prog "System Logs" "system-logviewer.png" /usr/bin/system-logviewer
+    prog "System Monitor" "procman.png" gnome-system-monitor
+    prog "Task Scheduler" "kcron" kcron --icon kcron  -caption "Task Scheduler"
+    prog "Terminal" "konsole" konsole
+    prog "X-CD-Roast" "/usr/lib/xcdroast-0.98/icons/xcdricon.png" /usr/bin/xcdroast
+    prog "emelFM2" "emelfm2/icon_emelfm2_064.png" emelfm2
+  }
+  menu "SystemSettings" "folder" {
+    menu "More System Settings" "redhat-system_settings.png" {
+    }
+    menu "Server" "folder" {
+      menu "Applications" "folder" {
+        menu "Server Settings" "redhat-server_settings.png" {
+          menu "More Server Settings" "redhat-server_settings.png" {
+          }
+          prog "Domain Name System" "system-config-bind.png" /usr/bin/system-config-bind
+          prog "HTTP" "system-config-httpd.png" system-config-httpd
+          prog "NFS" "system-config-nfs.png" /usr/bin/system-config-nfs
+          prog "Samba" "system-config-samba.png" /usr/bin/system-config-samba
+          prog "Services" "system-config-services.png" /usr/bin/system-config-services
+        }
+      }
+    }
+    prog "Add/Remove Applications" "system-config-packages.png" /usr/bin/system-config-packages
+    prog "Bootloader" "system-config-boot.png" /usr/bin/system-config-boot
+    prog "Date & Time" "system-config-date.png" /usr/bin/system-config-date
+    prog "Display" "system-config-display.png" /usr/bin/system-config-display
+    prog "Keyboard" "system-config-keyboard.png" /usr/bin/system-config-keyboard
+    prog "Language" "system-config-language.png" /usr/bin/system-config-language
+    prog "Login Screen" "gdm.xpm" gdmsetup
+    prog "Network" "neat.png" /usr/bin/system-config-network
+    prog "Printing" "printer.png" /usr/bin/printconf-gui
+    prog "Security Level" "system-config-securitylevel.png" /usr/bin/system-config-securitylevel
+    prog "Soundcard Detection" "system-config-soundcard.png" /usr/bin/system-config-soundcard
+    prog "Users and Groups" "system-config-users.png" /usr/bin/system-config-users
+  }
+  prog "Computer" "gnome-fs-client" nautilus computer:
+  prog "File Browser" "file-manager" nautilus --no-desktop --browser
+  prog "Find Files" "kfind" kfind 
+  prog "Help" "khelpcenter" khelpcenter
+  prog "Home" "folder_home" kfmclient openProfile filemanagement
+  prog "Home Folder" "gnome-home" nautilus
+  prog "Network Servers" "gnome-fs-network" nautilus network:
+  prog "Search for Files" "gnome-searchtool" gnome-search-tool
+}
+menu "KDE" folder {
+	menu "Development" folder {
+		prog "Qt Designer" - designer
+		prog "Kdbg" - kdbg
+		prog "Qt Assistant" - assistant
+		prog "Qt Linguist" - linguist
+	}
+	menu "Shells" folder {
+		prog "Konqueror" - konqueror
+	}
+	menu "Office" folder {
+		prog "Kpilot" - kpilot
+		prog "Korganizer" - korganizer
+		prog "Kandy" - kandy
+	}
+	menu "Graphics" folder {
+		prog "Fax viewer" - kfax
+		prog "Screen capture" - ksnapshot
+		prog "Screen ruler" - kruler
+		prog "Image viewer" - kuickshow
+		prog "DVI viewer" - kdvi
+		prog "Image viewer" - kview
+		prog "PS-PDF viewer" - kghostview
+		prog "Color editor" - kcoloredit
+		prog "Icon editor" - kiconedit
+		prog "Color chooser" - kcolorchooser
+	}
+	menu "System utils" folder {
+		prog "KDE control center" - kcontrol
+		prog "KMenuEdit" - kmenuedit
+		prog "Kdf" - kdf
+		prog "KwikDisk" - kwikdisk
+		prog "Kcron" - kcron
+		prog "Konsole" - konsole
+		prog "KSysGuard" - ksysguard
+		prog "Kpersonalizer" - kpersonalizer
+	}
+	menu "Games" folder {
+		prog "Kandalf's tips" - ktip
+	}
+	menu "Editors" folder {
+		prog "Kedit" - kedit
+		prog "Kate" - kate
+		prog "Kwrite" - kwrite
+	}
+	menu "Internet" folder {
+		prog "Korn" - korn
+		prog "Knode" - knode
+		prog "Konqueror" - konqueror
+		prog "IRC client" - ksirc
+		prog "PPP log viewer" - kppplogview
+		prog "Bookmarks editor" - keditbookmarks
+		prog "Kppp" - /usr/bin/kppp
+		prog "Kmail" - kmail
+	}
+	menu "Multimedia" folder {
+		prog "aRts builder" - artsbuilder
+		prog "Kaboodle" - kaboodle
+		prog "Kmid" - kmid
+		prog "AmaroK" - amarok
+		prog "Noatun" - noatun
+		prog "aRts control" - artscontrol
+		prog "K3B" - k3b
+		prog "Mixer" - kmix
+		prog "CD player" - kscd
+	}
+	menu "User utils" folder {
+		prog "Ark" - ark
+		prog "Kjots" - kjots
+		prog "Kpassword" - kdepasswd
+		prog "Klipper" - klipper
+		prog "KAdressBook" - kaddressbook
+		prog "KJobView" - kjobviewer
+		prog "Kcalc" - kcalc
+		prog "Kfloppy" - kfloppy
+		prog "KCharSelect" - kcharselect
+		prog "Kdict" - kdict
+		prog "KHexEdit" - khexedit
+	}
+}
+menu "GNOME" folder {
+	menu "Development" folder {
+		prog "Glade" - glade-2
+	}
+	menu "Shells" folder {
+		prog "Nautilus" - nautilus
+	}
+	menu "Graphics" folder {
+		prog "Postscipt viewer" - ggv
+	}
+	menu "System utils" folder {
+		prog "GNOME terminal" - gnome-terminal
+		prog "Bugbuddy" - bug-buddy
+		prog "GNOME system monitor" - gnome-system-monitor
+		prog "GDM configurator" - gdmconfig
+		prog "GConf configurator" - gconf-editor
+	}
+	menu "Games" folder {
+		prog "Glines" - glines
+		prog "Gataxx" - gataxx
+		prog "Gnect" - gnect
+		prog "Gnotski" - gnotski
+		prog "Gnomine" - gnomine
+		prog "Gtetravex" - gnotravex
+		prog "Gsame" - same-gnome
+		prog "Iagno" - iagno
+		prog "Gmahjongg" - mahjongg
+		prog "GAisleRiot" - sol
+		prog "Gnibbles" - gnibbles
+		prog "Gnobots2" - gnobots2
+		prog "Gtali" - gtali
+	}
+	menu "Editors" folder {
+		prog "Gnotepad+" - gnp
+		prog "GNOME editor" - gedit
+	}
+	menu "Internet" folder {
+		prog "gFTP" - gftp
+		prog "Epiphany" - epiphany
+		prog "Gaim" - gaim
+		prog "GnomeMeeting" - gnomemeeting
+	}
+	menu "Multimedia" folder {
+		prog "CD player" - gnome-cd
+		prog "Totem" - totem
+		prog "Sound recorder" - gnome-sound-recorder
+		prog "Sound mixer" - gnome-volume-control
+	}
+	menu "User utils" folder {
+		prog "GNOME search" - gnome-search-tool
+		prog "File Roller" - file-roller
+		prog "Calculator" - gnome-calculator
+		prog "Floppy formatter" - gfloppy
+		prog "Character map" - gnome-character-map
+	}
+	prog "Yelp" - yelp
+}
+menu "Console" folder {
+	menu "System utils" folder {
+		prog "Partition editor" - xterm -e parted
+	}
+	menu "Editors" folder {
+		prog "VIM" - xterm -e vim
+	}
+	menu "Internet" folder {
+		prog "Links" - xterm -e links
+		prog "Mutt" - xterm -e mutt
+		prog "FTP" - xterm -e ftp
+		prog "LFTP" - xterm -e lftp
+		prog "Telnet" - xterm -e telnet
+		prog "Lynx" - xterm -e lynx
+	}
+	menu "Development" folder {
+		prog "GDB" - xterm -e gdb
+	}
+	menu "Shells" folder {
+		prog "Python" - xterm -e python
+		prog "TclX" - xterm -e tcl
+		prog "Guile" - xterm -e guile
+		prog "Tclsh" - xterm -e tclsh
+		prog "Wish" - wish
+	}
+	menu "Graphics" folder {
+		prog "Gphoto" - xterm -e gphoto2
+	}
+	menu "Multimedia" folder {
+		prog "Aumix" - xterm -e aumix
+		prog "ALSA mixer" - xterm -e alsamixer
+	}
+	prog "Info" - xterm -e info
+}
+menu "System utils" folder {
+	prog "GKrellM" - gkrellm
+}
+menu "Terminals" folder {
+	prog "Xterm" - xterm
+	prog "Konsole" - konsole
+	prog "GNOME terminal" - gnome-terminal
+	prog "Xvt" - rxvt
+	prog "Rdesktop" - rdesktop
+}
+menu "Editors" folder {
+	prog "NEdit" - nedit
+	prog "GVIM" - gvim
+}
+menu "Internet" folder {
+	prog "Firefox" - firefox
+	prog "Dillo" - dillo
+	prog "Mozilla" - mozilla
+	prog "X-Chat" - xchat
+	prog "FetchMailConf" - fetchmailconf
+	prog "Opera" - opera
+	prog "Thunderbird" - thunderbird
+}
+menu "Shells" folder {
+	prog "Wish" - wish
+	prog "TixWish" - tixwish
+	prog "WishX" - wishx
+	prog "DFM" - dfm
+}
+menu "Games" folder {
+	prog "Tux Racer" - tuxracer
+	prog "FreeCiv" - civserver
+}
+menu "Graphics" folder {
+	prog "The GIMP" - gimp
+	prog "Acroread" - acroread
+	prog "XSane" - xsane
+	prog "GQview" - gqview
+}
+menu "Multimedia" folder {
+	prog "GXine" - gxine
+	prog "XMMS" - xmms
+	prog "XINE" - xine
+	prog "Xaumix" - xaumix
+}
+menu "User utils" folder {
+	prog "IcePref" - icepref
+	prog "fbRun" - fbrun
+}
+menu "X11" folder {
+	prog "Xbitmap" - bitmap
+	prog "Xcalc" - xcalc
+	prog "Xfontsel" - xfontsel
+	prog "Xterm" - xterm
+	prog "Xkill" - xkill
+	prog "Xclipboard" - xclipboard
+	prog "Xclock" - xclock
+	prog "Xconsole" - xconsole
+	prog "Xmag" - xmag
+	prog "Xload" - xload
+}
+menufile Toolbar toolbar toolbar
+separator
+prog "Quit Icewm" "bomb" killall -QUIT icewm
+prog "Screen Lock" "xlock" xlock
+prog "Screen Saver" "xlock" xlock -nolock

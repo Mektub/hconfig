@@ -1,0 +1,177 @@
+restart "Restart" "tools_16x16" icewm
+prog "Grellm" "Daemon_16x16.xpm" gkrellm
+menu "Misc" "folder_red_16x16" {
+    menu "File Managers" "mini-book1" {
+        prog "Konqueror" "mini-k" konqueror --profile "Johns Profile"
+        prog "Krusader" "krusader.png" krusader
+        prog "Smb4k" "smb4k.png" smb4k
+    	separator
+        prog "PcmanFM" "icon_emelfm2_024.png" pcmanfm
+        prog "Thunar" "Thunar.png" thunar
+        prog "Xfe" "xfe.png" xfe
+    }
+    separator
+    prog "DiskFree" "filelight.png" filelight
+    prog "KDiskFree" "kdf.png" kdf
+    separator
+    prog "Akregator" "akregator.png" akregator
+    prog "Tomboy" "tintin.png" tomboy
+    prog "LogWatch" "rdesktop.png" LogWatch
+    separator
+    prog "Google Earth" "googleearth-icon.png" googleearth
+    prog "Kexchange" "kexchange.png" kexchange
+    prog "Xset" "colormap" Xset
+    prog "Xfish" "fish.png" xfishtank
+    prog "Xsnow" "kpoker" xsnow
+    prog "TV FreeGuide" "freeguide.png" freeguide
+}
+menu "Terminals" "mini-display" {
+    prog "Terminal" "terminal" Terminal
+    prog "Urxvt" "xterm" urxvt -fn "xft:Bitstream Vera Sans Mono:style=Bold" -geometry 100x28
+    separator
+    prog "Konsole" "konsole.png" konsole --nomenubar
+    prog "gTerminal" "gnome-terminal.xpm" gnome-terminal --geometry 103x24
+    prog "xterm" "xterm" xterm +u8 -fg white -bg black -cr blue -fn 10x20 -ls -geometry 85x24
+    prog "xterm (tanso)" "xterm" su -l -c "xterm -fn 12x26 -geometry 90x24 -bg azure" tanso
+}
+separator
+menu "Remote" "adobe_32x32.xpm" {
+    menu "Remote Admin" "mini-book1" {
+        prog "RdeskTop Toshiba" "rdesktop.png" Rtosh
+        prog "VncViewer Ubuntu" "vnc.png" VncUbuntu
+        prog "VncViewer Vista" "vnc.png" VncVista
+        prog "VncViewer WinXP" "vnc.png" VncXP
+    }
+    separator
+    prog "RxvtSsh Freeshells" "xterm" RxvtSsh freeshells
+    prog "RxvtSsh SdfEU" "xterm" RxvtSsh sdf-eu.org
+    prog "Sftp SdfEU" "xterm" SftpSdfEU
+    separator
+    prog "RxvtSsh ASUS" "xterm" RxvtSsh asus
+    prog "RxvtSsh Maria Lino" "xterm" RxvtSsh MariaLino
+    separator
+    prog "RxvtSsh FedoraB" "xterm" RxvtSsh johnixtosh
+    prog "RxvtSsh OpenSuse" "xterm" RxvtSsh opensuse
+    prog "RxvtSsh PCLinuxOS" "xterm" RxvtSsh pclinuxos
+    prog "RxvtSsh Vista" "xterm" RxvtSsh vistatosh
+}
+menu "Config Files" "mini-book1" {
+    menu "Editors" "/root/.icewm/icons/gvim_16x16.xpm" {
+        prog "Gvim" "gvim.png" gvim -geom 105x30
+        prog "Gedit" "jwindow" gedit
+        prog "Kate" "kate.png" kate
+        prog "KWrite" "kwrite" kwrite
+    }
+    separator
+    prog "TelPriv" "klipper" gvim -geom 105x30  "/w/mydocs/JoaoPena/Tel/TelPriv.txt"
+    separator
+    prog "/etc/bashrc" "hand_up_3d" bash -c "Play tada ; gvim -geom 105x30 /etc/bashrc"
+    prog "/etc/profile" "hand_up_3d" gvim -geom 105x30  "/etc/profile"
+    separator
+    menu "IceWM" "mini-book1" {
+        prog "Menu" "mini-book1" gvim -geom 100x30  /home/john/.icewm/menu
+        prog "ToolBar" "mini-book1" gvim -geom 100x30  "/home/john/.icewm/toolbar"
+        prog "Programs" "mini-book1" gvim -geom 100x30  "/home/john/.icewm/programs"
+        prog "WinOpt" "mini-book1" gvim -geom 100x30  "/home/john/.icewm/winoptions"
+        prog "Preferences" "mini-book1" gvim -geom 100x30  "/home/john/.icewm/preferences"
+    }
+    menu "Bash Files" "jwindow" {
+        prog "Aliases" "hand_up_3d" gvim -geom 105x30  "/root/.dot/bashrc/aliases"
+        prog "Colors" "hand_up_3d" gvim -geom 105x30  "/root/.dot/bashrc/colors"
+        prog "Completions" "hand_up_3d" gvim -geom 105x30  "/root/.dot/bashrc/completions"
+        prog "Functions" "hand_up_3d" gvim -geom 105x30  "/root/.dot/bashrc/functions"
+    }
+    menu "X" "jwindow" {
+        prog "Xdefaults" "klipper" gvim -geom 105x30  "/root/.Xdefaults"
+        prog "Xsession" "klipper" bash -c "Play tada; gvim -geom 105x30 /etc/X11/xdm/Xsession"
+        prog "~/.Xsession" "klipper" bash -c "Play tada; gvim -geom 105x30 /root/.Xsession"
+        prog "Xorg.conf" "klipper" gvim -geom 105x30  "/etc/X11/xorg.conf"
+    }
+    separator
+    prog "Gftp BookMarks" "apacheconf.png" gvim -geom 105x30  "/root/.gftp/bookmarks"
+    prog "Httpd.Conf (Apache)" "apacheconf.png" gvim -geom 105x30  "/etc/httpd/conf/httpd.conf"
+    prog "Ld.so.Conf" "hand_up_3d" gvim -geom 105x30  "/etc/ld.so.conf"
+    prog "Samba Conf" "hand_up_3d" gvim -geom 105x30  "/etc/samba/smb.conf"
+    separator
+    prog "Moprobe.Conf" "hand_up_3d" gvim -geom 105x30  "/etc/modprobe.conf"
+}
+separator
+separator
+prog "FireStarter" "mini.xlock" firestarter
+separator
+menu "Mail" "mini-oldmail" {
+    prog "Sylpheed" "xfmail_16x16" sylpheed
+    prog "ThunderBird" "mozilla-mail_16x16.xpm" bash thunderbird
+    prog "Kmail" "kmail_16x16" bash -c "Play tada; kmail"
+    prog "KaddressBook" "tb_address_book.xpm" kaddressbook
+}
+prog "Xvolume" "mix_volume.xpm" xxxxxxxvolume -timeout 5 -fg yellow -bg black
+separator
+menu "Pic Viewers" "xeyes" {
+    prog "digiKam" "digikam.png" digikam
+    prog "F-Spot" "f-spot.png" f-spot
+    prog "Gliv" "gliv.png" gliv
+    prog "GqView" "gqview" gqview
+    prog "Gthumb" "gthumb" gthumb
+    prog "GwenView" "gwenview.png" gwenview
+    prog "Kview" "kview.png" kview
+    prog "Kuickshow" "kuickshow.png" kuickshow
+    separator
+    prog "Picasa" "showimg.png" picasa
+    prog "ShowImg" "showimg.png" showimg
+    prog "XnView" "kuickshow.png" xnview
+    separator
+    prog "Kolourpaint" "kolourpaint.png" kolourpaint
+}
+separator
+prog "Xchat" "XChat.png" Xchat
+menu "BillGaitas" "windows" {
+    prog "Agent - FreshMeat" "NewsAgent_32x32.xpm" Agent FreshMeat
+    prog "Agent - Sunsite"   "NewsAgent_32x32.xpm" Agent Sunsite
+    prog "Agent - Gmane"     "NewsAgent_32x32.xpm" Agent Gmane
+    prog "Agent - Netcabo"   "NewsAgent_32x32.xpm" Agent Netcabo
+    separator
+    menu "Window$" "jwindow" {
+        prog "Notepad" "appmonitor_32x32.xpm" Rwindows Notepad
+        prog "Word" "appmonitor_32x32.xpm" Rwindows Word
+        prog "Excel" "appmonitor_32x32.xpm" Rwindows Excel
+        prog "PowerPoint" "appmonitor_32x32.xpm" Rwindows PowerPoint
+        prog "Outlook" "appmonitor_32x32.xpm" Rwindows Outlook
+        prog "Money" "appmonitor_32x32.xpm" Rwindows Money
+        prog "Address Book" "appmonitor_32x32.xpm" Rwindows AddressBook
+        prog "Picasa" "appmonitor_32x32.xpm" Rwindows Picasa
+    }
+    separator
+    prog "WineCfg" "linkit.png" winecfg
+    separator
+    menu "Other W$ Progs" "jwindow" {
+    prog "IE6" "linkit.png" ie6
+    prog "IrfanView" "linkit.png" wine "/opt/Wine/drive_c/Program Files/irfanview/i_view32.exe"
+    prog "Solitaire" "linkit.png" wine sol
+    prog "Tenkey" "linkit.png" wine /opt/Wine/drive_c/John/tenkey/tenkey.exe
+    prog "WinAmp" "linkit.png" wine "/opt/Wine/drive_c/Program Files/Winamp/winamp.exe"
+    prog "WineFile"   "linkit.png" winefile
+    }
+}
+menu "Browsers" "netscape" {
+    prog "BookmarkBridge" "bookmarkbridgelogosmall.png" bookmarkbridge
+    separator
+    prog "elinks" "linkit.png" links
+    prog "links" "linkit.png" /usr/local/bin/links -g
+    separator
+    prog "Iexplorer" "iexplore" ie6
+    prog "Netscape" "netscape" netscape
+    separator
+    prog "Dillo" "real" dillo
+    prog "Opera" "opera" opera
+    prog "SkipStone" "galaxylinux" skipstone
+    separator
+    prog "Epiphany" "epiphany.png" epiphany
+    prog "Mozilla" "Mosaic" mozilla
+    separator
+    prog "Firefox"(ProfMgmt) "mozilla.png" firefox -ProfileManager
+    prog "Firefox"(Default) "mozilla.png" firefox -P Default
+    prog "Firefox (Simple)" "mozilla.png" firefox -P Simple
+    separator
+    prog "Firefox (Mektub)" "mozilla.png" firefox -P Mektub
+}

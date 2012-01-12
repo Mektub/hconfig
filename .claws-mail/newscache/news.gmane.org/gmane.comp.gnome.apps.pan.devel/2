@@ -1,0 +1,100 @@
+Path: main.gmane.org!not-for-mail
+From: Martin Tomasek <mtd-gj9ymP8/vxDrBKCeMvbIDA@public.gmane.org>
+Newsgroups: gmane.comp.gnome.apps.pan.devel
+Subject: Re: pan, gtkspell, and specifying your language
+Date: Fri, 2 Aug 2002 10:54:25 +0200
+Lines: 49
+Sender: pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+Approved: news@gmane.org
+Message-ID: <20020802085425.GB1740@mt.mk.cvut.cz>
+References: <3D4A1776.2060105@cs.washington.edu>
+Reply-To: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+NNTP-Posting-Host: localhost.gmane.org
+Mime-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="yEPQxsgoJgBvi8ip"
+X-Trace: main.gmane.org 1028278468 14274 127.0.0.1 (2 Aug 2002 08:54:28 GMT)
+X-Complaints-To: usenet@main.gmane.org
+NNTP-Posting-Date: Fri, 2 Aug 2002 08:54:28 +0000 (UTC)
+Return-path: <pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>
+Original-Received: from fencepost.gnu.org ([199.232.76.164])
+	by main.gmane.org with esmtp (Exim 3.33 #1 (Debian))
+	id 17aYCa-0003i7-00
+	for <gcgapd-pan-@public.gmane.org>; Fri, 02 Aug 2002 10:54:28 +0200
+Original-Received: from localhost ([127.0.0.1] helo=fencepost.gnu.org)
+	by fencepost.gnu.org with esmtp (Exim 3.35 #1 (Debian))
+	id 17aYD8-0005zL-00; Fri, 02 Aug 2002 04:55:02 -0400
+Original-Received: from mt.mk.cvut.cz ([147.32.97.80])
+	by fencepost.gnu.org with smtp (Exim 3.35 #1 (Debian))
+	id 17aYCZ-0005yH-00
+	for <pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>; Fri, 02 Aug 2002 04:54:27 -0400
+Original-Received: (qmail 3655 invoked by uid 1000); 2 Aug 2002 08:54:25 -0000
+Original-To: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+Content-Disposition: inline
+In-Reply-To: <3D4A1776.2060105-GmWTxIRN22iJaUV4rX00uodd74u8MsAO@public.gmane.org>
+X-Fnord: epsilon-23-delta-5
+Errors-To: pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+X-BeenThere: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+X-Reply-To: mtd-gj9ymP8/vxDrBKCeMvbIDA@public.gmane.org
+List-Help: <mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsNcOa+i2P73dg@public.gmane.org>
+List-Post: <mailto:pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>
+List-Subscribe: <http://mail.freesoftware.fsf.org/mailman/listinfo/pan-devel>,
+	<mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsM0zj+wxrhfeaQyC0oar+/r@public.gmane.org>
+List-Id: Discussions of Pan source code hacking. <pan-devel.mail.freesoftware.fsf.org>
+List-Unsubscribe: <http://mail.freesoftware.fsf.org/mailman/listinfo/pan-devel>,
+	<mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsOyq+daOM+IDKqXwboT3ro7@public.gmane.org>
+List-Archive: <http://mail.freesoftware.fsf.org/pipermail/pan-devel/>
+Xref: main.gmane.org gmane.comp.gnome.apps.pan.devel:2
+X-Report-Spam: http://spam.gmane.org/gmane.comp.gnome.apps.pan.devel:2
+
+
+--yEPQxsgoJgBvi8ip
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Thu, Aug 01, 2002 at 10:24:06PM -0700, Evan Martin wrote:
+> I've had a few requests for supporting alternate languages
+> ...
+> and I was wondering how foreign-language users actually specify=20
+> their language.
+> ...
+> If that variable is set to a language other than English, would it make=
+=20
+>  sense for GtkSpell to default to a language other than English, or do=20
+> we need the applications (Pan, LogJam) to allow you to specify the=20
+> language you're writing in?
+> (I can imagine wanting to write different messages in different=20
+> languages... but for now, what should GtkSpell default to: English?=20
+> Your locale-provided language?)
+
+pspell has its own defaults and settings, does it make sense to use own
+defaults? if so, gtkspell should default to english and let application
+decide about language. (for example newsgroups with different languages)
+
+btw, there is a problem
+with different charsets in gtkspell -- I forced it to use czech
+dictionary instead of english, but it does not work, because that
+dictionary uses iso-8859-2 and pan uses utf-8. feel free to contact me,
+if you want to do some testing around this.
+
+--=20
+Martin Tomasek, mtd-PkL3B3/Gfv0@public.gmane.org
+BOFH excuse #278:
+The Dilithium Cyrstals need to be rotated.
+
+--yEPQxsgoJgBvi8ip
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.7 (GNU/Linux)
+
+iD8DBQE9SkjBzWKqGie3rqoRAnUyAJ4tCQkiaeMbF/sRJ1e6R2+eYFzOKgCffVyd
+nXqET5D67qrgwX6S36ajf9A=
+=Q65n
+-----END PGP SIGNATURE-----
+
+--yEPQxsgoJgBvi8ip--

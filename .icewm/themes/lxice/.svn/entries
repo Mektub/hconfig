@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="74"
+   name=""
+   committed-date="2006-11-04T02:38:28.423934Z"
+   url="https://svn.sourceforge.net/svnroot/lxde/trunk/lxice"
+   last-author="pcmanx"
+   kind="dir"
+   uuid="3baf7735-d320-0410-8b56-b11ef3703fae"
+   repos="https://svn.sourceforge.net/svnroot/lxde"
+   revision="74"/>
+<entry
+   committed-rev="74"
+   name="maximizeI.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="5870786cc73320c4f3c59eae00d52add"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:03.000000Z"/>
+<entry
+   committed-rev="74"
+   name="restoreI.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="2979231c4da02d275d387b5521f9c2e3"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:03.000000Z"/>
+<entry
+   committed-rev="74"
+   name="closeI.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="5a7b3e889f315d976baf22a9af1713ad"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:03.000000Z"/>
+<entry
+   committed-rev="74"
+   name="menuButtonA.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="12f640b141675af9910912451cec8b6d"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:03.000000Z"/>
+<entry
+   committed-rev="74"
+   name="default.theme"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="bd21178b682395aedd0c3564aff2a0bd"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:03.000000Z"/>
+<entry
+   committed-rev="74"
+   name="minimizeA.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="c07ebf49b122ed6ef9cc99e173209c56"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:03.000000Z"/>
+<entry
+   committed-rev="74"
+   name="maximizeA.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="e7307045142b87eac8a030d191324a99"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:04.000000Z"/>
+<entry
+   committed-rev="74"
+   name="restoreA.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="7c6eeb6c102c0af2e7963561211de4d7"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:04.000000Z"/>
+<entry
+   committed-rev="74"
+   name="titleAB.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="6d478a0d4173a71c01deceac457ce3b1"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:04.000000Z"/>
+<entry
+   committed-rev="74"
+   name="titleAS.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="ef80d58128014952ff45a44f36581b33"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:04.000000Z"/>
+<entry
+   committed-rev="74"
+   name="closeA.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="41f996794b6060c3a46ba5acf0ec2047"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:04.000000Z"/>
+<entry
+   committed-rev="74"
+   name="menuButtonI.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="b6d65cb7c671771a46bed3082352a9a8"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:05.000000Z"/>
+<entry
+   committed-rev="74"
+   name="README"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="cd1b6a7cb52f1292154f53b770ec1841"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:05.000000Z"/>
+<entry
+   committed-rev="74"
+   name="minimizeI.xpm"
+   text-time="2006-11-04T02:35:26.000000Z"
+   committed-date="2006-11-04T02:38:28.423934Z"
+   checksum="686e39e1ccc300778187bff62e6e969a"
+   last-author="pcmanx"
+   kind="file"
+   prop-time="2006-11-03T17:34:05.000000Z"/>
+</wc-entries>

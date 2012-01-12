@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Video;AudioVideo;AudioVideoEditing;
+Comment=A subtitle editor based on GStreamer and Gtk+
+Encoding=UTF-8
+Exec[$e]=subtitleeditor %F
+GenericName=Subtitle Editor
+Icon=subtitleeditor
+InitialPreference=12
+MimeType=application/x-microdvd;application/x-subrip;application/x-subviewer;text/x-mpsub;text/x-ssa;text/plain
+Name=Subtitle Editor
+StartupNotify=true
+Terminal=false
+Type=Application

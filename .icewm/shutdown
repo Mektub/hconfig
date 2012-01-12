@@ -1,0 +1,11 @@
+#
+RETVAL=0
+dir="/lacie/crypt"
+
+df | grep encfs > /dev/null 2> /dev/null
+
+if [ $? -eq 0 ]
+   then
+       echo -n $"Unmounting $dir: "
+       umount $dir
+fi

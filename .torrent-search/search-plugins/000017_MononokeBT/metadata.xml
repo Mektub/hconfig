@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000017_MononokeBT" version="0.2.0">
+  <title>MononokeBT</title>
+  <released_time>2011-10-20 05:05:03</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>mononoke-bt.py</filename>
+  <classname>MononokeBTPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000017_MononokeBT/0.2.0/</download_url>
+  <website_url>http://mononoke-bt.org/</website_url>
+  <icon_url>http://mononoke-bt.org/favicon.ico</icon_url>
+  <require_auth>true</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

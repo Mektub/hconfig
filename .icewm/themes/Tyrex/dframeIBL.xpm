@@ -1,0 +1,12 @@
+/* XPM */
+static char *frameIBL[] = {
+"4 4 5 1",
+". c #6A655A",
+"X c #CDCAC5",
+"o c #D5CEC5",
+"O c gray100",
+"+ c None",
+".Ooo",
+".Ooo",
+".XXX",
+"+..."};

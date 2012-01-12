@@ -1,0 +1,36 @@
+/* XPM */
+static char *kbdmenuL[] = {
+/* columns rows colors chars-per-pixel */
+"32 6 24 1",
+"  c #9A99B1",
+". c #9E9DB6",
+"X c #A2A5B8",
+"o c #A3A5BC",
+"O c #A8ABB8",
+"+ c #A8A9BF",
+"@ c #B1B7BB",
+"# c #B3B6C5",
+"$ c #B8BCC5",
+"% c #BBBDCD",
+"& c #C6C6C7",
+"* c #C4CBD1",
+"= c #D2D1D5",
+"- c #D7D7D7",
+"; c #DBDBDC",
+": c #DFDFE1",
+"> c #DADCE8",
+", c #E1E0E3",
+"< c #E3E2E4",
+"1 c #E6E4E6",
+"2 c #E6EEE5",
+"3 c #E9E8E8",
+"4 c #ECEBEC",
+"5 c gray100",
+/* pixels */
+"5>#  .XoO+@#$%&*=-;:,<1342343444",
+"5>#  .XoO+@#$%&*=-;:,<1342343444",
+"5>#  .XoO+@#$%&*=-;:,<1342343444",
+"5>#  .XoO+@#$%&*=-;:,<1342343444",
+"5>#  .XoO+@#$%&*=-;:,<1342343444",
+"5>#  .XoO+@#$%&*=-;:,<1342343444"
+};

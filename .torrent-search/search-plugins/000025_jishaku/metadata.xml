@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000025_jishaku" version="0.2.0">
+  <title>Jishaku Toshokan</title>
+  <released_time>2011-10-20 06:13:54</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>jishaku.py</filename>
+  <classname>JishakuPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000025_jishaku/0.2.0/</download_url>
+  <website_url>http://www.jishaku.net/</website_url>
+  <icon_url>http://www.jishaku.net/favicon.png</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>true</default_disable>
+</plugin>

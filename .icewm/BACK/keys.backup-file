@@ -1,0 +1,6 @@
+#key "Ctrl+Alt+t" rxvt
+key "XF86AudioLowerVolume" aumix -v -5
+key "XF86AudioRaiseVolume" aumix -v +5
+key "Ctrl+Alt+k" xkill
+key "XF86HomePage" xkill
+key "Ctrl+Alt+t" rxvt

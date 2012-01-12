@@ -1,0 +1,28 @@
+/* XPM */
+static char *alevt_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"15 14 8 1",
+"  c black",
+". c green",
+"X c cyan",
+"o c red",
+"O c yellow",
+"+ c #c3c3c3",
+"@ c white",
+"# c None",
+/* pixels */
+"+++++++++++++++",
+"+@@@@@@@@@@@@@ ",
+"+@. oXXXX XXX@ ",
+"+@           @ ",
+"+@  . . OOO  @ ",
+"+@  . .  O   @ ",
+"+@  . .  O   @ ",
+"+@   .   O   @ ",
+"+@           @ ",
+"+@oo .. OO XX@ ",
+"+@@@@@@@@@@@@@ ",
+"               ",
+"####+@@@@@ ####",
+"##           ##"
+};

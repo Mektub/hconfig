@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<group name="gmane.comp.sysutils.backup.tarsnap.user">
+    <string name='character-encoding' value='UTF-8'/>
+    <string name='default-group-save-path' value='/root/News'/>
+</group>
+<group name="gmane.linux.arch.devel">
+    <string name='character-encoding' value='UTF-8'/>
+    <string name='default-group-save-path' value='/root/News'/>
+</group>
+<group name="gmane.comp.terminal-emulators.tmux.user">
+    <string name='character-encoding' value='UTF-8'/>
+    <string name='default-group-save-path' value='/root/News'/>
+</group>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000002_SUMO" version="0.5.1">
+  <title>SUMOTorrent.com</title>
+  <released_time>2011-10-19 10:54:37</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>SUMO.py</filename>
+  <classname>SUMOTorrentPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000002_SUMO/0.5.1/</download_url>
+  <website_url>http://www.sumotorrent.com/</website_url>
+  <icon_url>http://img.sumotorrent.com/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

@@ -1,0 +1,40 @@
+# Copyright 2006 Thomas Holder
+# Distributed under the terms of the GNU General Public License v2
+
+ThemeDescription="Tyrex (stolen from xfwm4)"
+ThemeAuthor="Thomas Holder <thomasxholder(a)compuserve.de>"
+
+Look=pixmap
+
+ShowMenuButtonIcon=0
+TitleBarHeight=20
+BorderSizeX=4
+BorderSizeY=4
+DlgBorderSizeX=4
+DlgBorderSizeY=4
+CornerSizeX=24
+CornerSizeY=24
+
+# Titlebar
+TitleBarJustify=50
+TitleButtonsLeft="sdr"
+TitleButtonsRight="xmi"
+TitleButtonsSupported="sdrxmi"
+TitleFontNameXft="Sans:size=9:bold"
+ColorNormalTitleBarText="#777777"
+ColorActiveTitleBarText="#FFFFFF"
+
+# Taskbar
+NormalTaskBarFontNameXft="Sans:size=10"
+ActiveTaskBarFontNameXft="Sans:size=10:bold"
+
+# Menu
+MenuFontNameXft="Sans:size=9"
+
+# Clock
+ColorClock=""
+ColorClockText="#000000"
+ClockFontNameXft="Sans:size=10"
+
+# Tooltips
+ToolTipFontNameXft="Sans:size=10"

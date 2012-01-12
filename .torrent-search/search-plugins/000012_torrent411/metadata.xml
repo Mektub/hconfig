@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000012_torrent411" version="0.2.0">
+  <title>Torrent411</title>
+  <released_time>2011-10-19 11:25:59</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>torrent411.py</filename>
+  <classname>Torrent411Plugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000012_torrent411/0.2.0/</download_url>
+  <website_url>http://www.torrent411.com/</website_url>
+  <icon_url>http://www.torrent411.com/favicon.ico</icon_url>
+  <require_auth>true</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

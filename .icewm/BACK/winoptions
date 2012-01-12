@@ -1,0 +1,265 @@
+
+gnubiff.tray: Exclusive
+gnubiff.allWorkspaces: 1
+gnubiff.layer: OnTop
+#gnubiff.noFocusOnAppRaise: 1
+#gnubiff.noFocusOnMap: 1
+
+gFTP.icon: ftp_3d
+gFTP.workspace: 4
+
+Wireshark.workspace: 4
+
+Gimp.workspace: 1
+
+Vim.icon: vim
+Vim.layer: AboveDock
+
+putty.workspace: 1
+Gjots2.workspace: 3
+
+opera.icon: opera
+opera.workspace: 2
+
+synaptic.workspace: 1
+
+freeguide.FreeGuide.workspace: 1
+freeguide.FreeGuide.icon: freeguide.png
+
+xterm.icon: xterm
+Logterm.workspace: 5
+Logterm.tray: Exclusive
+Logterm.icon: xeyes
+
+xchat.workspace: 1
+
+Googleearth-bin.workspace: 6
+
+Tomboy.ignoreTaskBar: 1
+
+urxvt.icon: xterm
+urxvt.tray: Exclusive
+
+RxvtSsh.workspace: 4
+
+Gnome-terminal.tray: Exclusive
+Gnome-terminal.icon: gdm_32x32.xpm
+
+Konsole.tray: Exclusive
+#Konsole.icon: terminal.png
+Konsole.icon: xconsole.png
+
+Gkrellm.icon: gkrellm
+Gkrellm.tray: Exclusive
+Gkrellm.allWorkspaces: 1
+
+frame.allWorkspaces: 1
+frame.layer: OnTop
+SWT.workspace: 1
+
+Mozilla.icon: mozilla_icon
+Mozilla.workspace: 2
+Mozilla-bin.workspace: 2
+Mozilla-bin.geometry: 1150x850+10+10
+
+Firefox-bin.workspace: 2
+Firefox-bin.tray: Exclusive
+
+conky.workspace: 6
+conky.icon: Empty.Hearts.xpm
+conky.tray: Exclusive
+
+xeyes.allWorkspaces: 1
+xeyes.ignoreTaskBar: 1
+xeyes.dTitleBar: 0
+xeyes.dSysMenu: 0
+xeyes.dBorder: 0
+xeyes.dResize: 0
+xeyes.dClose: 0
+xeyes.dMinimize: 0
+xeyes.dMaximize: 0
+xeyes.ignoreNoFocusHint: 1
+
+Vuescan.workspace: 1
+
+Showimg.workspace: 1
+
+XClock.icon: xclock
+XClock.tray: Exclusive
+XClock.ignoreNoFocusHint: 1
+
+FoxApp.FoxWindow.workspace: 3
+FoxApp.FoxWindow.tray: Exclusive
+
+Xfe.workspace: 6
+Xfe.tray: Exclusive
+
+#Pcmanfm.icon: LadyBug48x48_32x32.xpm
+Pcmanfm.icon: icon_emelfm2_024.png
+Pcmanfm.workspace: 6
+Pcmanfm.tray: Exclusive
+
+Bsc.workspace: 6
+Bsc.tray: Exclusive
+
+smb4k.workspace: 3
+smb4k.tray: Ignore
+
+k3b.workspace: 3
+
+Ogle_gui.icon: ogle
+Ogle_gui.workspace: 1
+
+Kmail.workspace: 1
+#kmail.ignoreTaskBar: 1
+Kmail.tray: Exclusive
+#Kmail.icon: xfce-newmail.png
+Kmail.icon: mozilla-mail_32x32.xpm
+
+kaddressbook.workspace: 1
+
+knotify.workspace: 1
+Thunderbird-bin.workspace: 1
+
+aMule.workspace: 4
+aMule.tray: Exclusive
+aMule.icon: amule.png
+
+Qtparted.workspace: 1
+Qtparted.icon: qtparted.png
+
+vmware.workspace: 5
+vmware.layer: Dock
+vmware.tray: Exclusive
+
+vmplayer.workspace: 5
+vmplayer.layer: Dock
+vmplayer.tray: Exclusive
+
+Parallels.workspace: 5
+Parallels.layer: Dock
+Parallels.tray: Exclusive
+
+VirtualBox.workspace: 5
+VirtualBox.layer: Dock
+VirtualBox.tray: Exclusive
+
+Vmw.layer: Dock
+Vmw.tray: Exclusive
+
+#Win4Lin.icon: windows
+Win4Lin.workspace: 5
+Win4Lin.layer: AboveDock
+Win4Lin.tray: Exclusive
+Win4Lin.dTitleBar: 0
+Win4Lin.dBorder: 0
+
+SDL_App.workspace: 5
+SDL_App.icon: LadyBug48x48_16x16.xpm
+SDL_App.tray: Exclusive
+
+MergePRO.icon: xwine.png
+MergePRO.workspace: 5
+MergePRO.layer: AboveDock
+MergePRO.tray: Exclusive
+#Mergepro-gfx.dTitleBar: 0
+#Mergepro-gfx.dBorder: 0
+
+rdesktop.workspace: 5
+# rdesktop.layer: Dock
+rdesktop.tray: Exclusive
+#rdesktop.dTitleBar: 0
+#rdesktop.dBorder: 0
+rdesktop.icon: ms-dos_32x32.xpm
+
+Vncviewer.icon: vnc
+Vncviewer.workspace: 4
+Vncviewer.layer: Dock
+Vncviewer.tray: Exclusive
+# Vncviewer.dTitleBar: 0
+# Vncviewer.dBorder: 0
+
+Wine.workspace: 4
+Wine.icon: xwine.png
+
+Grip.workspace: 4
+
+xmms.icon: xmms
+xmms.workspace: 4
+
+smart.workspace: 4
+#smart.noFocusOnAppRaise: 1
+#smart.noFocusOnMap: 1
+
+yumexmain.pyc.workspace: 4
+#yumexmain.pyc.noFocusOnAppRaise: 1
+#yumexmain.pyc.noFocusOnMap: 1
+
+Bittorrent.workspace: 4
+Bittorrent.noFocusOnAppRaise: 1
+Bittorrent.noFocusOnMap: 1
+
+MainWindow.py.workspace: 4
+
+gdmconfig.workspace: 4
+
+X-Chat.workspace: 1
+X-Chat.servlist.geometry: 800x800
+servlist.geometry: 800x800
+
+Xwc.xwc.workspace: 4
+
+realplay.bin.icon: realplayer
+realplay.bin.layer: OnTop
+realplay.bin.tray: Exclusive
+realplay.bin.allWorkspaces: 1
+
+Xine.icon: xine
+Xine.allWorkspaces: 1
+Xine.layer: OnTop
+
+Totem.allWorkspaces: 1
+Totem.layer: OnTop
+
+Totem-xine.allWorkspaces: 1
+Totem-xine.layer: OnTop
+
+Gxine.allWorkspaces: 1
+Gxine.layer: OnTop
+
+Kaffeine.allWorkspaces: 1
+Kaffeine.layer: OnTop
+
+xine.allWorkspaces: 1
+xine.layer: OnTop
+
+MPlayer.MPlayer.icon: mplayer
+MPlayer.layer: OnTop
+MPlayer.allWorkspaces: 1
+
+Xmessage.layer: OnTop
+Xmessage.allWorkspaces: 1
+
+panel_window.Panel.tray: Exclusive
+panel_window.Panel.fHide: 0
+panel_window.Panel.dTitleBar: 0
+panel_window.Panel.noFocusOnAppRaise: 1
+panel_window.Panel.ignoreNoFocusHint: 1
+
+Gaim.icon: gaim
+Gaim.allWorkspaces: 1
+Gaim.tray: Exclusive
+
+Kopete.allWorkspaces: 1
+Kopete.ignoreTaskBar: 1
+
+main.gFTP.icon: gftp
+xclock.icon: xclock
+gkrellm.icon: gkrellm
+ViDEO.MPlayer.icon: mplayer
+GQview.icon: gqview
+gedit.icon: notes
+gmix.icon: multimedia
+XnView.icon: nt
+AcroRead.icon: pdf
+Xsane.icon: sane-xsane-logo

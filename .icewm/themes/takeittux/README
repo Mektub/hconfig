@@ -1,0 +1,17 @@
+You have a better OS than those Linux weenies and you want everybody
+to know. :)
+
+This is the icewm theme takeittux, based on the popular picture
+at http://www.attrition.org/gallery/other/takeittux.jpg
+For the most part, this just copies the win95 theme by Marko
+Marcek.
+
+The files fulldaemon.xpm and daemonhead.xpm can be replaced at
+<icewm root>/taskbar/linux.xpm to create a different (and cooler)
+logo for the taskbar.  The picture takeittux.xpm and takeittux.jpg
+are for the background.  The default is takeittux.jpg but you can
+easily change that in default.theme.  The takeittux.xpm file is included
+for completeness, however, because of its size, I recommend not using
+it. 
+
+LionMan

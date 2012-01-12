@@ -1,0 +1,29 @@
+/* XPM */
+static char *demon_16x16[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        6            1",
+/* colors */
+". c none",
+"# c #cc3333",
+"a c #e66666",
+"b c #cc0000",
+"c c #ff9999",
+"d c #ffffff",
+/* pixels */
+"................",
+"................",
+".........a......",
+".........cb.....",
+"..cb#####ddb....",
+".ccdddddddddca..",
+".bddddddddddddb.",
+".#ddddddddddddc#",
+".#ddddddddddd#c.",
+".#dddddddddc#...",
+".#d#cccccda.....",
+".#b......b......",
+".#a.............",
+"................",
+"................",
+"................"
+};

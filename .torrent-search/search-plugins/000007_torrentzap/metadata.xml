@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000007_torrentzap" version="0.3.0">
+  <title>Torrentzap</title>
+  <released_time>2011-10-19 11:06:45</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>torrentzap.py</filename>
+  <classname>TorrentzapPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000007_torrentzap/0.3.0/</download_url>
+  <website_url>http://www.torrentzap.com/</website_url>
+  <icon_url>http://www.torrentzap.com/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

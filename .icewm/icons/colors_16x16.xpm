@@ -1,0 +1,31 @@
+/* XPM */
+static char *colors_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 9 1",
+"  c black",
+". c blue",
+"X c #00c000",
+"o c #00c0c0",
+"O c red",
+"+ c #c000c0",
+"@ c #ffa858",
+"# c #ffdca8",
+"$ c None",
+/* pixels */
+"$$$$$$   $$$$$$$",
+"$$$$$$ ..  $$$$$",
+"$$$$$$   ..   $$",
+"$$$$   ++  ...  ",
+"$$$$ oo  ++  .. ",
+"$$$$   oo   ++. ",
+"$$   XX  ooo  . ",
+"$$ @@  XX  oo . ",
+"$$   @@   XXo . ",
+"$$ OO  @@@ Xo . ",
+"$  OOOO  @ Xo   ",
+" ##   OO @ Xo $$",
+" #### OO @ Xo $$",
+" ### OOO @   $$$",
+" ## $  O @ $$$$$",
+"$  $$$$   $$$$$$"
+};

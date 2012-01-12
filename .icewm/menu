@@ -1,0 +1,516 @@
+menu "Ice Conf" folder {
+	prog "IceWm CC" gnome-gtali icecc
+	prog "IceWinOpts" gnome-gtali icewoed
+	separator
+	prog "IceWm Menu" klipper gvim -geom 100x28  "/root/.icewm/menu"
+	prog "IceWm ToolBar" klipper gvim -geom 100x28  "/root/.icewm/toolbar"
+	prog "IceWm Programs" klipper gvim -geom 100x28  "/root/.icewm/programs"
+	prog "IceWm WinOpt" klipper gvim -geom 100x28  "/root/.icewm/winoptions"
+	prog "IceWm Preferences" klipper gvim -geom 100x28  "/root/.icewm/preferences"
+}
+# End of Ice Conf menu
+
+menu Files folders {
+	prog /etc/bashrc hand_up_3d bash -c "Play tada ; gvim -geom 100x28 /etc/bashrc"
+	prog /etc/profile hand_up_3d gvim -geom 100x28  "/etc/profile"
+	separator
+	prog Aliases hand_up_3d gvim -geom 100x28  "/home/john/.dot/bashrc/aliases"
+	prog Colors hand_up_3d gvim -geom 100x28  "/home/john/.dot/bashrc/colors"
+	prog Completions hand_up_3d gvim -geom 100x28  "/home/john/.dot/bashrc/completions"
+	prog Functions hand_up_3d gvim -geom 100x28  "/home/john/.dot/bashrc/functions"
+	separator
+	prog Xsession klipper bash -c "Play tada; gvim -geom 100x28 /etc/X11/xdm/Xsession"
+	prog Xdefaults klipper gvim -geom 100x28  "/root/.Xdefaults"
+	prog XF86Config-4 klipper gvim -geom 100x28  "/etc/X11/XF86Config-4"
+}
+# End of Files menu
+
+separator
+menu Admin lockedfolder {
+	menu Help folder {
+		prog Yelp mini.maximize-vert yelp
+		prog KdeHelp mini.maximize-vert khelpcenter
+	}
+	# End of Help menu
+
+	prog FireStarter mini.xlock firestarter
+	prog "Glsof (Open Files)" glsof.png glsof
+	prog Gparted gparted.png gparted
+	prog QTparted qtparted.png qtparted
+	separator
+    prog PacInfo mini.maximize-vert pacinfo
+	separator
+	prog Avast avast.png avastgui
+	prog KeePass keepassx.png keepassx
+	prog Kprinter printer_32x32.xpm kprinter
+	prog "Nvidia Settings" qtparted.png nvidia-settings
+	prog "aRandr" gsd-xrandr.png arandr
+	prog "uRandr" gsd-xrandr.png urandr
+	separator
+	prog "Nitrogen - Set Wallpapper" nitrogen.png nitrogen
+	separator
+	prog "Gnome-system-monitor" gnome-gtali gnome-system-monitor
+	prog "Hal Device Manager" gnome-gtali gnome-device-manager
+	prog HardInfo gnome-gtali hardinfo
+	prog Inxi gnome-gtali Terminal --hold --geometry=120x30 -e "inxi -F -pl -N -G -s"
+	prog Kinfocenter gnome-gtali kinfocenter
+	prog USBview gnome-gtali usbview
+	separator
+	prog "Change Background" chbg_64x64.xpm chbg
+	prog DiskFree filelight.png filelight
+	prog "Password Manager" revelation.png revelation
+	prog XscreenSaver xscreensaver.xpm xscreensaver-demo
+}
+# End of Admin menu
+
+menu "Config Managers" folder {
+	menu Gnome+GTK+Kde folder {
+		prog GnomeCC gnome-cromagnon_16x16.xpm gnome-control-center
+		prog "Gnome Appearence" gnome-cromagnon_16x16.xpm gnome-appearance-properties
+		prog Gtk1-Theme mini-ray gtk-theme-switch1
+		prog Gtk2-Theme mini-ray gtk-chtheme
+		prog "GTK2 Theme and Fonts Changer" mini-ray gtk2_prefs
+		prog Kcontrol kcontrol.png kcontrol
+		prog LXappearance gnome-cromagnon_16x16.xpm lxappearance
+	    prog QtConfig gnome-gtali qtconfig
+	}
+	# End of Gnome+GTK menu
+
+	menu "PKG Managers" folder {
+		prog PKGbrowser pkgbrowser.png pkgbrowser
+		prog Wakka pacman.png wakka
+	}
+	# End of PKG Managers menu
+
+	prog Arxin arxin32.png arxin
+	prog SystemSetup gnome-gtali systemsettings
+	separator
+	prog "Add/Remove Users" luser.png luser.py
+	prog "NetCFG Config" netcfgGUI.png netcfgGUI
+	separator
+	prog "Btnx-Config" gimp.png btnx-config
+	prog "XBindKeys-Config" gimp.png xbindkeys_config
+	separator
+	separator
+	prog "GconfEditor" gimp.png gconf-editor
+	prog "DconfEditor" gimp.png dconf-editor
+	prog "Gnome-Tweak" gimp.png gnome-tweak-tool
+	prog Gproftpd gproftpd32.png gproftpd
+	prog Gtkxset panel_settings_16x16.xpm /root/bin/gxset
+	prog "Monitor Control" gddccontrol.png gddccontrol
+	separator
+	prog gRsync grsync.xpm grsync
+	prog gAdmin-Rsync gadmin-rsync.png gadmin-rsync
+	prog SyncBacup syncbackup.xpm syncbackup
+}
+# End of Config Managers menu
+
+menu "Gnome Admin" mini-shadowman-round {
+	menu Preferences folder {
+		prog "Keyboard Preferences" mini-ray gnome-keyboard-properties
+		prog "Keyboard Shortcuts" mini-ray gnome-keybinding-properties
+		separator
+		prog "Assistive Technologies Preferences" mini-ray gnome-at-properties
+		prog "Font Preferences" mini-ray gnome-font-viewer
+		prog "Mouse Preferences" mini-ray gnome-mouse-properties
+		prog "Screen Resolution Preferences" mini-ray gnome-display-properties
+	}
+	# End of Preferences menu
+
+	prog "Gnome Menus Editor" mini-ray gmenu-simple-editor
+	separator
+	prog "Calculator" mini-ray gnome-calculator
+	prog "Character Map" mini-ray gnome-character-map
+	prog "Control Center" mini-ray gnome-control-center
+	prog "Default Applications" mini-ray gnome-default-applications-properties
+	separator
+	prog "Gnome Help" mini-ray gnome-help
+	prog "Search Tool" mini-ray gnome-search-tool
+	prog "Sound Recorder" mini-ray gnome-sound-recorder
+	prog "System Monitor" mini-ray gnome-system-monitor
+	prog Telnet mini-ray gnome-telnet
+	prog "Text Editor" mini-ray gnome-text-editor
+	prog "Volume Control" mini-ray gnome-volume-control
+}
+# End of Gnome Admin menu
+
+separator
+menu Network folder {
+	prog IPtraf mini.checkmark urxvt -e iptraf
+	prog "Grdc (Remmina)" remmina.png remmina
+	prog "SSH & SCP" netwatch.xpm secpanel
+	prog Knetstats netwatch.xpm knetstats
+	prog Netstat1 netwatch.xpm urxvt -hold -fn "xft:Bitstream Vera Sans Mono:style=Bold" -geometry 100x28 -bg black -fg green -e /root/bin/Netstat
+	prog Netstat2 netwatch.xpm urxvt -hold -fn "xft:Bitstream Vera Sans Mono:style=Bold" -geometry 120x32 -bg black -fg green -e /root/bin/Netstat
+	prog Nnetstat netwatch.xpm Nnetstat
+	prog MNmap-UMIT openbsd_32.pn umit
+	prog Nmap  netwatch.xpm nmapfe
+	prog WireShark netwatch.xpm wireshark
+	separator
+	prog "Wicd" kwifimanager.png wicd-client -n
+	prog "WiFi Radar" wifi-radar.png wifi-radar
+	prog "WlAssistant" wlassistant.png wlassistant
+}
+# End of Network menu
+
+separator
+menu Internet internet2.png {
+	menu Down/Uploaders folder {
+        prog Jdownloader jdownloader.png jdownloader
+	    prog "Tucan" "tucan.png" tucan
+	    prog "Rapidshare FatRat" "fatrat.png" fatrat
+	    prog "Rapidshare Grabber" "lrg.png" /root/bin/lrg
+	}
+	menu FTP folder {
+		prog Capivara capivara.png java -jar /usr/local/Capivara/capivara.jar
+		prog WxdFast wxdfast.png wxdfast
+		separator
+		prog FileZilla filezilla.png filezilla
+		prog Foff kftpgrabber.png foff
+		prog Gftp gftp_16x16.xpm gftp
+		prog Kasablanca kasablanca.png kasablanca
+		prog VirgoFTP gftp_16x16.xpm /usr/local/virgoftp/virgoftp
+		prog Kftpgrabber kftpgrabber.png kftpgrabber
+	}
+	# End of FTP menu
+
+	separator
+	prog "Aria" "kftpgrabber.png" aria2fe
+	prog GwGet gwget.png gwget
+	prog HttTrack webhttrack.xpm httrack
+	prog Ghamachi webhttrack.xpm ghamachi
+	prog Hamachi-GUI webhttrack.xpm hamachi-gui
+	prog TeamViewer teamviewer.png su -l -c teamviewer tanso
+	separator
+	prog Akregator akregator.png akregator
+	separator
+	prog Putty putty.png putty
+	prog Portscan PhonePortable.xpm /root/bin/portscan
+}
+# End of Internet menu
+
+menu Bluetooth bluetooth.png {
+	prog "Gnome Bluetooth Manager" bluetooth.png gnome-bluetooth-manager
+	prog "Gnome Obex Server" bluetooth.png gnome-obex-server
+	prog "Gnome Obex Send" bluetooth.png gnome-obex-send
+	separator
+	prog "KDE BlueTooth Daemon" bluetooth.png kbluetoothd
+	prog "KDE Obex client" bluetooth.png kbtobexclient
+	prog "KDE Obex Client 2" bluetooth.png qobexclient
+	prog "KDE Obex Server" bluetooth.png kioobex_start
+	separator
+	prog "KDE Serial Chat" bluetooth.png kbtserialchat
+	prog "KDE HCI Config" bluetooth.png khciconfig
+}
+# End of Bluetooth menu
+
+separator
+menu Editors folder {
+	menu Hex folder {
+		prog "KHex Editor" khexdit khexedit
+		prog "GHex Editor" khexdit ghex2
+	}
+	# End of Hex menu
+
+	menu XML folder {
+		prog Conglomerate conglomerate-icon-16.png conglomerate
+		prog Serna conglomerate-icon-16.png serna
+		prog "XML Editor" mini-ray xmlcopyeditor
+	}
+	# End of XML menu
+	separator
+	prog "Geany" geany.png geany
+	separator
+	prog Gedit karm gedit
+	prog Gnotepad notepad_16x16.xpm gnp
+	prog Gvim gkb gvim
+	prog Kyzis kyzis.png kyzis
+	prog Kate kate.png kate
+	prog KchmViewer kate.png kchmviewer
+	prog Kompozer kate.png kompozer
+	prog KWrite kwrite kwrite
+	prog Txt2Tags kwrite txt2tags
+	separator
+	prog "NoteCase" "tomboy.png" notecase
+	prog "Zim Desktop Wiki" zim.png zim
+	separator
+	prog CSSed cssed.png cssed
+	prog NEdit pencil2 nedit
+	separator
+	prog "Unicode Char Map" yudit gucharmap
+	prog Yudit yudit yudit
+}
+# End of Editors menu
+
+menu Graphics folder {
+	menu "Image Viewers" folder {
+		prog digiKam digikam.png digikam
+		prog GqView gqview gqview
+		prog Gthumb gthumb gthumb
+		prog Kview kview.png kview
+		prog Kuickshow kuickshow.png kuickshow
+		prog ShowImg showimg.png showimg
+		separator
+		prog Kolourpaint kolourpaint.png kolourpaint
+		prog XnView kiconedit xnview
+	}
+	# End of Image Viewers menu
+
+	menu Scanner folder {
+		prog Gimp scanner.png gimp -s
+		prog VueCopy scanner.png Vuecopy
+		prog VueScan scanner.png vuescan
+		prog Xsane scanner.png xsane
+	}
+	# End of Scanner menu
+
+	prog "Google Earth" googleearth-icon.png googleearth
+	separator
+	prog "DVI Viewer" kdvi kdvi --caption "DVI_Viewer"
+	prog Gimp gimp_hi gimp
+	prog "Import (snapshot)" ksnapshot bash -c "import /tmp/screenshot-$(date +%s).png"
+	prog "Gscreenshot (Scrot)" gscreenshot.png gscreenshot
+	prog KSnapshot ksnapshot ksnapshot
+	prog Xvidcap xvidcap.png xvidcap
+}
+# End of Graphics menu
+
+menu Multimedia folder_favorites {
+	menu "Author- DVDrip - Transcode" folder {
+		prog Avidemux amarok.png avidemux2_gtk
+		prog Arista amarok.png arista-gtk
+		prog Dvd::rip dvdrip.xpm dvdrip
+		prog DVDauthor k3b.png dvdauthor
+		prog Gmencoder gmencoder.png gmencoder
+		prog Handbrake qhandbrake.png ghb
+		prog MKVtoolnix dvdrip.xpm mmg
+		prog ToVid tovid_icon_32.png tovid
+		prog Transcoder transcoder.png Transcoder
+		prog Transmageddon amarok.png transmageddon
+		prog TsMuxer dvdrip.xpm tsMuxerGUI
+	}
+
+	menu "Video Players" folder {
+		prog "AviPlay (AVI, ASF, ASX)" avifile.png aviplay
+		prog Gxine ksokoban gxine
+		prog Kaffeine kaffeine.png kaffeine
+		prog Totem gnome-gtali totem
+		prog MPlayer aktion gmplayer
+		prog SMplayer smplayer.png smplayer
+		prog VideoLan vlc.png vlc
+		separator
+		prog Ogle aktion ogle -u gui
+		prog RealPlayer real realplay
+		prog "VCD video Conv" ksokoban /usr/local/bin/vcd.py
+		prog Xine ksokoban xine
+	}
+	# End of Video Players menu
+
+	separator
+	menu "Sound Mixers" folder {
+		prog Aumix mini.checkmark urxvt -hold -e aumix -C ansi
+		prog AlsaMixer mini.checkmark urxvt -hold -geometry 220x30+0+0 -e alsamixer
+		prog AlsaMixerGUI alsamixergui.png alsamixergui
+		prog "Gnome Vol Control" gnome-mixer.png gnome-volume-control
+		prog "K Mixer" kmix kmix
+		prog Mix2005 kmix mix2005
+	}
+	# End of Sound Mixers menu
+
+	menu "Sound Recorders" folder {
+		prog Audacity audacity.xpm audacity
+		prog "Gnome Sound Recorder " audacity.xpm gnome-sound-recorder
+		prog Krec audacity.xpm krec
+	}
+	# End of Sound Recorders menu
+
+	menu Radio folder {
+		prog KdeRadioStation kderadio16_new.png kderadiostation --sync
+		prog RadioStation kderadio16_new.png radiostation
+		prog StreamTuner streamtuner.png streamtuner
+	}
+	# End of Radio menu
+
+	separator
+	prog Miro miro.png miro
+	separator
+	prog IsoMaster media-cdrom.png isomaster
+	prog "CDW - CD Writer" gnomebaker-48.png urxvt -e cdw
+	prog "Clipgrab - Youtube" clipgrab.png clipgrab
+	prog Graveman graveman48.png graveman
+	prog Brasero brasero.png brasero
+	prog "K3b - The CD Creator" k3b.png k3b
+	prog Nero nero.png nero
+	separator
+	prog DivFIX DivFix++.png divfixpp
+	prog MediaInfo gnomebaker-48.png mediainfo-gui
+	separator
+	prog EasyTag EasyTAG_icon.xpm easytag
+	prog "Kid3 TagMP3" kid3.png kid3
+	prog Sockso sockso.png sockso
+	prog Songbird songbird.png songbird
+	separator
+	prog SubDownloader subdownloader.png subdownloader
+	prog GnomeSubtitles gnome-subtitles.png gnome-subtitles
+	prog "Subtitle Editor" subtitleeditor.png subtitleeditor
+}
+# End of Multimedia menu
+
+menu P2P folder {
+	menu Messaging folder {
+		prog Kopete kopete.png kopete
+		separator
+		prog Ekiga ekiga.png ekiga
+		prog EkigaP ekiga.png bash -c "(. /root/bin/Portuga_Locale ; ekiga)"
+		prog Gizmo gizmo-project.png gizmo
+		prog Skype skype.png skype
+		prog WengoPhone wengophone.png WengoPhone
+	}
+	# End of Messaging menu
+
+    prog "GtorrentViewer" gtorrentviewer.png gtorrentviewer
+    prog "Torrent Search" torrent-search.png torrent-search
+    prog "Tribler" tribler.xpm tribler
+	separator
+	prog "Amule" amule.png amule
+	prog "Aria2" aria2fe.png aria2fe
+	prog "Deluge (bittorrent)" deluge.png deluge
+	prog "Ktorrent" ktorrent.png ktorrent
+	prog "Qbittorrent" qbittorrent.png qbittorrent
+	prog "Transmission" transmission.png transmission-gtk
+	prog "Utorrent" utorrent.png utserver
+}
+# End of P2P menu
+
+menu Ebooks folder {
+	prog "Calibre" calibre.png calibre
+	prog "FBReader" FBReader.png FBReader
+}
+
+separator
+
+menu KBD+Fonts folder_red {
+	menu "Char Maps" folder {
+		prog GuCharMap gucharmap.png gucharmap
+		prog KcharSelect kcharselect.png kcharselect
+	}
+	# End of Char Maps menu
+
+	menu "Fonts" folder {
+		prog XfontSel rpmfile xfontsel
+		prog "Font Viewer" rpmfile opcion
+		prog "FontMatrix" fontmatrix.png fontmatrix
+		prog "Fontpage" rpmfile fontpage.py
+	}
+
+	prog "Virtual Keyboard - Florence" keyboard.xpm florence
+	prog "Virtual Keyboard - xvkbd" keyboard.xpm xvkbd
+	prog "Virtual Keyboard - Klavier" keyboard.xpm klavier
+	prog XKeyCaps keyboard.xpm xkeycaps
+}
+
+menu Utils folder_red {
+	menu Calculators folder {
+		prog Galculator kcalc galculator
+		prog Gcalc calc_16x16.xpm gcalctool
+		prog Qalculate rcalc_16x16.xpm qalculate-gtk
+	}
+	# End of Calculators menu
+
+	menu Dictionarys folder {
+		prog Gnome-Dict qwordtrans gnome-dictionary
+		prog Kdict kdict.png kdict
+		prog Qwordtrans qwordtrans kwordtrans
+		prog StarDict stardict.png stardict
+	}
+	# End of Dictionarys menu
+
+	menu Emulators folder {
+		prog "Gnome Terminal" smallpc gnome-terminal
+		prog Urxvt kvt urxvt
+	}
+	# End of Emulators menu
+
+	menu "File Managers" folder {
+		prog Konqueror mini-k konqueror --profile "Johns Profile"
+		prog Krusader krusader.png krusader
+		prog Smb4k smb4k.png smb4k
+		separator
+		prog PcmanFM icon_emelfm2_024.png pcmanfm
+		prog Thunar Thunar.png thunar
+	}
+	# End of File Managers menu
+
+	prog Acrobat applix acroread
+	prog Apvlv applix apvlv
+	prog Zathura applix zathura
+	prog EPDFview epdfview epdfview
+	prog CatFish mini.xmag catfish
+	prog "Find Files (k)" kfind kfind
+	prog "Find Files (g)" kfind gnome-search-tool
+	separator
+	prog Gfloppy 3floppy_unmount gfloppy
+	prog GTKfloppy 3floppy_unmount /usr/local/bin/floppy
+}
+# End of Utils menu
+
+menu Xutils folder_red {
+	menu "Color Select" folder {
+		prog "Kcolor Choose" mini-raise kcolorchooser
+		prog "Kcolor Edit" mini-raise kcoloredit
+		prog Gcolor2 mini-raise gcolor2
+	}
+	# End of Color Select menu
+
+	separator
+	prog "Screen Resize & Rotate" randr.png krandrtray
+	prog KdirStat kdirstat.png kdirstat
+	prog GfontSampler rpmfile gfontsampler
+	separator
+	prog EditRes EscherTriangle editres
+	prog Glxinfo mini.checkmark urxvt -hold -e glxinfo
+	separator
+	prog XcutSel mini.xmag xcutsel
+	prog XdpYinfo kcmx urxvt -hold -e xdpyinfo
+	separator
+	prog Xkill bomb xkill
+}
+# End of Xutils menu
+
+menu Office+DB folder {
+	prog AbiWord abiword abiword  -geometry 1160x1000+12+19
+	prog OpenOffice soffice.png soffice
+	prog Gnumeric gnumeric gnumeric
+	prog Kexi kexi.png kexi
+	prog Knoda knoda.png kexi
+	prog Tellico tellico.png tellico
+}
+# End of Office+DB menu
+
+separator
+
+menu CommandLine folder {
+	prog "ALSA mixer" - xterm -e alsamixer
+	prog "Aumix" - xterm -e aumix
+	prog "Htop" - xterm -e htop
+	prog "Info" - xterm -e info
+	prog "LFTP" - xterm -e lftp
+	prog "Links" - xterm -e links
+	prog "Lynx" - xterm -e lynx
+	prog "Mail" - xterm -e mail
+	prog "Mutt" - xterm -e mutt
+	prog "Nano" - xterm -e nano
+	prog "Python" - xterm -e python
+	prog "Telnet" - xterm -e telnet
+	prog "Top" - xterm -e top
+	prog "VIM" - xterm -e vim
+	prog "XTerm (Unicode)" - uxterm
+	prog "Xev" - xterm -e xev
+	prog "Xterm" - xterm
+	prog "bc" - xterm -e bc
+	prog "dc" - xterm -e dc
+	prog "ntop" - xterm -e ntop
+	prog "pstree" - xterm -hold -e pstree
+	prog "scanimage" - xterm -e scanimage
+	prog "todisc GUI" - xterm -e todiscgui
+}

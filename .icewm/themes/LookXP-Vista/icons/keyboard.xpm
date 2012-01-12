@@ -1,0 +1,29 @@
+/* XPM */
+static char *keyboard[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"  c black",
+". c #151515",
+"X c #7B7D7B",
+"o c #838583",
+"O c #C5C6C5",
+"+ c gray100",
+"@ c None",
+/* pixels */
+"@@@@@@@@@@@@@@@@",
+"@@.X @@@@@@@@@@@",
+"@@@@ @ @ @ @ @@@",
+"@@@@@ @ @ @ @ @@",
+"@@@@@@@@@@@@@ @@",
+"@              @",
+" +++++++++++++O ",
+" +Oo+o+o+o+o+oO ",
+" +o o o o o o O ",
+" +OoOoOoOoOoOoO ",
+" +o o o o o o O ",
+" +O+O+O+O+O+O+O ",
+" Oooooooooooooo ",
+"@              @",
+"@@@@@@@@@@@@@@@@",
+"@@@@@@@@@@@@@@@@"
+};

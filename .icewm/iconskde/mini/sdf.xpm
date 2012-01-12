@@ -1,0 +1,31 @@
+/* XPM */
+static char * Sdf_t_pm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"16 16 9 1 0 0",
+/* colors */
+" 	s none	m none	c none",
+".	s iconColor1	m black	c black",
+"X	s iconColor2	m white	c white",
+"o	c #000000008617",
+"O	c #C71BC30BC71B",
+"+	c #0000FFFF0000",
+"@	c #861782078617",
+"#	s iconColor6	m white	c yellow",
+"$	c #FFFF00000000",
+/* pixels */
+"                ",
+"  ..........    ",
+"  .XXXXXXX.X.   ",
+"  .XooXO++.XX.  ",
+"  .XooXXXX....  ",
+"  .XooX.....X.  ",
+"  .XooX.XXXX@.  ",
+"  .XooXX.XXXX.  ",
+"  .XooX#X.XXX.  ",
+"  .Xoo#XXX.XX.  ",
+"  .XooX#X.XXX.  ",
+"  .XooXX.XXX@.  ",
+"  .XooX.....X.  ",
+"  .XooXXXXXXX.  ",
+"  .XXXX$XXXOX.  ",
+"  ............  "};

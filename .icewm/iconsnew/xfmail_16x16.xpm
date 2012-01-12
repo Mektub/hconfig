@@ -1,0 +1,27 @@
+/* XPM */
+static char *xfmail_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 5 1",
+"  c black",
+". c #c05800",
+"X c #ffa858",
+"o c white",
+"O c None",
+/* pixels */
+"O           OOOO",
+" XXXXXXXX . OOOO",
+" X  o o  .. OO O",
+" X       .. OO O",
+" XXXXXXX .. O  O",
+"         ..  OOO",
+"  XXXXX  .. OOOO",
+"  XXXXX  .. OOOO",
+"  XXXXX  ..    O",
+" XX   XX ..     ",
+" XXXXXXX ..     ",
+" XXXXXXX .      ",
+"               O",
+"             OOO",
+"  OOOOOO   OOOOO",
+"  OOOOOO  OOOOOO"
+};

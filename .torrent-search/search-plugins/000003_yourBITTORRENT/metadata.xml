@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000003_yourBITTORRENT" version="0.4.0">
+  <title>yourBITTORRENT</title>
+  <released_time>2011-07-21 05:14:36</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>yourBITTORRENT.py</filename>
+  <classname>yourBITTORRENTTorrentPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000003_yourBITTORRENT/0.4.0/</download_url>
+  <website_url>http://www.yourbittorrent.com/</website_url>
+  <icon_url>http://www.yourbittorrent.com/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

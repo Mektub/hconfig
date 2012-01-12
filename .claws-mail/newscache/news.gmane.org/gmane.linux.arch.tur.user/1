@@ -1,0 +1,57 @@
+Path: main.gmane.org!not-for-mail
+From: Eduardo Lopes <eduol-Fl035vbr6rZBDgjK7y7TUQ@public.gmane.org>
+Newsgroups: gmane.linux.arch.tur.user
+Subject: giftui segfault
+Date: Sun, 2 May 2004 18:08:57 -0300
+Lines: 8
+Sender: tur-users-admin-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org
+Approved: news@gmane.org
+Message-ID: <20040502180857.2776f874@linfocito.myvnc.com>
+Reply-To: tur-users-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org
+NNTP-Posting-Host: deer.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+X-Trace: sea.gmane.org 1083618873 29974 80.91.224.253 (3 May 2004 21:14:33 GMT)
+X-Complaints-To: usenet@sea.gmane.org
+NNTP-Posting-Date: Mon, 3 May 2004 21:14:33 +0000 (UTC)
+Original-X-From: tur-users-admin-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org Mon May 03 23:13:20 2004
+Return-path: <tur-users-admin-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org>
+Original-Received: from archlinux.org ([207.44.144.16] helo=dragon.archlinux.org)
+	by deer.gmane.org with esmtp (Exim 3.35 #1 (Debian))
+	id 1BKkka-0006Q5-00
+	for <glatu-tur-users@m.gmane.org>; Mon, 03 May 2004 23:13:20 +0200
+Original-Received: from localhost.localdomain ([127.0.0.1] helo=archlinux.org)
+	by dragon.archlinux.org with esmtp (Exim 3.22 #1)
+	id 1BKkYg-0001uX-00; Mon, 03 May 2004 17:01:02 -0400
+Original-Received: from smtp3.brturbo.com ([200.199.201.164])
+	by dragon.archlinux.org with esmtp (Exim 3.22 #1)
+	id 1BKkY6-0000y2-00
+	for tur-users@archlinux.org; Mon, 03 May 2004 17:00:26 -0400
+Original-Received: from linfocito.myvnc.com (unknown [201.2.53.71])
+	by smtp3.brturbo.com (Postfix) with SMTP id 368D034056
+	for <tur-users-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org>; Mon,  3 May 2004 18:06:56 -0300 (BRT)
+Original-To: tur-users-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org
+X-Mailer: Sylpheed version 0.9.10claws (GTK+ 1.2.10; i686-pc-linux-gnu)
+Errors-To: tur-users-admin-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org
+X-BeenThere: tur-users-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org
+X-Mailman-Version: 2.0.13
+Precedence: bulk
+List-Help: <mailto:tur-users-request-fd97jBR+K/7+mLghykT6EpSyx/Wj9/Chdaaq/uiDbmg@public.gmane.org>
+List-Post: <mailto:tur-users-fd97jBR+K/6hPH1hqNUYSQ@public.gmane.org>
+List-Subscribe: <http://www.archlinux.org/mailman/listinfo/tur-users>,
+	<mailto:tur-users-request-fd97jBR+K/7+mLghykT6EkfZv34bSr6CyrRgqdI+6y4@public.gmane.org>
+List-Id: Discussion about the Trusted User Repositories <tur-users.archlinux.org>
+List-Unsubscribe: <http://www.archlinux.org/mailman/listinfo/tur-users>,
+	<mailto:tur-users-request-fd97jBR+K/7+mLghykT6Eo4vVymAtk2CuCKOA6ERizqzQB+pC5nmwQ@public.gmane.org>
+List-Archive: <http://www.archlinux.org/pipermail/tur-users/>
+Xref: main.gmane.org gmane.linux.arch.tur.user:1
+
+I installed giftui today (from staging) and I'm having this message:
+
+(process:601): GLib-GObject-CRITICAL **: gtype.c:2253: initialization assertion failed, use g_type_init() prior to this function
+
+(process:601): GLib-GObject-CRITICAL **: file gobject.c: line 819 (g_object_new): assertion `G_TYPE_IS_OBJECT (object_type)' failed
+
+(process:601): GLib-GObject-CRITICAL **: file gobject.c: line 1561 (g_object_ref): assertion `G_IS_OBJECT (object)' failed
+Segmentation fault

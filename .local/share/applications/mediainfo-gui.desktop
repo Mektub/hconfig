@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=AudioVideo;AudioVideoEditing;
+Comment=Supplies technical and tag information about a video or audio file
+Encoding=UTF-8
+Exec[$e]=mediainfo-gui %f
+Icon=mediainfo
+InitialPreference=10
+MimeType=video/x-msvideo
+Name=MediaInfo
+Terminal=false
+Type=Application
+Version=1.0

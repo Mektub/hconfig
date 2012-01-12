@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000023_torrentdownloads" version="0.2.0">
+  <title>Torrent Downloads</title>
+  <released_time>2011-10-20 06:05:44</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>torrentdownloads.py</filename>
+  <classname>TorrentDownloadsPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000023_torrentdownloads/0.2.0/</download_url>
+  <website_url>http://www.torrentdownloads.net/</website_url>
+  <icon_url>http://www.torrentdownloads.net/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

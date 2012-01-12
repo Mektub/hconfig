@@ -1,0 +1,497 @@
+---
+defaults:
+  auto accept key: 1
+  auto hide connections list: ''
+  back color: '#000000000000'
+  bold color: '#cc62cc62cc62'
+  bold color like text: 1
+  close terminal on disconnect: 1
+  close to tray: 1
+  command prompt: '[#%\$>]|\:\/\s*$'
+  confirm exit: 1
+  connected color: '#0c0cbaba0000'
+  cursor shape: block
+  debug: ''
+  disconnected color: '#ffff00000000'
+  global variables: {}
+  hide on connect: ''
+  local commands:
+    - confirm: 1
+      description: ''
+      txt: cat > /dev/null
+  new data color: '#00008888ffff'
+  only one instance: 1
+  open connections in tabs: 1
+  password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+  ping port before connect: ''
+  ping port timeout: 1
+  proxy ip: ''
+  proxy pass: ''
+  proxy port: ''
+  proxy user: ''
+  record command history: 1
+  remote commands: []
+  save on exit: 1
+  save session logs: ''
+  screenshots external viewer: /usr/bin/xdg-open
+  screenshots use external viewer: ''
+  session logs amount: 10
+  session logs folder: /root/.pac/session_logs
+  shell binary: /bin/bash
+  shell directory: /root
+  shell options: -login
+  show commands box: ''
+  show screenshots: 1
+  sort groups first: 1
+  start iconified: ''
+  start main maximized: ''
+  start maximized: ''
+  tabs in main window: ''
+  tabs position: top
+  terminal backspace: auto
+  terminal character encoding: UTF-8
+  terminal emulation: xterm
+  terminal font: Monospace Bold 11
+  terminal scrollback lines: 5000
+  terminal transparency: 0
+  terminal windows hsize: 800
+  terminal windows vsize: 600
+  text color: '#0000ffff0000'
+  timeout command: 60
+  timeout connect: 40
+  use bw icon: ''
+  use proxy: ''
+  use system proxy: 1
+  username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+  version: 3.0.1.2
+  word characters: A-Za-z0-9_\-\.:\/
+environments:
+  2dd0f2ed-e49f-4026-8ff8-e84f5da7b387:
+    _is_group: 0
+    description: Connection with 'SilenceIsDefeat'
+    embed: 0
+    expect: []
+    ip: silenceisdefeat.com
+    local after: []
+    local before: []
+    local connected: []
+    macros: []
+    manual: 0
+    method: ssh
+    name: SilenceIsDefeat
+    options: ' -2 -4 -X -A'
+    parent: 9b366175-1670-489a-82bf-3c8e73bf308c
+    pass: 53616c7465645f5f3132333435363738186ade25d06eea54
+    port: 22
+    prepend command: ''
+    save session logs: ''
+    screenshots: []
+    session logs amount: 10
+    session logs folder: /root/.pac/session_logs
+    terminal options:
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+    title: 'SilenceIsDefeat '
+    use prepend command: ''
+    use proxy: 0
+    user: mektub
+    variables: []
+  2f150896-c118-4fa5-8f61-96b4dcc568e2:
+    _is_group: 0
+    description: Connection with 'PopCorn'
+    embed: 0
+    expect: []
+    ip: popcorn
+    local after: []
+    local before: []
+    local connected: []
+    macros: []
+    manual: 0
+    method: telnet
+    name: PopCorn
+    options: ' -4 -e "^]"'
+    parent: __PAC__ROOT__
+    pass: 53616c7465645f5f3132333435363738186ade25d06eea54
+    port: 23
+    prepend command: ''
+    save session logs: ''
+    screenshots: []
+    session logs amount: 10
+    session logs folder: /root/.pac/session_logs
+    terminal options:
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+    title: 'PopCorn '
+    use prepend command: ''
+    use proxy: 0
+    user: john
+    variables: []
+  4073f66f-38fb-48fb-b104-ede5cee6f3e4:
+    _is_group: 0
+    description: Connection with 'Linode'
+    embed: 0
+    expect: []
+    ip: ArchLinode
+    local after: []
+    local before: []
+    local connected: []
+    macros: []
+    manual: 0
+    method: ssh
+    name: Linode
+    options: ' -2 -4 -X -A  -Y -Cg  -L5901:localhost:5901'
+    parent: 9b366175-1670-489a-82bf-3c8e73bf308c
+    pass: 53616c7465645f5f3132333435363738186ade25d06eea54
+    port: 907
+    prepend command: ''
+    save session logs: ''
+    screenshots: []
+    session logs amount: 10
+    session logs folder: /root/.pac/session_logs
+    terminal options:
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+    title: 'Linode '
+    use prepend command: ''
+    use proxy: 0
+    user: john
+    variables: []
+  4932034e-b7af-45ce-9083-4b102d01184b:
+    _is_group: 0
+    description: Connection with 'ArchTosh-WL'
+    embed: 0
+    expect: []
+    ip: archtosh-wl
+    local after: []
+    local before: []
+    local connected: []
+    macros: []
+    manual: 0
+    method: ssh
+    name: ArchTosh-WL
+    options: ' -2 -4 -X -A'
+    parent: __PAC__ROOT__
+    pass: 53616c7465645f5f3132333435363738186ade25d06eea54
+    port: 22
+    prepend command: ''
+    save session logs: ''
+    screenshots: []
+    session logs amount: 10
+    session logs folder: /root/.pac/session_logs
+    terminal options:
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+    title: 'ArchTosh-WL '
+    use prepend command: ''
+    use proxy: 0
+    user: john
+    variables: []
+  4a4684a5-98d2-4711-a9cb-9286b6fb2697:
+    _is_group: 0
+    description: Connection with 'Archbang'
+    embed: 0
+    expect: []
+    ip: asuspc
+    local after: []
+    local before: []
+    local connected: []
+    macros: []
+    manual: 0
+    method: vncviewer
+    name: Archbang
+    options: ' -compresslevel 8 -quality 8 -encodings "Tight Zlib Hextile CoRRE RRE CopyRect Raw" -autopass'
+    parent: 9f0417ee-0e8d-4736-ae30-6239489091c6
+    pass: 53616c7465645f5f3132333435363738186ade25d06eea54
+    port: 5900
+    prepend command: ''
+    save session logs: ''
+    screenshots: []
+    session logs amount: 10
+    session logs folder: /root/.pac/session_logs
+    terminal options:
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+    title: 'VNC - Archbang '
+    use prepend command: ''
+    use proxy: 0
+    user: ''
+    variables: []
+  7bbbb332-d606-4444-8025-ec5ef2ad5294:
+    _is_group: 0
+    description: Connection with 'AsusPC'
+    embed: 0
+    expect: []
+    ip: asuspc
+    local after: []
+    local before: []
+    local connected: []
+    macros: []
+    manual: 0
+    method: ssh
+    name: AsusPC
+    options: ' -2 -4 -X -A -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+    parent: __PAC__ROOT__
+    pass: 53616c7465645f5f3132333435363738186ade25d06eea54
+    port: 22
+    prepend command: ''
+    save session logs: ''
+    screenshots: []
+    session logs amount: 10
+    session logs folder: /root/.pac/session_logs
+    terminal options:
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+    title: 'AsusPC '
+    use prepend command: ''
+    use proxy: 0
+    user: john
+    variables: []
+  848de41b-7e54-4cf3-8f29-e3f70fc730ef:
+    _is_group: 0
+    description: Connection with 'DNS323'
+    embed: 0
+    expect: []
+    ip: dns323
+    local after: []
+    local before: []
+    local connected: []
+    macros: []
+    manual: 0
+    method: ssh
+    name: DNS323
+    options: ' -2 -4 -X -A'
+    parent: __PAC__ROOT__
+    pass: 53616c7465645f5f3132333435363738186ade25d06eea54
+    port: 22
+    prepend command: ''
+    save session logs: ''
+    screenshots: []
+    session logs amount: 10
+    session logs folder: /root/.pac/session_logs
+    terminal options:
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+    title: 'DNS323 '
+    use prepend command: ''
+    use proxy: 0
+    user: john
+    variables: []
+  9b366175-1670-489a-82bf-3c8e73bf308c:
+    _is_group: 1
+    children:
+      2dd0f2ed-e49f-4026-8ff8-e84f5da7b387: 1
+      4073f66f-38fb-48fb-b104-ede5cee6f3e4: 1
+      b9e2e8bf-ab8f-4d29-ab1a-9eb24c5a52cb: 1
+    description: Connection group 'Remotes'
+    name: Remotes
+    parent: __PAC__ROOT__
+    pass: ''
+    screenshots: []
+    uuid: 9b366175-1670-489a-82bf-3c8e73bf308c
+    variables: []
+  9f0417ee-0e8d-4736-ae30-6239489091c6:
+    _is_group: 1
+    children:
+      4a4684a5-98d2-4711-a9cb-9286b6fb2697: 1
+    description: Connection group 'VNC'
+    name: VNC
+    parent: __PAC__ROOT__
+    pass: ''
+    screenshots: []
+    uuid: 9f0417ee-0e8d-4736-ae30-6239489091c6
+    variables: []
+  __PAC__ROOT__:
+    children:
+      2f150896-c118-4fa5-8f61-96b4dcc568e2: 1
+      4932034e-b7af-45ce-9083-4b102d01184b: 1
+      7bbbb332-d606-4444-8025-ec5ef2ad5294: 1
+      848de41b-7e54-4cf3-8f29-e3f70fc730ef: 1
+      9b366175-1670-489a-82bf-3c8e73bf308c: 1
+      9f0417ee-0e8d-4736-ae30-6239489091c6: 1
+    description: ''
+    expect: []
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    screenshots: []
+    variables: []
+  b9e2e8bf-ab8f-4d29-ab1a-9eb24c5a52cb:
+    _is_group: 0
+    description: Connection with 'Sdf-EU'
+    embed: 0
+    expect: []
+    ip: sdf-eu.org
+    local after: []
+    local before: []
+    local connected: []
+    macros: []
+    manual: 0
+    method: ssh
+    name: Sdf-EU
+    options: ' -2 -4 -X -A'
+    parent: 9b366175-1670-489a-82bf-3c8e73bf308c
+    pass: 53616c7465645f5f3132333435363738186ade25d06eea54
+    port: 22
+    prepend command: ''
+    save session logs: ''
+    screenshots: []
+    session logs amount: 10
+    session logs folder: /root/.pac/session_logs
+    terminal options:
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+    title: 'Sdf-EU '
+    use prepend command: ''
+    use proxy: 0
+    user: johnbina
+    variables: []
+tmp:
+  changed: 1
+  height: ~
+  log file: /root/.pac/tmp/pac_PID6461_n13.txt
+  socket: /root/.pac/sockets/pac_PID6461_n13.socket
+  uuid: pac_PID6461_n13
+  width: ~
+  xid: ~

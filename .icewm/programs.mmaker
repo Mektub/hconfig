@@ -1,0 +1,581 @@
+menu "Development" folder {
+	prog "Cervisia" - cervisia
+	prog "Fluid" - fluid
+	prog "Glade Interface Designer" - glade-3
+	prog "Hex Editor" - ghex2
+	prog "IDLE" - idle
+	prog "KAppTemplate" - kapptemplate
+	prog "KBugBuster" - kbugbuster
+	prog "KCachegrind" - kcachegrind
+	prog "KImageMapEditor" - kimagemapeditor
+	prog "KLinkStatus" - klinkstatus
+	prog "Kommander Editor" - kmdr-editor
+	prog "Kompare" - kompare
+	prog "KUIViewer" - kuiviewer
+	prog "KXSLDbg" - kxsldbg
+	prog "Lokalize" - lokalize
+	prog "Python" - xterm -e python
+	prog "Umbrello" - umbrello
+}
+menu "Editors" folder {
+	prog "AA Fire" - xterm -e aafire -driver slang
+	prog "Conglomerate XML Editor" - conglomerate
+	prog "GVim" - gvim
+	prog "Kate" - kate
+	prog "KWrite" - kwrite
+	prog "Mousepad" - mousepad
+	prog "Nano" - xterm -e nano
+	prog "Nedit" - nedit
+	prog "Text Editor" - gedit
+	prog "Vi" - xterm -e vi
+	prog "Vim" - xterm -e vim
+	prog "Xedit" - xedit
+	prog "Yudit" - yudit
+	prog "Zim Desktop Wiki" - zim
+}
+menu "Education" folder {
+	prog "Blinken" - blinken
+	prog "Kanagram" - kanagram
+	prog "KGeography" - kgeography
+	prog "KHangMan" - khangman
+	prog "Kiten" - kiten
+	prog "KLettres" - klettres
+	prog "KTouch" - ktouch
+	prog "KTurtle" - kturtle
+	prog "KWordQuiz" - kwordquiz
+	prog "Parley" - parley
+}
+menu "Games" folder {
+	menu "Amusement" folder {
+		prog "AMOR" - amor
+		prog "KTeaTime" - kteatime
+		prog "Potato Guy" - ktuberling
+		prog "Xeyes" - xeyes
+	}
+	menu "Arcade" folder {
+		prog "KBlocks" - kblocks
+		prog "KBounce" - kbounce
+		prog "KBreakOut" - kbreakout
+		prog "KGoldrunner" - kgoldrunner
+		prog "Kolf" - kolf
+		prog "kollision" - kollision
+		prog "KSpaceDuel" - kspaceduel
+		prog "PacMan" - pacman
+	}
+	menu "Board" folder {
+		prog "Bovo" - bovo
+		prog "KBlackBox" - kblackbox
+		prog "KFourInLine" - kfourinline
+		prog "Kiriki" - kiriki
+		prog "KMahjongg" - kmahjongg
+		prog "KReversi" - kreversi
+		prog "KSquares" - ksquares
+		prog "Monopoly" - xterm -e monop
+		prog "Shisen-Sho" - kshisen
+	}
+	menu "Card" folder {
+		prog "KPatience" - kpat
+		prog "LSkat" - lskat
+	}
+	menu "Puzzle" folder {
+		prog "KDiamond" - kdiamond
+		prog "ksudoku" - ksudoku
+		prog "Kubrick" - kubrick
+	}
+	menu "Strategy" folder {
+		prog "KAtomic" - katomic
+		prog "KBattleship" - kbattleship
+		prog "KJumpingCube" - kjumpingcube
+		prog "KMines" - kmines
+		prog "KNetWalk" - knetwalk
+		prog "Kolor Lines" - klines
+		prog "Konquest" - konquest
+		prog "KsirK" - ksirk
+		prog "SameGame" - ksame
+	}
+}
+menu "Graphics" folder {
+	prog "digiKam" - digikam
+	prog "F-Spot Photo Manager" - f-spot
+	prog "GNU Image Manipulation Program" - gimp-2.4
+	prog "GPicView Image Viewer" - gpicview
+	prog "GQview" - gqview
+	prog "gThumb Image Viewer" - gthumb
+	prog "Gwenview" - gwenview
+	prog "KColorChooser" - kcolorchooser
+	prog "KolourPaint" - kolourpaint
+	prog "KRuler" - kruler
+	prog "KSnapshot" - ksnapshot
+	prog "Okular" - okular
+	prog "scanimage" - xterm -e scanimage
+	prog "showFoto" - showfoto
+	prog "ShowImg" - showimg
+	prog "The GIMP" - gimp
+	prog "XGlyph" - xglyph
+}
+menu "Multimedia" folder {
+	prog "ALSA mixer" - xterm -e alsamixer
+	prog "Audacity" - audacity
+	prog "AUmix" - xterm -e aumix
+	prog "Avidemux" - avidemux_gtk
+	prog "Brasero Disc Burning" - brasero
+	prog "Dragon Player" - dragon
+	prog "dvd::rip" - dvdrip
+	prog "EasyTag" - easytag
+	prog "Gmplayer" - gmplayer
+	prog "Gnome Subtitles" - gnome-subtitles
+	prog "GtkPod" - gtkpod
+	prog "ISO Master" - isomaster
+	prog "JuK" - juk
+	prog "K3b" - k3b
+	prog "Kino" - kino
+	prog "KMix" - kmix
+	prog "KsCD" - kscd
+	prog "RealPlayer" - realplay
+	prog "SMPlayer" - smplayer
+	prog "Sound Recorder" - gnome-sound-recorder
+	prog "streamtuner" - streamtuner
+	prog "Subtitle Editor" - subtitleeditor
+	prog "todisc GUI" - xterm -e todiscgui
+	prog "tovid GUI" - tovidgui
+	prog "VLC media player" - vlc
+	prog "Volume Control" - gnome-volume-control
+	prog "Xaumix" - xaumix
+	prog "xine" - xine
+	prog "XMMS" - xmms
+	prog "XVidCap Screen Capture" - xvidcap
+}
+menu "Network" folder {
+	prog "" - bvnc
+	prog "" - bssh
+	prog "Akonaditray" - akonaditray
+	prog "Akregator" - akregator
+	prog "Browse Mirrored Websites" - webhttrack browse
+	prog "Checkgmail" - checkgmail
+	prog "Claws Mail" - claws-mail
+	prog "DBPedia References" - krubyapplication dbpedia_references/dbpedia_references.rb
+	prog "Dillo" - dillo
+	prog "Ekiga Softphone" - ekiga
+	prog "Epiphany Web Bookmarks" - epiphany --bookmarks-editor
+	prog "Epiphany Web Browser" - epiphany
+	prog "FileZilla FTP client" - filezilla
+	prog "FireFox" - firefox
+	prog "gFTP" - gftp
+	prog "Google Earth" - googleearth
+	prog "GPROFTPD" - gproftpd
+	prog "Grsync" - grsync
+	prog "hamachi-gui" - hamachi-gui
+	prog "Kandy" - kandy
+	prog "KGet" - kget
+	prog "KMail" - kmail
+	prog "KNetAttach" - knetattach
+	prog "KNetStats" - knetstats
+	prog "KNetworkManager" - knetworkmanager
+	prog "KNode" - knode
+	prog "Konqueror" - kfmclient openProfile webbrowsing
+	prog "Kopete" - kopete
+	prog "KPPP" - kppp
+	prog "KRDC" - krdc
+	prog "Krfb" - krfb
+	prog "LFTP" - xterm -e lftp
+	prog "Links" - xterm -e links
+	prog "Mail" - xterm -e mail
+	prog "Mutt" - xterm -e mutt
+	prog "ntop" - xterm -e ntop
+	prog "Opera" - opera
+	prog "pimBackup" - pimbackup.sh
+	prog "pimRestore" - pimrestore.sh
+	prog "Skype" - skype
+	prog "Telnet" - xterm -e telnet
+	prog "TkVNC" - xterm -e tkvnc
+	prog "WebHTTrack Website Copier" - webhttrack
+	prog "Wifi-radar" - sudo -S wifi-radar
+	prog "wxDownload Fast" - wxdfast
+	prog "X-Chat" - xchat
+	prog "Xbiff" - xbiff
+	prog "Xmh" - xmh
+}
+menu "Office" folder {
+	prog "AbiWord" - abiword
+	prog "Adobe Reader 8" - acroread
+	prog "KAddressBook" - kaddressbook
+	prog "KArm" - karm
+	prog "KchmViewer" - kchmviewer
+	prog "Kontact" - kontact
+	prog "KOrganizer" - korganizer
+	prog "Korn" - korn
+	prog "KPalmDOC" - kpalmdoc
+	prog "KPilot" - kpilot
+	prog "NoteCase notes manager" - notecase
+	prog "StarDict" - stardict
+	prog "Xgnokii" - xgnokii
+}
+menu "Other" folder {
+	prog "About GNOME" - gnome-about
+	prog "Akonadi Console" - akonadiconsole
+	prog "AUR" - xdg-open http://aur.archlinux.org
+	prog "Bugs" - xdg-open http://bugs.archlinux.org
+	prog "CD/DVD Creator" - nautilus --no-desktop burn:///
+	prog "Computer" - nautilus --no-desktop computer:
+	prog "Control Center" - kcontrol
+	prog "CVS" - xdg-open http://www.archlinux.org/cvs/
+	prog "Deluge BitTorrent Client" - deluge
+	prog "Developers" - xdg-open http://www.archlinux.org/developers/
+	prog "Documentation" - xdg-open http://www.archlinux.org/static/docs/arch-install-guide.html
+	prog "Donate" - xdg-open http://www.archlinux.org/donate/
+	prog "Find Files/Folders" - kfind
+	prog "Forum" - xdg-open http://bbs.archlinux.org
+	prog "Help" - yelp
+	prog "Help" - khelpcenter
+	prog "Homepage" - xdg-open http://www.archlinux.org
+	prog "KDEmod Bugtracker" - xdg-open http://www.kdemod.ath.cx/bugs
+	prog "KDEmod Forums" - xdg-open http://www.kdemod.ath.cx/bbs/
+	prog "KDEmod Website" - xdg-open http://www.kdemod.ath.cx
+	prog "Lisa" - lisa -root
+	prog "Munch" - munch -root
+	prog "Network" - nautilus --no-desktop network:
+	prog "Pacman" - pacman -root
+	prog "Schwag" - xdg-open http://www.cafeshops.com/archlinux/
+	prog "System Profiler and Benchmark" - hardinfo
+	prog "Wiki" - xdg-open http://wiki.archlinux.org
+}
+menu "Science" folder {
+	prog "bc" - xterm -e bc
+	prog "dc" - xterm -e dc
+	prog "KAlgebra" - kalgebra
+	prog "Kalzium" - kalzium
+	prog "KBruch" - kbruch
+	prog "Kig" - kig
+	prog "KmPlot" - kmplot
+	prog "KPercentage" - kpercentage
+	prog "KStars" - kstars
+	prog "Marble" - marble
+	prog "Step" - step
+	prog "Xcalc" - xcalc
+}
+menu "Shells" folder {
+	prog "Dash" - xterm -e dash -i
+	prog "Dfm" - dfm
+	prog "Dolphin" - dolphin
+	prog "Dos Emulator (tty)" - xterm -e dos
+	prog "Konsole" - konsole
+	prog "LXTerminal" - lxterminal
+	prog "Qemu Launcher" - qemu-launcher
+	prog "Rdesktop" - rdesktop
+	prog "Root Terminal" - gksu gnome-terminal
+	prog "ROXTerm" - roxterm
+	prog "rxvt-unicode" - urxvt
+	prog "Sakura" - sakura
+	prog "Sun xVM VirtualBox" - VirtualBox
+	prog "Terminal" - gnome-terminal
+	prog "Terminal" - Terminal
+	prog "Thunar File Manager" - Thunar
+	prog "Xterm" - xterm
+	prog "XTerm (Unicode)" - uxterm
+}
+menu "System" folder {
+	menu "Information" folder {
+		prog "CD-ROM Information" - kcmshell cdinfo
+		prog "Devices" - kcmshell devices
+		prog "DMA-Channels" - kcmshell dma
+		prog "IEEE 1394 Devices" - kcmshell kcmview1394
+		prog "Interrupts" - kcmshell interrupts
+		prog "IO-Ports" - kcmshell ioports
+		prog "Memory" - kcmshell memory
+		prog "Network Interfaces" - kcmshell nic
+		prog "OpenGL" - kcmshell opengl
+		prog "Partitions" - kcmshell partitions
+		prog "PCI" - kcmshell pci
+		prog "PCMCIA" - kcmshell pcmcia
+		prog "Processor" - kcmshell processor
+		prog "Protocols" - kcmshell ioslaveinfo
+		prog "Samba Status" - kcmshell smbstatus
+		prog "SCSI" - kcmshell scsi
+		prog "Sound" - kcmshell sound
+		prog "USB Devices" - kcmshell kcmusb
+		prog "X-Server" - kcmshell xserver
+	}
+	menu "Settings" folder {
+		menu "GNOME" folder {
+			prog "About Me" - gnome-about-me
+			prog "Alunn" - alunnconf
+			prog "Appearance" - gnome-appearance-properties
+			prog "Assistive Technologies" - gnome-at-properties
+			prog "File Management" - nautilus-file-management-properties
+			prog "Keyboard" - gnome-keyboard-properties
+			prog "Keyboard Shortcuts" - gnome-keybinding-properties
+			prog "Mouse" - gnome-mouse-properties
+			prog "Network Proxy" - gnome-network-preferences
+			prog "Preferred Applications" - gnome-default-applications-properties
+			prog "Printing" - gnome-cups-manager
+			prog "Privilege granting" - gksu-properties
+			prog "Removable Drives and Media" - gnome-volume-properties
+			prog "Screen Resolution" - gnome-display-properties
+			prog "Sound" - gnome-sound-properties
+			prog "Windows" - gnome-window-properties
+		}
+		menu "KDE" folder {
+			menu "Accessibility" folder {
+				prog "Accessibility" - kcmshell kcmaccess
+				prog "Country/Region & Language" - kcmshell language
+				prog "Input Actions" - kcmshell khotkeys
+				prog "Keyboard Layout" - kcmshell keyboard_layout
+				prog "Keyboard Shortcuts" - kcmshell keys
+			}
+			menu "Components" folder {
+				prog "Component Chooser" - kcmshell componentchooser
+				prog "File Associations" - kcmshell filetypes
+				prog "File Manager" - kcmshell filebrowser
+				prog "KDE Performance" - kcmshell kcmperformance
+				prog "KDE Resources" - kcmshell kresources
+				prog "Service Manager" - kcmshell kcmkded
+				prog "Session Manager" - kcmshell kcmsmserver
+				prog "Spell Checker" - kcmshell spellchecking
+			}
+			menu "Desktop" folder {
+				prog "Behavior" - kcmshell desktopbehavior
+				prog "Multiple Desktops" - kcmshell desktop
+				prog "Panels" - kcmshell panel
+				prog "Taskbar" - kcmshell kcmtaskbar
+				prog "Window Behavior" - kcmshell kwinoptions
+				prog "Window-Specific Settings" - kcmshell kwinrules
+			}
+			menu "Hardware" folder {
+				prog "Display" - kcmshell display
+				prog "Joystick" - kcmshell joystick
+				prog "Keyboard" - kcmshell keyboard
+				prog "Mouse" - kcmshell mouse
+				prog "Printers" - kcmshell printers
+			}
+			menu "Look & Feel" folder {
+				prog "Background" - kcmshell background
+				prog "Colors" - kcmshell colors
+				prog "Fonts" - kcmshell fonts
+				prog "GTK Styles and Fonts" - kcmshell kcmgtk
+				prog "Icons" - kcmshell icons
+				prog "KSM Theme Manager" - kcmshell ksmtheme
+				prog "Launch Feedback" - kcmshell kcmlaunch
+				prog "Screen Saver" - kcmshell screensaver
+				prog "Splash Screen" - kcmshell ksplashthememgr
+				prog "Style" - kcmshell style
+				prog "Theme Manager" - kcmshell kthememanager
+				prog "Window Decorations" - kcmshell kwindecoration
+			}
+			menu "Network" folder {
+				prog "Connection Preferences" - kcmshell netpref
+				prog "File Sharing" - kcmshell fileshare
+				prog "Local Network Browsing" - kcmshell lanbrowser
+				prog "Proxy" - kcmshell proxy
+				prog "Samba" - kcmshell kcmsambaconf
+				prog "Service Discovery" - kcmshell kcm_kdnssd
+			}
+			menu "Power" folder {
+				prog "Laptop Battery" - kcmshell laptop
+			}
+			menu "Security" folder {
+				prog "Crypto" - kcmshell crypto
+				prog "KDE Wallet" - kcmshell kwalletconfig
+				prog "Password & User Account" - kcmshell kcm_useraccount
+				prog "Privacy" - kcmshell privacy
+			}
+			menu "Sound" folder {
+				prog "Audio CDs" - kcmshell audiocd
+				prog "CDDB Retrieval" - kcmshell libkcddb
+				prog "Sound System" - kcmshell arts
+				prog "System Bell" - kcmshell bell
+				prog "System Notifications" - kcmshell kcmnotify
+			}
+			menu "System" folder {
+				prog "Date & Time" - kcmshell kde-clock.desktop
+				prog "Font Installer" - kcmshell kcmfontinst
+				prog "IBM Thinkpad Laptop" - kcmshell thinkpad
+				prog "Image Index" - kcmshell kcmkmrml
+				prog "Login Manager" - kcmshell kdm
+				prog "Paths" - kcmshell desktoppath
+				prog "Sony Vaio Laptop" - kcmshell kvaio
+			}
+			menu "Web" folder {
+				prog "AdBlocK Filters" - kcmshell khtml_filter
+				prog "Browser Identification" - kcmshell useragent
+				prog "Cache" - kcmshell cache
+				prog "CGI Scripts" - kcmshell kcmcgi
+				prog "Cookies" - kcmshell cookies
+				prog "History Sidebar" - kcmshell kcmhistory
+				prog "Java & JavaScript" - kcmshell khtml_java_js
+				prog "Plugins" - kcmshell khtml_plugins
+				prog "Stylesheets" - kcmshell kcmcss
+				prog "Web Behavior" - kcmshell khtml_behavior
+				prog "Web Shortcuts" - kcmshell ebrowsing
+			}
+			prog "Actions" - kcmshell kwinactions
+			prog "Advanced" - kcmshell kwinadvanced
+			prog "Appearance" - kcmshell fileappearance
+			prog "Appearance" - kcmshell kicker_appearance
+			prog "Arrangement" - kcmshell kicker_arrangement
+			prog "Behavior" - kcmshell filebehavior
+			prog "File Manager" - kfmclient openProfile filemanagement
+			prog "Focus" - kcmshell kwinfocus
+			prog "Hiding" - kcmshell kicker_hiding
+			prog "Kommander Executor" - kmdr-executor
+			prog "Konqueror Browser" - kcmshell khtml_fonts
+			prog "Konsole" - kcmshell kcmkonsole
+			prog "LAN KIO Slave" - kcmshell kcmkiolan
+			prog "LISa" - kcmshell kcmlisa
+			prog "Menus" - kcmshell kicker_menus
+			prog "Moving" - kcmshell kwinmoving
+			prog "Multiple Monitors" - kcmshell xinerama
+			prog "Performance" - kcmshell kcmkonqyperformance
+			prog "Power Control" - kcmshell energy
+			prog "Previews & Meta-Data" - kcmshell filepreviews
+			prog "Quick Copy & Move Plugin" - kcmshell kcmkuick
+			prog "ResLISa" - kcmshell kcmreslisa
+			prog "Size & Orientation" - kcmshell randr
+			prog "Storage Media" - kcmshell media
+			prog "Translucency" - kcmshell kwintranslucency
+			prog "Windows Shares" - kcmshell smb
+		}
+		menu "Xfce" folder {
+			prog "Xfce 4 Autostarted Applications" - xfce4-autostart-editor
+			prog "Xfce 4 Desktop Settings" - xfce-setting-show backdrop
+			prog "Xfce 4 Display Settings" - xfce-setting-show display
+			prog "Xfce 4 Keyboard Settings" - xfce-setting-show keyboard
+			prog "Xfce 4 Menu Editor" - xfce4-menueditor
+			prog "Xfce 4 Mixer Settings" - xfce-setting-show sound
+			prog "Xfce 4 Mouse Settings" - xfce-setting-show mouse
+			prog "Xfce 4 Panel Manager" - xfce4-panel -c
+			prog "Xfce 4 Preferred Applications" - exo-preferred-applications
+			prog "Xfce 4 Printing System Settings" - xfce-setting-show printing_system
+			prog "Xfce 4 Sessions and Startup Settings" - xfce-setting-show session
+			prog "Xfce 4 Settings Manager" - xfce-setting-show
+			prog "Xfce 4 Splash Screen Settings" - xfce-setting-show splash
+			prog "Xfce 4 User Interface Settings" - xfce-setting-show ui
+			prog "Xfce 4 Window Manager Settings" - xfce-setting-show xfwm4
+			prog "Xfce 4 Window Manager Tweaks" - xfce-setting-show wmtweaks
+			prog "Xfce 4 Workspaces Settings" - xfce-setting-show workspaces
+		}
+		prog "Appearance" - lxappearance
+		prog "Default Printer" - my-default-printer
+		prog "Menu Updating Tool" - kappfinder
+		prog "Openbox Configuration Manager" - obconf
+		prog "Printing" - system-config-printer
+		prog "Screensaver" - xscreensaver-demo
+		prog "Screensaver" - gnome-screensaver-preferences
+		prog "Sessions" - gnome-session-properties
+		prog "Wallet Management Tool" - kwalletmanager
+		prog "Xvidtune" - xvidtune
+	}
+	prog "archassistant" - archassistant
+	prog "Avahi Zeroconf Browser" - avahi-discover
+	prog "Blank Screen" - kblankscrn.kss
+	prog "Bulk Rename" - /usr/lib/xfce4/ThunarBulkRename
+	prog "Catfish" - catfish
+	prog "Configuration Editor" - gconf-editor
+	prog "Device Manager" - gnome-device-manager
+	prog "File Browser" - nautilus --no-desktop
+	prog "GDM flexiserver" - gdmflexiserver
+	prog "GDM flexiserver in Xnest" - gdmflexiserver -n
+	prog "GDM Photo Setup" - gdmphotosetup
+	prog "GDM Setup" - gksu gdmsetup
+	prog "GKrellM" - gkrellm
+	prog "Gnome SuperUser" - gnomesu
+	prog "GParted Partition Editor" - gparted
+	prog "Htop" - xterm -e htop
+	prog "Imlib Config" - imlib_config
+	prog "KDEmod theme settings" - kmdr-executor /opt/kde/bin/kdemod_theme_settings.kmdr
+	prog "KDiskFree" - kdf
+	prog "KInfoCenter" - kinfocenter
+	prog "KRandRTray" - krandrtray
+	prog "KSystemLog" - ksystemlog
+	prog "KUser" - kuser
+	prog "KwikDisk" - kwikdisk
+	prog "Manage Printing" - xdg-open http://localhost:631/
+	prog "Nautilus" - nautilus
+	prog "NVIDIA X Server Settings" - nvidia-settings
+	prog "Print Notification Icon" - gnome-cups-icon
+	prog "pstree" - xterm -e /usr/bin/pstree.x11
+	prog "pstree" - xterm -e pstree
+	prog "pstree" - xterm -e pstree.x11
+	prog "Random" - krandom.kss
+	prog "Shaman" - shaman
+	prog "System Monitor" - ksysguard
+	prog "Task Manager" - lxtask
+	prog "Top" - xterm -e top
+	prog "Xconsole" - xconsole
+	prog "XLoad" - xload
+}
+menu "Utilities" folder {
+	prog "Activate ScreenSaver (Next)" - xscreensaver-command -next
+	prog "Activate ScreenSaver (Previous)" - xscreensaver-command -prev
+	prog "Activate ScreenSaver (Random)" - xscreensaver-command -activate
+	prog "AllTray" - alltray
+	prog "Archive Manager" - file-roller
+	prog "Ark" - ark
+	prog "Calculator" - gcalctool
+	prog "Character Map" - gucharmap
+	prog "ChBg" - chbg
+	prog "Colour chooser" - xcolorsel
+	prog "Conduit Synchronizer" - conduit
+	prog "Demo Screen Hacks" - xscreensaver-command -demo
+	prog "Disable XScreenSaver" - xscreensaver-command -exit
+	prog "Editres" - editres
+	prog "Enable XScreenSaver" - xscreensaver
+	prog "File Size Viewer" - fsview
+	prog "Filelight" - filelight
+	prog "Galculator" - galculator
+	prog "Graveman" - graveman
+	prog "HP Device Manager" - hp-toolbox
+	prog "Info" - xterm -e info
+	prog "KAlarm" - kalarm
+	prog "KCalc" - kcalc
+	prog "KCharSelect" - kcharselect
+	prog "KDE Groupware Wizard" - groupwarewizard
+	prog "KdeprintFax" - kdeprintfax
+	prog "KFileReplace" - kfilereplace
+	prog "KFloppy" - kfloppy
+	prog "KFontView" - kfontview
+	prog "KGpg" - kgpg
+	prog "KitchenSync" - kitchensync
+	prog "KJobViewer" - kjobviewer --all
+	prog "KJots" - kjots
+	prog "Klipper" - klipper
+	prog "KMag" - kmag
+	prog "KMouseTool" - kmousetool
+	prog "KMouth" - kmouth
+	prog "KNotes" - knotes
+	prog "KTimer" - ktimer
+	prog "KTimeTracker" - ktimetracker
+	prog "KTip" - ktip
+	prog "KTnef" - ktnef
+	prog "kttsmgr" - kttsmgr
+	prog "Oclock" - oclock
+	prog "Okteta" - okteta
+	prog "Qalculate!" - qalculate-gtk
+	prog "Reinitialize XScreenSaver" - xscreensaver-command -restart
+	prog "Revelation Password Manager" - revelation
+	prog "ScreenSaver Preferences" - xscreensaver-command -prefs
+	prog "Search for Files or Folders" - pcmanfm
+	prog "Smb4K" - smb4k
+	prog "Squeeze" - squeeze
+	prog "SuperKaramba" - superkaramba
+	prog "Sweeper" - sweeper
+	prog "Tomboy Notes" - tomboy --search
+	prog "Viewres" - viewres
+	prog "Xarchiver" - xarchiver
+	prog "Xclipboard" - xclipboard
+	prog "Xclock (analog)" - xclock -analog
+	prog "Xclock (digital)" - xclock -digital
+	prog "Xclock (digital)" - xclock -digital -update 1
+	prog "Xcutsel" - xcutsel
+	prog "Xev" - xterm -e xev
+	prog "Xfce 4 Appfinder" - xfce4-appfinder
+	prog "Xfce 4 Print Dialog" - xfprint4
+	prog "Xfce 4 Print Manager" - xfprint4-manager
+	prog "XFontSel" - xfontsel
+	prog "xkeycaps" - xkeycaps
+	prog "Xkill" - xkill
+	prog "Xlogo" - xlogo
+	prog "Xmag" - xmag
+	prog "Xman" - xman
+	prog "Xrefresh" - xrefresh
+	prog "Xsetroot" - xsetroot
+}

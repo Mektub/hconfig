@@ -1,0 +1,59 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+
+
+#!/bin/sh
+
+CRT=`xrandr | grep "DFP1 connected"`
+if [ "x${CRT}x" != "xx" ]; then
+#  xrandr --output LVDS --off --output DFP1 --mode 1680x1050 --pos 0x0 --rotate normal
+   xrandr --output LVDS --mode 1366x768 --pos 0x0 --rotate normal  --output DFP1 --mode 1680x1050 --pos 0x0 --rotate normal
+fi
+
+xhost + &
+setxkbmap pt &
+xfsettingsd &
+(sleep 30; xmodmap ~/.Xmodmap) &
+xbindkeys &
+nitrogen --restore
+
+aplay /opt/MyDocs/Sounds/katapum.wav &
+/usr/bin/adeskbar &
+#usr/bin/conky -c /root/Conky/conkyCalendar/conkyrc &
+
+gnote --note-path=/root/Dropbox/Gnote &
+checkgmail &
+/usr/bin/gvolwheel &
+archassistant &
+/usr/bin/dropboxd &
+xcompmgr &
+
+Terminal --geometry=119x27+64+86 --hide-menubar -T Everything \
+         --command "tail -f /var/log/everything.log" \
+         --tab -T "Shell 1" --tab -T "Shell 2" --tab -T "Shell 3" &
+
+
+
+xset s 1800
+xset dpms 1800 1800 1800
+wicd-gtk &
+
+#gkrellm &
+#/root/bin/SynergyStart
+
+# Applications you want to run with fluxbox.
+
+devilspie &
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+terminator &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/root/.fluxbox/log"

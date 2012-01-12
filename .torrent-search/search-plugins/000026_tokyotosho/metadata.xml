@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000026_tokyotosho" version="0.2.0">
+  <title>Tokyo Toshokan</title>
+  <released_time>2011-10-20 06:15:59</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>tokyotosho.py</filename>
+  <classname>TokyoToshokanPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000026_tokyotosho/0.2.0/</download_url>
+  <website_url>http://tokyotosho.info/</website_url>
+  <icon_url>http://s3.tokyotosho.info/favicon.png</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>true</default_disable>
+</plugin>

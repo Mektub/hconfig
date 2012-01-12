@@ -1,0 +1,28 @@
+/* XPM */
+static char *arcem_16x16[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        5            1",
+/* colors */
+". c #ffffff",
+"# c #004499",
+"a c #eeee00",
+"b c #dd0000",
+"c c #00bbff",
+/* pixels */
+"#cccc###########",
+"cccccc########.#",
+"cc##cc#######..#",
+"cc##cc######...#",
+"cccccc#####..b.#",
+"cccccc####..b..#",
+"cc##cc###..bbb.#",
+"cc##cc##..bbb..#",
+"cc##cc#..bbbbb.#",
+"######.........#",
+"#####..........#",
+"####...aaaaaa..#",
+"###...aaaaaaa..#",
+"##...aaaaaaaa..#",
+"#...aaaaaaaaa..#",
+"...aaaaaaaaaa..#"
+};

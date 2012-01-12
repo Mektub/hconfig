@@ -1,0 +1,194 @@
+### GKrellM user config.  Auto written, do not edit (usually) ###
+### Version 2.3.5 ###
+enable_hostname 1
+hostname_short 0
+enable_sysname 0
+mbmon_port 0
+sticky_state 0
+dock_type 0
+decorated 0
+skip_taskbar 0
+skip_pager 0
+above 0
+below 0
+track_gtk_theme_name 0
+default_track_theme "Default"
+save_position 1
+chart_width 105
+update_HZ 5
+allow_multiple_instances 0
+float_factor 1000
+hostname sysname_mode 1
+clock_cal clock_launch 
+clock_cal clock_tooltip 
+clock_cal cal_launch 
+clock_cal cal_tooltip 
+clock_cal hour_chime_command 
+clock_cal quarter_chime_command 
+clock_cal loop_chime_enable 0
+clock_cal clock_options 1
+clock_cal cal_options 1
+clock_cal cal_format %a <span foreground="$A"><big><big>%e</big></big></span> %b
+clock_cal clock_format %k:%M <span foreground="$A"><small>%S</small></span>
+moon longitude 9
+moon latitude 38
+moon age 1
+moon fraction 1
+moon illumination 1
+moon visible 1
+moon risefall 1
+gkrellweather chart_visible 0
+gkrellweather panel_visible 1
+gkrellweather metric 1
+gkrellweather update_interval 15
+gkrellweather switch_interval 0
+gkrellweather wind_chill 0
+gkrellweather windspeed_unit 1
+gkrellweather pressure_unit 1
+gkrellweather station LPPT
+gkrellweather command /usr/share/gkrellm/GrabWeather LPPT
+gkrellweather filename /root/.wmWeatherReports/LPPT.dat
+cpu extra_info cpu 1
+cpu chart_config cpu 40 20 0 0 0 0 : 0 0 0 0 500 : 0 0 0 0 500 : 0 0 0 0 500
+cpu extra_info cpu0 1
+cpu chart_config cpu0 40 20 0 0 0 0 : 0 0 0 0 500 : 0 0 0 0 500 : 0 0 0 0 500
+cpu extra_info cpu1 1
+cpu chart_config cpu1 40 20 0 0 0 0 : 0 0 0 0 500 : 0 0 0 0 500 : 0 0 0 0 500
+cpu extra_info cpu2 1
+cpu chart_config cpu2 40 20 0 0 0 0 : 0 0 0 0 500 : 0 0 0 0 500 : 0 0 0 0 500
+cpu extra_info cpu3 1
+cpu chart_config cpu3 40 20 0 0 0 0 : 0 0 0 0 500 : 0 0 0 0 500 : 0 0 0 0 500
+cpu enable 0
+cpu smp_mode 0
+cpu omit_nice_mode 0
+cpu config_tracking 0
+cpu sensor_mode 0
+cpu text_format $T
+proc enable 0 1
+proc launch (null)
+proc tooltip_comment (null)
+proc sensor_mode 0
+proc text_format \w88\a$p\f procs\n\e$u\f users
+proc chart_config 40 100 0 0 0 0 : 1 0 0 0 500 : 0 0 0 0 500
+disk assign_method 2
+disk device Disk 0 0 0 0 1 0 0
+disk chart_config Disk 40 100000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+disk device sdc 0 0 11 0 1 -1 0
+disk device sdc1 0 0 11 0 1 1 0
+disk device sdc2 0 0 11 0 1 2 0
+disk device sdb 0 0 11 0 1 -1 0
+disk device sdb1 0 0 11 0 1 1 0
+disk device sdb2 0 0 11 0 1 2 0
+disk device sdb3 0 0 11 0 1 3 0
+disk device sdb4 0 0 11 0 1 4 0
+disk device sdb5 0 0 11 0 1 5 0
+disk device sdb6 0 0 11 0 1 6 0
+disk device sdb7 0 0 11 0 1 7 0
+disk device sda 0 0 11 0 1 -1 0
+disk device sda1 0 0 11 0 1 1 0
+disk device sda2 0 0 11 0 1 2 0
+disk device sda3 0 0 11 0 1 3 0
+disk device sda4 0 0 11 0 1 4 0
+disk device sda5 0 0 11 0 1 5 0
+disk device sda6 0 0 11 0 1 6 0
+disk device sda7 0 0 11 0 1 7 0
+disk device sda8 0 0 11 0 1 8 0
+disk device sda9 0 0 11 0 1 9 0
+disk device sda10 0 0 11 0 1 10 0
+disk device sda11 0 0 11 0 1 11 0
+disk device sda12 0 0 11 0 1 12 0
+disk device sda13 0 0 11 0 1 13 0
+disk device sr0 0 0 14 0 1 -1 0
+disk text_format $T
+inet text_format all \t$a\f $l\N$A\f $L
+inet update_interval all 1
+net enables eth0 0 1 0
+net chart_config eth0 40 20000 0 1 0 0 : 0 0 0 0 500 : 0 0 0 0 500
+net enables eth1 0 1 0
+net enables lo 0 1 0
+net enables wlan0 0 1 0
+net timer_enabled 0
+net timer_seconds 0
+net timer_iface none
+net timer_on 
+net timer_off 
+net text_format $T\b\c\f$L
+net reset_mday 1
+net net_stats_window_height 200
+meminfo mem_meter 0 0 0
+meminfo swap_meter 0 0
+meminfo swap_chart 0 1
+meminfo mem_launch 
+meminfo mem_tooltip 
+meminfo mem_data_format $t - $f free
+meminfo swap_launch 
+meminfo swap_tooltip 
+meminfo swap_data_format $t - $f free
+meminfo text_format $T
+fs fs_check_timeout 2
+fs nfs_check_timeout 16
+fs auto_eject 0
+fs binary_units 0
+fs data_format $t - $f free
+mail mailbox-local mbox /var/spool/mail/john
+mail mailbox-local mbox /var/spool/mail/johnr
+mail mailbox-local mbox /var/spool/mail/Foruns
+mail mailbox-local mbox /var/spool/mail/ArchNews
+mail mailbox-local mbox /var/spool/mail/AurDev
+mail mailbox-local mbox /var/spool/mail/AurGeneral
+mail mailbox-local mbox /var/spool/mail/MailList
+mail mailbox-local mbox /var/spool/mail/TansoDaSilva
+mail mua claws-mail
+mail notify aplay /opt/MyDocs/Sounds/info.wav
+mail fetch_command 
+mail remote_check_timeout 5
+mail local_check_timeout 100
+mail fetch_check_is_local 0
+mail msg_count_mode 0
+mail animation_select_mode 0
+mail fetch_check_only_mode 0
+mail reset_remote_mode 0
+mail unseen_is_new 0
+mail enable 1 0 0 0
+mail animation_continuous 0
+mail show_tooltip 1
+mail mh_seq_ignore 0
+mailwatch_plugin_config toggles 65535
+mailwatch_plugin_config animation_steps 0
+mailwatch_plugin_config mailpanel John
+mailwatch_plugin_config ticks 120
+mailwatch_plugin_config mailbox /var/spool/mail/john
+mailwatch_plugin_config mailpanel Johnr
+mailwatch_plugin_config ticks 120
+mailwatch_plugin_config mailbox /var/spool/mail/johnr
+mailwatch_plugin_config mailpanel Foruns
+mailwatch_plugin_config ticks 120
+mailwatch_plugin_config mailbox /var/spool/mail/Foruns
+mailwatch_plugin_config mailpanel ArchNews
+mailwatch_plugin_config ticks 120
+mailwatch_plugin_config mailbox /var/spool/mail/ArchNews
+mailwatch_plugin_config mailpanel AurDev
+mailwatch_plugin_config ticks 120
+mailwatch_plugin_config mailbox /var/spool/mail/AurDev
+mailwatch_plugin_config mailpanel AurGen
+mailwatch_plugin_config ticks 120
+mailwatch_plugin_config mailbox /var/spool/mail/AurGeneral
+mailwatch_plugin_config mailpanel Mlist
+mailwatch_plugin_config ticks 120
+mailwatch_plugin_config mailbox /var/spool/mail/MailList
+mailwatch_plugin_config mailpanel Tanso
+mailwatch_plugin_config ticks 120
+mailwatch_plugin_config mailbox /var/spool/mail/TansoDaSilva
+volume_plugin_config RIGHT_CLICK_CMD 
+battery enable 0
+battery enable_composite 0
+battery estimate_time 0
+battery estimate_time_discharge 1500
+battery estimate_time_charge 3000
+battery estimate_time_charge_model 0
+battery full_cap_fallback 5000
+battery poll_interval 5
+battery alert_units_percent 0
+uptime enable 1
+uptime launch 
+uptime tooltip 

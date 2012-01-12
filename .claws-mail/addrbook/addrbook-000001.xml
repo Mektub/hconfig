@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<address-book name="Common addresses" >
+  <person uid="235458509" first-name="" last-name="" nick-name="" cn="João Luís Pena" >
+    <address-list>
+      <address uid="235458510" alias="" email="jotapena@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+    </attribute-list>
+  </person>
+</address-book>

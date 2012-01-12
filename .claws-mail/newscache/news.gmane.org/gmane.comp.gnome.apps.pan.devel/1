@@ -1,0 +1,96 @@
+Path: main.gmane.org!not-for-mail
+From: Evan Martin <martine-GmWTxIRN22iJaUV4rX00uodd74u8MsAO@public.gmane.org>
+Newsgroups: gmane.comp.gnome.apps.pan.devel
+Subject: pan, gtkspell, and specifying your language
+Date: Thu, 01 Aug 2002 22:24:06 -0700
+Lines: 44
+Sender: pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+Approved: news@gmane.org
+Message-ID: <3D4A1776.2060105@cs.washington.edu>
+Reply-To: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+NNTP-Posting-Host: localhost.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Trace: main.gmane.org 1028265873 25490 127.0.0.1 (2 Aug 2002 05:24:33 GMT)
+X-Complaints-To: usenet@main.gmane.org
+NNTP-Posting-Date: Fri, 2 Aug 2002 05:24:33 +0000 (UTC)
+Return-path: <pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>
+Original-Received: from fencepost.gnu.org ([199.232.76.164])
+	by main.gmane.org with esmtp (Exim 3.33 #1 (Debian))
+	id 17aUvP-0006d1-00
+	for <gcgapd-pan-@public.gmane.org>; Fri, 02 Aug 2002 07:24:32 +0200
+Original-Received: from localhost ([127.0.0.1] helo=fencepost.gnu.org)
+	by fencepost.gnu.org with esmtp (Exim 3.35 #1 (Debian))
+	id 17aUvu-00048z-00; Fri, 02 Aug 2002 01:25:02 -0400
+Original-Received: from rwcrmhc51.attbi.com ([204.127.198.38])
+	by fencepost.gnu.org with smtp (Exim 3.35 #1 (Debian))
+	id 17aUv2-00045l-00; Fri, 02 Aug 2002 01:24:08 -0400
+Original-Received: from cs.washington.edu ([12.231.117.47]) by rwcrmhc51.attbi.com
+          (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP
+          id <20020802052407.ZYPG19356.rwcrmhc51.attbi.com-GmWTxIRN22iJaUV4rX00uodd74u8MsAO@public.gmane.org>;
+          Fri, 2 Aug 2002 05:24:07 +0000
+User-Agent: Mozilla/5.0 (X11; U; Linux ppc; en-US; rv:1.0.0) Gecko/20020614 Debian/1.0.0-3
+X-Accept-Language: en
+Original-To: pan-users-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org, 
+ pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org, 
+ gtkspell-devel-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org
+Errors-To: pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+X-BeenThere: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsNcOa+i2P73dg@public.gmane.org>
+List-Post: <mailto:pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>
+List-Subscribe: <http://mail.freesoftware.fsf.org/mailman/listinfo/pan-devel>,
+	<mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsM0zj+wxrhfeaQyC0oar+/r@public.gmane.org>
+List-Id: Discussions of Pan source code hacking. <pan-devel.mail.freesoftware.fsf.org>
+List-Unsubscribe: <http://mail.freesoftware.fsf.org/mailman/listinfo/pan-devel>,
+	<mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsOyq+daOM+IDKqXwboT3ro7@public.gmane.org>
+List-Archive: <http://mail.freesoftware.fsf.org/pipermail/pan-devel/>
+Xref: main.gmane.org gmane.comp.gnome.apps.pan.devel:1
+X-Report-Spam: http://spam.gmane.org/gmane.comp.gnome.apps.pan.devel:1
+
+Hello all,
+I am the author GtkSpell.  GtkSpell 2 isn't very popular (I just wrote 
+it recently!) so I figure the Pan users are the people I should ask 
+about features.  :)
+
+I'm working on GtkSpell 2.0.1 which should drop-in in place of GtkSpell 
+2.0.0.  (I plan to eventually make a GtkSpell 2.1 which will break 
+backward compatibility but work a bit more cleanly, but that will happen 
+  sometime in the future.)
+
+I've had a few requests for supporting alternate languages (such as this 
+one: 
+http://mail.freesoftware.fsf.org/pipermail/pan-users/2002-July/001284.html 
+  ) and I was wondering how foreign-language users actually specify 
+their language.
+
+Do you normally set an environment variable?  Which one (LANG, LC_ALL)?
+If that variable is set to a language other than English, would it make 
+  sense for GtkSpell to default to a language other than English, or do 
+we need the applications (Pan, LogJam) to allow you to specify the 
+language you're writing in?
+(I can imagine wanting to write different messages in different 
+languages... but for now, what should GtkSpell default to: English? 
+Your locale-provided language?)
+
+
+As for some other concerns I've seen here:  Yes, I know the 
+word-breaking doesn't work quite right, especially in a word like 
+"I've".  I've been relying on Pango (the internationalization module of 
+Gtk) to tell me where the word breaks are, but apparently it's lying. :)
+In any case, I'm aware of this issue, and I've mailed the Pango 
+developer about this (though it was a while ago and he never responded; 
+time to bug him again?).
+Worst case, I can write my own word-breaking code.  (The linguists 
+around here might shudder at the thought, but it appears pspell [the 
+backend of GtkSpell] doesn't support languages like Japanese [where 
+determining word boundaries is Very Hard].)
+
+
+Finally, if you have any suggestions or bug reports related to spell 
+checking, feel free to send them to me directly.
+
+Thanks,
+Evan Martin <martine-GmWTxIRN22iJaUV4rX00uodd74u8MsAO@public.gmane.org>

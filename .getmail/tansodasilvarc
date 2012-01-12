@@ -1,0 +1,20 @@
+
+[options]
+verbose = 0
+read_all = false
+delete = false
+message_log_syslog = true
+message_log = ~/.getmail/Log/tansodasilva.log
+
+[retriever]
+type = SimplePOP3SSLRetriever
+server = pop.gmail.com
+username = tansodasilva@gmail.com
+port = 995
+password = saguin69
+
+[destination]
+type = MDA_external
+path = /usr/bin/procmail
+allow_root_commands = true
+unixfrom = true

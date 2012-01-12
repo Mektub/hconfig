@@ -1,0 +1,11 @@
+/etc/rc.conf;/etc/rc.conf;
+/etc/pacman.conf;/etc/pacman.conf;
+/etc/X11/xorg.conf;/etc/X11/xorg.conf;
+/etc/profile;/etc/profile;
+/etc/locale.gen;/etc/locale.gen;
+/etc/resolv.conf;/etc/resolv.conf;
+/etc/hosts;/etc/hosts;
+/etc/fstab;/etc/fstab;
+/boot/grub/menu.lst;/boot/grub/menu.lst;
+/etc/samba/smb.conf;/etc/samba/smb.conf;
+/etc/rc.local;/etc/rc.local;

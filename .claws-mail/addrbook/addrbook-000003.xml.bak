@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<address-book name="LDIF Import" >
+  <person uid="235459036" first-name="Antonio" last-name="Mendes" nick-name="Obelix" cn="Antonio Mendes" >
+    <address-list>
+      <address uid="235459037" alias="" email="antonio.mendes@letswork.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Antonio M Mendes,mail=antonio.mendes@letswork.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459038" first-name="Maria" last-name="Pena" nick-name="" cn="Maria Pena" >
+    <address-list>
+      <address uid="235459039" alias="" email="bucinhas@netcabo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Maria Pena,mail=bucinhas@netcabo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458970" first-name="Francisco" last-name="Teixeira" nick-name="" cn="Francisco Teixeira" >
+    <address-list>
+      <address uid="235458971" alias="" email="francisco.teixeira@pt.mcd.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Francisco Teixeira,mail=francisco.teixeira@pt.mcd.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458972" first-name="Frederico" last-name="Afonso" nick-name="Xaparro" cn="Frederico Afonso" >
+    <address-list>
+      <address uid="235458973" alias="" email="frederico.afonso@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Frederico Afonso,mail=frederico.afonso@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458974" first-name="Susana" last-name="Fernandes" nick-name="Susie" cn="Susana Fernandes" >
+    <address-list>
+      <address uid="235458975" alias="" email="susana.c.fernandes@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Susana Fernandes,mail=susana.c.fernandes@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458976" first-name="Joana Micaela" last-name="Silva" nick-name="" cn="Joana Micaela Silva" >
+    <address-list>
+      <address uid="235458977" alias="" email="joana.silva@isbs.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Joana Micaela Silva,mail=joana.silva@isbs.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459141" first-name="" last-name="Vilares" nick-name="" cn="Vilares" >
+    <address-list>
+      <address uid="235459142" alias="" email="altodabroca@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Vilares,mail=altodabroca@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458978" first-name="João Manuel" last-name="Carraça" nick-name="Carraçómetro" cn="João Manuel Carraça" >
+    <address-list>
+      <address uid="235458979" alias="" email="joao.carraca@fnac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=João Manuel Carraça,mail=joao.carraca@fnac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459143" first-name="Sara Micaela" last-name="Silva" nick-name="" cn="Sara Micaela Silva" >
+    <address-list>
+      <address uid="235459144" alias="" email="sara.silva@sas.ul.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Sara Micaela Silva,mail=sara.silva@sas.ul.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458921" first-name="António" last-name="Rebelo" nick-name="Bocas" cn="António Rebelo" >
+    <address-list>
+      <address uid="235458922" alias="" email="ant_rebelo@clix.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=António Rebelo,mail=ant_rebelo@clix.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459145" first-name="Tiago" last-name="Quininha Faria" nick-name="" cn="Tiago Quininha Faria" >
+    <address-list>
+      <address uid="235459146" alias="" email="tfaria@itqb.unl.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Tiago Quininha Faria,mail=tfaria@itqb.unl.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458923" first-name="Ângelo" last-name="Henriques" nick-name="" cn="Ângelo Henriques" >
+    <address-list>
+      <address uid="235458924" alias="" email="angelohenriques@oniduo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Ângelo Henriques,mail=angelohenriques@oniduo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459147" first-name="Rosa" last-name="Paiva" nick-name="Rosinha" cn="Rosa Paiva" >
+    <address-list>
+      <address uid="235459148" alias="" email="mrp@mail.fct.unl.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Rosa Paiva,mail=mrp@mail.fct.unl.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458925" first-name="Paulo" last-name="Simoes" nick-name="" cn="Paulo Simoes" >
+    <address-list>
+      <address uid="235458926" alias="" email="Paulo.Simoes@colt.net" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Paulo Simoes,mail=Paulo.Simoes@colt.net</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459090" first-name="Pedro" last-name="Bravo" nick-name="" cn="Pedro Bravo" >
+    <address-list>
+      <address uid="235459091" alias="" email="pedro.bravo@uanetuane.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Pedro Bravo,mail=pedro.bravo@uanetuane.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459149" first-name="Luís" last-name="Reis" nick-name="" cn="Luís Reis" >
+    <address-list>
+      <address uid="235459150" alias="" email="lreis@olivetti.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Luís Reis,mail=lreis@olivetti.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458927" first-name="Jana" last-name="Ferreira" nick-name="" cn="Jana Ferreira" >
+    <address-list>
+      <address uid="235458928" alias="" email="rop38765@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Jana Ferreira,mail=rop38765@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459092" first-name="Luís" last-name="Faehr de Abreu" nick-name="" cn="Luís Faehr de Abreu" >
+    <address-list>
+      <address uid="235459093" alias="" email="Luis_Abreu@hp.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Luís Faehr de Abreu,mail=Luis_Abreu@hp.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458929" first-name="José" last-name="de Loureiro" nick-name="" cn="José de Loureiro" >
+    <address-list>
+      <address uid="235458930" alias="" email="joselloureiro@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=José Leal de Loureiro,mail=joselloureiro@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459094" first-name="Octávio" last-name="Teixeira" nick-name="" cn="Octávio Teixeira" >
+    <address-list>
+      <address uid="235459095" alias="" email="nomadas@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Octávio Teixeira,mail=nomadas@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459096" first-name="Conceição" last-name="Barros" nick-name="" cn="Conceição Barros" >
+    <address-list>
+      <address uid="235459097" alias="" email="m.c.barros@iol.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Conceição Barros,mail=m.c.barros@iol.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459040" first-name="Luís" last-name="de Melo" nick-name="O Gordo" cn="Luís de Melo" >
+    <address-list>
+      <address uid="235459041" alias="" email="luisdemello@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Luís de Melo,mail=luisdemello@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459098" first-name="BCP" last-name="Antunes" nick-name="" cn="BCP Antunes" >
+    <address-list>
+      <address uid="235459099" alias="" email="pedro.baptistaantunes@millenniumbcp.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=BCP - Pedro Antunes,mail=pedro.baptistaantunes@millenniumbcp.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459042" first-name="Maria" last-name="Ferreira" nick-name="" cn="Maria Ferreira" >
+    <address-list>
+      <address uid="235459043" alias="" email="maria.ferreira@t-online.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Maria Ferreira,mail=maria.ferreira@t-online.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459044" first-name="Armando" last-name="Machado" nick-name="Lunático" cn="Armando Machado" >
+    <address-list>
+      <address uid="235459045" alias="" email="armac@netcabo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Armando Machado,mail=armac@netcabo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459046" first-name="Dinis" last-name="Abreu" nick-name="" cn="Dinis Abreu" >
+    <address-list>
+      <address uid="235459047" alias="" email="dinis.abreu@netcabo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Dinis de Abreu,mail=dinis.abreu@netcabo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459048" first-name="Ana" last-name="Isabel" nick-name="AI" cn="Ana Isabel" >
+    <address-list>
+      <address uid="235459049" alias="" email="isabelbagio@hotmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Ana Isabel,mail=isabelbagio@hotmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458980" first-name="Carlos" last-name="Marques" nick-name="" cn="Carlos Marques" >
+    <address-list>
+      <address uid="235458981" alias="" email="carlos_marques437@hotmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Carlos Marques,mail=carlos_marques437@hotmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458982" first-name="Luís" last-name="Malaquias" nick-name="" cn="Luís Malaquias" >
+    <address-list>
+      <address uid="235458983" alias="" email="luis.malaquias.ecoffice@clix.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Luís Malaquias,mail=luis.malaquias.ecoffice@clix.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458984" first-name="Adán" last-name="Ortiz" nick-name="" cn="Adán Ortiz" >
+    <address-list>
+      <address uid="235458985" alias="" email="Adanro@fim.ucl.edu.cu" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Adán Ortiz,mail=Adanro@fim.ucl.edu.cu</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458986" first-name="Henrique" last-name="Freire" nick-name="Gáz Cidla" cn="Henrique Freire" >
+    <address-list>
+      <address uid="235458987" alias="" email="hsyder@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Henrique Syder Freire,mail=hsyder@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459151" first-name="Piedade" last-name="Gralha" nick-name="Pia" cn="Piedade Gralha" >
+    <address-list>
+      <address uid="235459152" alias="" email="avis.adsum@sapo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Piedade Gralha,mail=avis.adsum@sapo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458988" first-name="Jan" last-name="Ferreira" nick-name="" cn="Jan Ferreira" >
+    <address-list>
+      <address uid="235458989" alias="" email="mousaique@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Jan Bammel Ferreira,mail=mousaique@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459153" first-name="Virgílio" last-name="Vaz" nick-name="" cn="Virgílio Vaz" >
+    <address-list>
+      <address uid="235459154" alias="" email="virgiliovaz@sapo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Virgílio Vaz,mail=virgiliovaz@sapo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458931" first-name="Manuel" last-name="Vitorino" nick-name="Manel da Irmi" cn="Manuel Vitorino" >
+    <address-list>
+      <address uid="235458932" alias="" email="mvitorino@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Manuel Vitorino,mail=mvitorino@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459155" first-name="Luís" last-name="Silva" nick-name="" cn="Luís Silva" >
+    <address-list>
+      <address uid="235459156" alias="" email="Luis.Silva@pt.ibm.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Luís Silva,mail=Luis.Silva@pt.ibm.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458933" first-name="Marie" last-name="Muñoz" nick-name="" cn="Marie Muñoz" >
+    <address-list>
+      <address uid="235458934" alias="" email="munoz@ehess.fr" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Marie Claude Muñoz,mail=munoz@ehess.fr</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459157" first-name="Sérgio" last-name="Peres" nick-name="" cn="Sérgio Peres" >
+    <address-list>
+      <address uid="235459158" alias="" email="Sergio.Peres@airc.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Sérgio Peres,mail=Sergio.Peres@airc.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458935" first-name="Ulrike" last-name="Stöfen" nick-name="" cn="Ulrike Stöfen" >
+    <address-list>
+      <address uid="235458936" alias="" email="ulrike.stoefen@t-online.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Ulrike Stöfen,mail=ulrike.stoefen@t-online.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459100" first-name="José" last-name="Pinto" nick-name="" cn="José Pinto" >
+    <address-list>
+      <address uid="235459101" alias="" email="jose.pinto@cspb.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=José Pinto,mail=jose.pinto@cspb.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459159" first-name="Ana" last-name="Mendes" nick-name="" cn="Ana Mendes" >
+    <address-list>
+      <address uid="235459160" alias="" email="ammendes@montepio.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Ana Cristina Mendes,mail=ammendes@montepio.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458937" first-name="António" last-name="Avaria" nick-name="" cn="António Avaria" >
+    <address-list>
+      <address uid="235458938" alias="" email="antavaria@yahoo.es" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=António Avaria,mail=antavaria@yahoo.es</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459102" first-name="José" last-name="Reyes" nick-name="" cn="José Reyes" >
+    <address-list>
+      <address uid="235459103" alias="" email="j.reyes@gmx.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=José Reyes,mail=j.reyes@gmx.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458939" first-name="Natália" last-name="Colaço" nick-name="Natacha" cn="Natália Colaço" >
+    <address-list>
+      <address uid="235458940" alias="" email="natalia.colaco@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Natália Colaço,mail=natalia.colaco@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459104" first-name="Dimitri" last-name="Raftis" nick-name="" cn="Dimitri Raftis" >
+    <address-list>
+      <address uid="235459105" alias="" email="dr.d.raftis@t-online.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Dimitri Raftis,mail=dr.d.raftis@t-online.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459106" first-name="Sigrid" last-name="Maas" nick-name="" cn="Sigrid Maas" >
+    <address-list>
+      <address uid="235459107" alias="" email="macaulay@gmx.net" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Sigrid Maas,mail=macaulay@gmx.net</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459108" first-name="Fernando" last-name="Pereira" nick-name="" cn="Fernando Pereira" >
+    <address-list>
+      <address uid="235459109" alias="" email="fernandocandidopereira@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Fernando Pereira,mail=fernandocandidopereira@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459050" first-name="Júlio" last-name="Oliveira" nick-name="Juliô" cn="Júlio Oliveira" >
+    <address-list>
+      <address uid="235459051" alias="" email="julio.g.oliveira@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Júlio Oliveira,mail=julio.g.oliveira@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459052" first-name="Ana" last-name="Torres" nick-name="AP" cn="Ana Torres" >
+    <address-list>
+      <address uid="235459053" alias="" email="apttorres21@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Ana Paula Torres,mail=apttorres21@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459054" first-name="Fernanda" last-name="Abreu" nick-name="Nininha" cn="Fernanda Abreu" >
+    <address-list>
+      <address uid="235459055" alias="" email="919860178@sms.telecel.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Fernanda Diniz de Abreu,mail=919860178@sms.telecel.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459056" first-name="António" last-name="Pires" nick-name="Pyrex" cn="António Pires" >
+    <address-list>
+      <address uid="235459057" alias="" email="tavarespires@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=António Tavares Pires,mail=tavarespires@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459000" first-name="Maria" last-name="Carrilho" nick-name="Janeca" cn="Maria Carrilho" >
+    <address-list>
+      <address uid="235459001" alias="" email="mariajotacarrilho@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Maria João Carrilho,mail=mariajotacarrilho@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459058" first-name="Axel" last-name="Staudte" nick-name="" cn="Axel Staudte" >
+    <address-list>
+      <address uid="235459059" alias="" email="axel.staudte@t-online.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Axel Staudte,mail=axel.staudte@t-online.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458990" first-name="Rita" last-name="Franchi" nick-name="" cn="Rita Franchi" >
+    <address-list>
+      <address uid="235458991" alias="" email="ritacatita14@hotmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Rita Franchi,mail=ritacatita14@hotmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459002" first-name="Eduardo" last-name="Ferreira" nick-name="Eddie Blue" cn="Eduardo Ferreira" >
+    <address-list>
+      <address uid="235459003" alias="" email="cedep.uni@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Eduardo Ferreira,mail=cedep.uni@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458992" first-name="Jorge" last-name="Lopes" nick-name="Gibson" cn="Jorge Lopes" >
+    <address-list>
+      <address uid="235458993" alias="" email="jlopes@lis-co.pt.dhl.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Jorge Lopes,mail=jlopes@lis-co.pt.dhl.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459004" first-name="Alfredo" last-name="Henriques" nick-name="" cn="Alfredo Henriques" >
+    <address-list>
+      <address uid="235459005" alias="" email="angelohenriques@oniduo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Alfredo Ângelo Henriques,mail=angelohenriques@oniduo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458994" first-name="José" last-name="Santos" nick-name="Speedy" cn="José Santos" >
+    <address-list>
+      <address uid="235458995" alias="" email="josemlssantos@sapo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=José Maria Simões Santos,mail=josemlssantos@sapo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459006" first-name="Alexei" last-name="Ferreira" nick-name="" cn="Alexei Ferreira" >
+    <address-list>
+      <address uid="235459007" alias="" email="alexej_33@hotmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Alexei Ferreira,mail=alexej_33@hotmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458996" first-name="José" last-name="Romeu" nick-name="" cn="José Romeu" >
+    <address-list>
+      <address uid="235458997" alias="" email="jose-c-romeu@telecom.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=José Romeu,mail=jose-c-romeu@telecom.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459161" first-name="Maria" last-name="Lino" nick-name="" cn="Maria Lino" >
+    <address-list>
+      <address uid="235459162" alias="" email="Maria.Lino@sapo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Maria Lino,mail=Maria.Lino@sapo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459008" first-name="Karin" last-name="Ferreira" nick-name="" cn="Karin Ferreira" >
+    <address-list>
+      <address uid="235459009" alias="" email="Karin.Ferreira@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Karin Ferreira,mail=Karin.Ferreira@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458998" first-name="Francisco" last-name="Faria" nick-name="" cn="Francisco Faria" >
+    <address-list>
+      <address uid="235458999" alias="" email="o.faria@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Francisco Faria,mail=o.faria@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458941" first-name="Pedro" last-name="Lima" nick-name="Pedrocas" cn="Pedro Lima" >
+    <address-list>
+      <address uid="235458942" alias="" email="pedrolima@netcabo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Pedro Lima,mail=pedrolima@netcabo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458943" first-name="Boris" last-name="Ferreira" nick-name="Bógis" cn="Boris Ferreira" >
+    <address-list>
+      <address uid="235458944" alias="" email="Boris.Ferreira@horbach-gmbh.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Boris Ferreira,mail=Boris.Ferreira@horbach-gmbh.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458945" first-name="Paulo" last-name="Costa" nick-name="Pauloc" cn="Paulo Costa" >
+    <address-list>
+      <address uid="235458946" alias="" email="paulo.vilela@portugal.sun.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Paulo Vilela Costa,mail=paulo.vilela@portugal.sun.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459110" first-name="Svetozar" last-name="Niketić" nick-name="" cn="Svetozar Niketić" >
+    <address-list>
+      <address uid="235459111" alias="" email="niketics@isp.b92.net" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Svetozar Niketić,mail=niketics@isp.b92.net</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458947" first-name="Eveline" last-name="Junqueira" nick-name="" cn="Eveline Junqueira" >
+    <address-list>
+      <address uid="235458948" alias="" email="eveline.junqueira@senckenberg.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Eveline Junqueira,mail=eveline.junqueira@senckenberg.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459112" first-name="Youssef" last-name="Hanna" nick-name="" cn="Youssef Hanna" >
+    <address-list>
+      <address uid="235459113" alias="" email="yehanna@cyberia.net.lb" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Youssef Hanna,mail=yehanna@cyberia.net.lb</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458949" first-name="Montepio" last-name="Castro" nick-name="" cn="Montepio Castro" >
+    <address-list>
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Montepio - Filipe Castro,mail=</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459114" first-name="Diana" last-name="Lino" nick-name="" cn="Diana Lino" >
+    <address-list>
+      <address uid="235459115" alias="" email="diana.lino@sapo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Diana Lino,mail=diana.lino@sapo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459116" first-name="Maria" last-name="D&apos;Orey" nick-name="" cn="Maria D&apos;Orey" >
+    <address-list>
+      <address uid="235459117" alias="" email="maria@sylberg.com.au" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Maria da Graça D&apos;Orey,mail=maria@sylberg.com.au</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459118" first-name="Luísa" last-name="Reis" nick-name="Luisocas" cn="Luísa Reis" >
+    <address-list>
+      <address uid="235459119" alias="" email="luisasr@iol.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Luísa Sá Reis,mail=luisasr@iol.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458895" first-name="Yisel" last-name="Yadró" nick-name="" cn="Yisel Yadró" >
+    <address-list>
+      <address uid="235458896" alias="" email="yiselby2004@hotmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Yisel Betancourt Yadró,mail=yiselby2004@hotmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459060" first-name="Carlos" last-name="Vidal" nick-name="Bé" cn="Carlos Vidal" >
+    <address-list>
+      <address uid="235459061" alias="" email="CarlosVidal@costacastelo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Carlos Vidal,mail=CarlosVidal@costacastelo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458897" first-name="Júlio" last-name="Moreno" nick-name="Pinguim" cn="Júlio Moreno" >
+    <address-list>
+      <address uid="235458898" alias="" email="julio_moreno@hp.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Júlio Moreno,mail=julio_moreno@hp.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459062" first-name="Elisabeth" last-name="Bammel" nick-name="Famplina" cn="Elisabeth Bammel" >
+    <address-list>
+      <address uid="235459063" alias="" email="Elisabeth.Bammel@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Elisabeth Bammel,mail=Elisabeth.Bammel@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458899" first-name="João" last-name="Pena" nick-name="" cn="João Pena" >
+    <address-list>
+      <address uid="235458900" alias="" email="jotapena@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=João Luís Pena,mail=jotapena@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459064" first-name="Baios" last-name="Thomas" nick-name="" cn="Baios Thomas" >
+    <address-list>
+      <address uid="235459065" alias="" email="Baios.Thomas@sun.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Baios Thomas,mail=Baios.Thomas@sun.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459066" first-name="Vanda" last-name="Nunes" nick-name="" cn="Vanda Nunes" >
+    <address-list>
+      <address uid="235459067" alias="" email="vanda.s.nunes@seg-social.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Vanda Líbia Nunes,mail=vanda.s.nunes@seg-social.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459010" first-name="Artur" last-name="Ribeiro" nick-name="" cn="Artur Ribeiro" >
+    <address-list>
+      <address uid="235459011" alias="" email="artur.m.ribeiro@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Artur Ribeiro,mail=artur.m.ribeiro@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459068" first-name="Hakki" last-name="Kocabas" nick-name="" cn="Hakki Kocabas" >
+    <address-list>
+      <address uid="235459069" alias="" email="hakki@kcbbs.gen.nz" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Hakki Kocabas,mail=hakki@kcbbs.gen.nz</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459012" first-name="Barbara" last-name="Spielmann" nick-name="" cn="Barbara Spielmann" >
+    <address-list>
+      <address uid="235459013" alias="" email="spielmann.barbara@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Barbara Spielmann,mail=spielmann.barbara@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459014" first-name="Frederico" last-name="Sousa Santos" nick-name="" cn="Frederico Sousa Santos" >
+    <address-list>
+      <address uid="235459015" alias="" email="fredsantos@acm.org" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Frederico Sousa Santos,mail=fredsantos@acm.org</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459016" first-name="Susanne" last-name="Theill" nick-name="" cn="Susanne Theill" >
+    <address-list>
+      <address uid="235459017" alias="" email="s.theill@gmx.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Susanne Theill,mail=s.theill@gmx.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459018" first-name="Isaac" last-name="Sebastião" nick-name="" cn="Isaac Sebastião" >
+    <address-list>
+      <address uid="235459019" alias="" email="dirmayembe@yahoo.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Isaac Sebastião,mail=dirmayembe@yahoo.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458950" first-name="Manuel" last-name="Simões" nick-name="" cn="Manuel Simões" >
+    <address-list>
+      <address uid="235458951" alias="" email="simoesm@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Manuel Simões,mail=simoesm@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458952" first-name="Nelson" last-name="Bernardo" nick-name="" cn="Nelson Bernardo" >
+    <address-list>
+      <address uid="235458953" alias="" email="nbernardolx@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Nelson Bernardo,mail=nbernardolx@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458954" first-name="Deborah" last-name="Ferreira" nick-name="Bolbolina" cn="Deborah Ferreira" >
+    <address-list>
+      <address uid="235458955" alias="" email="lantaiD@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Deborah Ferreira,mail=lantaiD@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459120" first-name="Constança" last-name="Meira" nick-name="" cn="Constança Meira" >
+    <address-list>
+      <address uid="235459121" alias="" email="constanca@terezaseabra.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Constança Meira,mail=constanca@terezaseabra.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458956" first-name="Clark" last-name="Gregory" nick-name="" cn="Clark Gregory" >
+    <address-list>
+      <address uid="235458957" alias="" email="cgregory@compuzone.net" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Clark &amp; Elizabeth Gregory,mail=cgregory@compuzone.net</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459122" first-name="Michael" last-name="Steffan" nick-name="" cn="Michael Steffan" >
+    <address-list>
+      <address uid="235459123" alias="" email="ernst-michael.steffan@exxonmobil.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Michael Steffan,mail=ernst-michael.steffan@exxonmobil.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458958" first-name="António" last-name="Mello" nick-name="" cn="António Mello" >
+    <address-list>
+      <address uid="235458959" alias="" email="mello.antonio@netcabo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=António Mello,mail=mello.antonio@netcabo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458901" first-name="Julieta" last-name="Silva" nick-name="" cn="Julieta Silva" >
+    <address-list>
+      <address uid="235458902" alias="" email="julieta@chuchurumel.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Julieta Silva,mail=julieta@chuchurumel.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459124" first-name="Jorge" last-name="Ribeiro" nick-name="Georg Bach" cn="Jorge Ribeiro" >
+    <address-list>
+      <address uid="235459125" alias="" email="Jorge.ribeiro@svdi.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Jorge Ribeiro,mail=Jorge.ribeiro@svdi.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458903" first-name="Maria" last-name="Marques" nick-name="Zita" cn="Maria Marques" >
+    <address-list>
+      <address uid="235458904" alias="" email="mmmzita@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Maria Mercês Vasconcelos Marques,mail=mmmzita@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459126" first-name="Teo" last-name="Mesquita" nick-name="" cn="Teo Mesquita" >
+    <address-list>
+      <address uid="235459127" alias="" email="tfmlivros@aol.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Teo Ferrer de Mesquita,mail=tfmlivros@aol.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458905" first-name="Filipe" last-name="castro" nick-name="" cn="Filipe castro" >
+    <address-list>
+      <address uid="235458906" alias="" email="mg052@montepio.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Filipe castro,mail=mg052@montepio.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459128" first-name="Joaquim" last-name="Pena" nick-name="Jakas" cn="Joaquim Pena" >
+    <address-list>
+      <address uid="235459129" alias="" email="joaquimpena@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Joaquim Pena,mail=joaquimpena@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459070" first-name="Joaquim" last-name="de Castilho" nick-name="" cn="Joaquim de Castilho" >
+    <address-list>
+      <address uid="235459071" alias="" email="jcastilho@netcabo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Joaquim Rodrigues de Castilho,mail=jcastilho@netcabo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458907" first-name="Eduardo" last-name="Costa" nick-name="" cn="Eduardo Costa" >
+    <address-list>
+      <address uid="235458908" alias="" email="Eduardo.Costa@airc.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Eduardo Costa,mail=Eduardo.Costa@airc.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459072" first-name="Pedro" last-name="Marques" nick-name="" cn="Pedro Marques" >
+    <address-list>
+      <address uid="235459073" alias="" email="pvmpedro@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Pedro Vasconcelos Marques,mail=pvmpedro@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458909" first-name="Fernando" last-name="Pinto" nick-name="Fernandão" cn="Fernando Pinto" >
+    <address-list>
+      <address uid="235458910" alias="" email="fpinto@slbenfica.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Fernando Pinto,mail=fpinto@slbenfica.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459074" first-name="Simone" last-name="Boris" nick-name="" cn="Simone Boris" >
+    <address-list>
+      <address uid="235459075" alias="" email="simonemasarwah@gmx.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Simone Boris,mail=simonemasarwah@gmx.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459076" first-name="Paulo" last-name="Felisberto" nick-name="" cn="Paulo Felisberto" >
+    <address-list>
+      <address uid="235459077" alias="" email="pfelis@ualg.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Paulo Felisberto,mail=pfelis@ualg.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459020" first-name="Miguel" last-name="Pena" nick-name="" cn="Miguel Pena" >
+    <address-list>
+      <address uid="235459021" alias="" email="MiguelVPena@hotmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Miguel Pena,mail=MiguelVPena@hotmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459078" first-name="Cecília Ugolina" last-name="Mendes" nick-name="" cn="Cecília Ugolina Mendes" >
+    <address-list>
+      <address uid="235459079" alias="" email="cecilia.soares@hp.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Cecília Ugolina Mendes,mail=cecilia.soares@hp.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459022" first-name="António" last-name="Santos" nick-name="Seminas" cn="António Santos" >
+    <address-list>
+      <address uid="235459023" alias="" email="aibsantos@t-online.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=António Inácio de Brito Santos,mail=aibsantos@t-online.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459024" first-name="Mário" last-name="Carvalho" nick-name="" cn="Mário Carvalho" >
+    <address-list>
+      <address uid="235459025" alias="" email="marioaurelio@bol.com.br" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Mário Aurélio Rodrigues de Carvalho,mail=marioaurelio@bol.com.br</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459026" first-name="Inês" last-name="Colaço" nick-name="" cn="Inês Colaço" >
+    <address-list>
+      <address uid="235459027" alias="" email="inescolaco@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Inês Colaço,mail=inescolaco@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459028" first-name="Clara" last-name="Pereira" nick-name="" cn="Clara Pereira" >
+    <address-list>
+      <address uid="235459029" alias="" email="clara.pereira@navecortransitarios.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Clara Aranha Pereira,mail=clara.pereira@navecortransitarios.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458960" first-name="Rui" last-name="Sacramento" nick-name="Malinhas" cn="Rui Sacramento" >
+    <address-list>
+      <address uid="235458961" alias="" email="rui.sacramento@fanafel.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Rui Sacramento,mail=rui.sacramento@fanafel.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458962" first-name="Alberto" last-name="Passos" nick-name="" cn="Alberto Passos" >
+    <address-list>
+      <address uid="235458963" alias="" email="alto.passos@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Alberto Passos,mail=alto.passos@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458964" first-name="Túlia" last-name="Fernandes" nick-name="Tolan" cn="Túlia Fernandes" >
+    <address-list>
+      <address uid="235458965" alias="" email="tulia.fernandes@iol.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Túlia Fernandes,mail=tulia.fernandes@iol.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459130" first-name="Andreas" last-name="Hajiraftis" nick-name="" cn="Andreas Hajiraftis" >
+    <address-list>
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Andreas Hajiraftis,mail=</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458966" first-name="Fernando" last-name="Batinga" nick-name="Batingueiro" cn="Fernando Batinga" >
+    <address-list>
+      <address uid="235458967" alias="" email="fernandobatinga@yahoo.com.br" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Fernando Batinga,mail=fernandobatinga@yahoo.com.br</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459131" first-name="Carlos" last-name="Soares" nick-name="" cn="Carlos Soares" >
+    <address-list>
+      <address uid="235459132" alias="" email="amaralsoares1@sapo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Carlos Soares,mail=amaralsoares1@sapo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458968" first-name="Arnalda" last-name="Vasconcelos" nick-name="Arnaldite" cn="Arnalda Vasconcelos" >
+    <address-list>
+      <address uid="235458969" alias="" email="arnalda.arnaldis@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Arnalda Vasconcelos,mail=arnalda.arnaldis@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459133" first-name="Licínio" last-name="Serralheiro" nick-name="" cn="Licínio Serralheiro" >
+    <address-list>
+      <address uid="235459134" alias="" email="licinio.serralheiro@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Licínio Serralheiro,mail=licinio.serralheiro@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458911" first-name="António" last-name="Pena" nick-name="Toninho" cn="António Pena" >
+    <address-list>
+      <address uid="235458912" alias="" email="a.pena@netcabo.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=António Pena,mail=a.pena@netcabo.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459135" first-name="Humberto" last-name="Carvalho" nick-name="Bertinho" cn="Humberto Carvalho" >
+    <address-list>
+      <address uid="235459136" alias="" email="humberto.carvalho@wincor-nixdorf.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Humberto Carvalho,mail=humberto.carvalho@wincor-nixdorf.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458913" first-name="Maria" last-name="Silva" nick-name="" cn="Maria Silva" >
+    <address-list>
+      <address uid="235458914" alias="" email="maria.jose.aranha.silva@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Maria José Aranha Silva,mail=maria.jose.aranha.silva@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459137" first-name="Klaus" last-name="Warnatz" nick-name="" cn="Klaus Warnatz" >
+    <address-list>
+      <address uid="235459138" alias="" email="klaus.warnatz@uniklinik-freiburg.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Klaus Warnatz,mail=klaus.warnatz@uniklinik-freiburg.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458915" first-name="Flora" last-name="Antunes" nick-name="" cn="Flora Antunes" >
+    <address-list>
+      <address uid="235458916" alias="" email="floraa@portugalmail.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Flora Antunes,mail=floraa@portugalmail.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459080" first-name="Inês" last-name="Faria" nick-name="" cn="Inês Faria" >
+    <address-list>
+      <address uid="235459081" alias="" email="inesquininhafaria@mail.telepac.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Inês Quininha Faria,mail=inesquininhafaria@mail.telepac.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459139" first-name="Rita" last-name="Marques" nick-name="" cn="Rita Marques" >
+    <address-list>
+      <address uid="235459140" alias="" email="rita.marques@organon.pt" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Rita Marques,mail=rita.marques@organon.pt</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458917" first-name="António" last-name="Lino" nick-name="" cn="António Lino" >
+    <address-list>
+      <address uid="235458918" alias="" email="antoniodiaslino@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=António Lino,mail=antoniodiaslino@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459082" first-name="Cirilo" last-name="Santos" nick-name="Kirilov" cn="Cirilo Santos" >
+    <address-list>
+      <address uid="235459083" alias="" email="cirilo.santos@oracle.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Cirilo Santos,mail=cirilo.santos@oracle.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235458919" first-name="Amaro" last-name="Antunes" nick-name="" cn="Amaro Antunes" >
+    <address-list>
+      <address uid="235458920" alias="" email="amaro_antunes@hotmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Amaro Antunes,mail=amaro_antunes@hotmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459084" first-name="Annie" last-name="Lopes" nick-name="" cn="Annie Lopes" >
+    <address-list>
+      <address uid="235459085" alias="" email="annie.lopes@cec.eu.int" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Annie Le Terrien Lopes,mail=annie.lopes@cec.eu.int</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459086" first-name="Manuela" last-name="Dignatz" nick-name="" cn="Manuela Dignatz" >
+    <address-list>
+      <address uid="235459087" alias="" email="pereira@in.tum.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Manuela Dignatz,mail=pereira@in.tum.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459030" first-name="Christel" last-name="Washbuesch" nick-name="" cn="Christel Washbuesch" >
+    <address-list>
+      <address uid="235459031" alias="" email="ruth@psc.informatik.uni-frankfurt.de" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Christel Washbuesch,mail=ruth@psc.informatik.uni-frankfurt.de</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459088" first-name="Mário" last-name="Leal" nick-name="Laranjinha" cn="Mário Leal" >
+    <address-list>
+      <address uid="235459089" alias="" email="mario.leal@pt.ibm.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Mário Leal,mail=mario.leal@pt.ibm.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459032" first-name="Carlos" last-name="Martins" nick-name="" cn="Carlos Martins" >
+    <address-list>
+      <address uid="235459033" alias="" email="carlosmartins1968@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Carlos Martins,mail=carlosmartins1968@gmail.com</attribute>
+    </attribute-list>
+  </person>
+  <person uid="235459034" first-name="Fernando" last-name="Marques" nick-name="Zito" cn="Fernando Marques" >
+    <address-list>
+      <address uid="235459035" alias="" email="fjomarques@gmail.com" remarks="" />
+    </address-list>
+    <attribute-list>
+      <attribute uid="" name="dn" >cn=Fernando Marques,mail=fjomarques@gmail.com</attribute>
+    </attribute-list>
+  </person>
+</address-book>

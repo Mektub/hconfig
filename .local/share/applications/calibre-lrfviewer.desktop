@@ -1,0 +1,13 @@
+[Desktop Entry]
+Categories=Graphics;Viewer;
+Comment=Viewer for LRF files (SONY ebook format files)
+Exec[$e]=lrfviewer %F
+GenericName=Viewer for LRF files
+Icon=calibre-viewer
+InitialPreference=5
+MimeType=application/x-sony-bbeb;image/jpeg
+Name=LRF Viewer
+Terminal=false
+TryExec=lrfviewer
+Type=Application
+Version=1.0

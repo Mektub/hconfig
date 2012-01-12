@@ -1,0 +1,16 @@
+/* XPM */
+static char * frameIBR_xpm[] = {
+"4 4 9 1",
+" 	c None",
+".	c #D6DCC2",
+"+	c #CBCFB9",
+"@	c #BFC3B0",
+"#	c #B6BDAB",
+"$	c #D2D7BE",
+"%	c #C9CEB8",
+"&	c #C0C5B1",
+"*	c #BBC1AE",
+".+@#",
+"$%&#",
+"&@*#",
+"####"};

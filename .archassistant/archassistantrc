@@ -1,0 +1,4 @@
+[MAIN]
+single_profile_at_once=no
+wlan=
+autoconnect=no

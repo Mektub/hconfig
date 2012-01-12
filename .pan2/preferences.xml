@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<preferences>
+<flag name='body-pane-font-enabled' value='false'/>
+<flag name='body-pane-headers-expanded' value='false'/>
+<flag name='clear-article-cache-on-shutdown' value='false'/>
+<flag name='expand-threads-when-entering-group' value='false'/>
+<flag name='focus-on-image' value='true'/>
+<flag name='get-new-headers-on-startup' value='false'/>
+<flag name='get-new-headers-when-entering-group' value='false'/>
+<flag name='group-pane-font-enabled' value='true'/>
+<flag name='header-pane-font-enabled' value='true'/>
+<flag name='header-pane-sort-ascending' value='false'/>
+<flag name='highlight-urls' value='true'/>
+<flag name='main-window-is-maximized' value='false'/>
+<flag name='mark-group-read-before-xover' value='false'/>
+<flag name='mark-group-read-when-leaving-group' value='false'/>
+<flag name='match-high-scoring-articles' value='true'/>
+<flag name='match-ignored-articles' value='false'/>
+<flag name='match-low-scoring-articles' value='true'/>
+<flag name='match-medium-scoring-articles' value='true'/>
+<flag name='match-normal-scoring-articles' value='true'/>
+<flag name='match-only-binary-articles' value='false'/>
+<flag name='match-only-cached-articles' value='false'/>
+<flag name='match-only-my-articles' value='false'/>
+<flag name='match-only-unread-articles' value='false'/>
+<flag name='match-only-watched-articles' value='false'/>
+<flag name='match-watched-articles' value='true'/>
+<flag name='monospace-font-enabled' value='false'/>
+<flag name='mute-quoted-text' value='false'/>
+<flag name='shorten-group-names' value='false'/>
+<flag name='show-all-headers' value='false'/>
+<flag name='show-body-pane' value='true'/>
+<flag name='show-group-pane' value='true'/>
+<flag name='show-header-pane' value='true'/>
+<flag name='show-smilies-as-graphics' value='true'/>
+<flag name='show-text-markup' value='true'/>
+<flag name='show-toolbar' value='true'/>
+<flag name='single-click-activates-article' value='true'/>
+<flag name='single-click-activates-group' value='true'/>
+<flag name='size-pictures-to-fit' value='true'/>
+<flag name='smooth-scrolling' value='true'/>
+<flag name='space-selects-next-article' value='true'/>
+<flag name='tabbed-layout' value='false'/>
+<flag name='thread-headers' value='true'/>
+<flag name='use-regex' value='false'/>
+<flag name='work-online' value='true'/>
+<flag name='wrap-article-body' value='false'/>
+<int name='cache-size-megs' value='10'/>
+<int name='get-latest-n-days-headers' value='7'/>
+<int name='get-latest-n-headers' value='300'/>
+<int name='header-pane-action-column-width' value='24'/>
+<int name='header-pane-author-column-width' value='133'/>
+<int name='header-pane-date-column-width' value='1121'/>
+<int name='header-pane-lines-column-width' value='60'/>
+<int name='header-pane-score-column-width' value='50'/>
+<int name='header-pane-sort-column' value='6'/>
+<int name='header-pane-state-column-width' value='24'/>
+<int name='header-pane-subject-column-width' value='743'/>
+<int name='main-window-hpane-position' value='523'/>
+<int name='main-window-vpane-position' value='434'/>
+<int name='newsrc-autosave-timeout-min' value='10'/>
+<int name='task-save-delay-secs' value='10'/>
+<int name='tree-view-row-margins' value='1'/>
+<string name='body-pane-font' value='Sans 10'/>
+<string name='browser-mode' value='custom'/>
+<string name='custom-browser' value='firefox'/>
+<string name='custom-mailer' value='thunderbird'/>
+<string name='editor' value='gedit'/>
+<string name='group-pane-font' value='Sans Bold 11'/>
+<string name='header-pane-columns' value='state,action,subject,author,lines,date'/>
+<string name='header-pane-font' value='Sans 10'/>
+<string name='header-pane-show-matching' value='articles'/>
+<string name='mailer-mode' value='custom'/>
+<string name='monospace-font' value='Monospace 10'/>
+<string name='pane-layout' value='stacked-top'/>
+<string name='pane-orient' value='groups,headers,body'/>
+<color name='body-pane-color-quote-1' value='#4e9a06'/>
+<color name='body-pane-color-quote-2' value='#ce5c00'/>
+<color name='body-pane-color-quote-3' value='#5c3566'/>
+<color name='body-pane-color-signature' value='#728fcf'/>
+<color name='body-pane-color-url' value='#204a87'/>
+<color name='score-color-high-bg' value='#fce94f'/>
+<color name='score-color-high-fg' value='#000000'/>
+<color name='score-color-ignored-bg' value='#000000'/>
+<color name='score-color-ignored-fg' value='#888a85'/>
+<color name='score-color-low-bg' value='#000000'/>
+<color name='score-color-low-fg' value='#d3d7cf'/>
+<color name='score-color-medium-bg' value='#728fcf'/>
+<color name='score-color-medium-fg' value='#000000'/>
+<color name='score-color-watched-bg' value='#8ae234'/>
+<color name='score-color-watched-fg' value='#000000'/>
+<geometry name='events-window' x='150' y='150' w='600' h='300'/>
+<geometry name='main-window' x='73' y='34' w='2515' h='958'/>
+<geometry name='tasks-window' x='200' y='200' w='550' h='600'/>
+</preferences>

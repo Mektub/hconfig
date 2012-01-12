@@ -1,0 +1,121 @@
+Path: main.gmane.org!not-for-mail
+From: Evan Martin <martine-GmWTxIRN22iJaUV4rX00uodd74u8MsAO@public.gmane.org>
+Newsgroups: gmane.comp.gnome.apps.pan.devel
+Subject: Re: [Gtkspell-devel] Re: pan, gtkspell, and specifying
+ your language
+Date: Fri, 02 Aug 2002 10:29:31 -0700
+Lines: 66
+Sender: pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+Approved: news@gmane.org
+Message-ID: <3D4AC17B.7040306@cs.washington.edu>
+References: <3D4A1776.2060105@cs.washington.edu> <20020802070045.A12252@code.rebelbase.com>
+Reply-To: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+NNTP-Posting-Host: localhost.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Trace: main.gmane.org 1028309368 31401 127.0.0.1 (2 Aug 2002 17:29:28 GMT)
+X-Complaints-To: usenet@main.gmane.org
+NNTP-Posting-Date: Fri, 2 Aug 2002 17:29:28 +0000 (UTC)
+Cc: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org, 
+ gtkspell-devel-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org
+Return-path: <pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>
+Original-Received: from fencepost.gnu.org ([199.232.76.164])
+	by main.gmane.org with esmtp (Exim 3.33 #1 (Debian))
+	id 17agEx-0008AL-00
+	for <gcgapd-pan-@public.gmane.org>; Fri, 02 Aug 2002 19:29:27 +0200
+Original-Received: from localhost ([127.0.0.1] helo=fencepost.gnu.org)
+	by fencepost.gnu.org with esmtp (Exim 3.35 #1 (Debian))
+	id 17agFX-0000AI-00; Fri, 02 Aug 2002 13:30:03 -0400
+Original-Received: from rwcrmhc51.attbi.com ([204.127.198.38])
+	by fencepost.gnu.org with smtp (Exim 3.35 #1 (Debian))
+	id 17agF2-00007i-00
+	for <pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>; Fri, 02 Aug 2002 13:29:32 -0400
+Original-Received: from cs.washington.edu ([12.231.117.47]) by rwcrmhc51.attbi.com
+          (InterMail vM.4.01.03.27 201-229-121-127-20010626) with ESMTP
+          id <20020802172931.WXLV19356.rwcrmhc51.attbi.com-GmWTxIRN22iJaUV4rX00uodd74u8MsAO@public.gmane.org>;
+          Fri, 2 Aug 2002 17:29:31 +0000
+User-Agent: Mozilla/5.0 (X11; U; Linux ppc; en-US; rv:1.0.0) Gecko/20020614 Debian/1.0.0-3
+X-Accept-Language: en
+Original-To: Charles Kerr <charles-GQPKUYZ348xl57MIdRCFDg@public.gmane.org>
+Errors-To: pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+X-BeenThere: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsNcOa+i2P73dg@public.gmane.org>
+List-Post: <mailto:pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>
+List-Subscribe: <http://mail.freesoftware.fsf.org/mailman/listinfo/pan-devel>,
+	<mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsM0zj+wxrhfeaQyC0oar+/r@public.gmane.org>
+List-Id: Discussions of Pan source code hacking. <pan-devel.mail.freesoftware.fsf.org>
+List-Unsubscribe: <http://mail.freesoftware.fsf.org/mailman/listinfo/pan-devel>,
+	<mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsOyq+daOM+IDKqXwboT3ro7@public.gmane.org>
+List-Archive: <http://mail.freesoftware.fsf.org/pipermail/pan-devel/>
+Xref: main.gmane.org gmane.comp.gnome.apps.pan.devel:4
+X-Report-Spam: http://spam.gmane.org/gmane.comp.gnome.apps.pan.devel:4
+
+Charles Kerr wrote:
+> It's great to hear from you!  I was about to contact you this morning...
+
+Ah, good, you're the one I wanted to talk to.
+
+> Newsgroups typically use a single language, so in Pan users set
+> default charsets on a per-newsgroup basis, and Pan could pass that
+> along to a gtkspell API if you like.
+
+Here's the point I was trying to make-- I clearly wasn't clear enough 
+about it before because nobody but me saw it:
+To keep binary compatibility with the older gtkspell, I can't introduce 
+new functionality without doing some hacks (for example, it'd be nice to 
+specify the language and encoding to gtkspell_attach to allow per-view 
+lang/charset, but that changes the API).  So I was looking for advice in 
+two separate ways:
+  - what can be changed without breaking backward compat (2.0.x)
+  - what needs to be changed for the future (2.1.x)
+Realistically, this means that 2.1 will probably happen after the new 
+releases mentioned below.
+
+But this mention of character sets is interesting-- how are you putting 
+non-UTF8 data in a GtkTextView without Gtk complaining?
+
+> More urgently, though, I've also got a handful of crasher bug
+> reports that are best handled in gtkspell.   My (unrealistic?) wish
+> would be to have these fixes in 2.0.1, punting configurable languages
+> to 2.0.2 if necessary, in the next 7-10 days so that Pan 0.13.0 with
+> gtkspell can be released in time for bundling with the new RH and
+> Mandrake releases.
+> 
+> These are all GtkSpell-related crashes in Pan:
+> * http://bugzilla.gnome.org/show_bug.cgi?id=89657
+> * http://bugzilla.gnome.org/show_bug.cgi?id=89588
+> * http://bugzilla.gnome.org/show_bug.cgi?id=88924
+> * http://mail.freesoftware.fsf.org/pipermail/pan-users/2002-July/001500.html
+
+What are these "exceptions" you speak of?  I am a C programmer. :P
+
+> And, just to make certain it gets in the mailing list archives
+> before I forget about it, a low-priority request:
+> 
+> * When a user hits `rewrap text' to make it fit in 72/80 columns
+>   as per Usenet ettiquette, users have reported that the red
+>   spellcheck lines go away.  If gtkspell can know when the buffer's
+>   contents have changed, it would be nice to reapply the spellcheck
+>   for the entire changed region; otherwise, perhaps an API call so
+>   that Pan could tell it to update the region.
+
+I'll check out the Pan CVS to see what Pan is doing...
+
+Hm, that's interesting.  You rebuid the entire text view, but GtkSpell 
+doesn't affect it?  GtkSpell just attaches to the insert-text signal 
+(among others), both before and after it runs, and uses the difference 
+between the insertion point across that operation to see what has changed.
+
+
+Anyway, I'll investigate those bugs and just drop the language stuff 
+until it can be done properly.
+I'll try to restrict discussing further development to the 
+gtkspell-devel mailing list, too, so feel free to sign up or read the 
+archives.
+
+
+Thanks,
+Evan.

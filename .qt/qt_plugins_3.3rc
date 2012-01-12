@@ -1,0 +1,17 @@
+[opt]
+kde/lib/kde3/plugins/styles/highcolor.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-02-17T21:28:29^e
+kde/lib/kde3/plugins/styles/highcontrast.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-02-17T21:28:29^e
+kde/lib/kde3/plugins/styles/keramik.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-02-17T21:28:29^e
+kde/lib/kde3/plugins/styles/kthemestyle.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-02-17T21:28:29^e
+kde/lib/kde3/plugins/styles/light.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-02-17T21:28:29^e
+kde/lib/kde3/plugins/styles/plastik.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-02-17T21:28:29^e
+kde3/lib/kde3/plugins/styles/highcolor.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-25T09:35:03^e
+kde3/lib/kde3/plugins/styles/highcontrast.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-25T09:35:03^e
+kde3/lib/kde3/plugins/styles/keramik.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-25T09:35:03^e
+kde3/lib/kde3/plugins/styles/kthemestyle.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-25T09:35:03^e
+kde3/lib/kde3/plugins/styles/light.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-25T09:35:03^e
+kde3/lib/kde3/plugins/styles/plastik.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-25T09:35:03^e
+qt/plugins/imageformats/libqjpeg.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-30T20:09:57^e
+qt/plugins/imageformats/libqmng.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-30T20:09:57^e
+qt/plugins/imageformats/libqpng.so=30300^e3^ex86_64 Linux g++-4 full-config^e2011-05-30T20:09:57^e
+

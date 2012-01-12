@@ -1,0 +1,24 @@
+/* XPM */
+static char *gv_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 14 4 1",
+"  c black",
+". c gainsboro",
+"X c white",
+"o c None",
+/* pixels */
+"ooooo    ooooooo",
+"oooo .... oooooo",
+"ooo .XXXX. ooooo",
+"ooo .XXXX. ooooo",
+"oo  . XX .   ooo",
+"o ..X XX . .. oo",
+"o .XXXXXXX.X. oo",
+"oo .XXXXXXX. ooo",
+"ooo .XXXXX. oooo",
+"ooo .XXXXX. oooo",
+"ooo .XXXXX. oooo",
+"oo .X.XXX.X. ooo",
+"o ... ... ... oo",
+"oo           ooo"
+};

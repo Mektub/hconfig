@@ -1,0 +1,229 @@
+restart "Restart" "tools_16x16" icewm
+prog "Grellm" "Daemon_16x16.xpm" gkrellm
+menu "Misc" "folder_red_16x16" {
+    menu Down/Uploaders folder {
+        prog Jdownloader jdownloader.png jdownloader
+        prog "Tucan" "tucan.png" tucan
+        prog "Rapidshare FatRat" "fatrat.png" fatrat
+        prog "Rapidshare Grabber" "lrg.png" /root/bin/lrg
+    }
+    menu "Media" "mini-book1" {
+	prog MKVtoolnix dvdrip.xpm mmg
+	prog TsMuxer dvdrip.xpm tsMuxerGUI
+    }
+    separator
+    prog "HP-41cx" "Calculator_16x16.xpm" nonpareil 41cx
+    prog "HP-16c"  "Calculator_16x16.xpm" wine "/opt/Wine/drive_c/Program Files/HP-16c/WRPN.EXE"
+    prog "HP-16C"  "Calculator_16x16.xpm" wine "/opt/Wine/drive_c/Program Files/HP16C 2.0/hp16c.exe"
+    separator
+    prog "Commands Menu" "tracker.png" /root/bin/CommandsMenu
+    prog "UnetBoot" "tracker.png" unetbootin
+    separator
+    prog "LiveStation" "livestation.png" Livestation
+    separator
+    prog "DiskFree" "filelight.png" filelight
+    prog "KDiskFree" "kdf.png" kdf
+    separator
+    prog KeePass keepassx.png keepassx
+    prog Recoll recoll.png recoll
+    prog "Alarm" "kalarm.png" /root/bin/Alarm
+    separator
+    prog "BandWidth Monitor" - xterm -e bwm-ng
+    separator
+    prog "Rapidshare Grabber" "lrg.png" /root/bin/lrg
+    separator
+    prog "Boinc Mgr" "boinc.png" boincmgr
+    prog "Google Earth" "googleearth-icon.png"  googleearth
+    prog "Xset" "colormap" /root/bin/Xset
+    prog "Xsnow" "kpoker" xsnow
+    prog "Xchat" "XChat.png" /root/bin/Xchat
+}
+menu "Terminals" "mini-display.xpm" {
+    prog "Terminal" "terminal" Terminal --geometry=119x27+695+586 --hide-menubar --tab -T "Shell 1" --tab -T "Shell 2"
+    prog "Urxvt" "xterm" urxvt -sb -sr -fn "xft:Bitstream Vera Sans Mono:style=Bold" -geometry 100x28
+  # prog "Urxvt" "xterm" urxvt -sb -sr -fn "xft:DejaVu Sans Mono-12:style=Bold:dp1=81" -geometry 100x28
+    separator
+    prog "gTerminal" "gnome-terminal.xpm" gnome-terminal --geometry 103x24 --tab --tab
+    prog "Konsole" "konsole.png" konsole --nomenubar
+    prog "Lilyterm" "lilyterm.png" lilyterm -t 2
+    prog "LXterminal" "lxterminal.png" lxterminal --geometry=110x28
+    prog "Roxterm (local)" "gnome-term-night.png" /root/bin/RoxTerm
+    prog "Sakura" "gnome-term-night.png" sakura -c 110 -r 28 -n 4 --geometry 110x28+82+23
+    prog "Terminator" "terminator.png" terminator
+    prog "xterm" "xterm" xterm -u8 -fg "#00FF00" -bg black -cr "#00FF00" -sb -rightbar -sl 3000 -geometry 100x26
+    prog "xterm (tanso)" "xterm" su -l -c "xterm -geometry 90x24" tanso
+}
+separator
+menu "Remote" "adobe_32x32.xpm" {
+    menu "Remote Admin" "mini-book1" {
+        prog "RdeskTop Feital"    "rdesktop.png" /root/bin/Rtosh Feital
+        prog "RdeskTop EEEpc-wl"  "rdesktop.png" /root/bin/Rtosh EEEpc-wl
+        prog "RdeskTop Asuspc"    "rdesktop.png" /root/bin/Rtosh Asuspc
+        prog "RdeskTop Asuspc-WL" "rdesktop.png" /root/bin/Rtosh Asuspc-wl
+        prog "RdeskTop Toshiba"   "rdesktop.png" /root/bin/Rtosh Toshiba
+	    separator
+	    separator
+        prog "VncViewer Feital"  "vnc.png"  /root/bin/VNC Feital
+        prog "VncViewer EEEpc"   "vnc.png"  /root/bin/VNC EEEpc
+        prog "VncViewer Toshiba" "vnc.png"  /root/bin/VNC Toshiba
+        prog "VncViewer AsusPC"  "vnc.png"  /root/bin/VNC AsusPC
+    }
+    menu "Remote Rxvts" "mini-book1" {
+		prog "RxvtSsh Maria Lino" "xterm" /root/bin/RxvtSsh MariaLino
+		separator
+		prog "RxvtSsh SdfEU"      "xterm" /root/bin/RxvtSsh sdf-eu.org
+		prog "Sftp SdfEU" "xterm" SftpSdfEU
+		prog "RxvtSsh SilenceIsDefeat" "xterm" /root/bin/RxvtSsh silenceisdefeat
+    }
+    separator
+    menu "AsusPC" "mini-book1" {
+        prog "RxvtSsh ArchBang et Alia"        "xterm" /root/bin/RxvtSsh archbang
+        prog "RxvtSsh AsusPC-WL"         "xterm" /root/bin/RxvtSsh asuspc-wl
+        prog "RxvtSsh AsusPC-2"         "xterm" /root/bin/RxvtSsh asuspc-2
+    }
+    menu "ArchTosh" "mini-book1" {
+		prog "RxvtSsh ArchTosh2" "xterm" /root/bin/RxvtSsh archtosh2
+		prog "RxvtSsh ArchTosh2-wl" "xterm" /root/bin/RxvtSsh archtosh2-wl
+		prog "RxvtSsh ArchTosh-wl"  "xterm" /root/bin/RxvtSsh archtosh-wl
+    }
+    separator
+    menu "eeePC" "mini-book1" {
+		prog "RxvtSsh EEEpc-Arch-ETH" "xterm" /root/bin/RxvtSsh eeepc-arch
+		prog "RxvtSsh EEEpc-Arch-WL" "xterm" /root/bin/RxvtSsh eeepc_wl-arch
+    }
+    separator
+    prog "RxvtSsh ArchLinode"    "xterm" /root/bin/RxvtSsh archlinode
+    separator
+    prog "RxvtSsh DLINK-323"     "xterm" /root/bin/RxvtSsh dns323
+    prog "Telnet  DLINK-323"     "gnome-telnet.xpm" roxterm --separate -p Remote -e telnet dlink323
+    separator
+    prog "RxvtSsh POPcorn"       "xterm" /root/bin/RxvtSsh popcorn
+    prog "Telnet  POPcorn"       "gnome-telnet.xpm" roxterm --separate -T POPcorn -p Remote -e telnet popcorn
+    separator
+    prog "RxvtSsh Archabit"      "xterm" /root/bin/RxvtSsh ArchABIT
+    separator
+    prog "RxvtSsh DreamPlug"     "xterm" /root/bin/RxvtSsh dreamplug
+    prog "RxvtSsh DreamPlug2"    "xterm" /root/bin/RxvtSsh dreamplug2
+    prog "RxvtSsh asus-dd-wrt"   "xterm" /root/bin/RxvtSsh asus-dd-wrt
+}
+menu "Config Files" "mini-book1" {
+    menu "Editors" "/root/.icewm/icons/gvim_16x16.xpm" {
+        prog "Gvim" "gvim.png" gvim -geom 105x30
+        prog "Gedit" "jwindow" gedit
+        prog "Kate" "kate.png" kate
+        prog "KWrite" "kwrite" kwrite
+    }
+    separator
+    prog "TelPriv" "klipper" gvim -geom 105x30  "/w/mydocs/JoaoPena/Tel/TelPriv.txt"
+    separator
+    prog "/etc/bashrc" "hand_up_3d" bash -c "Play tada ; gvim -geom 105x30 /etc/bashrc"
+    prog "/etc/profile" "hand_up_3d" gvim -geom 105x30  "/etc/profile"
+    separator
+    menu "IceWM" "mini-book1" {
+        prog "Menu" "mini-book1" gvim -geom 100x30  /home/john/.icewm/menu
+        prog "ToolBar" "mini-book1" gvim -geom 100x30  "/home/john/.icewm/toolbar"
+        prog "Programs" "mini-book1" gvim -geom 100x30  "/home/john/.icewm/programs"
+        prog "WinOpt" "mini-book1" gvim -geom 100x30  "/home/john/.icewm/winoptions"
+        prog "Preferences" "mini-book1" gvim -geom 100x30  "/home/john/.icewm/preferences"
+    }
+    menu "Bash Files" "jwindow" {
+        prog "Aliases" "hand_up_3d" gvim -geom 105x30  "/root/.dot/bashrc/aliases"
+        prog "Colors" "hand_up_3d" gvim -geom 105x30  "/root/.dot/bashrc/colors"
+        prog "Completions" "hand_up_3d" gvim -geom 105x30  "/root/.dot/bashrc/completions"
+        prog "Functions" "hand_up_3d" gvim -geom 105x30  "/root/.dot/bashrc/functions"
+    }
+    menu "X" "jwindow" {
+        prog "Xdefaults" "klipper" gvim -geom 105x30  "/root/.Xdefaults"
+        prog "Xsession" "klipper" bash -c "Play tada; gvim -geom 105x30 /etc/X11/xdm/Xsession"
+        prog "~/.Xsession" "klipper" bash -c "Play tada; gvim -geom 105x30 /root/.Xsession"
+        prog "Xorg.conf" "klipper" gvim -geom 105x30  "/etc/X11/xorg.conf"
+    }
+    separator
+    prog "Gftp BookMarks" "apacheconf.png" gvim -geom 105x30  "/root/.gftp/bookmarks"
+    prog "Httpd.Conf (Apache)" "apacheconf.png" gvim -geom 105x30  "/etc/httpd/conf/httpd.conf"
+    prog "Ld.so.Conf" "hand_up_3d" gvim -geom 105x30  "/etc/ld.so.conf"
+    prog "Samba Conf" "hand_up_3d" gvim -geom 105x30  "/etc/samba/smb.conf"
+    separator
+    prog "Moprobe.Conf" "hand_up_3d" gvim -geom 105x30  "/etc/modprobe.conf"
+}
+separator
+separator
+prog "FireStarter" "mini.xlock" firestarter
+separator
+menu "Mail" "mini-oldmail" {
+    prog "ThunderBird" "thunderbird.png" thunderbird
+    separator
+    prog "ClawsMail" "xfmail_16x16" claws-mail
+    prog "Evolution - Mail"     "evolution" evolution -c mail
+    prog "Evolution - Contacts" "evolution" evolution -c contacts
+    prog "Pan" "pan.png" pan
+}
+prog "Xvolume" "mix_volume.xpm" xxxxxxxvolume -timeout 5 -fg yellow -bg black
+separator
+menu "Pic Viewers" "xeyes" {
+    prog "digiKam" "digikam.png" digikam
+    prog "Shotwell" "shotwell.png" shotwell
+    prog "Gimp" "scanner.png" gimp -s
+    prog "Gliv" "gliv.png" gliv
+    prog "GpicView" "gpicview.png" gpicview
+    prog "GqView" "gqview" gqview
+    prog "Gthumb" "gthumb" gthumb
+    prog "GwenView" "gwenview.png" gwenview
+    prog "Kview" "kview.png" kview
+    prog "Kuickshow" "kuickshow.png" kuickshow
+    prog "Mirage" "mirage.png" mirage
+    separator
+    prog "Picasa" "showimg.png" picasa
+    prog "ShowImg" "showimg.png" showimg
+    prog "ShowFoto" "showfoto.png" showfoto
+    prog "XnView" "kuickshow.png" xnview
+    separator
+    prog "Kolourpaint" "kolourpaint.png" kolourpaint
+}
+separator
+menu "ARCH" "arch-logo.png" {
+    prog "Gnome Tweak Tool"          "arch-logo.png" gnome-tweak-tool
+    prog "Start PulseAudio"          "arch-logo.png" start-pulseaudio-x11
+    prog "PulseAudio Preferences"    "arch-logo.png" paprefs
+    prog "PulseAudio Volume Control" "arch-logo.png" pavucontrol
+}
+menu "File Managers" "ksokoban_32x32.xpm" {
+    prog "PyNeighborhood" "pyneighborhood.png" pyNeighborhood
+    prog "MC" "mirage.png" urxvt -geometry 170x50 -e mc -S xoria256 /root /
+    prog "qtFM" "qtfm.png" qtfm
+    prog "Nautilus Browser" "nautilus.png" nautilus --no-desktop
+    prog "Nautilus Connect server" "nautilus.png" nautilus-connect-server
+	separator
+    prog "4Pane" 4Pane.png 4Pane
+    prog "Gentoo" gentoo.png gentoo --root-ok
+    prog "Konqueror" "mini-k" konqueror --profile filemanagement
+    prog "Krusader" "krusader.png" krusader
+    prog "Smb4k" "smb4k.png" smb4k
+    prog "Tux Commander" "mini-k" tuxcmd
+    prog "Xplorer2" "Thunar.png" /root/bin/xplorer2
+	separator
+    prog "EmelFM2" "icon_emelfm2_024.png" emelfm2
+    prog "PcmanFM" "icon_emelfm2_024.png" pcmanfm
+    prog "Thunar" "Thunar.png" thunar
+    prog "Xfe" "xfe.png" xfe
+}
+prog "Gigolo" "smb4k.png" dbus-launch gigolo
+prog "Krusader" "krusader.png" krusader
+prog "Run"     "Terminal.png" gmrun
+menu "Browsers" "netscape" {
+    separator
+    prog "Arora" "arora.png" arora
+    prog "Dillo" "real" dillo -g 1300x800+200+100
+    prog "Luakit" "luakit.png" luakit
+    prog "Midori" "galaxylinux" midori
+    prog "Opera" "opera" opera
+    separator
+    prog "Chromium" "chromium.png" chromium-browser --user-data-dir=/root/.config/chromium
+    prog "Chromium (tanso)" "chromium.png" su - tanso chromium-browser
+    separator
+    prog "Firefox"(ProfMgmt) "mozilla.png" firefox -ProfileManager
+    separator
+    prog "Firefox9 (default)" "mozilla.png" firefox -P default
+    prog "Firefox9 (John)"    "mozilla.png" firefox -P John
+    prog "Firefox9 (Box)"     "mozilla.png" firefox -P Box
+}

@@ -1,0 +1,28 @@
+/* XPM */
+
+/* This was drawn by Brian Masney <masneyb@seul.orgz> */
+
+static char *linkdir_xpm[] = {
+"16 14 7 1",
+" 	c	None",
+"#	c	#000000",
+"-	c	#ffffff",
+"*	c	gray50",
+"h	c	gray85",
+"i	c	purple",
+"j	c	yellow",
+"   ****         ",
+"  *hjhj*        ",
+" *hjhjhj******* ",
+"*-------------* ",
+"*-hjh*hjhjhjhj*#",
+"*-jh#*jhjhjhjh*#",
+"*-h#i********j*#",
+"*-#iiiiiiiiiih*#",
+"*-h#ii#######j*#",
+"*-jh#ijhjhjhjh*#",
+"*-hjh#hjhjhjhj*#",
+"*-jhjhjhjhjhjh*#",
+"***************#",
+" ###############"
+};

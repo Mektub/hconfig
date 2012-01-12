@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000011_linuxtracker" version="0.2.0">
+  <title>linuxTRACKER</title>
+  <released_time>2011-10-19 11:23:32</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>linuxtracker.py</filename>
+  <classname>linuxTRACKERPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000011_linuxtracker/0.2.0/</download_url>
+  <website_url>http://linuxtracker.org/</website_url>
+  <icon_url>http://linuxtracker.org/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

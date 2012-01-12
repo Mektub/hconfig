@@ -1,0 +1,141 @@
+ThemeAuthor="<manuel_carrasco@users.sourceforge.net> http://lxp.sourceforge.net"
+ThemeDescription="Human Ubuntu"
+Look=lxp
+
+ColorStartButton="rgb:51/82/45"
+#ColorStartButton="rgb:f2/c9/9f"
+ColorNormalTitleButton="rgb:ef/eb/e7"
+ColorActiveTitleButton="rgb:d1/8c/46"
+
+## Window Frames
+BorderSizeX=4
+BorderSizeY=4
+DlgBorderSizeX=3
+DlgBorderSizeY=3
+TitleBarHeight=20
+## Borders
+ColorNormalBorder="rgb:ef/eb/e7"
+ColorActiveBorder="rgb:d1/8c/46"
+## Title
+TitleFontNameXft="verdana:size=9"
+RolloverButtonsSupported=1
+TitleBarHorzOffset=10
+TitleButtonsRight="xmi"
+TitleButtonsLeft="s"
+TitleButtonsSupported="sxmird"
+ColorNormalTitleBar="rgb:ef/eb/e7"
+ColorNormalTitleBarText="rgb:00/00/00"
+ColorNormalTitleBarShadow="rgb:ef/eb/e7"
+ColorActiveTitleBar="rgb:d1/8c/46"
+ColorActiveTitleBarText="rgb:ff/ff/ff"
+ColorActiveTitleBarShadow="rgb:d1/8c/46"
+## Dialog
+ColorDialog="rgb:f8/f5/f2"
+## Labels
+ColorLabel="rgb:f8/f5/f2"
+ColorLabelText="rgb:00/00/00"
+LabelFontNameXft="verdana:size=9"
+## QuickSwitch
+QuickSwitchFontNameXft="verdana:size=10"
+ColorQuickSwitch="rgb:f8/f5/f2"
+ColorQuickSwitchText="rgb:d9/85/3e"
+ColorQuickSwitchActive="rgb:d9/85/3e"
+## ListBox
+ListBoxFontNameXft="verdana:size=10"
+ColorListBox="rgb:f8/f5/f2"
+ColorListBoxText="rgb:00/00/00"
+ColorListBoxSelection="rgb:f2/c9/9f"
+ColorListBoxSelectionText="rgb:ff/ff/ff"
+## Buttons
+NormalButtonFontNameXft="verdana:size=10"
+ActiveButtonFontNameXft="verdana:size=10"
+ColorNormalButton="rgb:2b/2d/3b"
+ColorActiveButton="rgb:f2/c9/9f"
+ColorNormalButton="rgb:cb/cc/da"
+ColorNormalButtonText="rgb:00/00/00"
+ColorActiveButtonText="rgb:FF/FF/FF"
+
+## Menu
+StartMenuIconSize=32
+smallIconSize = 16
+MenuIconSize=16
+largeIconSize=32
+hugeIconSize=48
+MenuMouseTracking=1
+MenuFontNameXft="verdana:size=8"
+StatusFontNameXft="verdana:size=8"
+ColorActiveMenuItem="rgb:d9/85/3e"
+ColorActiveMenuItemText="rgb:ff/ff/ff"
+ColorActiveMenuItemShadow="rgb:d9/85/3e"
+ColorNormalMenu="rgb:f8/f5/f2"
+ColorNormalMenuItemText="rgb:00/00/00"
+ColorNormalMenuItemShadow="rgb:f8/f5/f2"
+ColorDisabledMenuItemText="rgb:AC/A8/99"
+ColorDisabledMenuItemShadow="rgb:AF/AF/AF"
+
+##### TaskBar
+TaskBarHeight=28
+TaskButtonHeight=22
+TaskButtonWidth=158
+TaskButtonSeparatorSize=1
+TrayPanelUseBgPixmaps=0
+TaskBarDoubleHeight=0
+ColorDefaultTaskBar="rgb:cb/cc/da"
+ColorTaskBar="rgb:cb/cc/da"
+ColorStartButton="rgb:cb/cc/da"
+#ColorDefaultTaskBar="rgb:00/00/00"
+#ColorTaskBar="rgb:ff/ff/ff"
+NormalWorkspaceFontNameXft = "Lucida:size=18"
+ActiveWorkspaceFontNameXft = "Lucida:size=18"
+NormalTaskBarFontNameXft   =    "Lucida:size=8"
+ActiveTaskBarFontNameXft   =    "Lucida:size=8"
+MinimizedWindowFontNameXft="verdana:size=9"
+## Tasks
+#ColorActiveTaskBarApp="rgb:d9/85/3e"
+ColorActiveTaskBarApp="rgb:f2/c9/9f"
+ColorNormalTaskBarApp="rgb:cb/cc/da"
+ColorMinimizedTaskBarApp="rgb:cb/cc/da"
+#ColorNormalTaskBarApp="rgb:f2/c9/9f"
+#ColorMinimizedTaskBarApp="rgb:f2/c9/9f"
+ColorActiveTaskBarAppText="rgb:00/00/00"
+ColorInvisibleTaskBarAppText="rgb:00/00/00"
+ColorMinimizedTaskBarAppText="rgb:00/00/00"
+ColorNormalTaskBarAppText="rgb:00/00/00"
+## Workspacebuttons
+# ColorNormalWorkspaceButton="rgb:00/00/00"
+# ColorActiveWorkspaceButton="rgb:00/00/00"
+ColorNormalWorkspaceButtonText="rgb:00/00/00"
+ColorActiveWorkspaceButtonText="rgb:00/00/00"
+## ToolButtons
+ColorToolButtonText="rgb:E0/D0/60"
+## Move
+ColorMoveSizeStatus="rgb:d9/85/3e"
+ColorMoveSizeStatusText="rgb:FF/FF/FF"
+## Input
+InputFontNameXft="verdana:size=8"
+ColorInput="rgb:3b/3d/4b"
+ColorInputText="rgb:FF/FF/FF"
+ColorInputSelection="rgb:31/6A/C5"
+ColorInputSelectionText="rgb:FF/FF/FF"
+## Clock
+ColorClockText="rgb:00/00/00"
+ColorApmText="rgb:ef/eb/e7"
+ClockFontNameXft="verdana:size=10"
+TaskBarClockLeds=0
+ColorClock=""
+## Tips
+ColorToolTipText="rgb:00/00/00"
+ToolTipFontNameXft="verdana:size=8"
+ColorToolTip="rgb:FF/FF/FF"
+## Apm
+ApmFontNameXft="verdana:size=8"
+
+
+### Desktop
+DesktopBackgroundImage="wallpaper.png"
+DesktopBackgroundColor="rgb:3a/6e/a5"
+DesktopBackgroundScaled=1
+DesktopImageMaintainAspect=0
+
+TrayPanelUseBgPixmaps=0
+TrayPanelUseBgPixmaps=0

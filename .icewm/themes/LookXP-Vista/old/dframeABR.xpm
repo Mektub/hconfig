@@ -1,0 +1,9 @@
+/* XPM */
+static char * dframeABR_xpm[] = {
+"3 3 3 1",
+" 	c None",
+".	c #0A0A0C",
+"+	c #000000",
+" .+",
+"+++",
+"+++"};

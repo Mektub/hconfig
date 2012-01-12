@@ -1,0 +1,374 @@
+menu "Ice Conf" "folder" {
+    prog "IceWm CC" "gnome-gtali" icecc
+    separator
+    prog "IceWm Menu" "klipper" gvim -geom 100x28  /root/.icewm/menu
+    prog "IceWm ToolBar" "klipper" gvim -geom 100x28  "/root/.icewm/toolbar"
+    prog "IceWm Programs" "klipper" gvim -geom 100x28  "/root/.icewm/programs"
+    prog "IceWm WinOpt" "klipper" gvim -geom 100x28  "/root/.icewm/winoptions"
+    prog "IceWm Preferences" "klipper" gvim -geom 100x28  "/root/.icewm/preferences"
+}
+menu "Files" "folders" {
+    prog "/etc/bashrc" "hand_up_3d" bash -c "Play tada ; gvim -geom 100x28 /etc/bashrc"
+    prog "/etc/profile" "hand_up_3d" gvim -geom 100x28  "/etc/profile"
+    separator
+    prog "Aliases" "hand_up_3d" gvim -geom 100x28  "/home/john/.dot/bashrc/aliases"
+    prog "Colors" "hand_up_3d" gvim -geom 100x28  "/home/john/.dot/bashrc/colors"
+    prog "Completions" "hand_up_3d" gvim -geom 100x28  "/home/john/.dot/bashrc/completions"
+    prog "Functions" "hand_up_3d" gvim -geom 100x28  "/home/john/.dot/bashrc/functions"
+    separator
+    prog "Xsession" "klipper" bash -c "Play tada; gvim -geom 100x28 /etc/X11/xdm/Xsession"
+    prog "Xdefaults" "klipper" gvim -geom 100x28  "/root/.Xdefaults"
+    prog "XF86Config-4" "klipper" gvim -geom 100x28  "/etc/X11/XF86Config-4"
+}
+separator
+menu "Admin" "lockedfolder" {
+    menu "Help" "folder" {
+         prog "Yelp" "mini.maximize-vert" yelp
+         prog "KdeHelp" "mini.maximize-vert" khelpcenter
+    }
+    prog "FireStarter" "mini.xlock" firestarter
+    prog "Glsof (Open Files)" "mini.xlock" glsof
+    prog "Gparted" "gparted.png" gparted
+    prog "QTparted" "qtparted.png" qtparted
+    separator
+    prog "Klamav" "klamav.png" klamav
+    prog "Kprinter" "printer_32x32.xpm" kprinter
+    prog "Nvidia Settings" "qtparted.png" nvidia-settings
+    separator
+    prog "Hal Device Manager" "gnome-gtali" hal-device-manager
+    prog "HardInfo" "gnome-gtali" hardinfo
+    prog "Kinfocenter" "gnome-gtali" kinfocenter
+    prog "Show Hardware (hwbrowser)" "gnome-gtali" hwbrowser
+    prog "USBview" "gnome-gtali" usbview
+    separator
+    prog "Change Background" "chbg_64x64.xpm" chbg
+    prog "DiskFree" "filelight.png" filelight
+    prog "Password Manager" "revelation.png" revelation
+    prog "XscreenSaver" "xscreensaver.xpm" xscreensaver-demo
+}
+menu "Config Managers" "folder" {
+    menu "Gnome+GTK" "folder" {
+        prog "GnomeCC" "gnome-cromagnon_16x16.xpm" gnome-control-center
+        prog "Gtk1-Theme" "mini-ray" gtk-theme-switch1
+        prog "Gtk2-Theme" "mini-ray" gtk-chtheme
+        prog "GTK2 Theme and Fonts Changer" "mini-ray" gtk2_prefs
+        prog "Gnome-Crontab" "gnome-crontab.png" gnome-crontab
+    }
+    menu "PKG Managers" "folder" {
+        prog "Smart" "smart.png" bash -c "smart --gui"
+        prog "Synaptic" "synaptic.png" synaptic
+        prog "Yumex" "yumex.png" yumex
+    }
+    prog "Kcontrol" "gnome-gtali" kcontrol
+    prog "QtConfig" "gnome-gtali" qtconfig
+    separator
+    prog "GconfEditor 1" "gimp.png" gconf-editor
+    prog "gRsync" "grsync.xpm" grsync
+    prog "Gtkxset" "panel_settings_16x16.xpm" gxset
+}
+menu "Gnome Admin" "mini-shadowman-round" {
+    menu "Preferences" "folder" {
+        menu "Keyboard" "folder" {
+            prog "Keyboard Accessibility Prerences" "mini-ray" gnome-accessibility-keyboard-properties
+            prog "Keyboard Preferences" "mini-ray" gnome-keyboard-properties
+            prog "Keyboard Shortcuts" "mini-ray" gnome-keybinding-properties
+            prog "Keyboard Layout" "mini-ray" gnome-keyboard-layout
+        }
+        prog "Assistive Technologies Preferences" "mini-ray" gnome-at-properties
+        prog "Background Preferences" "mini-ray" gnome-background-properties
+        prog "File Types (MIME)" "mini-ray" gnome-file-types-properties
+        prog "Font Preferences" "mini-ray" gnome-font-properties
+        prog "Menu and Toolbar Preferences" "mini-ray" gnome-ui-properties
+        prog "Mouse Preferences" "mini-ray" gnome-mouse-properties
+        prog "Screen Resolution Preferences" "mini-ray" gnome-display-properties
+        prog "Sound Preferences" "mini-ray" gnome-sound-properties
+        prog "Theme Manager" "mini-ray" gnome-theme-manager
+    }
+    prog "Calculator" "mini-ray" gnome-calculator
+    prog "Cd Player" "mini-ray" gnome-cd
+    prog "Character Map" "mini-ray" gnome-character-map
+    prog "Control Center" "mini-ray" gnome-control-center
+    prog "Crontab" "mini-ray" gnome-crontab
+    prog "Default Applications" "mini-ray" gnome-default-applications-properties
+    separator
+    prog "Gnome Help" "mini-ray" gnome-help
+    prog "Search Tool" "mini-ray" gnome-search-tool
+    prog "Sound Recorder" "mini-ray" gnome-sound-recorder
+    prog "System Monitor" "mini-ray" gnome-system-monitor
+    prog "Telnet" "mini-ray" gnome-telnet
+    prog "Terminal" "mini-ray" gnome-terminal
+    prog "Text Editor" "mini-ray" gnome-text-editor
+    prog "Volume Control" "mini-ray" gnome-volume-control
+}
+menu "RedHat Admin" "mini-shadowman-round" {
+    prog "Red Hat Update" "mini-shadowman-round" up2date
+    prog "Red Hat Update Conf" "mini-shadowman-round" up2date --configure
+    separator
+    prog "Logviewer" "mini-shadowman-round" system-logviewer  --width=1100 --height=800
+    separator
+    prog "Config Apache" "mini-shadowman-round" system-config-httpd
+    prog "Config Authentication" "mini-shadowman-round" system-config-authentication
+    prog "Config Bind" "mini-shadowman-round" system-config-bind
+    prog "Config Boot" "mini-shadowman-round" system-config-boot
+    prog "Config Cluster" "mini-shadowman-round" system-config-cluster
+    prog "Config Date" "mini-shadowman-round" system-config-date
+    prog "Config Display" "mini-shadowman-round" system-config-display
+    prog "Config Keyboard" "mini-shadowman-round" system-config-keyboard
+    prog "Config Kickstart" "mini-shadowman-round" system-config-kickstart
+    prog "Config Language" "mini-shadowman-round" system-config-language
+    prog "Config LVM Logical Volumes" "mini-shadowman-round" system-config-lvm
+    prog "Config Mouse" "mini-shadowman-round" system-config-mouse
+    prog "Config Network" "mini-shadowman-round" system-config-network
+    prog "Config NFS" "mini-shadowman-round" system-config-nfs
+    prog "Config Packages" "rpmlogo-mini" system-config-packages --tree=/store/Misc/Rawhide
+    prog "Config Printer" "mini-shadowman-round" system-config-printer
+    prog "Config Samba" "mini-shadowman-round" system-config-samba
+    prog "Config Security" "mini-shadowman-round" system-config-securitylevel
+    prog "Config Services" "mini-shadowman-round" system-config-services
+    prog "Config Soundcard" "mini-shadowman-round" system-config-soundcard
+    prog "Config Time" "mini-shadowman-round" system-config-time
+    prog "Config Users" "mini-shadowman-round" system-config-users
+    separator
+    prog "Control Network" "mini-shadowman-round" system-control-network
+}
+separator
+menu "Network" "folder" {
+    prog "IPtraf" "mini.checkmark" urxvt -e iptraf 
+    prog "KnetworkManager" "knetworkmanager.png" knetworkmanager
+    prog "Knetstats" "netwatch.xpm" knetstats
+    prog "Netstat1" "netwatch.xpm" urxvt -hold -fn "xft:Bitstream Vera Sans Mono:style=Bold" -geometry 100x28 -e Netstat
+    prog "Netstat2" "netwatch.xpm" urxvt -hold -fn "xft:Bitstream Vera Sans Mono:style=Bold" -geometry 120x32 -e Netstat2
+    prog "Nnetstat" "netwatch.xpm" Nnetstat
+    prog "Nmap" "mini-bug2" nmapfe
+    prog "WireShark" "netwatch.xpm" wireshark
+    separator
+    prog "WiFi Manager" "kwifimanager.png" kwifimanager
+    prog "WiFi Selector" "kwifiselector.png" kwifiselector
+    prog "WiFi Radar" "wifi-radar.png" wifi-radar
+}
+separator
+menu "Internet" "internet2.png" {
+    menu "FTP" "folder" {
+        prog "Capivara" "capivara.png" java -jar /usr/local/Capivara/capivara.jar
+        prog "WxdFast" "wxdfast.png" wxdfast
+        separator
+        prog "FileZilla" "filezilla.png" filezilla
+        prog "Gftp" "gftp_16x16.xpm" gftp
+        prog "Kasablanca" "kasablanca.png" kasablanca
+        prog "VirgoFTP" "gftp_16x16.xpm" /usr/local/virgoftp/virgoftp
+        prog "Kftpgrabber" "kftpgrabber.png" kftpgrabber
+    }
+    menu "ProFtpd" "folder" {
+	prog "Proftpd status" "gftp.png" urxvt -hold -e ProFtpd status
+	prog "Proftpd start"  "gftp.png" urxvt -hold -e ProFtpd start
+	prog "Proftpd sttop"  "gftp.png" urxvt -hold -e ProFtpd stop
+    }
+    separator
+    prog "BookMarkBridge" "bookmarkbridgelogosmall.png" bookmarkbridge
+    prog "HttTrack" "webhttrack.xpm" webhttrack
+    separator
+    prog "Akregator" "akregator.png" akregator
+    separator
+    prog "Putty" "putty.png" putty
+    prog "Portscan" "PhonePortable.xpm" portscan
+}
+menu "Bluetooth" "bluetooth.png" {
+    prog "Gnome Bluetooth Manager" "bluetooth.png" gnome-bluetooth-manager
+    prog "Gnome Obex Server" "bluetooth.png" gnome-obex-server
+    prog "Gnome Obex Send" "bluetooth.png"   gnome-obex-send
+    separator
+    prog "KDE BlueTooth Daemon" "bluetooth.png" kbluetoothd
+    prog "KDE Obex client" "bluetooth.png"      kbtobexclient
+    prog "KDE Obex Client 2" "bluetooth.png"    qobexclient
+    prog "KDE Obex Server" "bluetooth.png"      kioobex_start
+    separator
+    prog "KDE Serial Chat" "bluetooth.png"   kbtserialchat
+    prog "KDE HCI Config" "bluetooth.png"    khciconfig
+}
+separator
+menu "Editors" "folder" {
+    menu "Hex" "folder" {
+        prog "KHex Editor" "khexdit" khexedit
+        prog "GHex Editor" "khexdit" ghex2
+    }
+    menu "XML" "folder" {
+        prog "Conglomerate" "conglomerate-icon-16.png" conglomerate
+        prog "XML Editor" "mini-ray" xmlcopyeditor
+    }
+    prog "Gedit" "karm" gedit
+    prog "Gnotepad" "notepad_16x16.xpm" gnp
+    prog "Gvim" "gkb" gvim
+    prog "Kyzis" "kyzis.png" kyzis
+    prog "Kate" "kate.png" kate
+    prog "KchmViewer" "kate.png" kchmviewer
+    prog "KWrite" "kwrite" kwrite
+    separator
+    prog "NEdit" "pencil2" nedit
+    separator
+    prog "CSSed" "cssed.png" cssed
+    prog "Nvu" "nvu.png" nvu
+    separator
+    prog "Unicode Char Map" "yudit" gucharmap
+    prog "Yudit" "yudit" yudit
+}
+menu "Graphics" "folder" {
+    menu "Image Viewers" "folder" {
+        prog "digiKam" "digikam.png" digikam
+        prog "GqView" "gqview" gqview
+        prog "Gthumb" "gthumb" gthumb
+        prog "Kview" "kview.png" kview
+        prog "Kuickshow" "kuickshow.png" kuickshow
+        prog "ShowImg" "showimg.png" showimg
+    	separator
+        prog "Kolourpaint" "kolourpaint.png" kolourpaint
+        prog "XnView" "kiconedit" xnview
+    }
+    menu "Scanner" "folder" {
+        prog "Gimp" "scanner.png" gimp -s
+        prog "VueCopy" "scanner.png" Vuecopy
+        prog "VueScan" "scanner.png" /usr/local/Vuescan/vuescan
+        prog "Xsane" "scanner.png" xsane
+    }
+    prog "Google Earth" "googleearth-icon.png" googleearth
+    separator
+    prog "DVI Viewer" "kdvi" kdvi --caption "DVI_Viewer"
+    prog "Gimp" "gimp_hi" gimp
+    prog "Snapshot" "ksnapshot" ksnapshot
+    prog "Xvidcap" "xvidcap.png" xvidcap
+}
+menu "Multimedia" "folder_favorites" {
+    menu "Author - Subt - Encode" "folder" {
+        prog "Avidemux2" "amarok.png" avidemux2
+        prog "Gtranscode" "amarok.png" gtranscode
+        prog "Kdvdauthor" "gnome-gtali" qdvdauthor
+        prog "Ksubtitles" "ksubtile.png" ksubtile
+    }
+    menu "Video Players" "folder" {
+        prog "AviPlay (AVI, ASF, ASX)" "avifile.png" aviplay
+        prog "Gxine" "ksokoban" gxine
+        prog "Kaffeine" "kaffeine.png" kaffeine
+        prog "Totem" "gnome-gtali" totem
+        prog "MPlayer" "aktion" gmplayer
+        prog "VideoLan" "vlc.png" vlc
+    	separator
+        prog "Ogle" "aktion" ogle -u gui
+        prog "RealPlayer" "real" realplay
+        prog "VCD video Conv" "ksokoban" /usr/local/bin/vcd.py
+        prog "Xine" "ksokoban" xine
+    }
+    separator
+    menu "Sound Mixers" "folder" {
+        prog "Aumix" "mini.checkmark" urxvt -hold -e aumix -C ansi
+        prog "AlsaMixer" "mini.checkmark" urxvt -hold -geometry 220x30+0+0 -e alsamixer 
+        prog "AlsaMixerGUI" "alsamixergui.png" alsamixergui
+        prog "Gnome Vol Control" "gnome-mixer.png" gnome-volume-control
+        prog "K Mixer" "kmix" kmix
+        prog "Mix2005" "kmix" mix2005
+    }
+    menu "Sound Recorders" "folder" {
+    	prog "Audacity" "audacity.xpm" audacity
+    	prog "Gnome Sound Recorder " "audacity.xpm" gnome-sound-recorder
+    	prog "Krec" "audacity.xpm" krec
+    }
+    menu "Radio" "folder" {
+        prog "KdeRadioStation" "kderadio16_new.png" kderadiostation --sync
+        prog "RadioStation" "kderadio16_new.png" radiostation
+        prog "StreamTuner" "streamtuner.png" streamtuner
+    }
+    separator
+    prog "Dvd::rip" "dvdrip.xpm" dvdrip
+    prog "DVDauthor" "k3b.png" DVDauthor
+    prog "IsoMaster" "gnome-cd.png" isomaster
+    prog "K3b - The CD Creator" "k3b.png" k3b
+    prog "MagicVid" "magicvidicon.png" magicvid
+    prog "ToVid" "tovid_icon_32.png" tovidgui.py
+    separator
+    prog "EasyTag" "EasyTAG.xpm" easytag
+    prog "Kid3 TagMP3" "kid3.png" kid3
+    prog "Songbird" "songbird.png" Songbird
+    separator
+    prog "Amarok" "amarok.png" amarok
+    prog "CD Player" "kscd" kscd
+    prog "NoAtun" "amarok.png" noatun
+    prog "Zinf" "amarok.png" zinf
+    prog "Rhythmbox" "rhythmbox.png" rhythmbox
+    prog "Xmms" "xmms.png" xmms
+}
+menu "P2P" "folder" {
+    menu "Messaging" "folder" {
+        prog "Gaim" "gaim_16x16" gaim
+        prog "Kopete" "kopete.png" kopete
+        separator
+        prog "Ekiga" "ekiga.png" ekiga
+        prog "EkigaP" "ekiga.png" bash -c "(. /root/bin/Portuga_Locale ; ekiga)"
+        prog "Skype" "skype.png" skype
+        prog "WengoPhone" "wengophone.png" WengoPhone
+    }
+    prog "Amule" "amule.png" su -l -c amule tanso
+    prog "Bittorrent" "bittorrent.png" bittorrent
+}
+separator
+menu "Utils" "folder_red" {
+    menu "Calculators" "folder" {
+        prog "Kcalc" "kcalc" kcalc
+        prog "Gcalc" "calc_16x16.xpm" gcalctool
+        prog "Qalculate" "rcalc_16x16.xpm" qalculate-gtk
+    }
+    menu "Dictionarys" "folder" {
+        prog "Gnome-Dict" "qwordtrans" gnome-dictionary
+        prog "Kdict" "kdict.png" kdict
+        prog "Qwordtrans" "qwordtrans" kwordtrans
+        prog "StarDict" "stardict.png" stardict
+    }
+    menu "Emulators" "folder" {
+        prog "Gnome Terminal" "smallpc" gnome-terminal
+        prog "Urxvt" "kvt" urxvt
+    }
+    menu "File Managers" "folder" {
+        prog "Konqueror" "mini-k" konqueror --profile "Johns Profile"
+        prog "Krusader" "krusader.png" krusader
+        prog "Smb4k" "smb4k.png" smb4k
+    	separator
+        prog "PcmanFM" "icon_emelfm2_024.png" pcmanfm
+	prog "Thunar" "Thunar.png" thunar
+    }
+    prog "Acrobat" "applix" acroread
+    prog "Find Files (k)" "kfind" kfind
+    prog "Find Files (g)" "kfind" gnome-search-tool
+    separator
+    prog "Gfloppy" "3floppy_unmount" gfloppy
+    prog "GTKfloppy" "3floppy_unmount" /usr/local/bin/floppy
+}
+menu "Xutils" "folder_red" {
+    menu "Char Maps" "folder" {
+        prog "GuCharMap" "gucharmap.png" gucharmap
+        prog "KcharSelect" "kcharselect.png" kcharselect
+    }
+    menu "Color Select" "folder" {
+        prog "Kcolor Choose" "mini-raise" kcolorchooser
+        prog "Kcolor Edit" "mini-raise" kcoloredit
+        prog "XcolorSel" "mini-raise" xcolorsel -rows 24 -rgb8
+    }
+    prog "Virtual Keyboard" "keyboard.xpm" klavier
+    prog "XKeyCaps" "keyboard.xpm" xkeycaps
+    separator
+    prog "Screen Resize & Rotate" "randr.png" krandrtray
+    prog "KdirStat" "kdirstat.png" kdirstat
+    prog "GfontSampler" "rpmfile" gfontsampler
+    prog "XfontSel" "rpmfile" xfontsel
+    separator
+    prog "EditRes" "EscherTriangle" editres
+    prog "Glxinfo" "mini.checkmark" urxvt -hold -e glxinfo
+    separator
+    prog "XcutSel" "mini.xmag" xcutsel
+    prog "XdpYinfo" "kcmx" urxvt -hold -e xdpyinfo
+    separator
+    prog "Xkill" "bomb" xkill
+}
+menu "Office+DB" "folder" {
+    prog "AbiWord" "abiword" abiword  -geometry 1160x1000+12+19
+    prog "Gnumeric" "gnumeric" gnumeric
+    prog "Kexi" "kexi.png" kexi
+    prog "Knoda" "knoda.png" kexi
+    prog "Tellico" "tellico.png" tellico
+}

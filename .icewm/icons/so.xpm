@@ -1,0 +1,36 @@
+/* XPM */
+static char *16_so[] = {
+/* width height num_colors chars_per_pixel */
+"    20    20        9            1",
+/* colors */
+". c #000000",
+"# c #000080",
+"a c #008080",
+"b c #808080",
+"c c #c0c0c0",
+"d c #ffff00",
+"e c #0000ff",
+"f c none",
+"g c #ffffff",
+/* pixels */
+"####ffffffbfffffffff",
+"####fffffbcbffffffff",
+"####ffffbcbebfffffff",
+"####fffbcbcbgbffffff",
+"####ffbcbgg.bgbfffff",
+"####fbcbgggg.bebffff",
+"####bcbggagggcbebfff",
+"###bcbgagggggg.bebff",
+"##bcbggggagaggg.bebf",
+"#bcbgggbbbbbbbggcbeb",
+"##bggbbaaadaeebggcbf",
+"###cbggaadddaaebgbff",
+"###bggcaaadaaaae.fff",
+"###gggaaaeeaaaae.fff",
+"##bgbaaaeaeaaaeebbff",
+"##gbgaceaaaeaae#a.ff",
+"##baccceaaaeaabea.ff",
+"##bgaeeaaaaaab#ab.ff",
+"##.aaaaaaaaaaa###.ff",
+"###..a.a.a.a.a.#.fff"
+};

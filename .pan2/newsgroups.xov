@@ -1,0 +1,14 @@
+# groupname totalArticleCount unreadArticleCount [server:latestXoverHigh]*
+gmane.comp.sysutils.backup.tarsnap.user 0 0 1:467
+gmane.comp.terminal-emulators.tmux.user 0 0 1:2360
+gmane.linux.arch.announce 0 0 1:258
+gmane.linux.arch.brazil 0 0 1:6215
+gmane.linux.arch.devel 0 0 1:16885
+gmane.linux.arch.general 0 0 1:38520
+gmane.linux.arch.pacman.devel 0 0 1:8770
+gmane.linux.arch.ports 0 0 1:56
+gmane.linux.arch.releng 0 0 1:965
+gmane.linux.arch.tur.user 0 0 1:23304
+gmane.network.bit-torrent.rtorrent.devel 3 0 1:2537
+gwene.linux.archlinux.packages 0 0 1:31951
+gwene.org.linux.arch.aur 0 0 1:21187

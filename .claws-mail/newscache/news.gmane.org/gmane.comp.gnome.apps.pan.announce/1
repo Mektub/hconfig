@@ -1,0 +1,134 @@
+Path: main.gmane.org!not-for-mail
+From: Charles Kerr <charles-GQPKUYZ348xl57MIdRCFDg@public.gmane.org>
+Newsgroups: gmane.comp.gnome.apps.pan.announce
+Subject: ANN: Pan 0.14.2.90 "A Bouquet of Corpses"
+Date: Fri, 28 Nov 2003 13:09:47 -0800
+Lines: 80
+Sender: pan-announce-bounces+gcgapa-pan-announce=m.gmane.org@nongnu.org
+Approved: news@gmane.org
+Message-ID: <20031128210947.GF8540@source.rebelbase.com>
+NNTP-Posting-Host: deer.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Trace: sea.gmane.org 1070053956 28947 80.91.224.253 (28 Nov 2003 21:12:36 GMT)
+X-Complaints-To: usenet@sea.gmane.org
+NNTP-Posting-Date: Fri, 28 Nov 2003 21:12:36 +0000 (UTC)
+Original-X-From: pan-announce-bounces+gcgapa-pan-announce=m.gmane.org@nongnu.org Fri Nov 28 22:11:34 2003
+Return-path: <pan-announce-bounces+gcgapa-pan-announce=m.gmane.org@nongnu.org>
+Original-Received: from monty-python.gnu.org ([199.232.76.173])
+	by deer.gmane.org with esmtp (Exim 3.35 #1 (Debian))
+	id 1APptm-0002RA-00
+	for <gcgapa-pan-announce@m.gmane.org>; Fri, 28 Nov 2003 22:11:34 +0100
+Original-Received: from localhost ([127.0.0.1] helo=monty-python.gnu.org)
+	by monty-python.gnu.org with esmtp (Exim 4.24)
+	id 1APqr9-0000Ox-4Y
+	for gcgapa-pan-announce@m.gmane.org; Fri, 28 Nov 2003 17:12:55 -0500
+Original-Received: from list by monty-python.gnu.org with tmda-scanned (Exim 4.24)
+	id 1APqqS-0000IO-7E for pan-announce@mail.freesoftware.fsf.org;
+	Fri, 28 Nov 2003 17:12:12 -0500
+Original-Received: from mail by monty-python.gnu.org with spam-scanned (Exim 4.24)
+	id 1APqpv-0008Sz-If for pan-announce@mail.freesoftware.fsf.org;
+	Fri, 28 Nov 2003 17:12:10 -0500
+Original-Received: from [209.209.39.241] (helo=a.mx.rebelbase.com)
+	by monty-python.gnu.org with esmtp (TLSv1:DES-CBC3-SHA:168)
+	(Exim 4.24) id 1APqpv-0008SZ-01
+	for pan-announce@mail.freesoftware.fsf.org;
+	Fri, 28 Nov 2003 17:11:39 -0500
+Original-Received: (qmail 28210 invoked by uid 1004); 28 Nov 2003 21:09:47 -0000
+Original-To: pan-announce-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+Content-Disposition: inline
+User-Agent: Mutt/1.5.4i
+X-BeenThere: pan-announce-qX2TKyscuCcdnm+yROfE0A@public.gmane.org
+X-Mailman-Version: 2.1.2
+Precedence: list
+List-Id: <pan-announce.nongnu.org>
+List-Unsubscribe: <http://mail.nongnu.org/mailman/listinfo/pan-announce>,
+	<mailto:pan-announce-request-qX2TKyscuCfj6uQDcMeWIL+T/TLBVb5JAQf1occZ6R0@public.gmane.org>
+List-Archive: <http://mail.gnu.org/pipermail/pan-announce>
+List-Post: <mailto:pan-announce-qX2TKyscuCcdnm+yROfE0A@public.gmane.org>
+List-Help: <mailto:pan-announce-request-qX2TKyscuCfj6uQDcMeWIGhVABuuHcJK@public.gmane.org>
+List-Subscribe: <http://mail.nongnu.org/mailman/listinfo/pan-announce>,
+	<mailto:pan-announce-request-qX2TKyscuCfj6uQDcMeWIPoqqxK1cvDH9vnX9k1QryA@public.gmane.org>
+Errors-To: pan-announce-bounces+gcgapa-pan-announce=m.gmane.org@nongnu.org
+Xref: main.gmane.org gmane.comp.gnome.apps.pan.announce:1
+
+Hmm, it's well past time for a new Pan beta.  Tarballs are up now,
+and I'll hold off the freshmeat/gnome-apps announcement until Monday
+to give the RPM builders a chance to do their magic.
+
+Also, is Fedora significantly different from RH9 that we need a new
+set of RPMs for it, or will RH9 RPMs be sufficient?
+
+cheers,
+Charles
+
+-----
+
+Nov 28, 2003 - New Release:                                                      
+0.14.2.90 - "A Bouquet of Corpses"                                               
+http://pan.rebelbase.com/download/releases/0.14.2.90/                            
+                                                                                 
+What is Pan?                                                                     
+                                                                                 
+  Pan is a newsreader which attempts to be pleasing to both new and experienced  
+  users. In addition to the standard newsreader features, Pan also supports      
+  yEnc, offline newsreading, article filtering, multiple connections, and more   
+  features for power users and alt.binaries fans.                                
+                                                                                 
+  It's also the only Unix newsreader to get a perfect score on the Good          
+  Net-Keeping Seal of Approval evaluations.                                      
+                                                                                 
+About 0.14.2.90                                                                  
+                                                                                 
+  This release adds Perl-compatable regular expression support, "Manual Decode"  
+  for decoding arbitrary sets of articles, and the inevitable bugfixes.          
+                                                                                 
+Changes since 0.14.2                                                             
+                                                                                 
+                                   New Features                                  
+  +----------------------------------------------------------------------------+ 
+  | #119518 | Torstein Sunde | Added "Manual Decode" button for decoding       | 
+  |         |                | arbitrary sets of articles.                     | 
+  |---------+----------------+-------------------------------------------------| 
+  | #122078 | Carl Hudkins   | Pan now uses Perl-Compatable Regular            | 
+  |         |                | Expressions.                                    | 
+  +----------------------------------------------------------------------------+ 
+                                                                                 
+                                    Usability                                    
+  +----------------------------------------------------------------------------+ 
+  |         |                | When expanding a multipart subthread, show the  | 
+  | #119543 | Torstein Sunde | top article's real line count, rather than the  | 
+  |         |                | sum of all lines in the multipart.              | 
+  +----------------------------------------------------------------------------+ 
+                                                                                 
+                                    Bug Fixes                                    
+  +----------------------------------------------------------------------------+ 
+  | #123246 | Jakob Breivik     | Fixed ``error creating regular expression''  | 
+  |         | Grimstveit        | bug in the Add Score dialog.                 | 
+  |---------+-------------------+----------------------------------------------| 
+  | #127661 | Ted Anderson      | Position the cursor at the end of the body   | 
+  |         |                   | in a follow-up window.                       | 
+  |---------+-------------------+----------------------------------------------| 
+  | #120129 | John van der Kamp | Fix GUI warts between the toolbar filter     | 
+  |         |                   | buttons and menu filter buttons.             | 
+  |---------+-------------------+----------------------------------------------| 
+  | #128128 | Pan Team          | Fix bug when sorting incomplete multipart    | 
+  |         |                   | articles.                                    | 
+  |---------+-------------------+----------------------------------------------| 
+  | #125921 | Artur Brodowski   | Fix charset encoding bug in the log window.  | 
+  |---------+-------------------+----------------------------------------------| 
+  |         |                   | Don't flag text as the beginning of a        | 
+  | #101510 | Juergen P. Meier  | uuencoded block if the begin line doesn't    | 
+  |         |                   | have 3 octal digits for file permissions.    | 
+  |---------+-------------------+----------------------------------------------| 
+  | #121765 | Bill Baker        | Added '\' as a valid URL character.          | 
+  |---------+-------------------+----------------------------------------------| 
+  | #124098 | Lenroc            | Silence annoying win32 warning message.      | 
+  |---------+-------------------+----------------------------------------------| 
+  | #121040 | haleykd           | Fixed regression test for Windows build      | 
+  +----------------------------------------------------------------------------+ 
+
+                                     Config
+  +----------------------------------------------------------------------------+ 
+  | #122749 | Pawe              | Fixed some errors in the desktop entry spec  | 
+  +----------------------------------------------------------------------------+ 

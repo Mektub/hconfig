@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000019_xtremespeeds" version="0.1.0">
+  <title>xtremespeeds.net</title>
+  <released_time>2010-09-01 10:52:07</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>xtremespeeds.py</filename>
+  <classname>xtremespeedsPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000019_xtremespeeds/0.1.0/</download_url>
+  <website_url>http://xtremespeeds.net</website_url>
+  <icon_url>http://xtremespeeds.net/favicon.ico</icon_url>
+  <require_auth>true</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

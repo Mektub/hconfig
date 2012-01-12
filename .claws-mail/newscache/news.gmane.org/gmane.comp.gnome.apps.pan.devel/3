@@ -1,0 +1,89 @@
+Path: main.gmane.org!not-for-mail
+From: Charles Kerr <charles-GQPKUYZ348xl57MIdRCFDg@public.gmane.org>
+Newsgroups: gmane.comp.gnome.apps.pan.devel
+Subject: Re: pan, gtkspell, and specifying your language
+Date: Fri, 2 Aug 2002 07:00:45 -0700
+Lines: 39
+Sender: pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+Approved: news@gmane.org
+Message-ID: <20020802070045.A12252@code.rebelbase.com>
+References: <3D4A1776.2060105@cs.washington.edu>
+Reply-To: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+NNTP-Posting-Host: localhost.gmane.org
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Trace: main.gmane.org 1028296829 24268 127.0.0.1 (2 Aug 2002 14:00:29 GMT)
+X-Complaints-To: usenet@main.gmane.org
+NNTP-Posting-Date: Fri, 2 Aug 2002 14:00:29 +0000 (UTC)
+Cc: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org, gtkspell-devel-5NWGOfrQmneRv+LV9MX5uipxlwaOVQ5f@public.gmane.org
+Return-path: <pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>
+Original-Received: from fencepost.gnu.org ([199.232.76.164])
+	by main.gmane.org with esmtp (Exim 3.33 #1 (Debian))
+	id 17acyi-0006JI-00
+	for <gcgapd-pan-@public.gmane.org>; Fri, 02 Aug 2002 16:00:29 +0200
+Original-Received: from localhost ([127.0.0.1] helo=fencepost.gnu.org)
+	by fencepost.gnu.org with esmtp (Exim 3.35 #1 (Debian))
+	id 17aczG-0003w0-00; Fri, 02 Aug 2002 10:01:02 -0400
+Original-Received: from code.rebelbase.com ([209.209.9.88])
+	by fencepost.gnu.org with smtp (Exim 3.35 #1 (Debian))
+	id 17acz1-0003u6-00
+	for <pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>; Fri, 02 Aug 2002 10:00:47 -0400
+Original-Received: (qmail 12425 invoked by uid 539); 2 Aug 2002 14:00:45 -0000
+Original-To: Evan Martin <martine-GmWTxIRN22iJaUV4rX00uodd74u8MsAO@public.gmane.org>
+Content-Disposition: inline
+In-Reply-To: <3D4A1776.2060105-GmWTxIRN22iJaUV4rX00uodd74u8MsAO@public.gmane.org>
+User-Agent: Mutt/1.3.20i
+Errors-To: pan-devel-admin-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+X-BeenThere: pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org
+X-Mailman-Version: 2.0.11
+Precedence: bulk
+List-Help: <mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsNcOa+i2P73dg@public.gmane.org>
+List-Post: <mailto:pan-devel-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf72LY78lusg7I@public.gmane.org>
+List-Subscribe: <http://mail.freesoftware.fsf.org/mailman/listinfo/pan-devel>,
+	<mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsM0zj+wxrhfeaQyC0oar+/r@public.gmane.org>
+List-Id: Discussions of Pan source code hacking. <pan-devel.mail.freesoftware.fsf.org>
+List-Unsubscribe: <http://mail.freesoftware.fsf.org/mailman/listinfo/pan-devel>,
+	<mailto:pan-devel-request-gkR8zOBocaisVsMlgIcMJTKN4Jd3Lbf7+z/wSnr6LsOyq+daOM+IDKqXwboT3ro7@public.gmane.org>
+List-Archive: <http://mail.freesoftware.fsf.org/pipermail/pan-devel/>
+Xref: main.gmane.org gmane.comp.gnome.apps.pan.devel:3
+X-Report-Spam: http://spam.gmane.org/gmane.comp.gnome.apps.pan.devel:3
+
+On Thu, Aug 01, 2002 at 10:24:06PM -0700, Evan Martin wrote:
+> I am the author GtkSpell.  GtkSpell 2 isn't very popular (I just wrote 
+> it recently!) so I figure the Pan users are the people I should ask 
+> about features.  :)
+
+Hi Evan,
+
+It's great to hear from you!  I was about to contact you this morning...
+
+Newsgroups typically use a single language, so in Pan users set
+default charsets on a per-newsgroup basis, and Pan could pass that
+along to a gtkspell API if you like.
+
+More urgently, though, I've also got a handful of crasher bug
+reports that are best handled in gtkspell.   My (unrealistic?) wish
+would be to have these fixes in 2.0.1, punting configurable languages
+to 2.0.2 if necessary, in the next 7-10 days so that Pan 0.13.0 with
+gtkspell can be released in time for bundling with the new RH and
+Mandrake releases.
+
+These are all GtkSpell-related crashes in Pan:
+* http://bugzilla.gnome.org/show_bug.cgi?id=89657
+* http://bugzilla.gnome.org/show_bug.cgi?id=89588
+* http://bugzilla.gnome.org/show_bug.cgi?id=88924
+* http://mail.freesoftware.fsf.org/pipermail/pan-users/2002-July/001500.html
+
+
+And, just to make certain it gets in the mailing list archives
+before I forget about it, a low-priority request:
+
+* When a user hits `rewrap text' to make it fit in 72/80 columns
+  as per Usenet ettiquette, users have reported that the red
+  spellcheck lines go away.  If gtkspell can know when the buffer's
+  contents have changed, it would be nice to reapply the spellcheck
+  for the entire changed region; otherwise, perhaps an API call so
+  that Pan could tell it to update the region.
+
+cheers,
+Charles

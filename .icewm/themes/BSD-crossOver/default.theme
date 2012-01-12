@@ -1,0 +1,89 @@
+# BSD-crossOver
+#
+# First, Deraj DeZine put together a wonderful looking design.
+# Then Alexander Mitvix added Linux to the active title.
+# Ahh, but then Metrol took Linux outta there and put FreeBSD
+# in its place, and all was well.
+#
+# Metrol <metrol@metrol.net>
+
+ThemeDescription="BSD-crossOver"
+ThemeAuthor="Metrol <metrol@metrol.net>"
+Look="gtk"
+
+TitleButtonsLeft="s"
+TitleButtonsRight="xmi"
+TitleButtonsSupported="sxmi"
+
+TitleBarHeight=20
+BorderSizeX=4
+BorderSizeY=5
+CornerSizeX=20
+CornerSizeY=20
+DlgBorderSizeX=2
+DlgBorderSizeY=2
+
+ShowMenuButtonIcon=0
+TaskBarClockLeds=0
+
+# Frame Borders
+
+ColorNormalBorder="#808080"
+ColorActiveBorder="#808088"
+
+# Taskbar Menus
+
+ColorNormalMenu="#d8d8d0"
+ColorActiveMenuItem="#b0b0ff"
+ColorNormalMenuItemText="#000000"
+ColorActiveMenuItemText="#000000"
+ColorDisabledMenuItemText="#808080"
+
+# Listbox
+
+ColorListBox="#d8d8d0"
+ColorListBoxText="#000000"
+ColorListBoxSelection="#b0b0ff"
+ColorListBoxSelectionText="#000000"
+ColorScrollBar="#d8d8d0"
+ColorScrollBarSlider="#d8d8d0"
+ColorScrollBarButton="#d8d8d0"
+ColorScrollBarButtonArrow="#000000"
+ColorLabel="#d8d8d0"
+ColorText="#000000"
+
+# Input
+
+ColorInput="#d8d8d0"
+ColorInputText="#000000"
+ColorInputSelection="#b0b0ff"
+ColorInputSelectionText="#000000"
+
+# Applets
+
+ColorClock="#d8d8d0"
+ColorClockText="#000000"
+ColorCPUStatusUser="#b0b0ff"
+ColorCPUStatusSystem="#808080"
+ColorCPUStatusNice="#000000"
+ColorCPUStatusIdle="#000000"
+ColorNetSend="#ffb0b0"
+ColorNetReceive="#b0b0ff"
+ColorNetIdle="#b0ffb0"
+
+# Tool Tips
+
+ColorToolTip="#b0b0ff"
+ColorToolTipText="#000000"
+
+# Misc
+
+ColorMoveSizeStatus="#b0b0ff"
+ColorMoveSizeStatusText="#000000"
+ColorQuickSwitch="#b0b0ff"
+ColorQuickSwitchText="#000000"
+ColorDefaultTaskBar="#d8d8d0"
+ColorDialog="#d8d8d0"
+ColorActiveTaskBarAppText="#ffffff"
+ColorNormalTaskBarAppText="#000000"
+ColorMinimizedTaskBarAppText="#000000"

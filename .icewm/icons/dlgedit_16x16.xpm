@@ -1,0 +1,29 @@
+/* XPM */
+static char *dlgedit_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"  c black",
+". c #585858",
+"X c navy",
+"o c #a0a0a0",
+"O c #c3c3c3",
+"+ c white",
+"@ c None",
+/* pixels */
+"@              @",
+" OOOOOOOOOOOOOO ",
+" OO.O.O.O.O.O.O ",
+" OOOOOOOOOOOOOO ",
+" OOO...O.Ooooo+ ",
+" OOOOOOO.Oo+Oo+ ",
+" O.......Oo...+ ",
+" OOOOOOOOOo++++ ",
+" O......+Oo...+ ",
+" O.+X++++Ooooo+ ",
+" O.+X++++OoOO.+ ",
+" O.+X++++Ooo.o+ ",
+" OOOOOOOOO+++++ ",
+" OO.O.O.O.O.O.O ",
+" OOOOOOOOOOOOOO ",
+"@              @"
+};

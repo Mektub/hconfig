@@ -1,0 +1,114 @@
+ThemeDescription="Icevista Modificado Para Parecer O M$-Ruindows Vista Black"
+ThemeAuthor="Eduardo F. Filippo <ed2ef@yahoo.com.br>"
+#---------------------------------------------------------------
+# Tipo de Tema
+#---------------------------------------------------------------
+Look=metal
+RolloverButtonsSupported=1
+#---------------------------------------------------------------
+# Tamanho Da Barra de titulos e outras coisitas
+#---------------------------------------------------------------
+TitleBarHeight=21
+TitleBarCentered=1
+TitleButtonsLeft="s"
+TitleButtonsRight="xmi"
+TitleButtonsSupported="xmis"
+#---------------------------------------------------------------
+# Frescuras do Tema
+#---------------------------------------------------------------
+BorderSizeX=2
+BorderSizeY=2
+CornerSizeX=23
+CornerSizeY=23
+DlgBorderSizeX=4
+DlgBorderSizeY=4
+#---------------------------------------------------------------
+# Cores
+#---------------------------------------------------------------
+# Barra De Titulos..
+#------------------------------------------
+ColorActiveTitleBarText="rgb:00/00/00"
+ColorNormalTitleBarText="rgb:6A/6A/6A"
+ColorNormalMenuItemText="rgb:DE/DE/DE"
+#------------------------------------------
+# Forca Transparencia No Relogio..
+#------------------------------------------
+ColorClock=""
+#------------------------------------------
+# Muda Cor Do Texto Da Janela Minimizada..
+#------------------------------------------
+ColorMinimizedTaskBarAppText="rgb:FF/FF/FF"
+ColorNormalTaskBarAppText="rgb:24/A7/54"
+ColorActiveTaskBarAppText="rgb:00/00/00"
+ColorNormalButtonText="rgb:24/A7/54"
+ColorNormalButton="rgb:00/57/29"
+# Listbox
+ColorListBox="rgb:00/00/00"
+ColorListBoxText="rgb:24/A7/54"
+ColorListBoxSelection="rgb:24/A7/54"
+ColorListBoxSelectionText="rgb:00/00/00"
+# Dialog
+ColorDialog="rgb:00/00/00"
+ColorLabel="rgb:00/00/00"
+ColorLabelText="rgb:24/A7/54"
+# QuickSwitch
+ColorQuickSwitch="rgb:00/52/27"
+ColorQuickSwitchText="rgb:FF/FF/FF"
+# Fontes
+TitleFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+TitleFontNameXft="sans-serif:size=12"
+#
+MenuFontName="-*-sans-bold-r-*-*-*-100-*-*-*-*-*-*"
+MenuFontNameXft="sans-serif:size=10:bold"
+#
+StatusFontName="-*-monospace-bold-r-*-*-*-120-*-*-*-*-*-*"
+StatusFontNameXft="monospace:size=12:bold"
+#  
+QuickSwitchFontName="-*-monospace-bold-r-*-*-*-120-*-*-*-*-*-*"
+QuickSwitchFontNameXft="monospace:size=12:bold"
+#  
+NormalButtonFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+NormalButtonFontNameXft="sans-serif:size=12"
+#  
+ActiveButtonFontName="-*-sans-bold-r-*-*-*-120-*-*-*-*-*-*"
+ActiveButtonFontNameXft="sans-serif:size=12:bold"
+#  
+NormalTaskBarFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+NormalTaskBarFontNameXft="sans-serif:size=12"
+#  
+ActiveTaskBarFontName="-*-sans-bold-r-*-*-*-120-*-*-*-*-*-*"
+ActiveTaskBarFontNameXft="sans-serif:size=12:bold"
+# fallback: NormalButtonFontName
+ToolButtonFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+ToolButtonFontNameXft="sans-serif:size=12"
+#  fallback: NormalButtonFontName
+NormalWorkspaceFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+NormalWorkspaceFontNameXft="sans-serif:size=12"
+#  fallback: ActiveButtonFontName
+ActiveWorkspaceFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+ActiveWorkspaceFontNameXft="sans-serif:size=12"
+#  
+MinimizedWindowFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+MinimizedWindowFontNameXft="sans-serif:size=12"
+#  
+ListBoxFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+ListBoxFontNameXft="sans-serif:size=12"
+#  
+ToolTipFontName="-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"
+ToolTipFontNameXft="sans-serif:size=12"
+#  
+ClockFontName="-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*"
+ClockFontNameXft="monospace:size=12"
+#  
+ApmFontName="-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*"  
+ApmFontNameXft="monospace:size=12"
+#  
+InputFontName="-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*"  
+InputFontNameXft="monospace:size=12"
+#  
+LabelFontName="-*-sans-medium-r-*-*-*-140-*-*-*-*-*-*"  
+LabelFontNameXft="sans-serif:size=12"
+#---------------------------------------------------------------
+# Images Q Vao Usar Degrade..ou seja la come q se escreve isso...
+#---------------------------------------------------------------
+Gradients="taskbuttonactive.xpm menusel.xpm taskbarbg.xpm menubg.xpm taskbuttonbg.xpm taskbuttonminimized.xpm"

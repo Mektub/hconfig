@@ -1,0 +1,48 @@
+#!/bin/sh
+# This file is a simple shell script; It gets run on pekwm startup, after 
+# the theme and all config has loaded if it is set executable
+
+# It also gets re-run every time pekwm is restarted.
+ 
+CRT=`xrandr | grep "HDMI-0 connected"`
+if [ "x${CRT}x" != "xx" ]; then
+##  xrandr --output LVDS --off --output DFP1 --mode 1680x1050 --pos 0x0 --rotate normal
+#   xrandr --output LVDS --mode 1366x768 --pos 0x0 --rotate normal  --output DFP1 --mode 1680x1050 --pos 0x0 --rotate normal 
+    xrandr --output LVDS --mode 1366x768 --pos 0x0 --rotate normal  --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal
+fi
+
+xhost + &
+setxkbmap pt &
+xfsettingsd &
+(sleep 30; xmodmap ~/.Xmodmap) &
+xbindkeys &
+nitrogen --restore
+
+#lxpanel &
+xfce4-panel &
+#xfce4-settings-manager &
+#xfdesktop &
+#nm-applet --sm-disable &
+#tint2 &
+
+aplay /opt/MyDocs/Sounds/katapum.wav &
+adeskbar &
+#/usr/bin/conky -c /root/Conky/conkyCalendar/conkyrc &
+gnote --note-path=/root/Dropbox/Gnote &
+#checkgmail &
+/usr/bin/gvolwheel &
+archassistant &
+/usr/bin/dropboxd &
+xcompmgr &
+
+Terminal --geometry=95x26+100+100 --hide-menubar -T Everything \
+	     --command "tail -f /var/log/everything.log" \
+		 --tab -T "Shell 1" --tab -T "Shell 2" --tab -T "Shell 3" &
+
+xset s 1800
+xset dpms 1800 1800 1800
+wicd-gtk &
+devilspie &
+
+#gkrellm &
+#(sleep 10;/root/bin/SynergyStart) &

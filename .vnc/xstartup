@@ -1,0 +1,15 @@
+#!/bin/sh
+
+xrdb $HOME/.Xresources
+xsetroot -solid NavyBlue &
+/usr/bin/xset r on s noblank s noexpose s 0 s off &
+export XAUTHORITY=~/.Xauthority
+
+#/root/bin/RoxTerm
+
+Terminal --geometry=94x25+521+382 --hide-menubar --tab -T "Shell 1" --tab -T "Shell 2" &
+##xbindkeys &
+##xhost + &
+##idesk &
+
+exec icewm &

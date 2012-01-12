@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000029_frenchtorrentdb" version="0.20">
+  <title>FrenchTorrentDB</title>
+  <released_time>2011-07-19 18:30:22</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>frenchtorrentdb.py</filename>
+  <classname>FrenchTorrentDBPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000029_frenchtorrentdb/0.20/</download_url>
+  <website_url>http://www2.frenchtorrentdb.com/</website_url>
+  <icon_url>http://www2.frenchtorrentdb.com/themes/images/favicon.png</icon_url>
+  <require_auth>true</require_auth>
+  <default_disable>true</default_disable>
+</plugin>

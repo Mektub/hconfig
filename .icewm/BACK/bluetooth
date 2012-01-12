@@ -1,0 +1,12 @@
+
+menu "Bluetooth" "bluetooth.png" {
+    prog "Gnome Bluetooth Manager" "bluetooth.png" gnome-bluetooth-manager
+    prog "Gnome Obex Server" "bluetooth.png" gnome-obex-server
+    prog "Gnome Obex Send" "bluetooth.png"   gnome-obex-send
+    separator
+    prog "KDE Obex client" "bluetooth.png"   kbtobexclient
+    prog "KDE Serial Chat" "bluetooth.png"   kbtserialchat
+    prog "KDE HCI Config" "bluetooth.png"    khciconfig
+    prog "KDE Obex Server" "bluetooth.png"   kioobex_start
+    prog "KDE Obex Client" "bluetooth.png"   qobexclient
+}

@@ -1,0 +1,13 @@
+03/05/10 02:36:11 Xvnc version TightVNC-1.3.10
+03/05/10 02:36:11 Copyright (C) 2000-2009 TightVNC Group
+03/05/10 02:36:11 Copyright (C) 1999 AT&T Laboratories Cambridge
+03/05/10 02:36:11 All Rights Reserved.
+03/05/10 02:36:11 See http://www.tightvnc.com/ for information on TightVNC
+03/05/10 02:36:11 Desktop name 'X' (archabit:2)
+03/05/10 02:36:11 Protocol versions supported: 3.3, 3.7, 3.8, 3.7t, 3.8t
+03/05/10 02:36:11 Listening for VNC connections on TCP port 5902
+03/05/10 02:36:11 Listening for HTTP connections on TCP port 5802
+03/05/10 02:36:11   URL http://archabit:5802
+IceWM: using /root/.icewm for private configuration files
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":2.0"
+      after 1022167 requests (1022161 known processed) with 0 events remaining.

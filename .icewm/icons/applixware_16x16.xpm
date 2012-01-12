@@ -1,0 +1,26 @@
+/* XPM */
+static char *applixware_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+"  c black",
+". c #a0a0a0",
+"X c white",
+"o c None",
+/* pixels */
+"oooooooooooooooo",
+"oooooooooo ooooo",
+"ooooooooo   oooo",
+"ooooooooo   oooo",
+"..o..oooo   oooo",
+"o....ooo     ooo",
+"oo...ooo  o  ooo",
+"ooo..ooo  o  ooo",
+"ooo...o   o   oo",
+"ooo....  ooo  oo",
+"ooo..o.       oo",
+"ooo..o         o",
+"ooo..o   ..o   o",
+"ooo..o  oo..o  o",
+"ooo..   ooo..   ",
+"oooooooooooooooo"
+};

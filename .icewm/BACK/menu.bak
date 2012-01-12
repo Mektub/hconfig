@@ -1,0 +1,287 @@
+menu "Ice Conf" "folder" {
+    prog "Ice Control Panel" "icewmcp.png" IceWMCP
+    prog "IceCC" "Wrench-12bit" icecc
+    prog "IceMenu" "Wrench-12bit" iceme
+    prog "IcePref" "launcher-program" icepref
+    prog "Ice Themes" "launcher-program" icets
+    prog "Ice Background" "launcher-program" icebgset
+    prog "IceSoundCfg" "launcher-program" icesndcfg /usr/X11R6/lib/X11/icewm /home/johni/.icewm/Sounds/warp-icewmsoundtheme
+    separator
+    prog "IceWm Menu" "klipper" gvim  /home/johni/.icewm/menu
+    prog "IceWm ToolBar" "klipper" gvim  "/home/johni/.icewm/toolbar"
+    prog "IceWm Programs" "klipper" gvim  "/home/johni/.icewm/programs"
+    prog "IceWm WinOpt" "klipper" gvim  "/home/johni/.icewm/winoptions"
+    prog "IceWm Preferences" "klipper" gvim  "/home/johni/.icewm/preferences"
+}
+menu "Files" "folders" {
+    menu "Config Files" "folder" {
+        prog "/etc/bashrc" "hand_up_3d" bash -c "Play tada ; gvim /etc/bashrc"
+        prog "/etc/profile" "hand_up_3d" gvim  "/etc/profile"
+        separator
+        prog "Aliases" "hand_up_3d" gvim  "/home/johni/.dot/bashrc/aliases"
+        prog "Colors" "hand_up_3d" gvim  "/home/johni/.dot/bashrc/colors"
+        prog "Completions" "hand_up_3d" gvim  "/home/johni/.dot/bashrc/completions"
+        prog "Functions" "hand_up_3d" gvim  "/home/johni/.dot/bashrc/functions"
+        separator
+        prog "Gftp BookMarks" "apacheconf.png" gvim  "/root/.gftp/bookmarks"
+        prog "Httpd.Conf (Apache)" "apacheconf.png" gvim  "/etc/httpd/conf/httpd.conf"
+        prog "Lilo.Conf" "hand_up_3d" gvim  "/etc/lilo.conf"
+        prog "Ld.so.Conf" "hand_up_3d" gvim  "/etc/ld.so.conf"
+        prog "Modules.Conf" "hand_up_3d" gvim  "/etc/modules.conf"
+        separator
+        prog "Xsession" "klipper" bash -c "Play tada; gvim /etc/X11/xdm/Xsession"
+        prog "Xdefaults" "klipper" gvim  "/root/.Xdefaults"
+        prog "XF86Config-4" "klipper" gvim  "/etc/X11/XF86Config-4"
+    }
+    menu "Notes" "folder" {
+        prog "TODO List" "klipper" gvim  "/w/mydocs/Allgemein/NotesTodo.txt"
+        separator
+        prog "Notes" "klipper" bash -c "Play tada; gvim /w/mydocs/Allgemein/notes.txt"
+        prog "Notes_Do_Linux" "klipper" gvim  "/w/mydocs/Allgemein/Linux.txt"
+        prog "Notes for QNX" "klipper" gvim  "/w/mydocs/Allgemein/Qnx.txt"
+        prog "Notes for Astronomy" "klipper" gvim  "/w/mydocs/Allgemein/AstroNotes.txt"
+        separator
+        prog "Pass" "klipper" gvim  "/w/mydocs/Allgemein/Pass.txt"
+        prog "WinTips" "klipper" gvim  "/w/mydocs/Allgemein/WinTips.txt"
+        separator
+        prog "BancosJP" "klipper" gvim   "/w/mydocs/JoaoPena/jp/BancosJP.txt"
+        prog "NCR_RoloBook" "klipper" gvim   "/w/joaopena/Tel/NcrRoloBook.txt"
+        separator
+        prog "TelPriv" "klipper" gvim  "/w/joaopena/tel/TelPriv.txt"
+        prog "TelSmall" "klipper" gvim  "/w/joaopena/tel/telsmall.txt"
+    }
+}
+separator
+menu "Admin" "lockedfolder" {
+    prog "EtherReal" "mini.maximize-vert" ethereal
+    prog "FireStarter" "mini.xlock" firestarter
+    prog "Nmap" "mini-bug2" nmapfe
+    prog "QtParted" "qtparted" qtparted
+    separator
+    prog "HP LJ CPanel" "kljettool" kljettool
+    prog "Show Hardware (hwbrowser)" "gnome-gtali" hwbrowser
+    prog "USBview" "gnome-gtali" usbview
+    separator
+    prog "Change Background" "chbg_64x64.xpm" chbg
+    prog "XscreenSaver" "xscreensaver.xpm" xscreensaver-demo
+}
+menu "Config Managers" "folder" {
+    prog "GnomeCC" "/usr/share/pixmaps/gedit-plugin-manager.png" gnome-control-center
+    prog "Kcontrol" "/usr/share/pixmaps/gedit-plugin-manager.png" kcontrol
+    prog "QtConfig" "/usr/share/pixmaps/gedit-plugin-manager.png" qtconfig
+    separator
+    prog "GconfEditor 1" "/usr/share/pixmaps/gnome-settings.png" gconf-editor
+    prog "GconfEditor 2" "/usr/share/pixmaps/gnome-settings.png" gconfpref
+    separator
+    prog "ControlPanel" "/usr/share/pixmaps/yes.xpm" control-panel
+    prog "GdmConfig" "gnome-gtali" gdmconfig
+    prog "GmodConfig" "gnome-gtali" gmodconfig
+    prog "Gnome-Crontab" "gnome-crontab.png" gnome-crontab
+    prog "Gxset" "panel_settings_16x16.xpm" gxset
+    separator
+    prog "Comanche" "apacheconf.png" Comanche
+    prog "Kpackage" "kpackage.xpm" kpackage
+    prog "NetworkCC" "gnome-gtali" gwcc
+    prog "Synaptic" "synaptic_48x48.png" synaptic
+    separator
+    prog "Win4Lin Install/Update" "mini-shadowman-round" win4lin-install
+}
+menu "Gnome Admin" "mini-shadowman-round" {
+    prog "accessibility-keyboard-properties" "mini-ray" gnome-accessibility-keyboard-properties
+    prog "background-properties" "mini-ray" gnome-background-properties
+    prog "calculator" "mini-ray" gnome-calculator
+    prog "cd" "mini-ray" gnome-cd
+    prog "cd-properties" "mini-ray" gnome-cd-properties
+    prog "character-map" "mini-ray" gnome-character-map
+    prog "control-center" "mini-ray" gnome-control-center
+    prog "default-applications-properties" "mini-ray" gnome-default-applications-properties
+    prog "dictionary" "mini-ray" gnome-dictionary
+    prog "file-types-properties" "mini-ray" gnome-file-types-properties
+    prog "font-properties" "mini-ray" gnome-font-properties
+    prog "help" "mini-ray" gnome-help
+    prog "keybinding-properties" "mini-ray" gnome-keybinding-properties
+    prog "keyboard-properties" "mini-ray" gnome-keyboard-properties
+    prog "mlview" "mini-ray" mlv
+    prog "mouse-properties" "mini-ray" gnome-mouse-properties
+    prog "network-preferences" "mini-ray" gnome-network-preferences
+    prog "search-tool" "mini-ray" gnome-search-tool
+    prog "sound-properties" "mini-ray" gnome-sound-properties
+    prog "sound-recorder" "mini-ray" gnome-sound-recorder
+    prog "system-monitor" "mini-ray" gnome-system-monitor
+    prog "telnet" "mini-ray" gnome-telnet
+    prog "terminal" "mini-ray" gnome-terminal
+    prog "text-editor" "mini-ray" gnome-text-editor
+    prog "theme-properties" "mini-ray" gnome-theme-properties
+    prog "ui-properties" "mini-ray" gnome-ui-properties
+    prog "vlc" "mini-ray" gnome-vlc
+    prog "volume-control" "mini-ray" gnome-volume-control
+}
+menu "RedHat Admin" "mini-shadowman-round" {
+    prog "Red Hat Update" "mini-shadowman-round" up2date
+    prog "Red Hat Update Conf" "mini-shadowman-round" up2date --configure
+    separator
+    prog "Control Network" "mini-shadowman-round" redhat-control-network
+    prog "Logviewer" "mini-shadowman-round" redhat-logviewer --width=1100 --height=800
+    separator
+    prog "View Gnome packages" "rpmlogo-mini" pkgview
+    separator
+    prog "Config Date" "mini-shadowman-round" system-config-date
+    prog "Config Apache" "mini-shadowman-round" redhat-config-httpd
+    prog "Config Keyboard" "mini-shadowman-round" system-config-keyboard
+    prog "Config Language" "mini-shadowman-round" system-config-language
+    prog "Config Mouse" "mini-shadowman-round" system-config-mouse
+    prog "Config Network" "mini-shadowman-round" system-config-network
+    prog "Config Packages" "rpmlogo-mini" redhat-config-packages --isodir=/winxp/Linux/
+    prog "Config Printer" "mini-shadowman-round" redhat-config-printer
+    prog "Config Proc" "mini-shadowman-round" system-config-proc
+    prog "Config Samba" "mini-shadowman-round" system-config-samba
+    prog "Config Services" "mini-shadowman-round" redhat-config-services
+    prog "Config Soundcard" "mini-shadowman-round" system-config-soundcard
+    prog "Config Users" "mini-shadowman-round" system-config-users
+    prog "Config Xfree86" "mini-shadowman-round" system-config-xfree86
+    separator
+    prog "Switch printer" "mini-shadowman-round" redhat-switch-printer
+}
+separator
+menu "Editors" "folder" {
+    prog "AbiWord" "abiword" bash -c "Play tada; abiword  -geometry 1160x1000+12+19"
+    prog "Gedit" "karm" gedit
+    prog "Gvim" "gkb" gvim
+    prog "Hex Editor (X)" "khexdit" khexedit -caption "%c" %i %m %f
+    prog "Hex Editor (C)" "khexdit" hexedit
+    prog "KWrite" "kwrite" kwrite
+    separator
+    prog "NEdit" "pencil2" nedit
+    prog "Ted" "TextEditor_16x16" Ted
+    separator
+    prog "XmlEdit" "mini-ray" gnome-mlview
+    prog "Unicode Char Map" "yudit" gucharmap
+}
+menu "Graphics" "folder" {
+    menu "Image Viewers" "folder" {
+        prog "GqView" "gqview" gqview
+        prog "Gthumb" "gthumb" gthumb
+        prog "PornView" "pornview.png" pornview
+        prog "XnView" "kiconedit" xnview
+    }
+    menu "Scanner" "folder" {
+        prog "Gimp" "scanner.png" gimp -s
+        prog "VueCopy" "scanner.png" Vuecopy
+        prog "VueScan" "scanner.png" Vuescan
+        prog "Xsane" "scanner.png" xsane
+    }
+    prog "DVI Viewer" "kdvi" kdvi --caption "DVI_Viewer"
+    prog "Gimp" "gimp_hi" gimp
+    prog "Snapshot" "ksnapshot" ksnapshot
+}
+menu "Multimedia" "folder_favorites" {
+    menu "CD Writers" "folder" {
+        prog "Gnome Toaster" "kscd" gtoaster
+        prog "XcdRoast" "xcdroast_32x32" xcdroast
+    }
+    menu "Mixers" "folder" {
+        prog "Aumix" "mini.checkmark" xterm -hold -rightbar -fn 12x26 -e aumix -C ansi
+        prog "Aumix-X11" "mini.checkmark" aumix-X11
+        prog "Sound Mixer Panel" "mini-exp" kmix
+    }
+    menu "Video Players" "folder" {
+        prog "AviPlay (AVI, ASF, ASX)" "avifile.png" aviplay
+        prog "Gxine (MPEG)" "ksokoban" gxine
+        prog "MPlayer (AVI, ASF, ASX, MPEG)" "aktion" mplayer
+        prog "Real Player" "real" realplay
+        prog "VCD video Conv" "ksokoban" /usr/local/bin/vcd.py
+        prog "Xine (MPEG)" "ksokoban" xine
+    }
+    separator
+    prog "DVDrip" "dvdrip.xpm" dvdrip
+    separator
+    prog "CD Player (Grip)" "kscd" /usr/bin/grip
+    prog "CD Player" "kscd" kscd
+    separator
+    prog "Xmms" "audiovol" xmms
+}
+menu "P2P" "folder" {
+    prog "Azureus (BitTorrent)" "hand_up_3d" /usr/local/azureus/azureus
+    prog "DcGui (DC++)" "hand_up_3d" dcgui-qt
+    prog "Xmule" "xmule.xpm" xmule
+}
+separator
+menu "Internet" "folder_red" {
+    menu "FTP" "folder" {
+        prog "Gftp"    "gftp_16x16.xpm" gftp
+        prog "FtpCube" "ftpcube" ftpcube
+    }
+    menu "Messaging" "folder" {
+        prog "Ayttm" "ayttm.png" ayttm
+        prog "Gaim" "gaim_16x16" gaim
+        prog "GnomeMeeting" "gnomemeeting-logo-icon.png" gnomemeeting
+        prog "Msn"  "msn_girl.png" bash -c "cd /usr/local/msn ; ./amsn"
+    }
+    separator
+    prog "BookMarkBridge"  "bookmarkbridgelogosmall.png" bookmarkbridge
+    prog "BookMarkEdit"  "ksokoban" bkedit --load /root/.phoenix/default/l2bo92ks.slt/bookmarks.html --load-plugin Mozilla
+    separator
+    prog "Gtelnet"  "gnome-telnet.png" gnome-telnet
+    prog "Netstat"  "netwatch.xpm" Nnetstat
+    prog "Portscan" "PhonePortable.xpm" portscan
+}
+menu "Utils" "folder_red" {
+    menu "Calculators" "folder" {
+        prog "Calculator (k)" "kcalc" kcalc
+        prog "Gnme-calc" "mini-HP-16C-48" gnome-calculator
+    }
+    menu "Dictionarys" "folder" {
+        prog "Gnome-Dict" "qwordtrans" gnome-dictionary
+        prog "Kdict" "kdict.png" kdict
+        prog "Qwordtrans" "qwordtrans" qwordtrans
+    }
+    menu "Emulators" "folder" {
+        prog "Gnome Terminal" "smallpc" gnome-terminal
+        prog "Rxvt" "kvt" rxvt
+    }
+    menu "File Managers" "folder" {
+        prog "Endeavour" "mini-k" endeavour2
+        prog "Konqueror" "mini-k" konqueror
+        prog "MrComamnder" "mini-k" mrc
+        prog "Tuxcmd" "mini-k" tuxcmd
+        prog "Xfe" "xfe.png" xfe
+    }
+    prog "Acrobat" "applix" acroread
+    prog "Find Files (k)" "kfind" kfind
+    prog "Find Files (g)" "kfind" gnome-search-tool
+    separator
+    prog "Gfloppy" "3floppy_unmount" gfloppy
+}
+menu "Xutils" "folder_red" {
+    prog "GuCharMap" "gucharmap.png" gucharmap
+    prog "KcharSelect" "kcharselect.png" kcharselect
+    separator
+    prog "KdirStat" "kdirstat.png" kdirstat
+    separator
+    prog "Gcolor" "mini-raise" gcolor
+    prog "XcolorSel" "mini-raise" xcolorsel -rows 24 -rgb8
+    separator
+    prog "XfontSel" "rpmfile" xfontsel
+    prog "EditRes" "EscherTriangle" editres
+    prog "Glxinfo" "mini.checkmark" xterm -hold -rightbar -fn 12x26 -e glxinfo
+    prog "XcutSel" "mini.xmag" xcutsel
+    prog "XdpYinfo" "kcmx" xterm -hold -rightbar -fn 12x26 -e xdpyinfo
+    prog "Xkill" "bomb" xkill
+}
+menu "Office" "folder" {
+    menu "OpenOffice" "folder" {
+         prog "OpenOffice" "abiword" ooffice
+         prog "OOadmin" "abiword" oopadmin
+         separator
+         prog "Draw" "ooo_draw.png" oodraw
+         prog "Calc" "ooo_calc.png" oocalc
+         prog "Impress" "ooo_impress.png" ooimpress
+         prog "Math" "ooo_math.png" oomath
+         prog "Writer" "ooo_writer.png" oowriter
+    }
+    prog "AbiWord" "abiword" abiword
+    prog "Gnucash" "one-euro.png" gnucash
+    prog "Gnumeric" "gnumeric" gnumeric
+    prog "Koffice" "koshell" koffice
+    prog "KWord" "kword" kword
+}

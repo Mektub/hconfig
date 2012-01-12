@@ -1,0 +1,10 @@
+key "XF86AudioLowerVolume" aumix -v -5
+key "XF86AudioRaiseVolume" aumix -v +5
+key "XF86AudioMute"        aumix -v  0 -w  0
+#key "XF86Favorites"        aumix -v 80 -w 80
+#
+key "Ctrl+Alt+k" xkill
+key "XF86Finance" xkill
+key "Ctrl+Alt+t" rxvt
+#
+key "XF86VendorHome" chvt 1

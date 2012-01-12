@@ -1,0 +1,75 @@
+#
+
+ICEWM_PRIVCFG=$HOME/.icewm2 icewm --display=$DISPLAY.1 &
+export XAUTHORITY=~/.Xauthority &
+
+## DD=${DISPLAY:1:1} &                                           # find out if VT 7 or 8
+
+# Switch off Nautilus meddling with the Desktop
+
+gconftool-2 -s -t bool /apps/nautilus/preferences/show_desktop false &
+gconftool-2 -s -t bool /desktop/gnome/background/draw_background false &
+
+/usr/bin/gnome-settings-daemon &
+#/usr/bin/xfce-mcs-manager &
+
+alsactl -f /root/local/asound.state restore &
+aplay /opt/MyDocs/Sounds/katapum.wav &
+
+#setxkbmap us -variant alt-intl 
+#setxkbmap "us(alt-intl)"
+setxkbmap "us(intl)" &
+setxkbmap -option terminate:ctrl_alt_bksp &                      # C-A-BS to kill X
+
+sleep 1
+xmodmap ~/.Xmodmap  &
+
+Terminal --geometry=117x31+719+527 --hide-menubar -T Mail \
+                              --command "tail -f /var/log/mail.log" \
+                              --tab -T Everything --command "tail -f /var/log/everything.log" \
+                              --tab -T Asus --command "tail -f /var/log/192.168.1.1" \
+                              --tab -T DNS323 --command "tail -f /var/log/192.168.1.22" \
+                              --tab -T "Shell 1" --tab -T "Shell 2" &
+
+
+gkrellm &
+xbindkeys &
+xhost + &
+idesk &
+
+
+#vncserver -geometry 1680x1050 :1 &
+#x11vnc -forever -usepw &
+#(hamachi start; hamachi get-nicks) &
+
+## /usr/bin/skvm & #IS IN RC.CONF
+
+/usr/bin/xset -dpms s 1800 1000 m 4/2 5 &
+/usr/bin/xset r rate 300 20 &
+#kbdrate -r 20 -d 250 &
+/root/bin/bsetroot -gradient flatgradientdiagonal -to rgb:a5/db/ff -from rgb:1e/48/8c &
+
+## urxvt &
+
+sakura -l -c 110 -r 28 -n 3 &
+
+# 2nd screen  ---------------------------------------------------------------------------
+
+  DISPLAY=$DISPLAY.1 icewmtray &
+  sleep 3
+  DISPLAY=$DISPLAY.1 /usr/bin/synergys &
+  DISPLAY=$DISPLAY.1 /usr/bin/adeskbar &
+  DISPLAY=$DISPLAY.1 archassistant &
+  DISPLAY=$DISPLAY.1 checkgmail &
+  DISPLAY=$DISPLAY.1 alunn &
+  DISPLAY=$DISPLAY.1 LANG=pt_PT.UTF-8 gnote &
+  DISPLAY=$DISPLAY.1 /root/bin/idesk2 &
+  DISPLAY=$DISPLAY.1 /usr/bin/volwheel &
+  DISPLAY=$DISPLAY.1 /usr/bin/dropboxd &
+  xsetroot   -display $DISPLAY.1 -solid rgb:68/7C/B1 &
+  DISPLAY=$DISPLAY.1 gnome-terminal --profile=Arch --geometry=106x28+833+577 --tab --tab --tab &
+# DISPLAY=$DISPLAY.1 roxterm --separate --title=roxy --geometry 115x28+737+571 --class=roxy -p ArchAbit --color-scheme=Local &
+# sleep 2
+# DISPLAY=$DISPLAY.1 roxterm --title=roxy --geometry +737+567 --class=roxy -p ArchAbit --color-scheme=Local --tab &
+
+# 2nd screen - END ----------------------------------------------------------------------

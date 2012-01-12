@@ -1,0 +1,42 @@
+ Idesk starting in :0
+[idesk] Background's file not found.
+[idesk] Background's source not found.
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 8708 requests (8708 known processed) with 89 events remaining.
+Possible unintended interpolation of @2 in string at (eval 30) line 1.
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+Playing WAVE '/opt/MyDocs/Sounds/OhOh.wav' : Unsigned 8 bit, Rate 22050 Hz, Mono
+checkgmail: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.1.
+ Idesk starting in :0.1
+[idesk] Background's file not found.
+[idesk] Background's source not found.
+ Idesk starting in :0.1
+[idesk] Background's file not found.
+[idesk] Background's source not found.
+ Idesk starting in :0.1
+[idesk] Background's file not found.
+[idesk] Background's source not found.
+ Idesk starting in :0.1
+[idesk] Background's file not found.
+[idesk] Background's source not found.
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0.1"
+      after 12725 requests (12725 known processed) with 0 events remaining.

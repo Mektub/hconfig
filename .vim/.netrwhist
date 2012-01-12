@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/root/.config/roxterm.sourceforge.net'
+let g:netrw_dirhist_2='/root/.gnome/mime-info'
+let g:netrw_dirhist_3='/root/.gconf/apps/gnote'
+let g:netrw_dirhist_4='/root/.conkygui'
+let g:netrw_dirhist_5='/root/local/.filezilla'
+let g:netrw_dirhist_6='/root/tmp/.kdemod3/share/apps/krusader'
+let g:netrw_dirhist_7='/root/.java/.userPrefs/ipscan'

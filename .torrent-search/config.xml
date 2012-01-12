@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<torrent-search-config>
+  <min_size_value type="int">311</min_size_value>
+  <min_size_unit type="string">MB</min_size_unit>
+  <min_size_enable type="bool">true</min_size_enable>
+  <stop_search_when_nb_results_reaches_enabled type="bool">true</stop_search_when_nb_results_reaches_enabled>
+  <window_width type="int">1818</window_width>
+  <after_date_enable type="bool">false</after_date_enable>
+  <config_dialog_height type="int">649</config_dialog_height>
+  <last_version_notified type="string">0.9.2.3</last_version_notified>
+  <hide_zero_seeders type="bool">true</hide_zero_seeders>
+  <torrent_standard_app type="string">deluge.desktop</torrent_standard_app>
+  <check_plugins_updates type="bool">true</check_plugins_updates>
+  <max_size_value type="int">200</max_size_value>
+  <max_size_enable type="bool">false</max_size_enable>
+  <before_date type="string">2011-12-10</before_date>
+  <search_history type="string_list">
+    <item>calimero </item>
+    <item>calimero amiguinhos</item>
+    <item>le havre</item>
+    <item>mysteries of lisbon</item>
+    <item>misteries of lisbon</item>
+    <item>mistérios de lisboa</item>
+    <item>air crash investigation</item>
+    <item>the plane that flew too high</item>
+    <item>contagion</item>
+    <item>sandra sanchez</item>
+    <item>spanking server</item>
+  </search_history>
+  <disabled_plugins type="string_list">
+    <item>000025_jishaku</item>
+    <item>000018_NyaaTorrents</item>
+    <item>000028_bakabt</item>
+    <item>000027_nipponsei</item>
+    <item>000026_tokyotosho</item>
+    <item>000017_MononokeBT</item>
+    <item>000019_xtremespeeds</item>
+    <item>000024_tntvillage</item>
+    <item>000012_torrent411</item>
+    <item>000029_frenchtorrentdb</item>
+  </disabled_plugins>
+  <max_size_unit type="string">MB</max_size_unit>
+  <stop_search_when_nb_plugin_results_reaches_value type="int">100</stop_search_when_nb_plugin_results_reaches_value>
+  <stop_search_when_nb_plugin_results_reaches_enabled type="bool">true</stop_search_when_nb_plugin_results_reaches_enabled>
+  <window_y type="int">92</window_y>
+  <window_x type="int">25</window_x>
+  <window_maximized type="bool">false</window_maximized>
+  <filter_duplicates type="bool">true</filter_duplicates>
+  <sort_column type="int">4</sort_column>
+  <stop_search_when_nb_results_reaches_value type="int">40</stop_search_when_nb_results_reaches_value>
+  <torrent_save_folder type="string">/lacie/P2P/Bittorrent/Torrents_Xirvik</torrent_save_folder>
+  <after_date type="string">2011-12-10</after_date>
+  <config_dialog_width type="int">970</config_dialog_width>
+  <torrent_custom_app type="string">gvim</torrent_custom_app>
+  <name_does_not_contain type="string"></name_does_not_contain>
+  <torrent_mode type="string">save_in_folder</torrent_mode>
+  <search_options_expanded type="bool">true</search_options_expanded>
+  <sort_desc type="bool">true</sort_desc>
+  <window_height type="int">950</window_height>
+  <dont_show_new_version_again type="bool">false</dont_show_new_version_again>
+  <max_sim_downloads type="int">3</max_sim_downloads>
+  <name_contains type="string"></name_contains>
+  <only_exact_phrase type="bool">false</only_exact_phrase>
+  <download_manager_width type="int">212</download_manager_width>
+  <only_all_words type="bool">true</only_all_words>
+  <before_date_enable type="bool">false</before_date_enable>
+  <converted_from_gconf type="bool">false</converted_from_gconf>
+  <confirmed_plugins type="string_list">
+    <item>000017_MononokeBT</item>
+    <item>000016_demonoid</item>
+    <item>000019_xtremespeeds</item>
+    <item>000024_tntvillage</item>
+    <item>000028_bakabt</item>
+    <item>000012_torrent411</item>
+    <item>000029_frenchtorrentdb</item>
+  </confirmed_plugins>
+</torrent-search-config>

@@ -1,0 +1,31 @@
+/* XPM */
+static char *arts_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 9 1",
+"  c black",
+". c gray19",
+"X c #004000",
+"o c green",
+"O c #808080",
+"+ c #a0a0a0",
+"@ c #c3c3c3",
+"# c white",
+"$ c None",
+/* pixels */
+" #####+$$$$$$$$$",
+" O  ##+$$$$oX$$$",
+" #####+    oX   ",
+" #####+$ $ oX$ $",
+" O  ##+    oX   ",
+" #####@OOO oXoXO",
+" O  #oXOOoXoXoXO",
+" ####oXOOoXoXoXO",
+" O  oXoXoXooXoXo",
+" ###oXXooX OoXoX",
+" #####@OOO OoXoX",
+" O  ##+     oX  ",
+" #####+$ $ $ $ $",
+" O  ##+         ",
+" #####+$$$$$$$$$",
+"      .$$$$$$$$$"
+};

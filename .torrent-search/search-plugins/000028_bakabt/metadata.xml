@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000028_bakabt" version="0.1.1">
+  <title>BakaBT</title>
+  <released_time>2011-01-15 10:44:54</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>bakabt.py</filename>
+  <classname>BakaBTPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000028_bakabt/0.1.1/</download_url>
+  <website_url>http://www.bakabt.com/</website_url>
+  <icon_url>http://www.bakabt.com/favicon.ico</icon_url>
+  <require_auth>true</require_auth>
+  <default_disable>true</default_disable>
+</plugin>

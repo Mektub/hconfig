@@ -1,0 +1,20 @@
+
+[options]
+verbose = 0
+read_all = false
+delete = false
+message_log_syslog = true
+message_log = ~/.getmail/Log/archnews.log
+
+[retriever]
+type = SimplePOP3SSLRetriever
+server = pop.gmail.com
+username = archnews@joaopena.com
+port = 995
+password = 69elis
+
+[destination]
+type = MDA_external
+path = /usr/bin/procmail
+allow_root_commands = true
+unixfrom = true

@@ -1,0 +1,22 @@
+set configs(sshbin) "ssh"
+set configs(keygenbin) "ssh-keygen"
+set configs(agentbin) "ssh-agent"
+set configs(addbin) "ssh-add"
+set configs(askpassbin) "ssh-askpass"
+set configs(scpbin) "scp"
+set configs(browserbin) "firefox"
+set configs(sshver) "OpenSSH"
+set configs(termver) "Xterm"
+set configs(sftpbin) "Filezilla"
+set launcher 0
+set configs(entback) #fefefe
+set configs(listback) #ffffff
+set configs(fontfam) "Droid Sans"
+set configs(fontsize) "11"
+set configs(fontbold) "1"
+set configs(fontitalic) "0"
+set configs(sysfonts) "0"
+set configs(wingeom) "1"
+set configs(protectdata) "0"
+set wins(base) "905x660+107+142"
+set configs(startsat) "0"

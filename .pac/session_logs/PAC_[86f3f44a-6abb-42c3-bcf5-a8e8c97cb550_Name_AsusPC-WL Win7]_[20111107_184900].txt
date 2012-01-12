@@ -1,0 +1,71 @@
+
+TigerVNC Viewer for X version 1.1.0 - built Nov  6 2011 14:42:04
+Copyright (C) 1999-2011 TigerVNC Team and many others (see README.txt)
+See http://www.tigervnc.org for information on TigerVNC.
+
+usage: vncviewer [parameters] [host:displayNum] [parameters]
+       vncviewer [parameters] -listen [port] [parameters]
+
+Parameters can be turned on with -<param> or off with -<param>=0
+Parameters which take a value can be specified as -<param> <value>
+Other valid forms are <param>=<value> -<param>=<value> --<param>=<value>
+Parameter names are case-insensitive.  The parameters are:
+
+Global Parameters:
+  name           - The X window name (default=)
+  MenuKey        - The key which brings up the popup menu (default=F8)
+  DebugDelay     - Milliseconds to display inverted pixel data - a debugging
+                   feature (default=0)
+  QualityLevel   - JPEG quality level. 0 = Low, 9 = High (default=8)
+  NoJPEG         - Disable lossy JPEG compression in Tight encoding.
+                   (default=0)
+  CompressLevel  - Use specified compression level0 = Low, 9 = High (default=6)
+  CustomCompressLevel - Use custom compression level. Default if CompressLevel
+                   is specified. (default=0)
+  via            - Gateway to tunnel via (default=)
+  display        - The X display (default=)
+  geometry       - X geometry specification (default=)
+  listen         - Listen for connections from VNC servers (default=0)
+  DesktopSize    - Reconfigure desktop size on the server on connect (if
+                   possible) (default=)
+  SendPrimary    - Send the primary selection and cut buffer to the server as
+                   well as the clipboard selection (default=1)
+  SendClipboard  - Send clipboard changes to the server (default=1)
+  AcceptClipboard - Accept clipboard changes from the server (default=1)
+  Shared         - Don't disconnect other viewers upon connection - share the
+                   desktop instead (default=0)
+  ViewOnly       - Don't send any mouse or keyboard events to the server
+                   (default=0)
+  FullScreen     - Full screen mode (default=0)
+  PreferredEncoding - Preferred encoding to use (Tight, ZRLE, Hextile or Raw)
+                   (default=Tight)
+  LowColourLevel - Alias for LowColorLevel
+  LowColorLevel  - Color level to use on slow connections. 0 = Very Low (8
+                   colors), 1 = Low (64 colors), 2 = Medium (256 colors)
+                   (default=2)
+  FullColour     - Alias for FullColor
+  FullColor      - Use full color (default=1)
+  AutoSelect     - Auto select pixel format and encoding. Default if
+                   PreferredEncoding and FullColor are not specified.
+                   (default=1)
+  DotWhenNoCursor - Show the dot cursor when the server sends an invisible
+                   cursor (default=1)
+  UseLocalCursor - Render the mouse cursor locally (default=1)
+  passwd         - Alias for PasswordFile
+  PasswordFile   - Password file for VNC authentication (default=)
+  WMDecorationHeight - Height of window manager decoration around a window
+                   (default=24)
+  WMDecorationWidth - Width of window manager decoration around a window
+                   (default=6)
+  PointerEventInterval - Time in milliseconds to rate-limit successive pointer
+                   events (default=0)
+  ImprovedHextile - Use improved compression algorithm for Hextile encoding
+                   which achieves better compression ratios by the cost of
+                   using more CPU time (default=1)
+  Log            - Specifies which log output should be directed to which
+                   target logger, and the level of output to log. Format is
+                   <log>:<target>:<level>[, ...]. (default=)
+  ZlibLevel      - Zlib compression level (default=-1)
+Viewer Parameters:
+  SecurityTypes  - Specify which security scheme to use (None, VncAuth)
+                   (default=VncAuth,None)

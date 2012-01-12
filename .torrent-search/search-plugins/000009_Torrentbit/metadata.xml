@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000009_Torrentbit" version="0.3.0">
+  <title>Torrentbit</title>
+  <released_time>2011-10-19 11:18:41</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>Torrentbit.py</filename>
+  <classname>TorrentbitPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000009_Torrentbit/0.3.0/</download_url>
+  <website_url>http://www.torrentbit.net/</website_url>
+  <icon_url>http://www.torrentbit.net/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

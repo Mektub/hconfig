@@ -1,0 +1,29 @@
+/* XPM */
+static char *draw_16x16[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        6            1",
+/* colors */
+". c none",
+"# c #555555",
+"a c #000000",
+"b c #eeee00",
+"c c #00cc00",
+"d c #ffbb00",
+/* pixels */
+"....aaa..aaaaaaa",
+".....a...accbcca",
+"...##a##.accbcca",
+"..#..a..#accbcca",
+"..#..a..#accbcca",
+"..#.#a#.#accbcca",
+"a..#a#a#.accbcca",
+"a...a.a..accbcca",
+"a...a.a..accbcca",
+"aaaaaaaaaaccbcca",
+"a..a...a.accbcca",
+"a..a...a..adbda.",
+"a.#a...a#.addda.",
+"..a#...#a..ada..",
+"..a.....a..aaa..",
+"..a.....a...a..."
+};

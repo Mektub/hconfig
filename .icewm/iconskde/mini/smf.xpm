@@ -1,0 +1,32 @@
+/* XPM */
+static char *16_smf[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        9            1",
+/* colors */
+". c #000000",
+"# c #000080",
+"a c #c0c0c0",
+"b c #808080",
+"c c #ff0000",
+"d c #00ff00",
+"e c #ffff00",
+"f c none",
+"g c #ffffff",
+/* pixels */
+"ffffffffffffffff",
+"ff..........ffff",
+"ff.ggggggg.g.fff",
+"ff.g##gadd.gg.ff",
+"ff.g##gggg....ff",
+"ff.g##g.....g.ff",
+"ff.g##g.ggggb.ff",
+"ff.g##gg.gggg.ff",
+"ff.g##geg.ggg.ff",
+"ff.g##eggg.gg.ff",
+"ff.g##geg.ggg.ff",
+"ff.g##gg.gggb.ff",
+"ff.g##g.....g.ff",
+"ff.g##ggggggg.ff",
+"ff.ggggcgggag.ff",
+"ff............ff"
+};

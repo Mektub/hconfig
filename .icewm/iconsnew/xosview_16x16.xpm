@@ -1,0 +1,33 @@
+/* XPM */
+static char *xosview_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 11 1",
+"  c black",
+". c navy",
+"X c blue",
+"o c green",
+"O c cyan",
+"+ c red",
+"@ c #ff8000",
+"# c yellow",
+"$ c #c3c3c3",
+"% c white",
+"& c None",
+/* pixels */
+"&              &",
+" %%%%%%%%%%%%%$ ",
+" %............$ ",
+" %@.ooooooooo.$ ",
+" %...#........$ ",
+" %............$ ",
+" %...O##+.....$ ",
+" %............$ ",
+" %@.XXXoooooo.$ ",
+" %............$ ",
+" %@.XXXXXoooo.$ ",
+" %............$ ",
+" %..ooooooooo.$ ",
+" %............$ ",
+" $$$$$$$$$$$$$$ ",
+"&              &"
+};

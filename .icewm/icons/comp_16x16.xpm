@@ -1,0 +1,30 @@
+/* XPM */
+static char *comp_16x16[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        7            1",
+/* colors */
+". c none",
+"# c #bbbbbb",
+"a c #777777",
+"b c #555555",
+"c c #333333",
+"d c #000000",
+"e c #eeeebb",
+/* pixels */
+"..bbbbbbbb......",
+"..beeeeeeb......",
+"..beaaaaeb......",
+"..be###aeb......",
+"..be###aeb......",
+"..beeeeeeb......",
+"..bcbbbbcb......",
+"bbbbbbbbbbbb....",
+"b######dd##b....",
+"beeeeeeeeeeb.bbb",
+"beccccccccbb.beb",
+".beeeeeeeeeebbeb",
+"beddddddeddcecbb",
+"beeeeeeeeeeeeb..",
+"bbbbbbbbbbbbbb..",
+"................"
+};

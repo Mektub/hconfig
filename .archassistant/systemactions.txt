@@ -1,0 +1,15 @@
+-T;ifconfig;ifconfig;
+-T;iwconfig;iwconfig;
+-T;route;route;
+-T;dmesg;dmesg;
+-T;locale -a;locale -a;
+-T;Disk Free;df -h;
+-T;glxgears;glxgears;
+-T;lsmod;lsmod;
+-T;lspci;lspci;
+-T;lspnp;lspnp;
+-T;pstree;pstree;
+-R;locate (request);locate;
+-R;slocate (request);slocate;
+-R;which (request);which;
+-R;whereis (request);whereis;

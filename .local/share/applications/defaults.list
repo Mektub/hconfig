@@ -1,0 +1,4 @@
+[Default Applications]
+image/jpeg=mirage.desktop
+application/pdf=acroread.desktop
+application/lrf=calibre-lrfviewer.desktop

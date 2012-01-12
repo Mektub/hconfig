@@ -1,0 +1,4 @@
+thread all apply
+bt full
+kill
+q

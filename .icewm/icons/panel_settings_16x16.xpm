@@ -1,0 +1,29 @@
+/* XPM */
+static char *panel_settings_16x16[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 7 1",
+"  c black",
+". c #ffa858",
+"X c #808080",
+"o c #ffdca8",
+"O c #c0c0c0",
+"+ c white",
+"@ c None",
+/* pixels */
+"@@@@@@@@@  @@@@@",
+"@@@@@@@@@ O  @@@",
+"@@@@   @@ +OO  @",
+"@@@ oo @@ +O+OO ",
+"@@ oo     OXOOO ",
+"  oooooo.o +OXO ",
+" oooo      OO+O ",
+" oooo.. @ +OXOO ",
+" oooooo @ +O+OO ",
+"  .... @@ OXOOO ",
+"@@     @@ ++OXO ",
+"@@@@@@@@@ XOO+O ",
+"@@@@@@@@@  OXOO ",
+"@@@@@@@@@@@  OO ",
+"@@@@@@@@@@@@@   ",
+"@@@@@@@@@@@@@@@ "
+};

@@ -1,0 +1,8 @@
+source /etc/profile.d/qt4.sh
+source /etc/profile.d/qt.sh
+source /etc/profile.d/kde4.sh
+source /etc/profile.d/kde.sh
+pacman -Syu
+pacman -Scc
+pacman -Ss
+ 

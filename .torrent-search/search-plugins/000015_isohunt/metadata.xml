@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="000015_isohunt" version="0.2.0">
+  <title>isoHunt</title>
+  <released_time>2011-10-19 11:36:52</released_time>
+  <author>Gwendal Le Bihan &lt;gwendal.lebihan.dev@gmail.com&gt;</author>
+  <filename>isohunt.py</filename>
+  <classname>isoHuntPlugin</classname>
+  <download_url>http://torrent-search.sourceforge.net/download-plugin/000015_isohunt/0.2.0/</download_url>
+  <website_url>http://isohunt.com/</website_url>
+  <icon_url>http://isohunt.com/favicon.ico</icon_url>
+  <require_auth>false</require_auth>
+  <default_disable>false</default_disable>
+</plugin>

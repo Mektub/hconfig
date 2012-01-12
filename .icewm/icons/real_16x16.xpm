@@ -1,0 +1,28 @@
+/* XPM */
+static char *realaudio[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        5            1",
+/* colors */
+". c #000000",
+"# c #0000ff",
+"a c #7f0000",
+"b c #ff0000",
+"c c none",
+/* pixels */
+"cccccccccccccccc",
+"cccc########cccc",
+"cc###.......##cc",
+"c##.....b.....#c",
+"##......bb.....#",
+"#.......bbb.....",
+"#.......bbba....",
+"c#......bba....c",
+"cc#.....ba....cc",
+"cccc#...a...cccc",
+"ccccccc...cccccc",
+"ccccccc..ccccccc",
+"ccccccc.cccccccc",
+"cccccccccccccccc",
+"cccccccccccccccc",
+"cccccccccccccccc"
+};

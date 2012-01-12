@@ -1,0 +1,2275 @@
+# This is the configuration file for tkbiff.
+#
+# You may change ANYTHING in this file.  The GUI is entirely in
+# this configuration file, thus you can change any part of the GUI.
+# That's the nice thing about tkbiff - the GUI is completely under
+# your control.
+#
+# Note: The default look-and-feel is just an example.  To get more info
+# on the defaults, run tkbiff and press ? in the window that pops up.
+#######################################################################
+
+#######################################################################
+# Action to execute upon receipt of new mail.
+proc announce_new_msg {id} {
+    global msg
+
+    # Traditional message for UNIX systems or when debugging.
+    catch {puts "you have new mail from $msg($id,from)"}
+
+    # For convenience, extract msg attributes, lowercase to simplify tests,
+    # and put pieces into simple variables for easy access.
+    set from	[string tolower $msg($id,from)]
+    set to	[string tolower $msg($id,to)]
+    set cc	[string tolower $msg($id,cc)]
+    set subject	[string tolower $msg($id,subject)]
+    # Other fields that can be examined are: sender, replyto, and body.
+
+    # Now the tests are simple.  The long "if" may look dumb, but
+    # there's little point in making it table-driven.  By leaving
+    # the tests explicit, we get the flexibility to do much more
+    # creative or complex decision making.
+    # Plus it's very easy to read!
+
+    if {[string match "*expect*" $subject]} {
+	play Yeah
+    } elseif {[string match "*oreilly.com*" $from]} {
+	play Sledge-Flute
+    } elseif {[string match "*mailer-daemon*" $from]} {
+	play bogus
+    } elseif {[string match "*bark*" $from]} {
+	play bark
+    } elseif {[string match "*bespalov*" $from]} {
+	play absorbed 75
+    } elseif {[string match "*schlenof*" $from]} {
+	play doh
+    } elseif {[string match "*bement*" $from]} {
+	play BT-Royal-Ugly-Dudes
+    } elseif {[string match "*clark*" $from]} {
+	play Back-Off-Man
+    } elseif {[string match "*debtron*" $from]} {
+	play AL-Lets-Rock
+    } elseif {[string match "*densock*" $from]} {
+	play bringout
+    } elseif {[string match "*fowler*" $from]} {
+	play hes-dead-jim
+    } elseif {[string match "*copeland*" $from]} {
+	play chirp
+    } elseif {[string match "*ken manheimer*" $from]} {
+	play Aludium-Q36
+    } elseif {[string match "*don libes*" $from]} {
+	play What-would-you-do-with-a-brain
+    } elseif {[string match "*luce*" $from]} {
+	play PB-Swords
+    } elseif {[string match "*mulroney*" $from]} {
+	play stupid-for-nothing
+    } elseif {[string match "*kc*" $from]} {
+	play clint_eastwood
+    } elseif {[string match "*paisley*" $from]} {
+	play Look-Up-in-the-Sky
+    } elseif {[string match "*potts*" $from]} {
+	play space-madness
+    } elseif {[string match "*steve ray*" $from]} {
+	play STTNG-redalert
+    } elseif {[string match "*ressler*" $from]} {
+	play crash
+    } elseif {[string match "*sauder*" $from]} {
+	play justwhat
+    } elseif {[string match "*selden*" $from]} {
+	play Darth-Dont-be-too-proud
+    } elseif {[string match "*opennist*" $subject]} {
+	play Girl-You-cant-do-that
+    } elseif {[string match "*lan_group*" $to]} {
+	play come-w-me
+    } elseif {[string match "*mcrrc*" $to]} {
+	play strength
+    } elseif {[string match "*susan libes*" $from]} {
+	play Be-nice
+    } elseif {[string match "*sol libes*" $from]} {
+	play Where-humor
+    } elseif {[string match "*kenna libes*" $subject]} {
+	play jharp
+    } elseif {[string match "*express-users*" $to$cc]} {
+	play horse-poop
+    } elseif {[string match "*freecycle*" $to]} {
+	# don't play anything
+    } else {
+	play TNG-beep2
+    }
+}
+
+# Prepare messages for display and announcement.
+# This is a good place to suppress some msgs from display/announcement
+# because it skips preparation of all the GUI prep that occurs behind
+# the scenes and that wouldn't otherwise be used.
+proc prep_new_msg {id} {
+    global msg
+
+    set from	[string tolower $msg($id,from)]
+    set to	[string tolower $msg($id,to)]
+    set cc	[string tolower $msg($id,cc)]
+    set subject	[string tolower $msg($id,subject)]
+
+    # Suppress the following even if personally addressed to me.
+    if {[string match "*adv:" $subject]} {
+	suppress_msg $id
+    } elseif {[string match "*xmledi-list*" $to$cc]} {
+	suppress_msg $id
+    } elseif {[string match "*ma-linux*" $from]} {
+	suppress_msg $id
+    } elseif {[string match "*wg12*" $to$cc]} {
+	suppress_msg $id
+    } elseif {[string match "*spam*" $subject]} {
+	suppress_msg $id
+    }
+
+    # I want to be alerted about anything else personally addressed to me
+    if {[string match "*don@libes.com*" $to] \
+     || [string match "*libes@nist.gov*" $to] \
+     || [string match "*libes@cme.nist.gov*" $to]} {
+	return
+    }
+
+    # Suppress the following that don't mention me.
+    if {[string match "*mailer-daemon*" $from] \
+     || [string match "*mail delivery subsystem*" $from] \
+     || [string match "*bounce*" $from] \
+     || [string match "*postmaster*" $from]} {
+	# Suppress bounce messages that don't even mention me.
+	suppress_msg $id
+    }
+}
+
+######################################################################
+# initializations that should only be done once - when tkbiff is started
+######################################################################
+proc init {} {
+    uplevel #0 {
+	############################################################
+	# The system admin has already chosen defaults for these but if you
+	# are using something else, modify and uncomment these:
+	#
+	# set protocol(type) "imap"         ;# pop, imap, mbox, mbx, maildir,
+	#				    ;# or babyl
+	# set protocol(host) "hostname"     ;# mailserver hostname
+	### Remainder are generally only customized for SSL/TLS
+	# set protocol(connect) ...         ;# open connection
+	# set protocol(connectinit) ...     ;# init connection extension
+	# set protocol(connectpre) ...      ;# prep connection before creation
+	# set protocol(connectpost) ...     ;# prep connection after creation
+        ############################################################
+
+	############################################################
+	# Tkbiff can figure out the default username and mailbox.  If you
+	# are using something unusual, modify and uncomment these:
+	#
+	# set mbox "mailbox"
+	# set user "username"
+	# set password "...."       ;# omit to be interactively prompted
+	#
+	# To check multiple mailboxes or users, stick just these in a tiny
+	# file (one for each mailbox) and end it with "source tkbiff".
+	############################################################
+
+	# Sleep this many seconds before checking again.  Leave this short
+	# for good response.
+	set sleep(file) 	5	;# very inexpensive
+	set sleep(imap)		180
+	set sleep(pop)		600	;# very expensive on huge folders
+
+	# If you're on a slow connection, you'll want to restrain imap/pop
+	# from transferring huge messages.
+	set protocol(imap,maxchars) -1	;# -1 == no limit
+	set protocol(pop,maxlines)  -1	;# -1 == no limit
+
+	# parameters for main window which displays sender-subject pairs
+	set width(from)		15      ;# initial width of from lines
+	set width(subject)	45	;# initial width of subject lines
+	set height(max)		5	;# after this, add a scrollbar
+	switch $windowingsystem "x11" {
+	    set main(font)      5x8		;# good fixed-width font
+	    # set main(font)	times-roman-10	;# good variable-width font
+	} "aqua" - "classic" {
+	    set main(font)	{-size 9}
+	} "win32" {
+	    set main(font)	{{MS Sans Serif} 7}
+	}
+	set main(font,alt)	{Helvetica 10 bold}
+
+	# parameters for message windows
+	set msgwin(height,max)	38	;# after this, add a scrollbar
+	set msgwin(width)	80	;# after this, wrap
+	# STRONGLY recommend msgwin(font) be a fixed-width font such as
+	# courier - otherwise many messages will look odd
+	switch $windowingsystem "x11" {
+	    set msgwin(font)    {Courier -12}
+	} "aqua" - "classic" {
+	    set msgwin(font)	{Courier 12}
+	} "win32" {
+	    set msgwin(font)	{Courier -12}
+	}
+	
+	#
+	# All other fonts used by tkbiff may be variable-width.
+	#
+
+	switch $windowingsystem "x11" {
+	    set helpwin(font)	{Times -14}
+	} "aqua" - "classic" {
+	    set helpwin(font)	{Times 12}
+	} "win32" {
+	    set helpwin(font)	{Times -14}
+	}
+
+	# if you don't want message body windows to go away when you hide
+	# them in the main window, set to 0.
+	set behavior(destroy_body_when_hiding)	1
+
+	# if you don't want message body windows to go away when the mail
+	# is no longer in your spool file, set to 0.
+	set behavior(destroy_body_when_gone)	1
+
+	# scroll new message into main window automatically
+	# (assuming you aren't looking elsewhere).
+	set behavior(autoscroll)	1
+
+	# raise main window when new mail arrives
+	set behavior(autoraise)		1
+
+	# deiconify main window when new mail arrives
+	set behavior(autodeiconify)	1
+
+	# iconify main windown when no mail
+	set behavior(autoiconify)	0
+
+        # titles for windows
+    	if {![info exists display(titleMain)]} {
+	    set display(titleMain)	"tkbiff - Press ? for help"
+	}
+    	if {![info exists display(titleIcon)]} {
+	    set display(titleIcon)	"tkbiff"
+	}
+    	if {![info exists display(titlePassword)]} {
+	    set display(titlePassword)	"tkbiff password"
+	}
+
+	# display To: in title bar
+	set display(titleTo)		0
+
+	# create list of audio directories to search
+	switch $tcl_platform(platform) "macintosh" {
+	    set tkbiff_dir [file dirname [info nameofexecutable]]
+	    set env(AUDIOPATH) [list $tkbiff_dir $env(DESK_FOLDER)]
+	} "windows" {
+	    if {![info exists env(AUDIOPATH)]} {
+		set tkbiff_dir [file dirname [info script]]
+		set env(AUDIOPATH) "C:/AUDIOS;$tkbiff_dir"
+		# if desktop exists, add to beginning of audiopath
+		catch {set desktop $env(SYSTEMROOT)/DESKTOP}
+		catch {set desktop $env(USERPROFILE)}
+		catch {set env(AUDIOPATH) "$desktop;$env(AUDIOPATH)"}
+	    }
+	} "unix" {
+	    # UNIX users don't need to define AUDIOPATH since a system-wide
+	    # default is defined at tkbiff installation.  But it can be
+	    # overridden here or via .login.  Example:
+	    # set env(AUDIOPATH) "~/audio:/usr/local/lib/audio"
+	}
+
+	#
+	# Audio-related settings
+	#
+
+	# default volume (linear range of 0-100)
+	set audio(volume,default) 50
+
+	# enable sound support
+	set behavior(sound) 1
+
+	# Check if running X windows because it's possible that we'll have to
+	# do extra work to get the sound played at a remote host.
+	if {[info exists env(DISPLAY)]} {
+	    # Here is an example of the kinds of things you can do:
+	    # My computer on my old ISDN had no server to handle remote
+	    # requests for audios, so don't even try:
+	    #
+	    # if {[string first "isdn055" $env(DISPLAY)]!=-1} {
+	    #	set behavior(sound) 0
+	    # }
+
+	    # Define host at which audios should be played.  If audio(host)
+	    # == "localhost" or not set, audios are played locally.
+	    set audio(host) [audio_host]
+	    # The default [audio_host] attempts to guess based on the DISPLAY.
+	    # But this can be wrong if, for example, you are using ssh even
+	    # to the same host (because ssh stuffs an opaque proxyname in
+	    # DISPLAY).  Override it here or with -audiohost flag.
+
+	    # Define remote program to play audios on another system.
+	    # Include full path since rsh et al have such a primitive PATH.
+	    set audio(remotecmd) [audio_remotecmd]
+	    # The default [audio_remotecmd] attempts to guess based on the
+	    # local location of tkbiff_audio.  Of course, this assumes that
+	    # remote path is same as local path.  Override it here or with
+	    # -audiorcmd flag.
+	}
+
+	# Uncomment following line to set browser explicitly.
+	# set env(BROWSER) netscape
+	# By default, search for it.
+	which_browser
+
+	############################################################
+	# Define colors
+	#
+	# I like bisque (a peach-like color).  Comment out tk_bisque
+	# to get the standard background (typically gray).
+	# Or just choose your own colors.
+	############################################################
+	if {[winfo depth .] > 1} {
+	    tk_bisque
+	    option add *Scrollbar.activeBackground #ffaeb9
+	}
+
+	set url(color,unclicked) blue
+	set url(color,clicked)   purple
+	set url(color,clicking)  red
+
+	############################################################
+	# Define 3d effects
+	#
+	# The defaults are exceedingly skimpy (although they can be made
+	# even skimpier by setting everything to 0).  Feel free to raise them.
+	############################################################
+
+	# Size of most 3D effects around widgets.  "2" looks fine to me,
+	# but I simply don't care to waste the space.
+	option add *borderWidth 0
+	option add *relief sunken
+
+	# Size of highlight when a widget has the focus.  Since we don't use
+	# such highlights, set to 0 unless you just like the extra padding.
+	option add *highlightThickness 0
+
+	# Size of scrollbar borders.
+	option add *Scrollbar.borderWidth 2
+	# Size of scrollbar internal elements.
+	option add *Scrollbar.elementBorderWidth 2
+
+	# Can't recognize buttons without borders.
+	option add *Button.borderWidth 3
+	option add *Button.relief raised
+
+	# Padding around From/Subject lines in main window
+	option add *Listbox.selectBorderWidth 1
+
+	# Define separation between names and subjects
+	option add *spacer.width 1
+	option add *spacer.background gray
+
+	# Size of 3D border around text selections (that amazingly doesn't
+	# take up any extra space)
+	option add *Text.selectBorderWidth 1
+
+	# initialize widgets and other things that are probably
+	# not of interest to most people
+	_init			
+
+	#############################################################
+	# define keystroke and mouse button actions
+	#############################################################
+
+        #         permanent/temporary-------------------------\
+        #         show headers-----------------------------\  |
+        #                                                   V V
+	bind MainWin  <1>		    {show_msgwin %y 0 1}
+	bind MainWin  <Shift-1>		    {show_msgwin %y 1 1}
+	bind MainWin  <2>		    {show_msgwin %y 0 0}
+	bind MainWin  <Shift-2>		    {show_msgwin %y 1 0}
+	bind MainWin  <ButtonRelease-2>	    {unshow_tmp_msgwin}
+	bind MainWin  <3>		    {forget_msgwin %y}
+        bind MainWin  <Shift-3>		    {bounce_msgwin %y
+					     forget_msgwin %y}
+        
+	# MsgWin bindings achieve same result as their MainWin counterparts
+	# but when clicked over message windows.
+	bind MsgWin   <Button-2>	    {set_tmp_msgwinW %W}
+	bind MsgWin   <ButtonRelease-2>     {unshow_tmp_msgwin}
+	bind MsgWin   <3>                   {forget_msgwinW %W}
+	bind MsgWin   <Shift-3>		    {bounce_msgwinW %W
+					     forget_msgwinW %W}
+
+	# Now provide suitable Windows and MacOS bindings which typically
+	# have less than 3 mouse buttons.  (Some do have those mouse buttons
+	# which is why we define bindings for <2> and <3> on all platforms.)
+
+	switch $windowingsystem "win32" {
+	    bind MainWin  <Alt-1>	    {show_msgwin %y 0 0}
+	    bind MainWin  <Alt-Shift-1>	    {show_msgwin %y 1 0}
+	    bind MainWin  <ButtonRelease-1> {unshow_tmp_msgwin}
+	    bind MsgWin   <Alt-1>	    {set_tmp_msgwinW %W}
+	    bind MsgWin   <ButtonRelease-1> {unshow_tmp_msgwin}
+	} "aqua" - "classic" {
+	    bind MainWin  <Option-1>        {show_msgwin %y 0 0}
+	    bind MainWin  <Option-Shift-1>  {show_msgwin %y 1 0}
+
+	    bind MainWin  <ButtonRelease-1> {unshow_tmp_msgwin}
+	    bind MainWin  <Control-1>       {forget_msgwin %y}
+	    bind MainWin  <Shift-Control-1> {bounce_msgwin %y
+					     forget_msgwin %y}
+	    bind MsgWin   <Option-1>	    {set_tmp_msgwinW %W}
+	    bind MsgWin   <ButtonRelease-1> {unshow_tmp_msgwin}
+	    bind MsgWin   <Shift-Control-1> {bounce_msgwinW %W
+					     forget_msgwinW %W}
+	}
+
+	# Windows and MacOS won't highlight selection unless window
+	# has the focus.  (Bug or design?)  Unfortunately, Tk won't
+	# give the focus to a disabled widget.  Naturally, our message
+	# windows are just that - to prevent users from messing with
+	# the text.  However, they should still be able to select
+	# text.  So force the focus when they begin a selection.
+	bind Text <1>                   {+focus %W}
+
+	bind all <Return>		{check_for_new_mail}
+	bind all <Shift-Return>		{read_cfile;check_for_new_mail}
+
+	bind all <u>			{toggle_display unread}
+	bind all <r>	 		{toggle_display read}
+	bind all <n>			{toggle_display new}
+
+	bind all <f>			{alt_font %K}
+
+	bind all <h>			{help}
+	bind all <question>		{help}
+	bind all <F1>			{aboutBox}
+
+	bind all <s>			{toggle_behavior sound}
+	bind all <a>			{toggle_behavior autoscroll}
+	bind all <t>			{toggle_behavior autoraise}
+	bind all <d>			{toggle_behavior autodeiconify}
+	bind all <i>			{toggle_behavior autoiconify}
+
+	# support scrolling beyond Tk's built-in Next/Previous
+	bind all <space> 		{scroll %W 1}   ;#more
+	bind all <Delete> 		{scroll %W -1}  ;#more
+	bind all <BackSpace> 		{scroll %W -1}  ;#more
+	bind all <Control-v>		{scroll %W 1}   ;#emacs
+	bind all <Meta-v>		{scroll %W -1}  ;#emacs
+	bind all <Control-f>		{scroll %W 1}   ;#vi
+	bind all <Control-b>		{scroll %W -1}  ;#vi
+	bind all <F35>			{scroll %W 1}   ;#sun
+	bind all <F29>			{scroll %W -1}  ;#sun
+
+	switch $windowingsystem "x11" {
+	    set kbdprefix "Meta"
+	} "aqua" - "classic" {
+	    set kbdprefix "Command"
+	} "win32" {
+	    set kbdprefix "Alt"
+	}
+	bind all <$kbdprefix-q>	exit
+	bind all <$kbdprefix-z>	consoleToggle
+    }
+}
+
+# procedure to play an audio clip
+#    arg 1: sound name
+#    arg 2: volume level (optional)
+proc play {sound {volume default}} {
+    global behavior audio
+
+    if {!$behavior(sound)} return
+
+    audio_init
+
+    if {$volume == "default"} {
+	set volume $audio(volume,default)
+    }
+
+    switch $::tcl_platform(platform) "unix" {
+	unix_audio $sound $volume $audio(cmd)
+    } "macintosh" {
+	mac_audio $sound $volume
+    } "windows" {
+	win_audio $sound $volume
+    }
+}
+
+# play audio on unix
+proc unix_audio {sound volume cmd} {
+    global audio
+
+    if {[catch "exec $cmd -v $volume -state $audio(state) $sound" msg]} {
+	puts "tkbiff: couldn't play $sound using $cmd"
+	puts "$msg"
+    }
+}
+
+# play audio on windows
+proc win_audio {sound volume} {
+    if {[file readable $sound]} {
+	# no searching if explicitly specified
+	if {[file dirname $sound] != "."} {
+	    set foundsound $sound
+	} else {
+	    set foundsound [file join [pwd] $sound]
+	}
+    } else {
+	# look for it in the sound directories
+	foreach dir [split $::env(AUDIOPATH) ";"] {
+	    set dirsound [file join $dir $sound]
+	    if {[file readable $dirsound]} { ;# first try with no extension
+		set foundsound $dirsound
+	        break
+	    } elseif {![catch {glob $dirsound.*} sounds]} { ;# any extension
+		set foundsound [lindex $sounds 0] ;# arbitrarily choose first
+	        break
+	    }
+	}
+    }
+    if {[info exists foundsound]} {
+	if {$::tcl_platform(os) == "Windows NT"} {
+	    set rc [catch {exec $::env(COMSPEC) /c start/wait $foundsound} emsg]
+	} else {
+	    # Windows 95/98
+	    set rc [catch {exec start /wait $foundsound} emsg]
+	}
+	if {$rc} {
+	    bgerror_notrace "Failed to play $foundsound\n$emsg"
+	}
+    } else {
+	error_soundNotFound $sound
+    }
+}
+
+# play audio on mac
+proc mac_audio {sound volume} {
+    # try playing as system sound
+    set hex [expr {int(256*($volume/100.))}]
+    set volume [format 0x%.4x%.4x $hex $hex]
+    if {0 == [catch {beep -volume $volume $sound}]} return
+
+    if {[file readable $sound]} {
+	# no searching if explicitly specified
+	if {[file dirname $sound] != "."} {
+	    set foundsound $sound
+	} else {
+	    # finder runs in its own directory, so give it our wd
+	    set foundsound [file join [pwd] $sound]
+	}
+    } else {
+	# look for it in the sound directories
+	foreach dir $::env(AUDIOPATH) {
+	    set dirsound [file join $dir $sound]
+	    if {[file readable $dirsound]} { ;# first try with no extension
+		set foundsound $dirsound
+	        break
+	    } elseif {![catch {glob $dirsound.*} sounds]} { ;# any extension
+		set foundsound [lindex $sounds 0] ;# arbitrarily choose first
+	        break
+	    }
+	}
+    }
+    if {[info exists foundsound]} {
+	if {[catch {AppleScript execute "
+	    tell application \"Finder\"
+	       open file \"$foundsound\"
+            end tell
+	"} emsg]} {
+	    bgerror_notrace "Failed to play $foundsound\n$emsg.\nTry converting it with SoundApp first."
+	}
+    } else {
+	error_soundNotFound $sound
+    }
+}
+
+# initialize audio system
+proc audio_init {} {
+    global audio
+
+    if {[info exists audio(initialized)]} return
+
+    switch $::tcl_platform(platform) "unix" {
+	if {[catch "exec $audio(cmd) -init" output]} {
+	    tkbiff::exit "couldn't initialize audio system: $audio(cmd) -init" $output
+	} else {
+	    set audio(state) $output
+	}
+    } default {
+    }
+    set audio(initialized) 1
+}
+
+# Utility to report when audios are not found
+# We use our own for two reasons:
+# 1) We want it to replace any prior audio errors, since multiple errors
+#    will almost always be due to a common error (e.g., wrong directory)
+# 2) We don't want to force user response (i.e., no grab) since it's not
+#    a particularly terrible error.
+# This is only used on Mac and Win.
+# (On UNIX, such errors just appear in the console.)
+proc error_soundNotFound {sound} {
+    catch {toplevel .sound}
+    wm title .sound "tkbiff sound not found"
+    wm iconname .sound "tkbiff sound"
+    catch {wm resizable .sound 0 0}
+    position_window .sound
+    catch {message .sound.text -aspect 600}
+    .sound.text configure -text "$sound: not found in any of the directories of your audio path.  Your audio path is:
+$::env(AUDIOPATH)
+
+Either:
+1) move the sound into one of the directories in the audio path, or
+2) add the directory containing the sound to the audio path, or
+3) disable sound (temporarily by pressing <s>), or
+4) disable sound (permanently by setting behavior(sound) in your configuration file).
+
+The audio path is defined by the variable env(AUDIOPATH) in the configuration file ($::cfile(real))."
+    catch {button .sound.ok}
+    .sound.ok configure -text "OK" -command {destroy .sound} -relief raised
+    bind .sound <Return> {destroy .sound;break}
+    pack .sound.text
+    pack .sound.ok -fill x -padx 2 -pady 2
+    raise .sound
+    update
+}
+
+########################################################################
+#
+#  Definitions below here describe lower-level aspects of the GUI.
+#  Most people will not be interested in changing these.
+#
+########################################################################
+
+proc _init {} {
+    uplevel #0 {
+	set tkbiff(version,gui) "2.10.2 (3/5/04)"
+
+	catch {console hide}
+
+	wm minsize  . 1 1
+	wm maxsize  . 999 999
+	wm title    . $display(titleMain)
+	wm iconname . $display(titleIcon)
+	wm protocol . WM_DELETE_WINDOW exit
+
+	switch $windowingsystem "aqua" - "classic" {
+	    menu .menuBar -tearoff 0
+
+	    .menuBar add cascade -menu .menuBar.file -label "File" -underline 0
+	    menu .menuBar.file -tearoff 0
+	    .menuBar.file add command -label Quit -command exit -underline 0 \
+		    -accelerator "Command-Q"
+
+	    .menuBar add cascade -menu .menuBar.apple
+	    menu .menuBar.apple -tearoff 0
+	    .menuBar.apple add command -label "About tkbiff" -command aboutBox
+
+	    . configure -menu .menuBar
+
+	    package require Tclapplescript
+	}
+
+	switch $windowingsystem "x11" {
+	    set cursor(hyperlink) "hand2"
+	} "aqua" - "classic" {
+	    set cursor(hyperlink) "hand"
+	} "win32" {
+	    set cursor(hyperlink) "arrow"
+	}
+
+	set position 10
+
+	listbox .from -width $width(from) -height 1
+	listbox .subj -width $width(subject) -height 1
+	# If internal/external borders are small, a little space between
+	# from/subject is helpful.  Do that with a little spacer frame.
+	frame .spacer
+
+	# ratio of width of .from to width of .
+	set width(fromratio) [expr {double($width(from))/($width(from)+$width(subject))}]
+
+	.from config -font $main(font)
+	.subj config -font $main(font) -yscroll ".sb set" -setgrid 1
+	scrollbar .sb -command scroll_mainwin
+	proc scroll_mainwin {args} {
+	    eval .from yview $args
+	    return [eval .subj yview $args]
+	}
+
+	set visible(scrollbar) 0
+	grid .from   -column 1 -row 0 -sticky ewn
+	grid .spacer -column 2 -row 0 -sticky ewns
+	grid .subj   -column 3 -row 0 -sticky ewn
+	# Normally we want everything to stick to top and bottom.  Except when
+	# the window manager FORCES the window to maximize.  In that case,
+	# let things stick just to the top.  We can't readily find out if
+	# maximize is in effect but it's really not a problem because we
+	# expand things in the <configure> handler anyway.
+
+	# make from/subject boxes expand proportionally
+	grid columnconfigure . 1 -weight $width(from)
+	grid columnconfigure . 3 -weight $width(subject)
+
+	# provide something to look at initially
+	.from insert end "checking..."
+	switch -- $protocol(type) "pop" - "imap" {
+	    .subj insert end $protocol(host)
+	} else {
+	    # Sigh, we don't know mailbox at this point
+	    # .subj insert end $mbox
+	}
+	set height(subject) 1
+
+	# to allow shortcut in <configure> handler, give dummy values to:
+	set height(req) -1
+	set width(req) -1
+
+	update
+
+	# actual height of window
+	set height(subject) 0		
+
+	# don't propagate Configure events to toplevel
+	bind .subj <Configure> break
+	bind .from <Configure> break
+	bind .spacer <Configure> break
+
+	bind . <Configure> {
+	    # delay resize handling to reduce jitter
+	    catch {after cancel $::tkbiff::configure_id}
+	    set ::tkbiff::configure_id [after 500 config_main]
+	}	    
+	proc config_main {} {
+	    uplevel #0 {
+		# on Windows, we get configure events for no apparent
+		# reason after our initial update, so ignore them
+		# until tkbiff has had a chance to initialize itself
+		if {![info exists all_list]} return
+
+		# save old height
+		set height(subject,old) $height(subject)
+
+		# Reconfiguring the height can potentially be expensive.
+		# We get lots of configure events for every real change.
+		# Also get configure events when window is already the
+		# requested size (such as when it is merely moved).  So
+		# ignore redundant ones by remembering previous ones.
+		set width(req,old) $width(req)
+		set height(req,old) $height(req)
+
+		# record new width
+		scan [wm geometry .] "%dx%d" width(req) height(req)
+
+		# if request same as last time, ignore
+		set width(ok) 0
+		set height(ok) 0
+		if {$width(req) == $width(req,old)} {set width(ok) 1}
+		if {$width(req) == $width(subject)} {set width(ok) 1}
+		if {$height(req) == $height(req,old)}  {set height(ok) 1}
+		if {$height(req) == $height(subject)} {set height(ok) 1}
+		if {$height(ok) && $width(ok)} {
+		    wm geometry . ""
+		    return
+		}
+		if {!$width(ok)} {
+		    set width(total) [expr {$width(req) + $width(from)}]
+		    set width(from) [expr {round($width(total)*$width(fromratio))}]
+		    set width(subject) [expr {$width(total)-$width(from)}]
+		    .from config -width $width(from)
+		    .subj config -width $width(subject)
+		    wm geometry . ""
+		}
+
+		if {!$height(ok)} {
+		    set height(max,old) $height(max)
+
+		    if {$height(req) != $height(subject,old)} {
+			set height(max) $height(req)
+			if {$height(max) < 3} {
+			    # disallow height < 3 because scrollbar itself
+			    # takes at least 3 lines (with typical fonts)
+			    # leading to a display of a 1-line list stretched
+			    # over 3 lines which is just silly.
+			    set height(max) 3
+			}
+			if {$height(max) != $height(max,old)} update_help_text
+		    }
+		    unset height(ok) width(ok)
+		    update_display
+		}
+	    }
+	}
+
+	# skip class bindings
+	bindtags .from {.from MainWin . all}
+	bindtags .subj {.subj MainWin . all}
+
+	bind .from <FocusIn>		{focus .}
+
+	# generate pretty things for help window
+	if {[info exists mbox]} {
+	    set display(mbox) $mbox
+	} else {
+	    set display(mbox) "derived"
+	}
+	# mbox can be changed later so...
+	trace variable mbox w mboxTrace
+	proc mboxTrace {var elt val} {
+	    set ::display(mbox) $::mbox
+	    update_help_text
+	}
+
+	if {[info exists user]} {
+	    set display(user) $user
+	} else {
+	    set display(user) "derived"
+	}
+	# user can be changed later so...
+	trace variable user w userTrace
+	proc userTrace {var elt val} {
+	    set ::display(user) $::user
+	    update_help_text
+	}
+
+	set url(doc) "http://expect.nist.gov/tkbiff/doc.html"
+	set url(home) "http://expect.nist.gov/tkbiff"
+
+	# select which messages are displayed
+	set display(new)    1
+	set display(unread) 1
+	if {$protocol(type) == "pop"} {
+	    # set display(unread) 1
+	    set display(read)	1
+	} else {
+	    # set display(unread) 0
+	    set display(read)   0
+	}
+
+	# If user didn't select remote shell, guess.
+	if {![info exists audio(rsh)]} {
+	    # try ssh, then remsh, then rsh
+	    # (HPs have both remsh and rsh but rsh doesn't seem to work right)
+	    if {[catch {set audio(rsh) [which ssh]}]} {
+		if {[catch {set audio(rsh) [which remsh]}]} {
+		    set audio(rsh) rsh
+		}
+	    }
+	}
+	if {![info exists audio(host)]} {
+	    set audio(host) "localhost"
+	}
+
+	# Try to resolve audio(cmd) to an absolute path.  With a relative path,
+        # we get time delays induced by automounts while path searching during
+        # every exec.
+        set audio(cmd) tkbiff_audio
+        catch {which tkbiff_audio} audio(cmd)
+	if {0 != [string compare "localhost" $audio(host)]} {
+	    append audio(cmd) " -r $audio(rsh) -c $audio(remotecmd) -h $audio(host)"
+	    set display(audiohost) $audio(host)
+	    set display(audiorsh) $audio(rsh)
+	    set display(audiorcmd) $audio(remotecmd)
+	} else {
+	    set display(audiohost) "localhost"
+	    set display(audiorsh) "not used"
+	    set display(audiorcmd) "not used"
+	}
+
+	if {$::verbose} {
+	    set ::verbose 0
+	    consoleToggle
+	}
+    }
+}
+
+proc usage {{errormsg {}}} {
+    global argv audio display
+
+    if {0 == [string compare $errormsg ""]} {
+	while {[llength $argv]} {
+	    set flag [lindex $argv 0]
+	    switch -- $flag "-audiohost" {
+		set audio(host) [lindex $argv 1]
+		set argv [lrange $argv 2 end]
+	    } "-audiorsh" {
+		set audio(rsh) [lindex $argv 1]
+		set argv [lrange $argv 2 end]
+	    } "-audiorcmd" {
+		set audio(remotecmd) [lindex $argv 1]
+		set argv [lrange $argv 2 end]
+	    } "-titlepassword" {
+		set display(titlePassword) [lindex $argv 1]
+		set argv [lrange $argv 2 end]
+	    } "-title" {
+		set display(titleMain) [lindex $argv 1]
+		set argv [lrange $argv 2 end]
+	    } "-titleicon" {
+		set display(titleIcon) [lindex $argv 1]
+		set argv [lrange $argv 2 end]
+	    } default {
+		set errormsg "$flag: unknown argument"
+		break
+	    }
+	}
+    }
+    if {0 != [string compare $errormsg ""]} {
+	puts stderr "tkbiff: $errormsg"
+	puts stderr {usage: tkbiff [flags] ... where flags are:
+[-cf configfile]
+[-mbox file]
+[-user name]
+[-pop/-imap host[:port]]
+[-password ...]
+[-audiohost host]
+[-audiorsh rsh|ssh]
+[-audiorcmd cmd]
+[-connectinit ...]
+[-connect ...]
+[-connectpre ...]
+[-connectpost ...]
+[-title ...]
+[-titleicon ...]
+[-titlepassword ...]
+[-verbose]
+[-verbosefile file]
+[-version]}
+	exit 1
+    }
+}
+
+proc consoleToggle {} {
+    if {$::verbose} {
+	set ::verbose 0
+	destroy .console
+    } else {
+	set ::verbose 1
+	set w .console
+	set sb $w.sb
+	set t $w.t
+	set buttonframe $w.buttons
+	set close $buttonframe.close
+	set clear $buttonframe.clear
+	toplevel $w
+	wm title $w "tkbiff console"
+	wm iconname $w "tkbiff console"
+	wm protocol $w WM_DELETE_WINDOW consoleToggle
+	text $t -yscroll "$sb set" -state disabled
+	scrollbar $sb -command "$t yview"
+	frame $buttonframe
+	button $clear -text "Clear" -command consoleClear
+	button $close -text "Close" -command consoleToggle
+	grid $sb -column 0 -row 0 -sticky ns
+	grid $t  -column 1 -row 0 -sticky nsew
+	# let text box only expand
+	grid rowconfigure $w 0 -weight 1
+	grid columnconfigure $w 1 -weight 1
+
+	grid $buttonframe -column 0 -row 1 -sticky nsew -columnspan 2
+	grid $clear -column 0 -row 0 -sticky nsew
+	grid $close -column 1 -row 0 -sticky nsew
+	grid columnconfigure $buttonframe 0 -weight 1
+	grid columnconfigure $buttonframe 1 -weight 1
+
+	set ::console(newline) ""
+	# if something buffered, show it
+	if {[info exists ::console(buffer)]} {
+	    consoleWrite "earlier: $::console(buffer)"
+	}
+    }
+}
+
+# write to console (verbose) window
+proc consoleWrite {output} {
+    set bottom [lindex [.console.t yview] 1]
+    # console(newline) is initially empty so that first line isn't blank
+    # and then later changed to a true newline.  Newlines are put at the
+    # beginning of each line rather than the end to avoid always seeing
+    # an empty line at the bottom of the console.
+    .console.t configure -state normal
+    .console.t insert end "$::console(newline)$output"
+    .console.t configure -state disabled
+    set ::console(newline) \n
+
+    # If bottom was showing before adding text, make sure it's showing
+    # after, too.  If not, leave screen alone so user can continue
+    # studying whatever they were looking at while we continue to append.
+    if {$bottom == 1} {
+	.console.t see end
+    }
+}
+
+proc consoleClear {} {
+    set w .console
+    $w.t configure -state normal
+    $w.t delete 0.1 end
+    $w.t configure -state disabled
+    set ::console(newline) ""
+}
+
+proc verbose {msg} {
+    set ::console(buffer) $msg
+
+    if {!($::verbose || [info exists ::verbosefile])} return
+
+    set output "[clock format [clock seconds] -format %T] $msg"
+
+    if {$::verbose} {consoleWrite $output}
+
+    #
+    # write to verbose log file
+    #
+    if {[info exists ::verbosefile]} {
+	if {[catch {puts $::verbosefile $output} emsg]} {
+	    unset ::verbosefile
+	    verbose "error writing to verbose log file $::verbosefilename"
+	    verbose "error is: $emsg"
+	}
+    }
+}
+
+# call this when it is inappropriate to offer the trace window
+proc bgerror_notrace {msg} {
+    set ::errorInfo {}
+    bgerror $msg
+}
+
+# bounce msg from a MsgWin binding
+proc bounce_msgwinW {w} {
+    set w [file rootname $w]
+    set id $::guimsg($w,id)
+    bounce_msg $id
+}
+
+# bounce msg from a MainWin binding
+proc bounce_msgwin {y} {
+    # translate from y position to message id
+    set id [lindex $::show_list [.from nearest $y]]
+    bounce_msg $id
+}
+
+# bounce msg, given its id
+proc bounce_msg {id} {
+    busy
+
+    global msg bounce
+
+    verbose "preparing to bounce, will try all three of..."
+    verbose "from:    $msg($id,from)"
+    verbose "sender:  $msg($id,sender)"
+    verbose "replyto: $msg($id,replyto)"
+    foreach toRaw [list $msg($id,from) $msg($id,sender) $msg($id,replyto)] {
+	verbose "bouncing to $toRaw"
+	set to [bounce_addr $toRaw]
+	verbose "raw email: $to"
+	if {[string equal $to ""]} continue
+
+	set bounce(file) [file join $bounce(tmpdir) bouncemail.[pid]]
+	set bounce(fid) [open $bounce(file) w+]
+	set bounce(to) $to
+	set bounce(from) {"Mail Delivery Subsystem" <MAIL-DAEMON@nist.gov>}
+	set bounce(fromShort) {<MAIL-DAEMON@nist.gov>}
+
+	# Bounce msgs might bounce but nobody wants bounce msgs for bounce msgs,
+	# so do our best to send them someplace useless.
+	puts $bounce(fid) "Return-Path: $bounce(from)"
+	puts $bounce(fid) "From: $bounce(from)"
+	puts $bounce(fid) "To: $to"
+	puts $bounce(fid) "Subject: Returned mail: User unknown"
+	puts $bounce(fid) ""
+	puts $bounce(fid) "---- The following addresses had permanent fatal errors ----"
+	puts $bounce(fid) "$msg($id,to)"
+	flush $bounce(fid)
+	# don't close yet
+
+	verbose "trying to bounce via native mail: bounce_$::tcl_platform(platform)"
+	if {[catch {bounce_$::tcl_platform(platform)}]} {
+	    # for sites with no native delivery method fall back to manual smtp
+	    verbose "trying to bounce via smtp"
+	    catch {bounce_smtp}
+	}
+	close $bounce(fid)
+	file delete -force $bounce(file)
+	verbose "bounce done"
+    }
+    idle
+}
+
+# for testing
+# set bounce(smtpserver) mailhub.cme.nist.gov
+
+proc bounce_unix {} {
+    global bounce
+    verbose "bounce_unix"
+
+    if {[file executable /usr/lib/sendmail]} {
+	exec /usr/lib/sendmail -t -odb < $bounce(file)
+	# Explanation:
+	# -t   means: pick up recipient from body
+	# -odb means: deliver in background
+	# note: bogus local address cause sendmail to fail immediately
+    } elseif {[file executable /usr/sbin/sendmail]} {
+	exec /usr/sbin/sendmail -t -odb < $bounce(file)
+	# sendmail is in /usr/sbin on some BSD4.4-derived systems.
+    } else {
+	error
+    }
+}
+
+proc bounce_windows {id} {error}
+proc bounce_macintosh {id} {error}
+
+# no error checking so caller must catch
+proc bounce_smtp {} {
+    global bounce
+
+    set s [socket $bounce(smtpserver) 25]
+    gets $s answer
+    lindex $answer 0
+    bounce_smtp2 $s
+    close $s
+}
+    
+proc bounce_smtp2 {s} {
+    global bounce
+
+    puts $s "HELO [info host]";flush $s
+    gets $s answer
+    if {[lindex $answer 0] != 250} return
+
+    puts $s "MAIL FROM:<$bounce(fromShort)>";flush $s
+    gets $s answer
+    if {[lindex $answer 0] != 250} return
+
+    puts $s "RCPT TO:<$bounce(to)>";flush $s
+    gets $s answer
+    if {[lindex $answer 0] != 250} return
+
+    puts $s DATA;flush $s
+    gets $s answer
+    if {[lindex $answer 0] != 354} return
+
+    seek $bounce(fid) 0 start
+    puts $s [read $bounce(fid)];flush $s
+    puts $s .;flush $s
+    gets $s answer
+}
+
+# take a raw addr and extract the @-email address from it
+proc bounce_addr {addr} {
+    if {![regexp (.)(.*) $addr x c list]} return
+
+    set list [split $list ""]
+
+    #
+    # separate into quoted, unquoted, <>'d and parened pieces
+    # Code assumes delimiters are balanced, but I think mail enforces
+    # this so we're safe.
+    #
+
+    while {1} {
+	if {$c == "<"} {
+	    set i [lsearch $list ">"]
+	    set angle [join [lrange $list 0 [expr {$i-1}]] ""]
+	    set list [lrange $list [expr {$i+2}] end]
+	} elseif {$c == "\""} {
+	    set i [lsearch $list "\""]
+	    set list [lrange $list [expr {$i+2}] end]
+	} elseif {$c == "("} {
+	    set i [lsearch $list ")"]
+	    set list [lrange $list [expr {$i+2}] end]
+	} else {
+	    append raw $c
+	}
+	if {[llength $list] == 0} break
+	set c [lindex $list 0]
+	set list [lrange $list 1 end]
+    }
+    if {[info exists angle]} {
+	return $angle
+    } else {
+	return $raw
+    }
+}
+
+proc bounce_init {} {
+    global bounce
+
+    # deduce tmp directory
+    switch $::tcl_platform(platform) {
+	unix {
+	    set bounce(tmpdir) /tmp
+	} macintosh {
+	    set bounce(tmpdir) [pwd]
+	} default {
+	    set bounce(tmpdir) [pwd]
+	    catch {set bounce(tmpdir) $env(TMP)}
+	    catch {set bounce(tmpdir) $env(TEMP)}
+	}
+    }
+}
+bounce_init
+
+proc forget_msgwin {y} {
+    global msg show_list behavior
+
+    if {![info exists show_list]} {
+	wm iconify .
+	return
+    }
+
+    # translate from y position to message id
+    set id [lindex $show_list [.from nearest $y]]
+
+    if {$behavior(destroy_body_when_hiding)} {
+	unshow_msgwin [id_to_widget $id]
+    }
+
+    set msg($id,status) HIDE
+    update_display
+}
+
+proc forget_msgwinW {w} {
+    set w [file rootname $w]
+    unshow_msgwin $w
+    set ::msg($::guimsg($w,id),status) HIDE
+    update_display
+
+    # prevent any additional bindings from executing since the window has
+    # now been destroyed
+    return -code break
+}
+
+proc suppress_msg {id} {
+    set ::msg($id,status) HIDE
+}
+
+proc toggle_display {type} {
+    set ::display($type) [expr {!$::display($type)}]
+    update_help_text
+    update_display
+}
+
+proc toggle_behavior {type} {
+    set ::behavior($type) [expr {!$::behavior($type)}]
+    update_help_text
+}
+
+proc normal_font {keysym} {
+    .from configure -font $::main(font)
+    .subj configure -font $::main(font)
+    bind all $keysym {alt_font %K}
+}
+
+proc alt_font {keysym} {
+    .from configure -font $::main(font,alt)
+    .subj configure -font $::main(font,alt)
+    bind all $keysym {normal_font %K}
+}
+
+proc position_window {w} {
+    global position
+
+    # some people have interactive placement which really loses
+    # so force placement somewhere
+    set position [expr {($position+20)%300}]
+    wm geometry $w +$position+$position
+}
+
+# translate an id to a widget name
+proc id_to_widget {id} {
+    # strip punctuation from id so it is usable as a widget name
+    regsub -all {[][<>.@ :$-]} $id "" w
+    # adding a prefix solves two problems:
+    # 1) Tk does not permit uppercase widget names
+    # 2) some messages arrive with screwed up message ids, like < >
+    #    which would get rewritten to . without a prefix
+    return .msgid_$w
+}
+
+# Compute physical number of lines required to display a string.
+# String must NOT include terminating newline. 
+proc count_lines {s} {
+    global msgwin
+
+    set lines 0
+    # long lines will wrap, so compute physical lines required.
+    # no handling is made for special characters (in particular, control
+    # chars can consume up to 4 chars and tabs can consume up to 8)
+    # however the likelihood of them actually causing problems is low
+    # enough that its not worth worrying about.  And even in the worst
+    # case, the user can scroll the window up using the pan bindings.
+    # Can't fit more than 83 lines on any screen, so don't bother counting
+    # lines after that.
+    set max_lines 83
+    foreach line [split $s \n] {
+	# treat empty lines as if they had one char to simplify
+	# subsequent linecount computation
+	if {0==[set chars [string length $line]]} {
+	    set chars 1
+	}
+	incr lines [expr {1+($chars-1)/$msgwin(width)}]
+	
+	if {$lines > $max_lines} break
+    }
+    return $lines
+
+    # Below here is an old version, no longer used.  It's dead-on
+    # but slow and I'm willing to give up some accuracy for speed.
+
+    # if long enough, don't even bother being accurate
+    if {[string length $s]>$msgwin(width)*$msgwin(height,max)} {
+	return $msgwin(height,max)
+    }
+
+    set row 1
+    set col 0
+
+    foreach char [split $s ""] {
+	scan $char %c c
+	if {$c >= 040 && $c <= 0176} {
+	    incr col
+	} elseif {$c == 012} {
+	    set col 0
+	    incr row
+	    continue
+	} elseif {$c == 011} {
+	    incr col [expr {8 - $col%8}]
+	} elseif {$c >= 07 && $c <= 015} {
+	    incr col 2
+	} else {
+	    incr col 4
+	}
+	if {$col > $msgwin(width)} {
+	    incr row
+	    set col [expr {$col-$msgwin(width)}]
+	}
+	if {$row > $msgwin(height,max)} break
+    }
+    return $row
+}
+
+# when messages go away, delete all the gui-related bookkeeping
+proc destroy_guimsg {id} {
+    # if message was suppressed, this will fail immediately - that's normal
+    catch {
+	unset guimsg($id,headers)
+	unset guimsg($id,headers,lines)
+	unset guimsg($id,subject)
+	unset guimsg($id,subject,lines)
+	unset guimsg($id,body,lines)
+	unset guimsg($id,min,lines)
+	unset guimsg([id_to_widget $id],id)
+    }
+}
+
+# Create preformatted message for display purposes.
+# This is done once per message so that the act of popping it up is quick.
+# The bottleneck here is computing the number of lines in the message.
+# The original size that comes with the message is logical lines, but we need
+# physical lines, specific to the width of the text widget.  When lines wrap,
+# logical lines can take multiple physical lines.  So this procedure also
+# computes how many lines will be required.  We want to show that many lines
+# if we have the space to do so.
+proc create_guimsg {id} {
+    global msg guimsg
+
+    if {[string match $msg($id,status) HIDE]} return
+
+    set w [id_to_widget $id]
+    set headers ""
+
+    if {[string compare "" $msg($id,resent-from)]} {
+	append headers "Resent-From: $msg($id,resentfrom)\n"
+    }
+    if {[string compare "" $msg($id,to)]} {
+	append headers "To: $msg($id,to)\n"
+    }
+    if {[string compare "" $msg($id,cc)]} {
+	append headers "Cc: $msg($id,cc)\n"
+    }
+    if {[string compare "" $msg($id,date)]} {
+	append headers "Date: $msg($id,date)\n"
+    }
+    set guimsg($id,headers) [string trim $headers \n]
+    set guimsg($id,headers,lines) [count_lines $guimsg($id,headers)]
+    if {$guimsg($id,headers,lines)} {
+	append guimsg($id,headers) "\n"
+    }
+
+    # to translate =? sequences from bodies, uncomment next line
+    # set msg($id,body) [tkbiff::field_decode $msg($id,body)]
+
+    set guimsg($id,subject) "Subject: $msg($id,subject)"
+    set guimsg($id,subject,lines) [count_lines $guimsg($id,subject)]
+    set guimsg($id,body,lines) [count_lines $msg($id,body)]
+}
+
+proc show_msgwin {y show_headers permanent} {
+    global w msg guimsg msgwin show_list display
+
+    if {![info exists show_list]} return
+
+    # translate from y position to message id
+    set id [lindex $show_list [.from nearest $y]]
+
+    set w [id_to_widget $id]
+
+    if {[winfo exists $w]} {
+	if {$permanent} {
+	    unshow_msgwin $w
+	} else {
+	    raise $w
+	    set display(temporary) $w
+	}
+	return
+    }
+
+    toplevel $w
+    position_window $w
+    set title "From: $msg($id,from)"
+    if {$display(titleTo)} {
+	append title " To: $msg($id,to)"
+    }
+    wm title $w $title
+    wm iconname $w $msg($id,from,short)
+    wm protocol $w WM_DELETE_WINDOW "unshow_msgwin $w"
+
+    set lines [expr {$guimsg($id,body,lines) + $guimsg($id,subject,lines)}]
+
+    set body {}
+    if {$show_headers} {
+	append body $guimsg($id,headers)
+	incr lines $guimsg($id,headers,lines)
+    }
+
+    # number of lines in header+message is at least this and may be more
+    set guimsg($id,min,lines) $lines
+    # remember id so that we can get it from events using only widget name
+    set guimsg($w,id) $id
+
+    append body "$guimsg($id,subject)\n$msg($id,body)"
+
+    if {$lines > $msgwin(height,max)} {
+	set winheight $msgwin(height,max)
+    } else {
+	set winheight $lines
+    }
+
+    text $w.text -width $msgwin(width) -height $winheight -font $msgwin(font) \
+	    -setgrid 1
+
+    scrollbar $w.sb -command "$w.text yview"
+    $w.text config -yscroll "$w.sb set"
+
+    # scrollbar would normally be packed during configure event
+    # but it looks so funny (seeing the window move over) that we
+    # pack it here initially
+    if {$winheight < $lines} {
+	pack $w.sb -expand yes -fill y -side left
+    }
+
+    pack $w.text -fill both -expand yes -side right
+
+    # Constrain width because we don't handle varying widths.
+    wm minsize $w $msgwin(width) 1
+    wm maxsize $w $msgwin(width) 999
+
+    $w.text insert end $body
+    $w.text configure -state disabled	;# prevent user from editing
+    bind $w <Destroy> {unshow_msgwin %W}
+
+    # Remember which windows are temporary so that we can scroll
+    # them even though events are being delivered to main window.
+    # Also useful so we remember which one to delete.
+    if {!$permanent} {
+	set display(temporary) $w
+    }
+
+    # Do raise last to avoid early flush.
+    # Do update before raise, otherwise raise causes brief display
+    # of a vanilla top-level.  Have no idea why this is.
+    # Alas, the update means that a 2nd show_msgwin can be triggered
+    # at this time, destroying the window so that when we come back
+    # it is gone.  Thus, we must check the raise.  Sigh.
+    update
+    if {[catch {raise $w}]} {
+	catch {unset display(temporary)}
+	return
+    }
+
+    bindtags $w.text "$w.text MsgWin Text $w all"
+    bind $w.text <Configure> {config_msgwin %W}
+}
+
+proc config_msgwin {msgtextwin} {
+    global guimsg winheight
+
+    set w [file rootname $msgtextwin]    ;# strip off .text
+
+    # record new width
+    scan [wm geometry $w] "%dx%d" winwidth winheight
+
+    set id $guimsg($w,id)
+
+    # if new height is big enough, add scrollbar if not already
+    # if new height is small enough, remove sb if not already
+
+    if {$guimsg($id,min,lines) > $winheight} {
+	if {![winfo ismapped $w.sb]} {
+	    pack $w.sb -expand yes -fill y -side left
+	}
+    } else {
+	if {[winfo ismapped $w.sb]} {
+	    pack unpack $w.sb
+	}
+    }
+
+    # work around bug on MacOS - manual resizing of gridded windows screws up
+    # the width so set it back
+    switch $::windowingsystem "aqua" - "classic" {
+	if {$winwidth != $::msgwin(width)} {
+	    wm geometry $w $::msgwin(width)x$winheight
+	}
+    }
+}
+
+proc unshow_msgwin {w} {
+    if {[info exists ::display(temporary)]} {
+	if {$::display(temporary) == $w} {
+	    unshow_tmp_msgwin_simple
+	    return
+	}
+    }
+    catch { ;# if window is not showing, it does not exist so do nothing
+	bind $w <Destroy> " "
+	destroy $w
+    }
+}
+
+# This is intended to be called from a binding.
+proc unshow_tmp_msgwin {} {
+    unshow_tmp_msgwin_simple
+    
+    # prevent any additional bindings from executing since the window has
+    # now been destroyed
+    return -code break
+}
+
+# This is intended to be called from a proc.
+proc unshow_tmp_msgwin_simple {} {
+    # This is a kludge to support the PC and Mac on which
+    # we overload some of the mouse buttons.  The result is
+    # that when the mouse button is released, it only means
+    # "delete temp window" if one already exists!
+
+    if {[info exists ::display(temporary)]} {
+	bind $::display(temporary) <Destroy> " "
+	destroy $::display(temporary)
+	unset ::display(temporary)
+    }
+}
+
+# mark the current window as temporary
+proc set_tmp_msgwinW {w} {
+    set ::display(temporary) [file rootname $w]
+}
+
+proc update_display {} {
+    global msg height visible width
+
+    catch {unset ::update_display_requested}
+
+    # remember how window is scrolled
+    set goaltop [.from nearest 0]		;# first visible line
+
+    set bottom_was_showing [expr {[.from size] - $goaltop <= $height(subject)}]
+
+    .from delete 0 end
+    .subj delete 0 end
+    set show_count 0		;# number of showable messages
+    # after any filtering
+    catch {unset ::show_list}
+
+    # QUALCOMM POP3 server changes Status of all messages to U even after RSET,
+    # so consider those NEW.
+
+    foreach id $::all_list {
+	if {$msg($id,status) == "O"   && $::display(unread) ||
+	$msg($id,status) == "RO"  && $::display(read) ||
+	$msg($id,status) == "NEW"  && $::display(new) ||
+	$msg($id,status) == "U" && $::display(new)} {
+	    incr show_count
+	    lappend ::show_list $id
+	    .from insert end $msg($id,from,short)
+	    .subj insert end $msg($id,subject)
+	}
+    }
+
+    if {$show_count > 0} {
+	if {$show_count <= $height(max)} {
+	    set height(subject) $show_count
+	} else {
+	    set height(subject) $height(max)
+	}
+    } else {
+	set height(subject) 1
+	.from insert end "no mail"
+    }
+    .from configure -height $height(subject)
+    .subj configure -height $height(subject)
+    wm geometry . ""
+
+    if {$show_count > $height(max)} {
+	if {!$visible(scrollbar)} {
+	    grid .sb -column 0 -row 0 -sticky ns
+	    set visible(scrollbar) 1
+	}
+    } else {
+	if {$visible(scrollbar)} {
+	    grid forget .sb 
+	    set visible(scrollbar) 0
+	}
+    }
+
+    if {$::behavior(autoscroll) && $bottom_was_showing} {
+	.from yview [expr {$show_count - $height(subject)}]
+	.subj yview [expr {$show_count - $height(subject)}]
+    } else {
+	.from yview $goaltop
+	.subj yview $goaltop
+    }
+
+    if {$::behavior(autoiconify) && ($show_count == 0)} {
+	wm iconify .
+    }
+}
+
+proc announce_new_msgs {} {
+    global first_announce
+
+    if {![info exists first_announce]} {
+	set first_announce 1
+    }
+
+    foreach id $::new_list {
+	prep_new_msg $id
+	create_guimsg $id
+    }
+
+    if {[llength $::new_list] \
+     || [llength $::dead_list] \
+     || [llength $::changed_status_list] \
+     || $first_announce} {
+	update_display
+    }
+
+    # at startup, do not announce messages already waiting
+    if {$first_announce} {
+	set first_announce 0
+	return
+    }
+
+    # first time through this loop only, do the "behaviors"
+    set first_time 1
+
+    foreach id $::new_list {
+	if {[string match $::msg($id,status) HIDE]} continue
+
+	# if message was last seen just a short time ago
+	# mailer probably temporarily rewrote file so don't
+	# reannounce
+	if {[info exists ::recently_seen_ids($id)]} continue
+
+	# raise/deiconify before audios.  Since audios are slow
+	# relatively-speaking, this lets the updated main window
+	# be visible immediately.
+
+	if {$first_time} {
+	    set first_time 0
+	    if {$::behavior(autoraise)} {raise .}
+	    if {$::behavior(autodeiconify)} {wm deiconify .}
+	    update
+	}
+
+	announce_new_msg $id
+    }
+}
+
+proc renounce_msg {id} {
+    if {$::behavior(destroy_body_when_gone)} {
+	set w [id_to_widget $id]
+	unshow_msgwin $w
+    }
+
+    destroy_guimsg $id
+}
+
+proc renounce_msgs {ids} {
+    foreach id $ids {
+	renounce_msg $id
+    }
+}
+
+proc scroll {w dir} {
+    # if win == ".", this means user has either requested main window be
+    # scrolled (in which case we have to massage its name a little since
+    # it's already got a "." at the end) OR we should scroll a msg window
+    # that's already displayed.  The latter can happen if it's a temporary
+    # msg window.
+    if {$w == "."} {
+	set w ""
+	catch {set w $::display(temporary)}
+    }
+    # ignore attempts to scroll non-scrollable windows (like help window)
+    catch {tkScrollByPages $w.sb v $dir}     ;# Tk < 8.4
+    catch {tk::ScrollByPages $w.sb v $dir}   ;# Tk >=8.4
+}
+
+# To which host should audios be directed?
+# If local, return "localhost"
+proc audio_host {} {
+    # Guess by looking at where the X display is.
+    # however sometimes this is wrong (e.g., ssh uses a proxy on the
+    # same host), so we only guess if the user doesn't explicitly say.
+
+    if {[info exists ::audio(host)]} {
+	return $::audio(host)
+    }
+
+    regexp "(.*):" [winfo screen .] ignore Xhost
+    set hostname [info hostname]
+    set domainname ""
+    catch {set domainname [exec domainname]}
+    if {"$Xhost" != "$hostname.$domainname"
+     && "$Xhost" != "$hostname"
+     && "$Xhost" != [lindex [split $hostname .] 0]
+     && "$Xhost" != "unix"
+     && "$Xhost" != ""} {
+	return $Xhost
+    } else {
+	return "localhost"
+    }
+}
+
+# What command should be used to play audios remotely?
+# If none, return empty string.
+proc audio_remotecmd {} {
+    global audio
+
+    if {[info exists audio(remotecmd)]} {
+	# user specified
+	return $audio(remotecmd)
+    } elseif {![info exists audio(host)]} {
+	return ""
+    } elseif {$audio(host) == "localhost"} {
+	return ""
+    }
+
+    if {0 == [catch {which tkbiff_audio} cmd]} {
+	return $cmd
+    }
+
+    # it's not fatal, so just issue diagnostic and continue
+    puts "tkbiff: tkbiff_audio not found - please finish installing\
+	    tkbiff (or find tkbiff_audio and add its directory to your\
+	    path (currently $::env(PATH))."
+    return [file join UnknownPath tkbiff_audio]
+}
+
+proc which {prog} {
+    switch $::tcl_platform(platform) "unix" {
+	set separator ":"
+    } "windows" {
+	set separator ";"
+    } "macintosh" {
+	error "this proc isn't used by MacOS"
+    }
+
+    foreach dir [split $::env(PATH) $separator] {
+	set dirprog [file join $dir $prog]
+	if {[file executable $dirprog]} {
+	    return $dirprog
+	}
+    }
+    error "$prog: not found"
+}
+
+proc which_browser {} {
+    global env
+
+    if {[info exists env(BROWSER)]} return
+
+    # on some platforms, we need to work to find the browser
+    switch $::tcl_platform(platform) "unix" {
+	if {0 == [catch {which netscape} env(BROWSER)]} return
+	if {0 == [catch {which iexplorer} env(BROWSER)]} return
+	unset env(BROWSER)
+    } "macintosh" {
+	# might be a better way on the Mac but I'm unaware of it
+	set env(BROWSER) "Browse the Internet"
+    }
+}
+
+proc user_password {} {
+    set oldfocus [focus]
+
+    set w .p
+    toplevel $w
+    set title $::display(titlePassword)
+    wm title $w $title
+    wm iconname $w $title
+    wm protocol $w WM_DELETE_WINDOW exit
+
+    set row 0
+
+    if {0 == [string compare $::protocol(host) "?"]} {
+	set ::protocol(host) ""
+	label $w.hl -text "Host: "
+	entry $w.he -textvar ::protocol(host) -borderwidth 2 
+	grid $w.hl -row $row -column 0 -sticky e
+	grid $w.he -row $row -column 1 -sticky ew
+	incr row
+	bindtags $w.he "$w.he Entry"
+	
+	proc protocolTypeCmd {w var} {
+	    regexp (.)(.*) $var x first rest
+	    set label "[string toupper $first]$rest: "
+	    $w.pl configure -text $label
+	    $w.pe configure -textvar $var
+	}
+
+	label $w.imapl -text "IMAP: "
+	radiobutton $w.imapb -variable protocol(type) -value "imap" -bd 2 \
+		-anchor w -relief flat \
+		-command "protocolTypeCmd $w password"
+	grid $w.imapl -row $row -column 0 -sticky e
+	grid $w.imapb -row $row -column 1 -sticky we
+	incr row
+
+	label $w.popl -text "POP: "
+	radiobutton $w.popb -variable protocol(type) -value "pop" -bd 2 \
+		-anchor w -relief flat \
+		-command "protocolTypeCmd $w password"
+	grid $w.popl -row $row -column 0 -sticky e
+	grid $w.popb -row $row -column 1 -sticky w
+	incr row
+
+	label $w.apopl -text "APOP: "
+	radiobutton $w.apopb -variable protocol(type) -value "apop" -bd 2 \
+		-anchor w -relief flat \
+		-command "protocolTypeCmd $w secret"
+	grid $w.apopl -row $row -column 0 -sticky e
+	grid $w.apopb -row $row -column 1 -sticky w
+	incr row
+    }
+
+    label $w.ul -text "User: "
+    entry $w.ue -textvar user -borderwidth 2
+    grid $w.ul -row $row -column 0 -sticky e
+    grid $w.ue -row $row -column 1 -sticky ew
+    incr row
+
+    if {$::needsecret} {
+	label $w.pl -text "Secret: "
+    } else {
+	label $w.pl -text "Password: "
+    }
+    entry $w.pe -textvar password -borderwidth 2 -show *
+    grid $w.pl -row $row -column 0 -sticky w
+    grid $w.pe -row $row -column 1 -sticky ew
+    grid columnconfigure $w 1 -weight 1 ;# let entry expand
+    incr row
+
+    if {0 == [string compare $::protocol(host) ""]} {
+	switch $::tcl_platform(platform) "macintosh" {
+	    set msg "This dialogue may be avoided by storing the username, hostname, etc., in the tkbiff Preferences file."
+	} default {
+	    set msg "This dialogue may be avoided by storing the username, hostname, etc., in the tkbiff configuration file or by using flags from the command line (such as -username and -imap)."
+	}
+    } else {
+	switch $::tcl_platform(platform) "macintosh" {
+	    set msg "This dialogue may be avoided by storing the username, etc., in the tkbiff Preferences file."
+	} "default" {
+	    set msg "This dialogue may be avoided by storing the username, etc., in the tkbiff configuration file or by using flags from the command line (such as -username)."
+	}
+    }
+    message $w.m -aspect 400 -text $msg
+    button $w.ok -text "OK" -command "finish $w"
+    grid $w.m -columnspan 2 -sticky ew
+    grid $w.ok -columnspan 2 -sticky ew -padx 2 -pady 2
+
+    # remove "all" bindings so keystrokes don't fire all bindings
+    # might be simpler to use a different technique here!
+    bindtags $w "$w TopLevel"
+    bindtags $w.ue "$w.ue Entry"
+    bindtags $w.pe "$w.pe Entry"
+    bind $w.pe <Return> "finish $w;break"
+
+    if {0 == [string compare $::protocol(host) ""]} {
+	focus $w.he
+
+	bind $w.he <Tab> "focus $w.ue"
+	bind $w.he <Shift-Tab> "focus $w.pe"
+	bind $w.ue <Tab> "focus $w.pe"
+	bind $w.ue <Shift-Tab> "focus $w.he"
+	bind $w.pe <Tab> "focus $w.he"
+	bind $w.pe <Shift-Tab> "focus $w.ue"
+
+    } else {
+	focus $w.pe
+
+	bind $w.ue <Tab> "focus $w.pe"
+	bind $w.pe <Tab> "focus $w.ue"
+    }
+
+    proc finish {w} {
+	# protocol(type) == apop isn't actually valid.  we just made that
+	# up so both pop and apop buttons could go down separately!
+
+	# also, don't leave secret laying around if unused because tkbiff
+	# prefers secret over password and will use it even if empty
+	# since "" is a valid secret!
+	if {$::protocol(type) == "apop"} {
+	    set ::protocol(type) "pop"
+	} else {
+	    catch {unset ::secret}
+	}
+	destroy $w
+    }
+
+    tkwait visibility $w    ;# window has to be visible before we can grab
+    raise $w
+    grab $w
+    tkwait window $w
+    grab release $w
+    focus $oldfocus
+    .subj delete 0 end
+    .subj insert end $::protocol(host)
+}
+
+proc busy {} {
+    # change to busy cursor
+    catch {
+	.from config -cursor watch
+	.subj config -cursor watch
+	update
+    }
+}
+
+proc idle {} {
+    # restore to idle cursor
+    .from config -cursor ""
+    .subj config -cursor ""
+    update
+}
+
+proc display_or_suppress {s} {
+    regexp "." $s key
+    return "'$key' toggles display of $s messages (currently being\
+	    [expr {$::display($s)?"displayed":"suppressed"}])"
+}
+
+proc help {} {
+    global helpwin url
+
+    if {[winfo exists .help]} {
+	destroy .help
+	return
+    }
+
+    toplevel .help
+    wm title .help "tkbiff help"
+    wm iconname .help "tkbiff help"
+
+    position_window .help
+
+    scrollbar .help.sb -command {.help.text yview}
+    text .help.text -width 80 -height 30 -yscroll {.help.sb set} -wrap word \
+	-font $helpwin(font)
+    update_help_text
+
+    button .help.ok -text "OK" -command {destroy .help} -relief raised
+    bind .help <Return> {destroy .help;break}
+    grid .help.sb -row 0 -column 0 -sticky ns
+    grid .help.text -row 0 -column 1 -sticky nsew
+    grid .help.ok -row 1 -columnspan 2 -sticky ew  -padx 2 -pady 2
+
+    # let text box only expand
+    grid rowconfigure .help 0 -weight 1
+    grid columnconfigure .help 1 -weight 1
+
+    # Strange but -cursor "" restores text widget to arrow, not ibeam!
+    set ::cursor(old) [.help.text cget -cursor]
+
+    # Implement hyperlink look-and-feel
+
+    # I'm using two different tags for two different URLs but simplicity.
+    # If there were more URLs, I'd switch to using tag bind prevrange.
+    set t .help.text
+
+    foreach u {home doc} {
+	# "break" avoids default <1> binding of setting sel tag
+	$t tag bind $u <1> "url_press $t $u %x %y;break"
+ 	$t tag bind $u <ButtonRelease-1> "url_release $t $u"
+	$t tag bind $u <Enter> "url_enter $t $u"
+	$t tag bind $u <Leave> "url_leave $t $u"
+	$t tag bind $u <B1-Motion> "url_motion $t $u %x %y"
+
+	if {![info exists url($u,color)]} {
+	    set ::url($u,color) $url(color,unclicked)
+	}
+
+	$t tag configure $u -foreground $url($u,color) -underline 1
+    }
+}
+
+# temporarily highlight the tag the same way a browser does to give user
+# the feel of having kicked off an action
+proc url_press {w tag x y} {
+    global url
+
+    set url($tag,state) 1
+    set url($tag,x) $x
+    set url($tag,y) $y
+    $w tag configure $tag -foreground $url(color,clicking)
+    focus $w      ;# to allow selection
+}
+
+# if mouse travels far enough between ButtonPress and ButtonRelease, ignore
+# even if still over url - this is indeed what real browsers do, too.
+proc url_motion {w tag x y} {
+    global url
+
+    if {![info exists url($tag,x)]} return
+
+    if {(abs($url($tag,x) - $x) > 10) || (abs($url($tag,y) - $y) > 10)} {
+	url_leave $w $tag
+	unset url($tag,x)
+    }
+}
+
+proc url_release {w tag} {
+    global url
+
+    if {$url($tag,state)} {
+	set url($tag,color) $url(color,clicked)
+	after 500 "$w tag configure $tag -foreground $url(color,clicked)"
+	url_open $url($tag)
+    }
+
+    # if cursor still over link, fake an Enter (just in case motion had
+    # faked caused a fake Leave).  No need to worry if we've truly
+    # left since then we'll get a real Leave which will undo this.
+    url_enter $w $tag
+}
+
+proc url_enter {w tag} {
+    global url
+
+    $w config -cursor $::cursor(hyperlink)
+}
+
+proc url_leave {w tag} {
+    global url
+
+    $w tag configure $tag -foreground $url($tag,color)
+    $w config -cursor $::cursor(old)
+    set url($tag,state) 0
+}
+
+proc url_open {url} {
+    global env
+
+    switch $::tcl_platform(platform) "unix" {
+	if {0 == [info exists env(BROWSER)]} {
+	    bgerror_notrace "Couldn't find a usable browser.  Set the BROWSER environment variable or env(BROWSER) in your tkbiff configuration file ($::cfile(real))."
+	}
+	if {[catch {exec $::env(BROWSER) -remote openURL($url)}]} {
+	    # perhaps browser isn't running or doesn't understand -remote flag
+	    if {[catch {exec $::env(BROWSER) $url &} emsg]} {
+		bgerror_notrace "Error while displaying $url in browser\n$emsg"
+	    }
+	}
+    } "windows" {
+	if {$::tcl_platform(os) == "Windows NT"} {
+	    set rc [catch {exec $::env(COMSPEC) /c start $url} emsg]
+	} else {
+	    # Windows 95/98
+	    set rc [catch {exec start $url} emsg]
+	}
+	if {$rc} {
+	    bgerror_notrace "Error while displaying $url in browser\n$emsg"
+	}
+    } "macintosh" {
+	if {[catch {AppleScript execute "
+	    tell application \"$env(BROWSER)\"
+	       open url \"$url\"
+            end tell
+	"} emsg]} {
+	    bgerror_notrace "Error while displaying $url in browser\n$emsg"
+	}
+    }
+}
+
+proc mouse_button {n} {
+    switch $::windowingsystem "x11" {
+	return "Mouse button $n"
+    } "win32" {
+	switch $n {
+	    1 {return "The left mouse button"}
+	    2 {return "Alt-left"}
+	    3 {return "The right mouse button"}
+	}
+    } "aqua" - "classic" {
+	switch $n {
+	    1 {return "Clicking the mouse button"}
+	    2 {return "Option-click"}
+	    3 {return "Control-click"}
+	}
+    }
+}
+
+# On Windows, text widget requires newline for scrollbar to be
+# able to show last line.
+if {$tcl_platform(platform) == "windows"} {
+    set text_widget_end "\n"
+} else {
+    set text_widget_end ""
+}
+    
+proc docpage {w} {
+    set URL $::url(doc)
+
+    switch $::tcl_platform(platform) "unix" {
+	$w insert end "tkbiff(1) or " {} $URL doc
+    } "windows" {
+	$w insert end $URL doc
+    } "macintosh" {
+	$w insert end $URL doc
+    }
+}
+
+proc homepage {w} {
+    $w insert end $::url(home) home
+}
+
+proc update_help_text {} {
+    global display behavior audio
+
+    # catch if help is not displayed
+    if {![winfo exists .help]} return
+
+    # since we're about to recreate window, remember where we are
+    set position [.help.text yview]
+
+    .help.text configure -state normal
+    .help.text delete 1.0 end
+    .help.text insert end "tkbiff - by Don Libes <don@libes.com> "
+    homepage .help.text
+    .help.text insert end "
+Version $::tkbiff(version), GUI Version $::tkbiff(version,gui)
+
+tkbiff is yet another program to report new mail. \
+Its claim to fame is a high degree of configurability. \
+You can configure it to display messages, show pictures, play sounds,\
+or order pizza.  Everything associated with the user interface can be changed\
+- colors, key bindings, this message, everything! \
+The configuration is usually stored in $::cfile(default). \
+The remainder of this message describes the default configuration.
+
+The default configuration is intended to allow very fast message\
+browsing while taking very little screen real estate.
+
+Fast browsing is provided by the following bindings:
+[mouse_button 1] pops up a message (or pops down a message that is already displayed).
+[mouse_button 2] pops up a message only as long as the mouse button is held down.
+[mouse_button 3] deletes a message from the display (or iconifies the window if no messages are shown).
+By default, To:, Cc:, Resent-From:, and Date: are not displayed. \
+Display these by holding down <Shift> while popping up the message.
+
+<f> toggles between fonts in the main window. \
+To conserve screen space, a small font is used initially.
+
+Additional space is saved by using a scrollbar if enough messages\
+arrive (currently $::height(max)).  Change this by resizing the window -\
+the new size\
+will be used as the new limit. \
+If autoscrolling is on and the last message header is already visible,\
+the display will automatically scroll so that new messages become visible.
+<a> toggles autoscroll (currently [expr {$behavior(autoscroll)?"on":"off"}]).
+<i> toggles autoiconify (currently [expr {$behavior(autoiconify)?"on":"off"}]). If autoiconify is on when no mail is displayed, the main window is iconified.
+<d> toggles autodeiconify (currently [expr {$behavior(autodeiconify)?"on":"off"}]). If autodeiconify is on when new mail arrives, the main window is deiconified.
+<t> toggles autoraise (currently [expr {$behavior(autoraise)?"on":"off"}]). If autoraise is on when new mail arrives, the main window is raised.
+
+Some mail clients and servers maintain state for each mail message.  The\
+following bindings make use of that:
+<u> toggles display of unread messages (currently being\
+	[expr {$display(unread)?"displayed":"suppressed"}]).
+<r> toggles display of read messages (currently being\
+	[expr {$display(read)?"displayed":"suppressed"}]).
+<n> toggles display of new messages (currently being\
+	[expr {$display(new)?"displayed":"suppressed"}]).
+
+Sounds are nice when you're not looking at the screen but not\
+so nice when you're having a meeting in your office.
+<s> toggles sound generation (currently [
+  expr {$behavior(sound)?"on, sound directed to [
+expr {0 == [string compare "localhost" $audio(host)]?"local host":"remote host $audio(host)"}
+  ]":"off"
+}]).
+
+<?> or <h> toggles display of this help window. \
+The status of any non-obvious toggles can be viewed in this help window. \
+The toggles or any other parameters may be changed permanently by editing\
+the configuration file.
+
+Some bindings for rapidly testing new configurations:
+<$::kbdprefix-q> exits tkbiff.
+<$::kbdprefix-z> toggles tkbiff tracing.
+<Return> checks for new mail.
+<Shift-Return> rereads your configuration file and then checks for new mail.
+(Note that initialization is not performed again.)
+
+Command-line options include the usual X and Tk things such as -display and\
+-geometry. \
+Also supported are -cf, -mbox, and -user to explicitly identify\
+a different configuration file (currently $::cfile(real)),\
+mail file (currently $display(mbox)), user name (currently $display(user)),\
+and -audiohost (currently $display(audiohost)), -audiorsh (currently\
+$display(audiorsh)), and -audiorcmd (currently $display(audiorcmd))\
+to direct sounds to a specific host.  For more information, see "
+    docpage .help.text
+    .help.text insert end ".$::text_widget_end"
+
+    # restore position of window
+    .help.text yview moveto [lindex $position 0]
+
+    .help.text configure -state disabled ;# prevent user from editing
+}
+
+# Can't use tk_messageBox since it does a global grab which interferes with
+# "?" binding.
+proc aboutBox {} {
+    if {[catch {toplevel .ab}]} {
+	raise .ab
+	return
+    }
+    wm title .ab "About tkbiff"
+    wm iconname .ab "About tkbiff"
+    catch {wm resizable .ab 0 0}
+    position_window .ab
+    message .ab.text -aspect 10000
+    .ab.text configure -text "tkbiff - by Don Libes <don@libes.com>
+
+Version $::tkbiff(version)
+GUI Version $::tkbiff(version,gui)
+
+Press ? for more information."
+    button .ab.ok -text "OK" -command {destroy .ab} -relief raised
+    bind .ab <Return> {destroy .ab;break}
+    pack .ab.text
+    pack .ab.ok -fill x -padx 2 -pady 2
+    update
+}

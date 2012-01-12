@@ -1,0 +1,4048 @@
+cd Gnote
+#1323894638
+grap fileshare
+#1323894647
+cd Zim
+#1323894648
+grap fileshare
+#1323896357
+grap file share
+#1323896391
+grap filehosting
+#1323896397
+grap file hosting
+#1323896421
+p 0Notes/File_Hosting.txt
+#1323899172
+cd /etc
+#1323899185
+p proftpd.conf 
+#1323899214
+man proftpd 
+#1323901839
+ping 192.168.1.22
+#1323903826
+man proftpd 
+#1323903865
+man inetd
+#1323910152
+host joaopena.no-ip.com
+#1323958847
+grep anon /etc/passwf
+#1323958850
+grep anon /etc/passwd
+#1323958865
+grep anon /etc/group
+#1323958873
+p /etc/passwd
+#1323958991
+lftp 192.168.1.22
+#1323959011
+lftp 192.168.1.22
+#1323962241
+man proftpd 
+#1323962261
+man proftpd 
+#1323965505
+ssh guest@192.168.1.22
+#1323965536
+telnet 192.168.1.22
+#1323965564
+lftp 192.168.1.22
+#1323972171
+kal
+#1323974605
+df
+#1323974615
+umount /media/Kindle
+#1323993601
+RSYNC
+#1324040862
+cd Conky/
+#1324040864
+l
+#1324040874
+cd conkyCalendar/
+#1324040876
+ls
+#1324040894
+p conkyrc 
+#1324040984
+..
+#1324040986
+ls
+#1324040995
+cd Weather/
+#1324040997
+ls
+#1324041000
+p weather.sh 
+#1324042417
+TARsnap
+#1324043009
+ping dns323
+#1324043026
+ssh john@dns323
+#1324043060
+telnet dns323
+#1324043144
+ssh root@dns323
+#1324043235
+vip RxvtSsh 
+#1324043267
+ssh john@dns323
+#1324046936
+pacs mongoose
+#1324062176
+Yaourt
+#1324062276
+cd /etc/samba/
+#1324062278
+l
+#1324062292
+grepi vfs *
+#1324062301
+grepi nt *
+#1324062328
+grepi ntlmv *
+#1324043532
+ssh john@dns323
+#1324070848
+Yaourt
+#1324071053
+smbstatus 
+#1324071072
+smbstatus -h
+#1324071079
+man smbstatus 
+#1324071119
+man smbcontrol
+#1324071151
+man smbclient
+#1324071168
+man smbstatus 
+#1324071185
+man smb.conf 
+#1324071247
+man smb.conf | grep ntlm
+#1324071356
+smb
+#1324072584
+type swat
+#1324072594
+psgrep swat
+#1324072602
+romf swat
+#1324072608
+rpmf swat
+#1324072677
+rpmqil xinetd
+#1324072690
+p /etc/xinetd.conf
+#1324072703
+cd /etc/xinetd.d
+#1324072705
+ls
+#1324072710
+p swat 
+#1324072731
+man xinetd
+#1324072786
+psgrep xinet
+#1324072798
+kill -HUP 1200
+#1324072916
+l
+#1324072920
+v swat 
+#1324073030
+l
+#1324073036
+grepi port *
+#1324073053
+p ../services
+#1324073174
+grep swat ../services*
+#1324073242
+grepi port *
+#1324073258
+p servers 
+#1324073269
+v swat 
+#1324073307
+cd rc.d
+#1324073320
+./xinetd 
+#1324073326
+./xinetd restart
+#1324046957
+man mongoose 
+#1324073409
+cd /etc
+#1324073413
+v services
+#1324073504
+./xinetd restart
+#1324062340
+v smb.conf
+#1324073542
+l
+#1324073571
+cp smb.conf smb.conf,20111216
+#1324073576
+l
+#1324073597
+mv smb.conf,20111216 smb.conf.2011-12-16
+#1324073599
+l
+#1324073657
+v smb.conf
+#1324072629
+man swat
+#1324076425
+cd 
+#1324076429
+cd Downloads/
+#1324076431
+ld
+#1324076436
+ls
+#1324076462
+mv bftpd-3.6.tar.gz /root/Work/
+#1324076466
+cd work
+#1324076470
+ls
+#1324076485
+tar xvf bftpd-3.6.tar.gz 
+#1324076493
+cd bftpd/
+#1324076495
+ls
+#1324076512
+wc -l *.h *.c
+#1324076591
+ls
+#1324076598
+p README 
+#1324076613
+ls
+#1324076629
+p Makefile
+#1324076639
+ls
+#1324076645
+ls debian/
+#1324076658
+ls redhat/
+#1324076660
+ls
+#1324076677
+v main.c
+#1324076705
+..
+#1324076712
+rm -r bftpd*
+#1324077719
+cd
+#1324077722
+cd Downloads/
+#1324077723
+ls
+#1324077739
+mv oftpd-0.3.6.tar.gz /root/Work/
+#1324077744
+ls
+#1324077756
+rm adeskbar*
+#1324077763
+tar xvf oftpd-0.3.6.tar.gz 
+#1324077767
+cd oftpd-0.3.6/
+#1324077769
+ls
+#1324077791
+p INSTALL
+#1324077797
+ls
+#1324077800
+p FAQ 
+#1324077813
+ls
+#1324077818
+ls dist/
+#1324077826
+ls init/
+#1324077832
+cd src/
+#1324077834
+ls
+#1324077848
+wc -l *
+#1324077935
+...
+#1324077944
+rm -r oftpd-0.3.6*
+#1324116682
+ls
+#1324116687
+ls -lt
+#1324116705
+ls
+#1324116737
+ls Dlink/
+#1324116767
+ls google.csv 
+#1324116773
+ls Docs/
+#1324116792
+ls uam-0.2.1
+#1324116811
+p uam-0.2.1/README 
+#1324116869
+ls
+#1324116872
+l
+#1324116930
+rm -r uam
+#1324116937
+rm -r uam-0.2.1*
+#1324116938
+ls
+#1324116949
+l
+#1324116968
+ls wicd/
+#1324116981
+rm -r wicd
+#1324117866
+cd
+#1324117873
+cd ice
+#1324117877
+p startup 
+#1324123958
+cat /etc/exports
+#1324123974
+psgrep nfs
+#1324123986
+cd etc
+#1324123995
+tail rc.conf
+#1324124008
+cd rc.d
+#1324124010
+ls
+#1324124017
+./nfs-server 
+#1324124023
+./nfs-server status
+#1324124037
+./nfs-common 
+#1324124042
+./nfs-common status
+#1324124049
+./nfs-server start
+#1324124053
+./nfs-server status
+#1324124058
+b
+#1324124063
+car exports
+#1324124068
+cat exports
+#1324128081
+exportfs -arv
+#1324130095
+v rc.conf
+#1324133804
+yaourt -S pan
+#1324133863
+pacman -S gnome-common
+#1324133874
+yaourt -S pan
+#1324134595
+pan &
+#1324170057
+pan &
+#1324171184
+pacs pan news
+#1324171742
+pacvs pkgstats
+#1324171745
+pacs pkgstats
+#1324182405
+cd
+#1324182421
+search mtp
+#1324182437
+p ./.msmtprc
+#1324218497
+rl in treatment
+#1324218516
+cd /store/Natalia/
+#1324218517
+l
+#1324218567
+cd /var/log
+#1324218572
+tail everything.log 
+#1324218583
+df
+#1324218625
+fdisk -l
+#1324218643
+fdisk /dev/sdd
+#1324219571
+df
+#1324219578
+cd /media/4234-1303
+#1324219581
+ls
+#1324219606
+ls Sliding\ Doors\ \(1998\)/
+#1324219617
+b
+#1324219619
+l
+#1324218592
+v everything.log 
+#1324219648
+b
+#1324219657
+cd /media/4234-1303
+#1324219659
+ls
+#1324219662
+cd
+#1324219665
+df
+#1324219680
+gparted&
+#1324219723
+b
+#1324219824
+df
+#1324219835
+df
+#1324219843
+cd /media/LANZUDA
+#1324219846
+ls
+#1324219851
+rm -r *
+#1324219853
+ls
+#1324219856
+sync
+#1324219864
+l
+#1324220432
+top
+#1324221057
+cd /var/log
+#1324220953
+Yaourt
+#1324221368
+ps axf
+#1324221442
+ps axf
+#1324219918
+cp -v in.treatment.s03e* /media/LANZUDA/
+#1324223113
+rm /media/LANZUDA/in.treatment.s03e11.720p.hdtv.x264.mkv
+#1324223128
+cd /media/LANZUDA/
+#1324223129
+l
+#1324223133
+sync
+#1324223290
+cd
+#1324223303
+umount /media/LANZUDA
+#1324223305
+df
+#1324221068
+tail -f everything.log 
+#1324225721
+cd Downloads/
+#1324225722
+l
+#1324225738
+cp windows6.1-kb972813-x64-en-us_483a3e51038f1a369b#1324294733
+cd opt/root_home/thumbnails
+#1324294742
+du -khs *
+#1324294753
+cd normal/
+#1324294755
+l
+#1324294756
+ls
+#1324294762
+rm *
+#1324294765
+la
+#1324294766
+..
+#1324294771
+cd large/
+#1324294784
+ls
+#1324294787
+rm *
+#1324294790
+cd
+#1324294923
+df
+#1324294929
+mount /backup/
+#1324294931
+df
+#1324294937
+umount /backup 
+#1324294952
+fsck -f -C0 /dev/sdb8
+#1324310543
+mount
+#1324310675
+grep pop /etc/hosts
+#1324310695
+ssh john@popcorn
+#1324310706
+ssh root@popcorn
+#1324311040
+p /etc/fstab
+#1324311391
+mount /popcornnfs
+#1324311394
+df
+#1324311403
+umount /popcornnfs
+#1324311409
+p /etc/fstab
+#1324333745
+pacs krandrtray
+#1324333764
+pacs rand
+#1324333812
+pacs xrand
+#1324333874
+arandr 
+#1324336139
+rpmqq yaourt
+#1324336185
+pacs pkgbrowser
+#1324336212
+vip Yaourt
+#1324340112
+rl cork forest
+#1324340155
+smplayer /dlink2/Video/0_Documentarios/0_BBC/Bbc
+#1324340173
+smplayer /dlink2/Video/0_Documentarios/0_BBC/Bbc\ Natural\ World\ 2008\ Cork\ Forest\ In\ A\ Bottle.avi 
+#1324346882
+date
+#1324347458
+psgrep syne
+#1324347470
+ipaddr
+#1324348157
+man pacman
+#1324348356
+pacman -h
+#1324348369
+pacman -h -R
+#1324348998
+cd etc
+#1324349004
+cd fonts/
+#1324349005
+l
+#1324349186
+cd
+#1324349194
+cd .fonts
+#1324349196
+l
+#1324349236
+..
+#1324349247
+cd .FontForge/
+#1324349248
+l
+#1324353876
+Yaourt
+#1324382312
+cd /etc/fonts/conf.avail/
+#1324382314
+l
+#1324382330
+pacs arphic
+#1324382360
+pacs cjk
+#1324382380
+pacs defoma
+#1324382392
+pacs thai
+#1324382413
+pacman -S extra/ttf-thai
+#1324382531
+Yaourt
+#1324386663
+p /etc/rc.local
+#1324386776
+cd etc
+#1324386783
+cd modprobe.d/
+#1324386785
+l
+#1324386790
+p blacklist.conf 
+#1324386801
+p modprobe.conf 
+#1324387383
+..
+#1324387385
+ls
+#1324387479
+ls *.conf
+#1324387517
+p sysctl.conf
+#1324390823
+cd ice
+#1324390825
+p startup 
+#1324391045
+setcd
+#1324391047
+cd
+#1324391048
+la
+#1324391065
+cd .ssh
+#1324391067
+ls
+#1324391073
+l
+#1324391078
+p authorized_keys 
+#1324391104
+ls
+#1324391113
+cd
+#1324391115
+ls
+#1324391119
+l
+#1324391125
+e
+#1324392184
+cd .dot
+#1324392187
+v aliases
+#1324395416
+ls
+#1324398205
+ls
+#1324405130
+rpmqil synergy
+#1324405157
+p /etc/synergy.conf.example
+#1324405192
+p /etc/synergy.conf
+#1324414007
+gparted &
+#1324433726
+cd /etc
+#1324433732
+v pacman.conf
+#1324433785
+Yaourt
+#1324433828
+l /dev/mtab
+#1324433837
+l /etc/mtab
+#1324433859
+pacman -Sf core/filesystem
+#1324433865
+Yaourt
+#1324433933
+cd ice
+#1324433945
+grep syner startup 
+#1324433958
+psgrep syner
+#1324433967
+kill 11906
+#1324433969
+psgrep syner
+#1324433976
+/usr/bin/synergys
+#1324433979
+psgrep syner
+#1324435833
+psgrep syner
+#1324435843
+/usr/bin/synergys
+#1324435845
+psgrep syner
+#1324440334
+psgrep syn
+#1324466319
+rpmqq blue
+#1324466334
+pacman -R gnome-bluetooth
+#1324466374
+pacman -R bluez
+#1324472859
+rpmqq firef
+#1324472883
+Yaourt
+#1324473399
+rpmf bbox
+#1324473416
+rpmqil texlive-bin
+#1324473424
+rpmqil texlive-bin|p
+#1324473451
+rpmq texlive-bin
+#1324473457
+rpmq texlive
+#1324473473
+pacs textlive
+#1324473487
+bbox
+#1324473504
+bbox -h
+#1324473526
+pacman -R texlive-bin
+#1324473539
+pacman -R texlive-bin evince-gtk
+#1324473546
+bbox
+#1324473342
+yaourt -S bbox
+#1324473612
+rpmq djvulibre
+#1324473637
+rpmqil bbox
+#1324473648
+p /usr/share/doc/bbox/README.md
+#1324473722
+pacman -R bbox
+#1324474379
+cd ice
+#1324474387
+v toolbar
+#1324474796
+psgrep syner
+#1324477735
+pan&
+#1324482291
+p /etc/hosts
+#1324482322
+ping 192.168.1.56
+#1324483621
+psgrep syne
+#1324484680
+grep pan menu 
+#1324484712
+grep pan toolbar
+#1324484799
+rpmqil pan
+#1324484742
+v toolbar
+#1324506526
+nfsstat 
+#1324506541
+man nfs
+#1324506708
+ping 192.168.1.142
+#1324506715
+ping 192.168.1.143
+#1324506752
+ssh john@192.168.1.142
+#1324506815
+ssh john@192.168.1.143
+#1324507516
+ssh john@192.168.1.143
+#1324510770
+p /etc/hosts
+#1324511437
+vip RxvtSsh 
+#1324558809
+rpmq pyqt
+#1324558829
+pacman -R pyqt 
+#1324558839
+pacman -R pyqt  python2-pyqt
+#1324558708
+Yaourt
+#1324558934
+Yaourt
+#1324560065
+df
+#1324560077
+ls /media/ARCHBANG
+#1324560084
+ls /media/ARCHBANG/arch/
+#1324560096
+ls /media/ARCHBANG/arch/boot/
+#1324560107
+ls /media/ARCHBANG/arch/boot/i686/
+#1324560114
+cd
+#1324560123
+umount /media/ARCHBANG
+#1324560235
+f
+#1324560241
+df
+#1324560364
+l /dev/sd*
+#1324560437
+df
+#1324560444
+umouny /media/SYSRESC
+#1324560449
+umount /media/SYSRESC
+#1324560511
+df
+#1324560519
+ls /media/DEBIAN_LIVE
+#1324560528
+ls /media/DEBIAN_LIVE/live/
+#1324560546
+p /media/DEBIAN_LIVE/live/packages.txt 
+#1324560584
+df
+#1324560595
+umount /media/DEBIAN_LIVE
+#1324565711
+psgrep udisk
+#1324565730
+rpmqq udikie
+#1324565735
+rpmqq udis
+#1324565746
+pacs udiskie
+#1324567963
+cd .ssh
+#1324567967
+..
+#1324567974
+search dropb
+#1324570639
+cd ice
+#1324570756
+ssh root@192.168.1.142
+#1324570774
+v /root/.ssh/known_hosts
+#1324570790
+ssh root@192.168.1.142
+#1324577527
+ssh root@192.168.1.142
+#1324577626
+ssh root@192.168.1.142
+#1324577964
+SSH root@192.168.1.142
+#1324579582
+SSH root@192.168.1.142
+#1324579655
+SSH root@192.168.1.142
+#1324581552
+Yaourt
+#1324581562
+RSYNC
+#1324582088
+Yaourt
+#1324584921
+rpmqq firef
+#1324585759
+SSH root@192.168.1.142
+#1324601305
+cd Downloads/
+#1324601310
+ls *pet
+#1324601320
+rm *pet
+#1324601330
+ls *txz
+#1324601575
+mv /tmp/gnupg-1.4.10-i486-1.txz .
+#1324577863
+vip RxvtSsh 
+#1324586086
+SSH root@192.168.1.142
+#1324612128
+cd /var/log
+#1324612137
+tail -30 everything.log 
+#1324607764
+man tmux
+#1324612219
+Yaourt
+#1324612320
+pacman -Sff python2-urwid
+#1324612324
+Yaourt
+#1324612388
+pacman -Qdt
+#1324613071
+pacman -R obexd-client perl-locale-gettext perl-module-build polkit-gnome telepathy-logger xcmiscproto xorg-util-macros yasm 
+#1324613076
+pacman -Qdt
+#1324570650
+v winoptions
+#1324612156
+tail -f everything.log 
+#1324636785
+psgrep gnote
+#1324645269
+cd Downloads/
+#1324645270
+l
+#1324645283
+./igdctl.pl 
+#1324645297
+v igdctl.pl 
+#1324645325
+v igdctl.pl 
+#1324645354
+v igdctl.pl 
+#1324645377
+v igdctl.pl 
+#1324645513
+v igdctl.pl 
+#1324645520
+./igdctl.pl 
+#1324645721
+psgrep syner
+#1324645739
+cd /var/cache/pacman/
+#1324645742
+ls
+#1324645745
+cd pkg/
+#1324645769
+rpmqq syner
+#1324645778
+ls synergy*
+#1324645804
+synergys
+#1324645827
+psgrep syner
+#1324645830
+synergys
+#1324646465
+synergys
+#1324646623
+cp /root/synergy-1.3.7-1-x86_64.pkg.tar.xz .
+#1324646638
+pacman -U ./synergy-1.3.7-1-x86_64.pkg.tar.xz
+#1324646646
+synergys
+#1324646665
+v /etc/pacman.conf
+#1324651607
+man fstab
+#1324664906
+cd etc
+#1324664917
+cd rc.d
+#1324664919
+ls
+#1324664932
+cd functions.d/
+#1324664934
+ls
+#1324664965
+..
+#1324664973
+grep run_hook *
+#1324664995
+grep sysinit_prefsck *
+#1324665002
+ls
+#1324665009
+rl sysinit_prefsck
+#1324665021
+..
+#1324665041
+rl sysinit_prefsck rc.sysinit 
+#1324665052
+grep sysinit_prefsck rc.sysinit 
+#1324665067
+grap sysinit_prefsck
+#1324665239
+cd rc.d
+#1324665249
+grep run_ho functions
+#1324665254
+v functions
+#1324668415
+cd ff
+#1324668420
+ls
+#1324668425
+cd chrome/
+#1324668427
+l
+#1324668436
+v userContent.css 
+#1324668495
+v userContent.css 
+#1324668589
+v userContent.css 
+#1324668943
+v userContent.css 
+#1324671937
+l
+#1324671944
+v userContent.css
+#1324690261
+ping 192.168.1.56
+#1324690452
+cd Gnote
+#1324690460
+grap gnote
+#1324690474
+v 6662af22-14eb-42d8-a655-5d17d81ac049.note
+#1324691889
+ping 192.168.1.56
+#1324692042
+ping 192.168.1.56
+#1324692050
+ping 192.168.1.142]
+#1324692054
+ping 192.168.1.142
+#1324692106
+ping 192.168.1.142
+#1324692125
+SSH john@192.168.1.142
+#1324696535
+SSH john@192.168.1.142
+#1324696858
+SSH john@192.168.1.142
+#1324697386
+v /etc/hosts
+#1324697594
+vip RxvtSsh 
+#1324697649
+grep archt /etc/hosts
+#1324697675
+v /etc/hosts
+#1324697726
+ping archtosh2-wl
+#1324697739
+cd ice
+#1324697746
+v toolbar
+#1324697831
+v toolbar
+#1324698101
+o /etc/hosts
+#1324737760
+cd work
+#1324737761
+l
+#1324737773
+l 0Pics 
+#1324737781
+rm 0Pics 
+#1324737803
+ln -s /opt/MyPictures/0-WorkPics 0Pics
+#1324737806
+l 0Pics 
+#1324737810
+l
+#1324752356
+cd ff
+#1324752359
+cd chrome/
+#1324752361
+l
+#1324752367
+v userContent.css 
+#1324756016
+fsck -h
+#1324757475
+Yaourt
+#1324758087
+pacs firefox-au
+#1324758328
+cd -log
+#1324758332
+v pacman.log 
+#1324758572
+pacs perl-lwp-protocol-https
+#1324758581
+cd -log
+#1324758593
+grep perl-lwp-protocol-https pacman.log 
+#1324758608
+v pacman.log 
+#1324759878
+rl callgi
+#1324760071
+df
+#1324760079
+umount /media/SamsungMini
+#1324760145
+df
+#1324760171
+df
+#1324760181
+ls /media/2EADEC6050742134
+#1324760206
+mount
+#1324760383
+df
+#1324760386
+df
+#1324760408
+df
+#1324760610
+df
+#1324666862
+v functions
+#1324697703
+vip RxvtSsh 
+#1324698106
+p /etc/hosts
+#1324765055
+df
+#1324765066
+mount
+#1324765311
+df
+#1324765366
+df
+#1324765371
+mount
+#1324768287
+cd /lacie/Rshare/00-Cheggi-newnew/
+#1324768289
+l
+#1324768307
+smplayer Last\ Stand.avi 
+#1324768394
+umplayer Last\ Stand.avi 
+#1324768475
+ls
+#1324768516
+lxsplit -j Chained\ Heat.avi.001 
+#1324768537
+l
+#1324768550
+rm Chained\ Heat.avi.00?
+#1324768558
+umplayer Chained\ Heat.avi 
+#1324770942
+di
+#1324789955
+di
+#1324792124
+di
+#1324792433
+type shutdown
+#1324792440
+f /sbin/shutdown
+#1324793266
+di
+#1324793340
+cd /etc/
+#1324793341
+lsd
+#1324793343
+ls
+#1324793374
+p inittab 
+#1324793428
+p rc.single
+#1324793459
+ls rc.*
+#1324793477
+p rc.shutdown 
+#1324793518
+p rc.sysinit 
+#1324793753
+p rc.sysinit 
+#1324793765
+p /etc/rc.d/functions
+#1324793826
+ls rc.*
+#1324793849
+p rc.multi
+#1324793886
+v /etc/rc.d/functions
+#1324793906
+p rc.multi
+#1324793925
+p rc.single 
+#1324793954
+ls rc.*
+#1324794068
+p inittab 
+#1324794625
+di
+#1324796508
+di
+#1324796688
+di
+#1324797023
+di
+#1324797383
+di
+#1324797727
+di
+#1324798169
+di
+#1324798834
+di
+#1324798872
+df
+#1324798883
+umount /media/Ceboleiro
+#1324798916
+smplayer 
+#1324798965
+echo $LANG
+#1324798981
+set | grep LC_
+#1324799022
+cd ice
+#1324799026
+p startup 
+#1324799057
+LANG=en_IE.utf-8 smplayer
+#1324799076
+smplayer 
+#1324799448
+ipaddfr
+#1324799451
+ipaddr 
+#1324799468
+ping 192.168.2.56
+#1324799845
+ssh john@192.168.2.1
+#1324799867
+telnet 192.168.2.1
+#1324799943
+telnet 192.168.2.1
+#1324801686
+telnet 192.168.2.1
+#1324801750
+ssh root@192.168.2.1
+#1324802057
+export NOCHECK="-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+#1324802096
+sakura -t Asus-DDwrt --geometry=124x35 -e ssh -Y $NOCHECK root@192.168.2.1 &
+#1324802182
+e
+#1324801768
+vip RxvtSsh 
+#1324804591
+cd ice
+#1324804606
+grepi earth *
+#1324804620
+google-earth 
+#1324804652
+p /root/.googleearth/crashlogs/crashlog-4ef6ea17.txt
+#1324804675
+google-earth -h
+#1324804685
+google-earth --help
+#1324804784
+ping 192.168.1.56
+#1324805478
+route -n
+#1324805500
+ping 192.168.2.1
+#1324805508
+ping 192.168.2.56
+#1324853726
+cd etc
+#1324853750
+grep loadkeys rc.sysinit 
+#1324853776
+grep KEYMAP rc.sysinit 
+#1324853789
+p rc.sysinit 
+#1324853819
+grep KEYMAP rc.sysinit 
+#1324853697
+man loadkeys 
+#1324853920
+ls /usr/share/kbd/keymaps
+#1324853934
+cd /usr/share/kbd/keymaps
+#1324853939
+search us
+#1324853970
+cd i386/qwerty
+#1324853978
+p us.map.gz 
+#1324854013
+less us.map.gz
+#1324854022
+v us.map.gz
+#1324853832
+man loadkeys 
+#1324898887
+v /etc/rc.conf
+#1324898911
+cd rc.d
+#1324898914
+./samba 
+#1324898919
+./samba stop
+#1324899126
+Yaourt
+#1324899522
+conkyForecast.fontbased.sh
+#1324899546
+/usr/share/conkyforecast/example/conkyForecast.fontbased.sh
+#1324899620
+/usr/share/conkyforecast/example/conkyForecast.fontbasedtemplate.sh 
+#1324899653
+/usr/share/conkyforecast/example/conkyForecast.fontbasedtemplate.sh
+#1324899705
+/usr/share/conkyforecast/test/conkyForecast.test.sh
+#1324899749
+Yaourt
+#1324899849
+pacman -S konqueror
+#1324899863
+pacman -S krusader
+#1324900041
+cd ice
+#1324900044
+v toolbar
+#1324900116
+krusader 
+#1324900182
+krusader --help
+#1324900188
+krusader --help-all
+#1324900270
+krusader 
+#1324900307
+krusader 
+#1324905575
+l /usr/lib/initscripts/arch-sysctl
+#1324905581
+p /usr/lib/initscripts/arch-sysctl
+#1324905553
+p /etc/rc.multi 
+#1324906576
+df
+#1324906597
+cd /tmp
+#1324906599
+l
+#1324906648
+df
+#1324906796
+cd
+#1324906798
+ls
+#1324906808
+mv Windows\ 7\ SP1\ PreActivated\ x86\ x64\ MultiBrand\ MultiEdition.iso /srv/
+#1324907177
+cd /var
+#1324907179
+l
+#1324907191
+cd /srv
+#1324907193
+l
+#1324907202
+rm Windows\ 7\ SP1\ PreActivated\ x86\ x64\ MultiBrand\ MultiEdition.iso 
+#1324909969
+l
+#1324909976
+b
+#1324909985
+cdl
+#1324910336
+pacman -S konsole
+#1324910365
+pacs konsole
+#1324910382
+pacman -S kdebase-konsole
+#1324911206
+konsole --help
+#1324911991
+psgrep krus
+#1324911998
+krusader
+#1324912029
+cd
+#1324912040
+search krusader
+#1324912060
+v ./.kde4/share/apps/krusader/krusaderui.rc ./.kde4/share/config/krusaderrc
+#1324912152
+cd ./.kde4/share/apps/krusader/
+#1324912154
+l
+#1324912170
+grepi konsole *
+#1324912179
+grepi terminal *
+#1324912196
+..
+#1324912198
+ls
+#1324912210
+..
+#1324912212
+ls
+#1324912216
+cd config/
+#1324912217
+ls
+#1324912230
+v krusaderrc 
+#1324912253
+krusader 
+#1324912297
+pacman -R konsole
+#1324912317
+rpmqq konsole
+#1324912326
+pacman -R kdebase-konsole
+#1324912331
+krusader 
+#1324912501
+cd ice
+#1324912508
+grepi terminal 8
+#1324912515
+grepi terminal 
+#1324912520
+grepi terminal *
+#1324916603
+psgrep conky
+#1324916617
+grepi conky startup 
+#1324916630
+LC_ALL=en_IE.utf-8  DISPLAY=$DISPLAY.1 /usr/bin/conky -c /root/Conky/conkyCalendar/conkyrc &
+#1324916653
+LC_ALL=en_IE.utf-8  /usr/bin/conky -c /root/Conky/conkyCalendar/conkyrc &
+#1324916778
+cd
+#1324916782
+cd Conky/
+#1324916784
+l
+#1324916790
+cd conkyCalendar/
+#1324916792
+l
+#1324916797
+v conky
+#1324916805
+v conkyrc 
+#1324916861
+v conkyrc 
+#1324917217
+psgrep conky
+#1324917225
+kill 11054
+#1324917228
+psgrep conky
+#1324917233
+psgrep conky
+#1324917235
+psgrep conky
+#1324917246
+rm /root/.cache/pacman/db.lck
+#1324917256
+cd /root/.cache/pacman
+#1324917257
+l
+#1324917277
+cd ice
+#1324917281
+p startup 
+#1324917311
+LC_ALL=en_IE.utf-8 /usr/bin/conky -c /root/Conky/conkyCalendar/conkyrc &
+#1324917319
+l
+#1324928364
+psgrep khelpcenter
+#1324928372
+psgrep kde
+#1324928400
+Yaourt
+#1324928574
+Yaourt
+#1324928641
+Yaourt
+#1324931125
+cd etc
+#1324931138
+ls exports.d/
+#1324931546
+exportfs 
+#1324931145
+v exports
+#1324931649
+exportfs
+#1324931661
+man exportfs
+#1324931703
+exportfs -av
+#1324931780
+rpmqq pac
+#1324931897
+rpmqil paconky
+#1324931912
+type -a paconky
+#1324931954
+grepi conky startup 
+#1324931979
+type -a conky
+#1324932013
+cd bin
+#1324932014
+ls
+#1324932052
+type -a paconky
+#1324932058
+type -a paconky.py
+#1324932066
+p paconky.py 
+#1324932090
+cd
+#1324932094
+cd Conky/
+#1324932096
+ls
+#1324932106
+cd conkyCalendar/
+#1324932108
+ls
+#1324932122
+grepi pac *
+#1324932213
+type -a paconky
+#1324932222
+rpmqil paconky
+#1324932394
+v conkyrc 
+#1324932593
+v conkyrc 
+#1324932233
+man paconky 
+#1324899418
+v /usr/share/conkyforecast/README
+#1324933868
+ping 192.168.2.56
+#1324934198
+ping 192.168.2.56
+#1324934240
+ping 192.168.2.56
+#1324934270
+tr
+#1324934274
+route -n
+#1324934302
+traceroute 192.168.2.56
+#1324934322
+ping 192.168.2.56
+#1324936852
+ping 192.168.2.56
+#1324936899
+rpmqq vlc
+#1324937907
+ping 192.168.2.56
+#1324938008
+ping 192.168.2.56
+#1324938057
+ping 192.168.2.1
+#1324938067
+ping 192.168.2.115
+#1324938077
+route -n
+#1324938088
+ping 192.168.2.1
+#1324938187
+ping 192.168.2.1
+#1324938195
+ping 192.168.2.56
+#1324942331
+ping 192.168.2.56
+#1324942634
+ping 192.168.2.56
+#1324942677
+e
+#1324942704
+v /etc/rc.conf
+#1324933853
+p /etc/hosts
+#1324942923
+ping 192.168.2.56
+#1324943145
+Yaourt
+#1324944375
+cd /var/log
+#1324944379
+ls -lt
+#1324944760
+sysctl 
+#1324944774
+sysctl -A
+#1324944777
+sysctl -a
+#1324944783
+man sysctl
+#1324944807
+sysctl -p
+#1324944827
+sysctl -q
+#1324944830
+sysctl -a
+#1324944837
+sysctl -a|p
+#1324945396
+sysctl -a|grep forward
+#1324945500
+sysctl net.ipv4.ip_forward
+#1324945937
+ping 192.168.2.56
+#1324946033
+ping 192.168.2.56
+#1324946046
+route -n
+#1324946056
+netstat -n
+#1324946060
+netstat -rn
+#1324946071
+route -n
+#1324948228
+pacs krusader
+#1324948248
+cd -log
+#1324948256
+v pacman.log 
+#1324948475
+pacman -S konqueror
+#1324948488
+pacs konqueror
+#1324948538
+pacman -S extra/kdebase-konqueror
+#1324954537
+telnet 192.168.1.11
+#1324954554
+ssh root@192.168.1.11
+#1324955221
+uname -a
+#1324963348
+ping 192.168.1.141
+#1324963471
+exit
+#1324963457
+ssh john@192.168.1.100
+#1324963806
+ipaddr 
+#1324963843
+ifconfig wlan0 down
+#1324963845
+ipaddr 
+#1324963870
+ipaddr 
+#1324963897
+ipaddr 
+#1324964018
+ping 192.168.1.141
+#1324964085
+ssh john@192.168.1.11
+#1324987555
+kal
+#1324987761
+cd .thumbnails/
+#1324987763
+l
+#1324987774
+ls normal/
+#1324987779
+ls large/
+#1324987789
+rm large/* normal/*
+#1324987576
+RSYNC
+#1324988259
+cd Downloads/
+#1324988270
+v weather.sh
+#1324990910
+cd
+#1324990965
+c
+#1324991077
+xev
+#1324991208
+rl keycode
+#1324991227
+man getkeycodes 
+#1324991241
+getkeycodes 
+#1324991256
+rl keycode
+#1324991273
+cd /usr/share/X11/xkb/keycodes
+#1324991275
+ls
+#1324991288
+p README 
+#1324991316
+v xfree86
+#1324991360
+grap diaeresi
+#1324991364
+ls
+#1324991374
+..
+#1324991376
+ls
+#1324991379
+grap diaeresi
+#1324991394
+grap dead_diaeresi
+#1324991412
+grap dead_diaeresi|p
+#1324991466
+v symbols/us
+#1324993231
+cd Downloads/
+#1324993233
+l
+#1324993238
+p key.txt 
+#1324993292
+l
+#1324993306
+bunzip2 autofsck3.2_generic.tar.bz2 
+#1324993308
+l
+#1324993315
+tar tvf autofsck3.2_generic.tar 
+#1324993329
+md autofsck
+#1324993338
+mv autofsck3.2_generic.tar autofsck
+#1324993341
+cd autofsck/
+#1324993342
+l
+#1324993347
+tar xvf autofsck3.2_generic.tar 
+#1324993362
+p README 
+#1324993396
+ls
+#1324993400
+p install 
+#1324993413
+p cliinst 
+#1324993441
+l
+#1324993448
+p S85autofsck 
+#1324993486
+l
+#1324993496
+p autofsck
+#1324993530
+..
+#1324993535
+rm -r autofsck/
+#1324991623
+man loadkeys 
+#1324993648
+cd /usr/share/X11/xkb/
+#1324993650
+ls
+#1324993682
+grap dead_diaeresis
+#1324993690
+grap dead_diaeresis|p
+#1324993694
+grap dead_diaeresis|p
+#1324993731
+grap dead_diaeresis|p
+#1324993765
+cd ice
+#1324993768
+p startup 
+#1324993801
+b
+#1324993817
+cd /etc/X11/xorg.conf.d
+#1324993818
+l
+#1324993827
+p 10-evdev.conf
+#1324993846
+b
+#1324993862
+grap alt-intl
+#1324993899
+man xev
+#1324994130
+xmodmap -pke
+#1324994151
+xmodmap -pke|grep dis
+#1324994153
+xmodmap -pke|grep dia
+#1324994216
+setkeycodes 
+#1324994222
+setkeycodes -h
+#1324994241
+setxkbmap us
+#1324994261
+xev
+#1324993570
+man setxkbmap 
+#1324994530
+setxkbmap us alt-int
+#1324994565
+setxkbmap -h
+#1324994579
+setxkbmap --help
+#1324994586
+man setxkbmap 
+#1324994638
+setxkbmap us -variant alt-int
+#1324994656
+h | grep alt
+#1324994701
+setxkbmap us -variant alt_int
+#1324994728
+cd /etc/X11/xorg.conf.d
+#1324994730
+l
+#1324994736
+p 10-evdev.conf
+#1324994768
+setxkbmap us -variant alt_intl
+#1324994806
+setxkbmap us -variant alt-intl
+#1324994814
+ls
+#1324994852
+cd
+#1324994858
+v .Xmodmap 
+#1324990915
+v .Xmodmap 
+#1324994964
+xmodmap ./.Xmodmap 
+#1324994986
+v .Xmodmap 
+#1324995014
+xmodmap ./.Xmodmap 
+#1324995180
+cd
+#1324995190
+cd Conky/conkyCalendar/
+#1324995191
+l
+#1324995198
+v conkyrc
+#1324995240
+..
+#1324995244
+cd Weather/
+#1324995247
+l
+#1324988292
+v weather.sh
+#1324995325
+ls
+#1324995251
+v weather.sh 
+#1324995345
+l
+#1324995364
+l
+#1324995369
+cx weather.sh 
+#1324995379
+./weather.sh 
+#1324995386
+f weather.sh 
+#1324995402
+hexdump weather.sh 
+#1324995416
+v weather.sh 
+#1324995426
+f
+#1324995437
+type bash
+#1324995442
+v weather.sh 
+#1324995467
+./weather.sh 
+#1324995494
+./weather.sh "EUR|PT|PO012|LISBON"
+#1324995587
+mv weather.sh /root/Conky/Weather/weather2.sh
+#1324995611
+cd
+#1324995618
+cd Conky/
+#1324995619
+l
+#1324995625
+cd conkyCalendar/
+#1324995630
+l
+#1324995636
+v conkyrc 
+#1324995476
+p weather.sh 
+#1324995953
+l
+#1324995957
+v weather2.sh 
+#1324996083
+l
+#1324996290
+curl www.whatismyip.org
+#1324996442
+l
+#1324996449
+cd 
+#1324996455
+cd Conky/
+#1324996456
+l
+#1324996462
+cd conkyCalendar/
+#1324996465
+l
+#1324996472
+v conkyGoogleCalendar.template
+#1324996529
+p /root/Conky/pacrepos.conf
+#1324996543
+Yaourt
+#1324996593
+h
+#1324996602
+p /root/Conky/pacrepos.conf
+#1324996685
+l
+#1324996696
+grepi vofset *
+#1324996708
+grep voffset *
+#1324996094
+v conkyrc
+#1324996887
+v conkyrc 
+#1324999714
+curl www.whatismyip.org
+#1324999723
+type curl
+#1324997383
+v conkyrc 
+#1325001270
+ping 192.168.2.56
+#1324998864
+p /etc/hosts
+#1325001356
+ping 192.168.2.56
+#1325001376
+ipaddr
+#1325001851
+v /etc/hosts
+#1325002062
+ping 192.168.2.56
+#1325002072
+p /etc/hosts
+#1325002089
+ping toshiba2-wl
+#1325002032
+wmctrl -s 6; sakura -t Dreamplug --geometry=124x35 -e ssh -Y $NOCHECK root@dreamplug2
+#1325009613
+play /opt/MyDocs/Sounds/Messenger/suzy.wav
+#1325009647
+Say "Ludwig is Online"
+#1325009660
+Saywrite "Ludwig is Online"
+#1325009670
+Play /tmp/myfile.wav
+#1325009679
+ls /tmp
+#1325009689
+cd /tmp
+#1325009697
+play /tmp/myfile.wav
+#1325009702
+play /tmp/myfile.wav
+#1325009716
+Saywrite "Lowig is Online"
+#1325009720
+play /tmp/myfile.wav
+#1325009732
+Saywrite "Louis  is Online"
+#1325009735
+play /tmp/myfile.wav
+#1325009751
+Saywrite "Louis Mello  is Online"
+#1325009753
+play /tmp/myfile.wav
+#1325009765
+Saywrite "Lóuis Mello  is Online"
+#1325009768
+play /tmp/myfile.wav
+#1325009781
+Saywrite "Loouis Mello  is Online"
+#1325009784
+play /tmp/myfile.wav
+#1325009813
+mv myfile.wav luis.waw
+#1325009834
+mv luis.waw /opt/MyDocs/Sounds/Messenger/
+#1325009920
+cd /opt/MyDocs/Sounds/Messenger/
+#1325009921
+l
+#1325009931
+mv luis.waw luis.wav
+#1325010980
+vip RxvtSsh 
+#1325001942
+vip RxvtSsh 
+#1325011042
+cd ice
+#1325011048
+v toolbar
+#1325031562
+cd etrc
+#1325031568
+cd etc
+#1325031603
+Yaourt
+#1325033433
+cd /etc/pacman.d/
+#1325033435
+l
+#1325033438
+v mirrorlist
+#1325033495
+Yaourt
+#1325033487
+v mirrorlist
+#1325033533
+Yaourt
+#1325031573
+p hosts
+#1325044248
+cd rc.d
+#1325044249
+ls
+#1325044258
+p deluged
+#1325048045
+p /etc/hosts
+#1325048715
+deluge
+#1325048987
+deluge-gtk 
+#1325049317
+deluge-gtk 
+#1325051588
+deluge-gtk 
+#1325054629
+crontab -l
+#1325054648
+p /root/bin/DropBoxMake
+#1325054665
+p /root/bin/DropBoxMake
+#1325054671
+/root/bin/DropBoxMake
+#1325071155
+ipaddr
+#1325071190
+man ethtool 
+#1325071566
+ethtool eth0
+#1325071598
+ethtool eth1
+#1325071615
+Yaourt
+#1325073148
+cd /etc/pacman.d/
+#1325073151
+p mirrorlist
+#1325073337
+Yaourt
+#1325073353
+v mirrorlist
+#1325073902
+SSH root@192.168.2.66
+#1325073942
+v /etc/hosts
+#1325097545
+p mirrorlist
+#1325097553
+Yaourt
+#1325098888
+xprop
+#1325098913
+cd ice
+#1325098918
+v winoptions
+#1325099167
+psgrep xvt
+#1325099187
+kill -4 15737
+#1325099457
+cd Zim
+#1325099466
+grap utorrent
+#1325099475
+cd Gnote
+#1325099478
+grap utorrent
+#1325103173
+cd
+#1325103174
+ls
+#1325111870
+TARsnap
+#1325118488
+rl virtualbox pdf
+#1325118522
+l /opt/MyDocs/Manuals/VirtualBox+VmWare/VirtualBox-Manual-4.0.pdf 
+#1325118530
+l /usr/share/virtualbox/UserManual.pdf
+#1325118545
+acroread /usr/share/virtualbox/UserManual.pdf
+#1325119830
+rpmqq virtual
+#1325121584
+ls
+#1325125674
+cd .local/
+#1325125676
+ls
+#1325125681
+cd
+#1325125682
+la
+#1325125709
+cd local/
+#1325125711
+la
+#1325125724
+cd .idesktop/
+#1325125725
+ls
+#1325125733
+p Rasus.lnk 
+#1325125744
+vip Rtosh 
+#1325132389
+man rdesktop
+#1325132466
+man xfreerdp 
+#1325125827
+rdesktop -a 16 -N 192.168.2.56:3389
+#1325132580
+cd bin
+#1325132581
+ls
+#1325132682
+xfreerdp -a 16 -N 192.168.2.56
+#1325132591
+v Rtosh 
+#1325132697
+man rdesktop 
+#1325132776
+xfreerdp -a 16 -g 1680x1050 192.168.2.56
+#1325132813
+xfreerdp -a 16 -g 1680x1050 192.168.2.56
+#1325133431
+xfreerdp -a 16  192.168.2.56
+#1325133472
+xfreerdp -a 16 -g 1280x1024 192.168.2.56
+#1325134966
+xfreerdp -a 16 -g 1280x1024 192.168.2.56
+#1325135113
+xfreerdp -a 16 -g 1600x1024 192.168.2.56
+#1325159668
+h|acro
+#1325159668
+h|acro
+#1325159674
+h|grep acro
+#1325159732
+h|grep rdesk
+#1325159750
+h|grep xfreee
+#1325159754
+h|grep xfree
+#1325166154
+xfreerdp -a 16  192.168.2.55
+#1325166184
+ping 192.168.2.55
+#1325166196
+ping 192.168.2.56
+#1325166209
+xfreerdp -a 16  192.168.2.56
+#1325166311
+xfreerdp -a 16  192.168.2.55
+#1325166467
+h|grep xfree
+#1325166479
+xfreerdp -a 16 -g 1600x1024 192.168.2.55
+#1325176880
+xprop 
+#1325170329
+xfreerdp -a 16 -g 1600x1024 192.168.2.55
+#1325180920
+xfreerdp -a 16 -g 1700x1024 192.168.2.55
+#1325180939
+xfreerdp -a 16 -g 1800x1024 192.168.2.55
+#1325184380
+ping 192.168.2.55
+#1325185049
+man sysctl
+#1325186030
+route -n
+#1325186070
+ ip route add 192.168.2.0/24 via 192.168.2.115
+#1325186073
+route -n
+#1325193569
+la
+#1325193603
+v .gtkrc-2.0
+#1325193647
+p .gtkrc.mine
+#1325193677
+l .gtk*
+#1325193705
+v .gtkrc-2.0
+#1325181530
+remmina 
+#1325193778
+cd icw
+#1325193811
+type qwit
+#1325193782
+v startup 
+#1325193852
+rpmqq gnome
+#1325193870
+rpmqq gtk
+#1325193885
+rpmqil gtk3
+#1325193891
+rpmqil gtk3|p
+#1325193918
+        
+#1325193922
+/usr/bin/gtk3-demo
+#1325193985
+cd
+#1325193993
+l .gtk*
+#1325194055
+rpmqq gtk
+#1325194098
+pacs gtk-theme
+#1325194152
+pacs gtk3
+#1325195136
+rpmq 
+#1325195165
+type rpmq
+#1325195181
+pacman -Qs
+#1325195200
+pacman -Qs|grep routed
+#1325195213
+pacman -Qs|grep gated
+#1325195395
+pacman -Qs|grep rip
+#1325195477
+pacs rip protocol |p
+#1325195520
+rpmqq quagga
+#1325195526
+pacs quagga
+#1325199665
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325199803
+bg
+#1325199870
+h|grep acror
+#1325201562
+rl frozen planet
+#1325211592
+Yaourt
+#1325252393
+cd rc.d
+#1325252395
+ls
+#1325252412
+tail ../rc.conf
+#1325252422
+p zebra 
+#1325252946
+p /etc/quagga/ripngd.conf 
+#1325252969
+psgrep rip
+#1325252977
+ps axf
+#1325253853
+ls /etc/quagga/
+#1325253872
+cd /etc/quagga/
+#1325253876
+p zebra.conf.sample 
+#1325253907
+mv zebra.conf.sample zebra.conf
+#1325253915
+b
+#1325253924
+p ripd
+#1325257245
+cd Downloads/
+#1325257247
+l
+#1325257273
+gunzip DarchWP.tar.gz 
+#1325257281
+tar tvf DarchWP.tar 
+#1325257290
+tar xvf DarchWP.tar 
+#1325257319
+rm DarchWP.tar
+#1325257337
+mirage DarchSideOfTheTux-1920x1200.jpg
+#1325257352
+l
+#1325257365
+rm DarchSideOfTheTux-2560x1440.jpg
+#1325257403
+mv DarchSideOfTheTux-1* /opt/MyDocs/Linux/BackGrounds/
+#1325257406
+l
+#1325257423
+rl GeoLiteCity.dat
+#1325261169
+Yaourt
+#1325261244
+yaourt -S cairo-dock cairo-dock-plug-ins cairo-dock-themes
+#1325262327
+cd etc
+#1325262337
+grepi android hosts
+#1325262346
+v hosts
+#1325264089
+v hosts
+#1325281557
+rl agent exe
+#1325346681
+cd work
+#1325346687
+wl bookmarks*
+#1325346700
+p bookmarkssmall.html 
+#1325346776
+crontab -l
+#1325346782
+/root/bin/DropBoxMake
+#1325356603
+cd
+#1325356608
+cd Gnote
+#1325356617
+grap coversyl
+#1325356626
+p 92ada00c-4317-4bbd-a880-9e7afbaa94ee.note
+#1325356720
+v 92ada00c-4317-4bbd-a880-9e7afbaa94ee.note
+#1325357777
+Yaourt
+#1325357808
+cd
+#1325357813
+cd Conky/
+#1325357815
+l
+#1325357828
+p pac*
+#1325357842
+cat pac*
+#1325357914
+l
+#1325357921
+cd conkyCalendar/
+#1325357923
+l
+#1325357971
+type -a paconky
+#1325357978
+cd bin
+#1325357979
+ls
+#1325358002
+f /usr/bin/paconky
+#1325358008
+p /usr/bin/paconky
+#1325357932
+v conkyrc 
+#1325380489
+yaourt
+#1325380496
+Yaourt
+#1325395733
+ping 192.168.1.55
+#1325395743
+ping 192.168.2.55
+#1325428893
+deluge-gtk
+#1325428943
+p /etc/hosts
+#1325447248
+pinggoogle.com
+#1325447252
+ping google.com
+#1325468370
+cd Downloads/
+#1325468372
+k
+#1325468374
+l
+#1325468405
+rm unrpm.undeb.pup
+#1325468410
+p key.txt 
+#1325468428
+p key.txt 
+#1325468497
+mv key.txt At_Home_Modifiera_key.txt
+#1325468503
+l
+#1325468551
+mv O\!Play\ user\ manual\ \(English\).pdf OPlay_usermanual.pdf 
+#1325468553
+l
+#1325471706
+cd /store/
+#1325471708
+l
+#1325472509
+cd /VM
+#1325472511
+l
+#1325472514
+cd VirtualBox/
+#1325472515
+l
+#1325472522
+cd Machines/
+#1325472524
+l
+#1325472531
+cd WIN7/
+#1325472532
+l
+#1325472558
+cd
+#1325472568
+l .VirtualBox/
+#1325472580
+cd .VirtualBox/
+#1325472583
+l
+#1325472769
+vboxmanage clonevm
+#1325472847
+vboxmanage clonevm WIN7.vdi --mode all --name Windows7 
+#1325472877
+vboxmanage listvm vms
+#1325472908
+vboxmanage listvm vms
+#1325472912
+vboxmanage list vms
+#1325472942
+l
+#1325472974
+vboxmanage clonevm "WIN7"--mode all --name Windows7 
+#1325473016
+vboxmanage clonevm "WIN7"
+#1325473039
+l
+#1325473051
+vboxmanage clonevm "WIN7"--mode all --name Windows7 
+#1325473070
+vboxmanage clonevm "WIN7"--mode all --name "Windows7"
+#1325473109
+vboxmanage clonevm "WIN7" --name "Windows7"
+#1325474279
+l
+#1325474360
+Yaourt
+#1325474297
+UPdatedb
+#1325474397
+rl Windows7
+#1325474416
+cd /VM/VirtualBox/Machines/Windows7
+#1325474418
+l
+#1325474425
+..
+#1325474426
+l
+#1325474437
+cd Windows7/
+#1325474439
+l
+#1325474449
+p Windows7.vbox
+#1325474465
+l
+#1325509759
+Yaourt
+#1325520088
+df
+#1325520096
+cd /dlink1/BACKUPs/
+#1325520098
+ls
+#1325520109
+cd ArchTosh-tty/root/
+#1325520112
+l
+#1325520129
+cd
+#1325521811
+cd -Iso
+#1325521821
+md5sum siduction-11.1-OneStepBeyond-xfce-amd64-201112302135.iso 
+#1325524202
+cd
+#1325524218
+cd .VirtualBox/
+#1325524219
+l
+#1325538319
+l
+#1325538337
+date
+#1325539841
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325539864
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325551566
+ping 192.168.2.55
+#1325551768
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325552988
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325555811
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325560892
+cd local/
+#1325560894
+la
+#1325560907
+cd .idesktop/
+#1325560908
+l
+#1325560939
+p Vbox.lnk 
+#1325560990
+cp Vbox.lnk rdesktoshtty
+#1325561109
+cd .idesktop/
+#1325561111
+l
+#1325560994
+v rdesktoshtty 
+#1325561207
+cd ice
+#1325561209
+l
+#1325561213
+p startup 
+#1325561230
+grep idesk startup 
+#1325561123
+p Jdown.lnk 
+#1325561268
+cd
+#1325561281
+cd local/.idesktop/
+#1325561283
+l
+#1325561305
+rm Vbox.lnk
+#1325561317
+psgrep idesk
+#1325561334
+kill 9245
+#1325561341
+kill 1701
+#1325561389
+nohup /root/bin/idesk2 &
+#1325561489
+l
+#1325561517
+rm FileZilla.lnk.bak
+#1325561530
+p ArchLinode.lnk 
+#1325561551
+la
+#1325561555
+ls
+#1325561573
+rm route1 XFCE.init.tar 
+#1325561588
+tail Xsession.cdm 
+#1325561610
+ls
+#1325561623
+rm local
+#1325561627
+rm locale.sh 
+#1325561637
+l
+#1325561648
+rm ArchLinode.lnk 
+#1325561708
+type rdesktop 
+#1325561657
+v rdesktoshtty 
+#1325561749
+psgrep idesk
+#1325561759
+kill 22206
+#1325561779
+nohup /root/bin/idesk2&
+#1325561803
+tail Xsession.cdm 
+#1325561838
+psgrep ise
+#1325561843
+psgrep idesk
+#1325561852
+kill 24573
+#1325561862
+l
+#1325561867
+cat rdesktoshtty 
+#1325561875
+v rdesktoshtty 
+#1325561919
+cd bin
+#1325561921
+ls
+#1325561951
+cp Rtosh Rtosh-VBheadless
+#1325561952
+l
+#1325561973
+v Rtosh-VBheadless
+#1325561892
+v rdesktoshtty 
+#1325562085
+h|grep noh
+#1325562126
+nohup /root/bin/idesk2&
+#1325562162
+cd
+#1325562167
+tail Xsession.cdm 
+#1325562306
+l
+#1325562333
+mv rdesktoshtty rdesktoshtty.lnk
+#1325562335
+l
+#1325562344
+rm default.lnk.bak
+#1325562355
+psgrep idesk
+#1325562363
+kill 24733
+#1325562376
+nohup /root/bin/idesk2&
+#1325571105
+cd Downloads/
+#1325571108
+ls
+#1325571120
+unzip -l Gallery_FW_V207.zip
+#1325571267
+l
+#1325571279
+unzip Gallery_FW_V207.zip
+#1325571300
+unzip Gallery_FWupdate_Userguide.zip
+#1325571304
+l
+#1325571313
+rm Gallery_FWupdate_Userguide.zip
+#1325571374
+mv How\ to\ Update\ the\ Firmware\ \ Gallery.pdf How_to_Update_the_Firmware_Gallery.pdf 
+#1325571376
+l
+#1325571385
+acroread How_to_Update_the_Firmware_Gallery.pdf
+#1325571441
+l
+#1325571466
+unzip O_Direct_PC_Install.zip 
+#1325571476
+l
+#1325571496
+rm O_Direct_PC_Install.zip
+#1325571504
+l
+#1325571557
+mv O\!Direct-Utility\ for\ PC-Install/ ODirect-Utility_for_PC-Install/
+#1325575066
+xev
+#1325559586
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325594617
+cd Downloads/
+#1325594618
+l
+#1325594631
+l Oplay/
+#1325594891
+cd /opt/root_home/googleearth/instance-running-lock
+#1325594896
+cd /opt/root_home/googleearth/
+#1325594898
+l
+#1325594910
+rm instance-running-lock 
+#1325595420
+Yaourt
+#1325599920
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325610782
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325611106
+rdesktop -a 16 -g 1800x1024 192.168.2.55
+#1325617388
+cd bin
+#1325617503
+cd
+#1325617507
+cd local/
+#1325617519
+cd .idesktop/
+#1325617525
+l
+#1325617565
+p VNCtoshWL.lnk
+#1325617659
+vncviewer -passwd /root/.vnc/passwd archtosh2-tty:1
+#1325617690
+vncviewer -passwd /root/.vnc/passwd archtosh2-tty:0
+#1325618796
+vncviewer -passwd /root/.vnc/passwd archtosh2-tty:1
+#1325632580
+df
+#1325633662
+psgrep delu
+#1325634128
+ping 192.168.2.55
+#1325634148
+ssh john@192.168.2.55
+#1325640707
+cd
+#1325640711
+cd local/
+#1325640716
+cd .idesktop/
+#1325640717
+l
+#1325640766
+grep Vbox *
+#1325640781
+v rdesktoshtty.lnk
+#1325640800
+v /root/bin/Rtosh-VBheadless
+#1325641026
+rdesktop -a 16 -g 1600x800 192.168.2.55
+#1325641182
+rdesktop -a 16 -g 1600x800 192.168.2.55
+#1325641257
+rdesktop -a 16 -g 1400x800 192.168.2.55
+#1325641591
+rdesktop -a 16 -g 1600x1024 192.168.2.55
+#1325617601
+p /etc/hosts
+#1325679975
+firefox -new-tab www.google.com
+#1325688111
+Yaourt
+#1325688267
+yaourt -S vlc-subtitles-mod
+#1325688322
+cd /popcorn/Video/SF
+#1325688323
+l
+#1325688343
+vlc Man_Earth.avi 
+#1325688603
+vlc Man_Earth.avi 
+#1325689521
+psgrep rdesk
+#1325689534
+kill -9 22484
+#1325689536
+psgrep rdesk
+#1325689541
+kill -9 22484
+#1325689543
+psgrep rdesk
+#1325690145
+xprop
+#1325690187
+xprop
+#1325690197
+xprop
+#1325690222
+vip RxvtSsh 
+#1325690422
+wmctrl -l
+#1325690449
+wmctrl -d
+#1325690741
+wmctrl -r freerdp -T Windows7
+#1325690774
+wmctrl -r freerdp -N Windows7
+#1325690793
+wmctrl -r freerdp -I Windows7
+#1325698573
+Yaourt
+#1325702547
+df
+#1325702574
+cd /var
+#1325702576
+l
+#1325702585
+cd tmp
+#1325702588
+l
+#1325702593
+cd /tmp
+#1325702595
+l
+#1325702602
+di
+#1325702699
+mv WinVB/ /var/tmp/
+#1325689574
+xfreerdp -a 16 -g 1800x1024 192.168.2.55
+#1325708809
+b
+#1325708811
+b
+#1325708827
+cd /etc/samba
+#1325708834
+v smb.conf
+#1325716081
+cd sounds
+#1325716083
+ls
+#1325716095
+aplay Aah.wav
+#1325716394
+Yaourt
+#1325716445
+cd Conky/conkyCalendar/
+#1325716446
+l
+#1325716512
+type paconky
+#1325716518
+type -a paconky
+#1325716530
+f /usr/bin/paconky
+#1325716620
+cd Conky/
+#1325716621
+l
+#1325717602
+cat > paconky.py
+#1325717632
+l
+#1325717641
+l bin/paconky.py 
+#1325716454
+v conkyrc
+#1325717770
+l
+#1325717782
+v conkyrc
+#1325720567
+xset q
+#1325720684
+xset q
+#1325720601
+man xset
+#1325720999
+xinput --version
+#1325721043
+xinput --list
+#1325721079
+xinput --list --long
+#1325721173
+xinput --list
+#1325720953
+man xinput
+#1325722332
+setleds -h
+#1325722342
+man setleds
+#1325724376
+pacs systemse
+#1325724430
+Yaourt
+#1325724471
+pacs kdebase-workspace
+#1325724495
+pacman -Sy
+#1325724502
+pacman -S extra/kdebase-workspace
+#1325716537
+v /usr/bin/paconky
+#1325724566
+systemsettings 
+#1325716630
+p pacrepos.conf
+#1325726555
+psgrep wbar
+#1325726566
+kill 11666
+#1325726570
+psgrep wbar
+#1325727198
+cd ice
+#1325727278
+setxkbmap us
+#1325727320
+grep -i firefox toolbar
+#1325727570
+xset -q
+#1325727586
+xset
+#1325727595
+h
+#1325727602
+xset q
+#1325727619
+xset q > xset.xfce
+#1325727629
+xinput
+#1325727720
+xinput list
+#1325727752
+xinput list 2
+#1325727821
+xinput --list --long 2
+#1325727875
+xinput --list --long 2 > xinput2.xfce
+#1325727885
+xinput list
+#1325727899
+xinput --list --long 4
+#1325727952
+xinput --list --long 4 > xinput4.xfce
+#1325727683
+man xinput
+#1325727331
+firefox -P default
+#1325730381
+df
+#1325730397
+ping google.com
+#1325730456
+ipaddr
+#1325730508
+tail /etc/rc.conf
+#1325730520
+netcfg Eth0-dhcp
+#1325730533
+ipaddr
+#1325730541
+ping google.com
+#1325730562
+route -n
+#1325730588
+MountDlink-323
+#1325730597
+di
+#1325730600
+df
+#1325730622
+vip MountDlink-323
+#1325730640
+df
+#1325736477
+cd Conky/conkyCalendar/
+#1325736479
+l
+#1325736626
+cd .cache/pacman/
+#1325736628
+l
+#1325736642
+l sync/
+#1325736668
+rm sync/kdemod3.db 
+#1325736686
+crontab -l
+#1325736485
+v conkyrc 
+#1325736771
+cd
+#1325736783
+cd local/.idesktop/
+#1325736784
+l
+#1325736802
+v rdesktoshtty.lnk 
+#1325736950
+l
+#1325736975
+mv rdesktoshtty.lnk DelugeGTK.lnk
+#1325736977
+l
+#1325741495
+psgrep syn
+#1325741533
+kill 1694
+#1325741535
+psgrep syn
+#1325741541
+synergys
+#1325745795
+df
+#1325745822
+cd /opt
+#1325745832
+du -khs *
+#1325745885
+cd root_home/
+#1325745887
+du -khs *
+#1325745907
+cd Work/
+#1325745909
+du -khs *
+#1325745923
+du -khs *|grep G
+#1325745941
+rm -r Portable/
+#1325745946
+df
+#1325746215
+cd /store/
+#1325746216
+l
+#1325746227
+du -khs Portable/
+#1325746236
+cd Portable/
+#1325746237
+l
+#1325746249
+mount
+#1325746279
+du -khs Portable/
+#1325746287
+..
+#1325746289
+du -khs Portable/
+#1325746921
+du -khs Portable/
+#1325776146
+cat >DirB
+#1325778761
+Yaourt
+#1325783708
+search pidgin
+#1325783748
+search gaim
+#1325783792
+cd .config/
+#1325783793
+ls
+#1325783829
+cd
+#1325783836
+search purplr
+#1325783840
+search purpl
+#1325783845
+cd .purple/
+#1325783847
+l
+#1325786574
+rodent&
+#1325810754
+reaver &
+#1325810770
+man reaver
+#1325810779
+rpmqil reaver
+#1325810791
+rpmqq reaver
+#1325810800
+rpmqil reaver-wps-svn
+#1325823140
+lspci
+#1325826337
+rl vlc-mini
+#1325826356
+rl vlc
+#1325826419
+rl vlc work
+#1325826433
+rl work vlc 
+#1325826445
+p /opt/root_home/Work/vlc.PKGBUILD
+#1325826563
+pacman -R vlc-mini
+#1325826572
+pacman -R vlc-mini vlc-subtitles-mod
+#1325826585
+pacs vlc
+#1325826604
+pacman -S vlc
+#1325827602
+vlc
+#1325827631
+yaourt -S vlc-subtitles-mod
+#1325827654
+vlc &
+#1325827973
+umount /opt
+#1325827982
+fuser /opt
+#1325827992
+fuser -m /opt
+#1325828026
+psgrep 1689 1819 2257 2327 2331
+#1325828041
+psgrep 1689 
+#1325828064
+psgrep  1819 
+#1325828071
+cd
+#1325828076
+fuser -m /opt
+#1325828088
+psgrep 2257
+#1325828107
+fuser -m /opt
+#1325828110
+fuser -m /opt
+#1325828118
+umount /opt
+#1325828125
+gparted
+#1325828503
+mount /opt
+#1325828510
+md /xfs
+#1325828517
+cd /etc
+#1325828522
+v fstab
+#1325828594
+mount /xfs
+#1325828602
+v fstab
+#1325828638
+mount /xfs
+#1325828641
+df
+#1325828651
+mount
+#1325828672
+Yaourt
+#1325849047
+cd sounds
+#1325849051
+ls
+#1325849057
+aplay Aah.wav 
+#1325854325
+l
+#1325877718
+ls
+#1325877733
+xprop
+#1325882952
+ls
+#1325882959
+hexedit settings.dat 
+#1325888436
+transmission-remote-gui-bin
+#1325888445
+rpmqil transmission-remote-gui-bin
+#1325889634
+UpdateDB
+#1325889670
+updatedb
+#1325889701
+rl sandrasilva
+#1325890415
+xprop
+#1325891142
+cd ice
+#1325894894
+transgui --help
+#1325895943
+rl transgui png
+#1325895963
+l /opt
+#1325895981
+l /opt/TransGUI/
+#1325895990
+cd /opt/TransGUI/
+#1325895992
+l
+#1325895998
+p readme.txt 
+#1325896379
+l
+#1325896390
+p transgui
+#1325896414
+cd local/.idesktop/
+#1325896415
+l
+#1325896435
+cp Zim.lnk TransGUI.lnk
+#1325896464
+rl transmission png
+#1325896474
+rl transg png
+#1325896439
+v TransGUI.lnk 
+#1325898608
+cd /var/cache/pacman/pkg/
+#1325898644
+pacman -U ./chromium-16.0.912.63-2-x86_64.pkg.tar.xz
+#1325898723
+cd etc
+#1325898730
+v pacman.conf
+#1325898914
+rl number theory
+#1325898924
+rl number theory torrent
+#1325903840
+top
+#1325903914
+top
+#1325888457
+transgui 
+#1325907784
+transgui &
+#1325909704
+xprop
+#1325909723
+cd ice
+#1325909726
+v winoptions
+#1325891151
+v winoptions
+#1325909743
+v winoptions
+#1325909800
+xprop
+#1325909830
+v winoptions
+#1325909914
+v winoptions
+#1325909949
+cd bin
+#1325909966
+./makePROFILEmini 
+#1325910709
+cd
+#1325910716
+search cairo
+#1325910731
+ls
+#1325910750
+tar tvf cairo.init.tar 
+#1325910763
+tar tvf cairo.init.tar |p
+#1325910776
+rpmqq cairo
+#1325911070
+ls
+#1325911742
+Yaourt
+#1325911856
+top
+#1325938402
+cd local/.idesktop/
+#1325938404
+ls
+#1325938413
+v TransGUI.lnk 
+#1325938474
+df
+#1325938508
+umount /VM
+#1325938520
+fsck -f -C0 /dev/sdb7
+#1325938547
+mount /VM
+#1325938550
+di
+#1325938565
+cd bin
+#1325938572
+v MountDlink-323 
+#1325938619
+/bin/df
+#1325938912
+df
+#1325938925
+mount
+#1325938975
+mount
+#1325939009
+df
+#1325939020
+umount /dlinkUSB
+#1325939022
+df
+#1325939115
+mount --rbind /dlink/mnt/USB/   /dlinkUSB
+#1325939118
+df
+#1325939167
+di
+#1325939177
+man df
+#1325939185
+man df
+#1325939257
+di
+#1325939196
+man \df
+#1325939367
+type -a df
+#1325982458
+mount /xfs
+#1325982461
+df
+#1325982478
+cd /xfs
+#1325982479
+l
+#1325982537
+tar xvf /root/Downloads/PortableApps.rar 
+#1325982581
+unrar x /root/Downloads/PortableApps.rar
+#1325982623
+df
+#1325982630
+l
+#1325982635
+cd PortableApps/
+#1325982636
+l
+#1325982734
+df
+#1325983702
+cd /xfs
+#1325983785
+cd /xfs
+#1325983786
+ls
+#1325983791
+cd PortableApps/
+#1325983792
+ls
+#1325983843
+ls PortableApps.com/
+#1325983867
+p PortableApps.com/readme.txt 
+#1325983885
+ls 
+#1325983903
+mv PortableApps.com/ 0-PortableApps.com/
+#1325983905
+l
+#1325983907
+ls
+#1325983914
+cd 0-PortableApps.com/
+#1325983916
+l
+#1325983714
+v README,txt
+#1325984262
+mv README,txt README.txt 
+#1325984342
+l
+#1325984351
+mv README.txt PortableApps/
+#1325984355
+cd PortableApps/
+#1325984358
+l
+#1325938703
+man mount
+#1325984384
+cd 
+#1325984394
+cd Downloads/
+#1325984396
+l
+#1325984444
+ls -lt
+#1325984479
+mv VirtuaWinPortable_4.3_English.paf.exe PuTTYPortable_0.62_English.paf.exe FirefoxPortable_9.0.1_English.paf.exe /xfs
+#1325984492
+cd /xfs/
+#1325984493
+l
+#1325984502
+cd PortableApps/
+#1325984504
+l
+#1325984519
+rm Desktop.ini 
+#1325984523
+v README.txt 
+#1325984624
+v README.txt 
+#1325985260
+df
+#1325985299
+df
+#1325985314
+ls /media/37CD-0078
+#1325985323
+ls /media/1C1C-0030
+#1325985343
+ls
+#1325985363
+cp -v * /media/1C1C-0030
+#1325985372
+ls /media/1C1C-0030
+#1325985387
+rm /media/1C1C-0030/README.txt 
+#1325938692
+v MountDlink-323 
+#1325985548
+di
+#1325985938
+di
+#1325986275
+top
+#1325986315
+top
+#1325986753
+cd /xfs/PortableApps/
+#1325986755
+l
+#1325986934
+di
+#1325985401
+cp -av * /media/1C1C-0030
+#1325986973
+di
+#1325986986
+cd /dev/sdd1
+#1325986988
+l
+#1325987011
+mv README.txt 0-README.txt
+#1325987012
+l
+#1325987019
+l
+#1325987036
+ls -l
+#1325987063
+df
+#1325987083
+cd
+#1325987161
+psgrep umoun
+#1325987171
+kill -9 17387
+#1325987173
+psgrep umoun
+#1325987182
+kill -9 17387
+#1325987183
+kill -9 17387
+#1325987184
+kill -9 17387
+#1325987228
+df
+#1325987247
+psgrep umoun
+#1325987101
+umount /media/1C1C-0030 /media/37CD-0078
+#1325987541
+psgrep umoun
+#1325987545
+df
+#1325987560
+umount /media/37CD-0078
+#1325987562
+df
+#1325987635
+cd Documents/
+#1325987637
+l
+#1325987644
+cd 
+#1325987653
+cd Downloads/
+#1325987655
+ls
+#1325987936
+df
+#1325987946
+ls /media/aptosid
+#1325987984
+umount /media/aptosid 
+#1325988056
+df
+#1325988119
+df
+#1325988171
+mount /dev/sdd1 /media/cd
+#1325988185
+mount /dev/sdd1 /media/dvd 
+#1325988202
+umount /media/aptosid
+#1325988205
+df
+#1325988209
+mount /dev/sdd1 /media/dvd 
+#1325988211
+df
+#1325988223
+cd /media/dvd/
+#1325988224
+ls
+#1325988294
+fdisk -l /dev/sdd
+#1325988339
+cd Downloads/
+#1325988340
+l
+#1325988360
+cp transgui-3.2-setup.exe /media/dvd
+#1325988382
+ls /media/dvd/
+#1325988408
+df
+#1325988417
+umount /media/dvd 
+#1325988420
+cd
+#1325988422
+umount /media/dvd 
+#1325991108
+host joaopena.archlinux.tk
+#1325991995
+cd ice
+#1325991998
+p startup 
+#1325992988
+pacs teamviewer
+#1325993017
+yaourt -S aur/teamviewer
+#1325993317
+teamviewer7 
+#1325994420
+ls
+#1325995724
+psgrep idesk
+#1325995734
+kill 14775
+#1325995744
+kill 21796
+#1325995755
+cd ice
+#1325995762
+grep idesk startup 
+#1325995781
+/root/bin/idesk2
+#1325998762
+Yaourt
+#1325993334
+su - tanso
+#1326033968
+df
+#1326033978
+umount /media/aptosid
+#1326033989
+mount /dev/sdd1
+#1326034000
+mount /dev/sdd1  /media/dvd
+#1326034010
+ls /media/dvd/
+#1326034053
+cd Downloads/
+#1326034054
+l
+#1326034067
+cp thomson-tg784-setup-and-user-guide.pdf /media/dvd/
+#1326034080
+l /media/dvd
+#1326034087
+cd
+#1326034091
+df
+#1326034100
+umount /media/dvd
+#1326034107
+gparted
+#1326034152
+df
+#1326036353
+teamviewer7 
+#1326042138
+virtualbox
+#1326057755
+cd Downloads/
+#1326057756
+ls
+#1326057763
+./evhz 
+#1326057795
+l
+#1326057803
+rm evhz*
+#1326058947
+rl bin subtitle
+#1326058969
+/usr/bin/mp4subtitle
+#1326058990
+/usr/bin/subtitleeditor
+#1326065037
+rl unix
+#1326065065
+rl root unix
+#1326065094
+rl root linux
+#1326065152
+rl opt linux
+#1326065186
+rl mydocs linux
+#1326065204
+mirage /opt/MyDocs/Manuals/UNIX-Linux/Unix_history.png
+#1326065464
+cd /opt/MyDocs/Manuals/UNIX-Linux/
+#1326065465
+l
+#1326065478
+acroread unix_letter.pdf
+#1326074031
+VBOX
+#1326080552
+ping google.com
+#1326080568
+Yaourt
+#1326080660
+cd etc
+#1326080668
+p rc.conf
+#1326080673
+p rc.conf.pacnew 
+#1326080749
+rm rc.conf.pacnew 
+#1326082222
+pacs gimp
+#1326082241
+pacman -S gimp
+#1326082287
+cd
+#1326082292
+cd Downloads/
+#1326082298
+gimp transmission.jpg 
+#1326082501
+mirage transmission.jpg 
+#1326084081
+pacs imgur
+#1326036365
+su - tanso
+#1326118208
+cd local/.idesktop/
+#1326118209
+l
+#1326118229
+v VNCtoshWL.lnk
+#1326119218
+man vncserver 
+#1326119481
+man vncserver 
+#1326126070
+df
+#1326126147
+df
+#1326126161
+ls /media/UDF\ Volume/
+#1326126192
+cd /store/Iso_Win_7/
+#1326126194
+l
+#1326126205
+df
+#1326126275
+cd /store/Iso_Win_7
+#1326126276
+l
+#1326126302
+l
+#1326126737
+l
+#1326126262
+dd if=/dev/sr0 of=Win7_Ultimate_EN_32_64.iso
+#1326126993
+f Win7_Ultimate_EN_32_64.iso
+#1326127240
+umount /media/UDF\ Volume 
+#1326127249
+eject /dev/sr0
+#1326148251
+cd /store/Iso_Win_7
+#1326148276
+mount -o loop /media/iso/ Win7_Ultimate_EN_32_64.iso
+#1326148303
+mount -o loop  Win7_Ultimate_EN_32_64.isoa /media/iso/
+#1326148312
+mount -o loop  Win7_Ultimate_EN_32_64.iso /media/iso/
+#1326148322
+cd /media/iso/
+#1326148324
+ls
+#1326148331
+cd
+#1326148334
+df
+#1326148341
+umount /media/iso 
+#1326160826
+Yaourt
+#1326197441
+pacs vimpager
+#1326197457
+pacman -Sy
+#1326197467
+pacman -S vimpager
+#1326197499
+rpmqil vimpager
+#1326197579
+type -a vimpager
+#1326197589
+export PAGER=~/usr/bin/vimpager
+#1326197603
+alias less=$PAGER
+#1326197613
+less .bashrc
+#1326197635
+export PAGER=/usr/bin/vimpager
+#1326197639
+less .bashrc
+#1326197647
+alias less=$PAGER
+#1326197649
+less .bashrc
+#1326197695
+v .bashrc 
+#1326197863
+less .bashrc
+#1326197512
+man vimpager
+#1326197789
+v .vimpagerrc
+#1326197898
+less .bashrc
+#1326197916
+rm .vimpagerrc 
+#1326198133
+cd local/.idesktop/
+#1326198134
+ls
+#1326198147
+mv DelugeGTK.lnk DelugeGTK.lnk.old
+#1326198195
+cp DelugeGTK.lnk.old FFdefault.lnk
+#1326198200
+v FFdefault.lnk 
+#1326199051
+cd ff
+#1326199053
+ls
+#1326199064
+search force
+#1326199072
+grap force
+#1326199086
+grap force|p
+#1326199097
+grap force|p
+#1326199114
+grap force> /tmp/zz
+#1326199134
+v /tmp/zz
+#1326199146
+v /tmp/zz
+#1326206472
+cd ice
+#1326206493
+xprop
+#1326206476
+v winoptions
+#1326207329
+cd local/.idesktop/
+#1326207339
+grep wc *
+#1326207343
+ls
+#1326207433
+rl bin cnt
+#1326207486
+grep wmctrl *
+#1326207518
+v TransGUI.lnk 
+#1326207535
+grep wmctrl *
+#1326207546
+v TransGUI.lnk 
+#1326210049
+TARsnap
+#1326210195
+tarsnap -d -f 20111121-002702-/opt/MyPictures
+#1326210253
+for i in 20111121-002702-/opt/root_home/Work 20111121-002702-/opt/root_home/config 20111121-002702-/opt/root_home/purple; do tarsnap -d -f $i; done
+#1326210306
+TARsnap
+#1326210372
+for i in 20111201-012305-/opt/MyPictures 20111201-012305-/opt/root_home/Work 20111201-012305-/opt/root_home/config 20111201-012305-/opt/root_home/purple; do tarsnap -d -f $i; done
+#1326210407
+TARsnap
+#1326210432
+TARsnap
+#1326225233
+p /etc/inittab 
+#1326226300
+rpmqq pyinoti
+#1326226415
+yaourt -Qo /etc/xdg/menus/applications.menu
+#1326226455
+lx /etc/xdg/menus/applications.menu
+#1326226461
+ls /etc/xdg/menus/applications.menu
+#1326226498
+cd /etc/xdg/menus/
+#1326226499
+l
+#1326226513
+ŕpmqq arch
+#1326226521
+rpmqq arch
+#1326226624
+l
+#1326226642
+yaourt -Qo /etc/xdg/menus/applications.menu 
+#1326226727
+cd
+#1326226727
+l
+#1326227034
+rpmqq dropb
+#1326227901
+cd ice
+#1326227907
+grep drop startup 
+#1326228153
+cd
+#1326228158
+search ades
+#1326228172
+cd config
+#1326228173
+l
+#1326228190
+cd
+#1326228195
+cd .config/
+#1326228197
+l
+#1326228224
+cd
+#1326228232
+search adeskbar
+#1326228245
+cd .conf
+#1326228262
+cd
+#1326228268
+la
+#1326228282
+cd .config/
+#1326228285
+ls
+#1326228290
+l
+#1326228307
+cd adeskbar/
+#1326228308
+l
+#1326228455
+cd 
+#1326228458
+ls -la
+#1326228824
+ls -ld .filezilla/
+#1326228826
+ls -ld .filezilla
+#1326228832
+cd .filezilla/
+#1326228833
+l
+#1326228978
+rpmqq cairo
+#1326229011
+cd ice
+#1326229024
+grep cut startup 
+#1326229060
+psgrep auto
+#1326229087
+type psgrep
+#1326229574
+cd
+#1326229575
+la
+#1326229633
+ls -ld .mozilla/
+#1326229638
+ls -ld .mozilla
+#1326230436
+cd /var/log
+#1326230437
+ls
+#1326234170
+pacs pagekite
+#1326237013
+cd .ssh
+#1326237014
+ls
+#1326237026
+vi id_rsa.pub
+#1326245187
+Yaourt
+#1326210116
+vip TARsnap
+#1326292321
+Yaourt
+#1326305951
+ls
+#1326305956
+cd root
+#1326305957
+ls
+#1326305960
+la
+#1326305978
+ls
+#1326306900
+Yaourt
+#1326307050
+pacman -S community/highlight community/highlight-gui
+#1326307059
+highlight-gui 
+#1326307296
+rpmqil highlight
+#1326307304
+man highlight
+#1326307422
+rpmqil highlight
+#1326307487
+v /usr/share/doc/highlight/examples/web_plugins/movabletype/README
+#1326307646
+highlight --list-langs
+#1326307682
+highlight --list-langs|grep shell
+#1326307688
+highlight --list-langs|grep -i shell
+#1326307603
+v /usr/share/doc/highlight/README
+#1326307783
+cd /usr/share/highlight/langDefs/
+#1326307784
+l
+#1326307803
+grepi bash *
+#1326307725
+v /usr/share/doc/highlight/README_LANGLIST
+#1326307815
+v /usr/share/doc/highlight/README
+#1326307865
+cd bin
+#1326307877
+cp RSYNC RSYNC.sh
+#1326307910
+v /usr/share/doc/highlight/README
+#1326307956
+highlight -i RSYNC.sh RSYNC.html
+#1326307965
+highlight -i RSYNC.sh -o RSYNC.html
+#1326307972
+v RSYNC.html 
+#1326308034
+rm RSYNC.html RSYNC.sh
+#1326308038
+l RS*
+#1326310092
+cd
+#1326310094
+la
+#1326327620
+tpp
+#1326327624
+top
+#1326329824
+yaourt -S n2n
+#1326329989
+yaourt -S n2n-svn
+#1326330359
+rpmqil n2n-svn

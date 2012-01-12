@@ -1,0 +1,31 @@
+set meta-flag on
+set input-meta on
+set output-meta on
+set convert-meta off
+set show-all-if-ambiguous on
+set editing-mode vi
+set bell-style visible
+
+set keymap vi
+set expand-tilde on
+set visible-stats on
+
+set mark-directories on
+
+# Completed names which are symbolic links to
+# directories have a slash appended.
+set mark-symlinked-directories on
+
+set completion-ignore-case on
+
+
+"\e[21~":tilde-expand
+
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+
+"\e[H": beginning-of-line
+"\e[F": end-of-line
+
+"\e[3~": delete-char
+

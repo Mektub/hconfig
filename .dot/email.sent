@@ -1,0 +1,58 @@
+Subject: Com o AT
+From: "Joao Luis Pena" <joao.l.pena@gmail.com>
+To: <joaopena@lavabit.com>
+Date: Thu, 14 Aug 2008 01:40:00 +0100
+Reply-To: <joao.l.pena@gmail.com>
+Content-Type: text/plain
+X-Mailer: Cleancode.email v3.0.5 
+
+root::0:root,tanso,johnj,johng,johnk,johne,johnx
+bin::1:root,bin,daemon
+daemon::2:root,bin,daemon
+sys::3:root,bin
+adm::4:root,daemon
+tty::5:
+disk::6:root
+lp::7:daemon
+mem::8:
+kmem::9:
+wheel::10:root
+ftp::11:
+mail::12:
+uucp:x:14:
+log::19:root
+smmsp::25:
+games::50:
+network:x:90:
+video:x:91:
+audio::92:john,root
+optical::93:hal
+floppy:x:94:hal
+storage:x:95:hal
+power:x:98:
+nobody::99:
+users::100:
+locate:x:21:
+john:x:1000:
+dbus:x:81:
+hal:x:82:
+avahi:x:84:
+tanso:x:1001:
+camera:x:97:
+scanner:x:96:
+postdrop:x:75:
+postfix:x:73:
+gdm:x:1002:
+http:x:33:
+vboxusers:x:1003:john,root
+kvm:x:78:
+johnr:x:1004:
+clamav:x:64:
+johno:x:1008:
+johnl:x:1009:
+
+João Luís Pena
+joao.l.pena@gmail.com
+Lisbon / Portugal
+
+

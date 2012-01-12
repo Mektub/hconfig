@@ -1,0 +1,58 @@
+alias												\
+  a='alias '										\
+  h='history '										\
+  l='ls -lh --group-directories-first'				\
+  la='ls -a --group-directories-first'				\
+  ls='ls -F --color=tty --group-directories-first'	\
+  ll='/bin/ls -F '									\
+  lls='/bin/ls -lF '								\
+  e=exit											\
+  b='cd -'											\
+  cp='cp -i '										\
+  mv='mv -i '										\
+  p='less -XIme -x4 '								\
+  v='vim '											\
+  df='df -ah | egrep -v "^none|pipe|^nfs|^gvfs|^fusectl|^proc|^sys|^devpts|^/dev/pts|^/dev/shm|^/dev "'		\
+  di='di -sn -af SBuv2TM | egrep -v "^udev|^shm|^devpts|^proc|^sys|^rpc_pipefs|^gvfs-fuse-daemon|^none|^nfsd|^fuse"' \
+  md='mkdir '										\
+  rd='rmdir '										\
+  cx='chmod +x '									\
+  crw='chmod ug+rw o-w'								\
+  man='man -a '										\
+  grepi='egrep -i --color ' 						\
+  grep='grep --color '								\
+  sudo='sudo -E '									\
+  pingx='ping -c 5 '								\
+  tarx='tar xvf '									\
+  ..='cd ..'										\
+  ...='cd ../..'									\
+  ....='cd ../../..'								\
+  .....='cd ../../../..'							\
+  cd..='cd ..'										\
+  cdl='cd -l'										\
+  cds='cd $(pwd -P)'								\
+  ipl='iptables -L'									\
+  ipf='iptables -F'									\
+  muttr='mutt -f /var/spool/mail/root'				\
+  muttj='mutt -f /var/spool/mail/johnr'				\
+  cdmount='mount -r /dev/cdrom'						\
+  cdumount='umount /dev/cdrom'						\
+  dvdmount='mount -r /dev/dvd'						\
+  dvdumount='umount /dev/dvd'						\
+  cdopen='eject /dev/hdd'							\
+  dvdopen='eject /dev/dvd'							\
+  cdclose='eject -t /dev/hdd'						\
+  dvdclose='eject -t /dev/dvd'						\
+  fortune='/usr/bin/fortune -s '					\
+  kal='clear;echo -n "Heutiges Datum: ";date;echo;cal -3m'      \
+  llsmod='lsmod | sort |p '							\
+  wl='wc -l '										\
+  hexdump='hexdump -C '								\
+  rlocate='locate -i -l 0 -r '						\
+  ulftp='lftp -u john,69elis '                      \
+  UPdatedb='sh /etc/cron.daily/updatedb '			\
+  pacsearch="pacman -Sl | cut -d' ' -f2 | grep "	\
+  xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'
+
+
+# di='di -f SBuv2TM | egrep -v "udev|shm"'			\

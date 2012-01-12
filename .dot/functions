@@ -1,0 +1,636 @@
+#!/bin/sh
+
+
+CRYPT_EXT='3des'
+encrypt () 
+{ 
+    local EFILE="$1.$CRYPT_EXT";
+    local DFILE="$1";
+    [[ -e "$DFILE" ]] || { 
+        echo "File '$DFILE' not found";
+        return 1
+    };
+    openssl des3 -salt -in "$DFILE" -out "$EFILE";
+    chmod --reference="$DFILE" "$EFILE";
+#   [[ -e "$EFILE" ]] && shred -un64 "$DFILE"
+}
+
+decrypt () 
+{ 
+    local EFILE="$1";
+    local DFILE="${1%.$CRYPT_EXT}";
+    [[ -e "$EFILE" ]] || { 
+        echo "File '$EFILE' not found";
+        return 1
+    };
+    [[ "$DFILE" != "$EFILE" ]] || { 
+        echo "Can only decrypt .$CRYPT_EXT files";
+        return 2
+    };
+    openssl des3 -d -salt -in $EFILE -out $DFILE;
+    [[ -e "$DFILE" ]] && rm -f "$EFILE"
+}
+
+function tar_encrypt() {
+    local SRC_FNAME="$1"
+    local DST_FNAME="$(basename $1).$CRYPT_EXT"
+    [[ -e "$SRC_FNAME" ]] || { echo "File '$SRC_FNAME' not found"; return 1; }
+    [[ -e "$DST_FNAME" ]] && { echo "Refusing to overwrite existing file: '$DST_FNAME'"; return 1; }
+    echo "Encrypting '$SRC_FNAME' to '$DST_FNAME'"
+    { tar czpf - $SRC_FNAME | openssl aes-256-cbc -salt -out "$DST_FNAME"; } # && rshred "$SRC_FNAME"
+}
+function tar_decrypt() {
+    local SRC_FNAME="$1"
+    [[ -e "$SRC_FNAME" ]] || { echo "File '$SRC_FNAME' not found"; return 1; }
+    { openssl aes-256-cbc -d -in "$SRC_FNAME" | tar xzpf -; } && rm "$SRC_FNAME"
+}
+
+propstring () {
+	  echo -n 'Property '
+	    xprop WM_CLASS | sed 's/.*"\(.*\)", "\(.*\)".*/= "\1,\2" {/g'
+		  echo '}'
+	  }
+
+bbs () 
+{ 
+#   ${BROWSER} "http://www.google.com/search?q=site%3Abbs.archlinux.org $*"
+    firefox "http://www.google.com/search?q=site%3Abbs.archlinux.org $*"
+}
+
+# Convert HEX to Decimal
+
+h2d(){
+  echo "obase=16; $@"|bc
+}
+# Convert Decimal to HEX
+
+d2h(){
+  echo "obase=10; $@"|bc
+}
+
+function f {
+     [ $# -eq 0 ] && file * || file $*
+}
+
+function fp {
+     for i in $*
+       do
+          file $(type -path $i)
+     done
+}
+
+function vip {
+     for i in $*
+       do
+          vim $(type -path $i)
+     done
+}
+
+function vipp {
+     for i in $*
+       do
+          gvim $(type -path $i)
+     done
+}
+
+function vi {
+    [ $# -eq 0 ] && { gvim; return 0; }
+
+#   for i in $* 
+#    do
+#      [ -n "$DISPLAY" ] && gvim $i || vim $i
+#   done
+
+       [ -n "$DISPLAY" ] && gvim -p $* || vim -p $*
+}
+
+pp () {
+   /bin/bash -c "$*" | less -me
+}
+
+translate ()
+{
+
+[ $# -eq 0 ] && { echo "Usage: translate word lang"; return 1; }
+[ $# -eq 1 ] && LINGUA='Portuguese (Portugal)' || LINGUA=$2
+
+TRANSLATED=`lynx -dump "http://dictionary.reference.com/browse/${1}" | grep -i -m 1 -w "${LINGUA}:" | sed 's/^[ \t]*//;s/[ \t]*$//'`
+if [[ ${#TRANSLATED} != 0 ]] ;then
+	echo "\"${1}\" in ${TRANSLATED}"
+	else
+	echo "Sorry, I can not translate \"${1}\" to ${LINGUA}"
+fi
+}
+
+#function pacs {
+#     for i in $*
+#       do
+#          yaourt -Ss "$i"
+#     done
+#}
+
+pacs () {
+	yaourt -Ss $@
+}
+
+# coloured repo search
+pacss () {
+       echo -e "$(pacman -Ss $@ | sed \
+       -e 's#core/.*#\\033[1;31m&\\033[0;37m#g' \
+       -e 's#extra/.*#\\033[0;32m&\\033[0;37m#g' \
+       -e 's#community/.*#\\033[1;35m&\\033[0;37m#g' \
+       -e 's#^.*/.* [0-9].*#\\033[0;36m&\\033[0;37m#g' )"
+}
+
+function rpmf {
+     for i in $*
+       do
+           pacman -Qo $(type -path $i)
+     done
+}
+
+function rpmq {
+     [ $# -eq 0 ] && { echo "Usage: $0 packg ..."; exit 1; }
+
+      for i in $*
+        do
+          pacman -Qs $i
+       done 
+}
+
+dpkgq () {
+    [ $# -eq 0 ] && { echo "Usage: $0 packg ..."; exit 1; }
+
+    for i in $*
+    do
+        dpkg -l | grep -i $i
+    done
+}
+
+function rpmqq {
+     
+     for i in $*
+      do
+         pacman -Q | grep $i
+     done
+}
+
+function rpmqi {
+     echo
+     for i in $*
+      do
+         pacman -Qi $i
+     done
+}
+
+function rpmqil {
+     
+     for i in "$*"
+      do
+         pacman -Ql $i
+     done
+}
+
+function rpmqip {
+     [ $# -eq 0 ] && { echo "Usage: $0 rpmfile(s)..."; exit 0; }
+
+     for i in $*
+      do
+        echo -e "\nPACKAGE: $i\n"
+        rpm -qip $i
+        echo -ne "\nPress NL:"
+        read
+     done         
+}
+
+function rpmqilp {
+
+      [ $# -eq 0 ] && { echo "Usage: $0 rpmfile(s)..."; exit 0; }
+
+      ( for i in $*
+         do
+           echo -e "\nPACKAGE: $i\n"
+           rpm -qipl $i
+         done ) | less 
+}
+
+function lc {
+    /bin/ls -lF --color=yes "$@" | egrep '^d|total'
+    /bin/ls -lFXB --color=yes "$@" | egrep -v '^d|total';
+}
+
+function lslap {
+    /bin/ls -la $1 | less -me
+}
+
+function Mount() {
+    for i in $*
+     do
+       mount /mnt/$i
+    done
+}
+
+function Umount() {
+    for i in $*
+     do
+       umount /mnt/$i
+    done
+}
+
+function grap() {
+    local String S
+    S=false
+
+    for i in $*
+     do
+       if [ $S = "true" ]
+          then
+            String=${String}".*"
+       fi
+       String=${String}"$i"
+       S=true
+    done
+
+    grep -ri "$String" *
+}
+
+function rl() {
+    local String S
+    S=false
+
+    for i in $*
+     do
+       if [ $S = "true" ]
+          then
+            String=${String}".*"
+       fi
+       String=${String}"$i"
+       S=true
+    done
+
+    locate -i -r "$String" | sort
+}
+
+function rll() {
+    local String S
+    local f
+    S=false
+
+    for i in "$*"
+     do
+       if [ $S = "true" ]
+          then
+            String=${String}".*"
+       fi
+	echo "I=$i"
+       String="${String}""$i"
+	echo "Str=$String"
+       S=true
+    done
+
+    for f in $(locate -i -r "$String")
+     do
+       /bin/ls -lh "$f" | cut -c23-
+    done
+}
+
+function Say() {
+#     echo "$*" | espeak -v \!v/f3
+      echo "$*" | festival --tts
+}
+
+function Saywrite() {
+#     echo "$*" | espeak -v \!v/f3 -w /tmp/myfile.wav
+      echo "$*" | text2wave -o /tmp/myfile.wav
+      echo "Wave witten to /tmp/myfile.wav"
+}
+
+function iconv8859() {
+
+      [ $# -eq 0 ] && { echo "Usage: $0 file1 file2... (output in file1.conv...)"; return 1; }
+
+      for i in $*
+       do
+        iconv -f utf-8 -t iso-8859-15 $i > $i.conv
+        echo "Output file: $i.conv"
+      done
+}
+      
+function iconvutf8() {
+
+      [ $# -eq 0 ] && { echo "Usage: $0 file1 file2... (output in file1.conv...)"; return 1; }
+
+      for i in $*
+       do
+        iconv -f iso-8859-15 -t utf-8 $i > $i.conv
+        echo "Output file: $i.conv"
+      done
+}
+      
+function lowercase() {                       # move filenames to lowercase
+    for file 
+     do
+        filename=${file##*/}
+
+        case "$filename" in
+          */*) dirname==${file%/*} ;;
+          *) dirname=.;;
+        esac
+
+        nf=$(echo $filename | tr A-Z a-z)
+        newname="${dirname}/${nf}"
+
+        if [ "$nf" != "$filename" ]; then
+            mv "$file" "$newname"
+            echo "lowercase: $file --> $newname"
+        else
+            echo "lowercase: $file not changed."
+        fi
+    done
+}
+
+function xlsgrep() {
+   xlsfonts -fn "*$1*" | uniq
+}
+
+#   errmsg - print error message to stderr and set error variable
+#   USAGE: errmsg "message"
+
+errmsg() {
+    error=1
+    echo "$*" >&2
+}
+
+extract () {
+     if [ -f $1 ] ; then
+         case $1 in
+             *.tar.bz2)   tar xjf $1        ;;
+             *.tar.gz)    tar xzf $1     ;;
+             *.tar.xz)    tar xvJf $1    ;;
+             *.bz2)       bunzip2 $1       ;;
+             *.rar)       unrar x $1     ;;
+             *.gz)        gunzip $1     ;;
+             *.tar)       tar xf $1        ;;
+             *.tbz2)      tar xjf $1      ;;
+             *.tgz)       tar xzf $1       ;;
+             *.zip)       unzip $1     ;;
+             *.Z)         uncompress $1  ;;
+             *.7z)        7z x $1    ;;
+             *)           echo "'$1' cannot be extracted via extract()" ;;
+         esac
+     else
+         echo "'$1' is not a valid file"
+     fi
+}
+
+# Functions to manipulate the PATH variable
+#   path	- add directory to path or show current PATH
+#   USAGE: path [dir ...]
+#	If no directory is specified, print current $PATH
+#	otherwise use addpath to add director[y|ies]
+#   RETURNS: 1 if dir does not exist, otherwise 0
+
+#   addpath	- add directory or directories to $PATH
+#     USAGE: addapth [-i] dir [...]
+#   OPTIONS: -i - insert director[y|ies] at beginning of $PATH
+#	Add director[y|ies] to the end (or beginning, if -i is used)
+#	of the PATH variable
+#   RETURNS: 1 if dir does not exist, otherwise 0
+
+#   rmpath	- remove directory or directories from $PATH
+#     USAGE: rmapth dir [...]
+#   RETURNS: none
+
+#   checkpath	- check that all directories in $PATH exist
+#   RETURNS: 1 if a directory in $PATH does not exist, otherwise 0
+
+path() {
+    error=0
+    if [ "$*" ]
+    then
+	addpath "$@"
+	error=$?
+    else
+	echo $PATH | tr ":" "\n"
+    fi
+
+    return $error
+}
+
+message () {
+  # pretty-print messages of arbitrary length; use xmessage if it
+  # is available and $DISPLAY is set
+  MESSAGE="$PROGNAME: $*"
+  echo "$MESSAGE" | fold -s -w ${COLUMNS:-80} >&2
+  if [ -n "$DISPLAY" ] && which xmessage > /dev/null 2>&1; then
+    echo "$MESSAGE" | fold -s -w ${COLUMNS:-80} | xmessage -center -file -
+  fi
+}
+
+message_nonl () {
+  # pretty-print messages of arbitrary length (no trailing newline); use
+  # xmessage if it is available and $DISPLAY is set
+  MESSAGE="$PROGNAME: $*"
+  echo -n "$MESSAGE" | fold -s -w ${COLUMNS:-80} >&2;
+  if [ -n "$DISPLAY" ] && which xmessage > /dev/null 2>&1; then
+    echo -n "$MESSAGE" | fold -s -w ${COLUMNS:-80} | xmessage -center -file -
+  fi
+}
+
+addpath() {                        # add directory or directories to $PATH
+    path=`echo $PATH | tr ":" "\n"`
+    error=0
+    prefix=0
+
+    if [ "$1" = "-i" ] # insert directories at front of $PATH
+    then
+	prefix=1
+	shift
+    fi
+
+    for p in "$@"
+    do
+	echo "$path" | grep -qsx "$p" && errmsg "$p already in path" ||
+	if [ -d "$p" ]
+	then
+	    if [ $prefix -eq 1 ]
+	    then
+		PATH="$p:$PATH"
+	    else
+		PATH="$PATH:$p"
+	    fi
+	else
+	    errmsg "addpath: $p is not a directory"
+	fi
+    done
+    return $error
+}
+
+rmpath() # remove directory or directories from $PATH
+{
+    path=`echo $PATH | tr ":" "\n"`
+
+    for p in "$@"
+    do
+	path=`echo "$path" | grep -vsx "$p"`
+    done
+
+    PATH=`echo -n "$path" | tr "\n" ":"`
+}
+
+checkpath() # verify that all directories in $PATH are directories
+{
+    error=0
+    echo $PATH | tr ":" "\n" | while read p
+	do
+	    if [ ! -d "$p" ]
+	    then
+		errmsg "checkpath: $p is not a directory"
+	    fi
+	done
+    return $error
+}
+
+# cdhist - cd replacement with a directory stack like pushd/popd
+#
+# usage: cd [-l] [-n] [-] [-pat] [dir]
+#
+# options:
+#	-l	print the cd directory stack, one entry per line
+#	-n	cd to nth directory in cd directory stack
+#	-	equivalent to $OLDPWD
+#	-pat	cd to first directory in stack matching (substring) `pat'
+#
+# arguments:
+#	dir	cd to dir and push dir onto the cd directory stack
+#
+# If the new directory is a directory in the stack and the options selected
+# it (-n, -s), the new working directory is printed
+#
+# If the variable CDHISTFILE is set, the cd directory stack is loaded from
+# and written to $CDHISTFILE every time `cd' is executed.
+#
+# Chet Ramey - chet@po.cwru.edu	
+
+CDHISTFILE=$HOME/.dot/cdhistfile
+
+_cdprint() {
+	echo -e "$@"
+}
+
+cd() {
+	typeset -i cdlen i
+	typeset t
+	
+	[ $# -eq 0 ] && set -- $HOME
+	
+	if [ "$CDHISTFILE" -a -r "$CDHISTFILE" ] # if directory history exists
+	then
+		typeset CDHIST
+		i=-1
+		while read -r t			# read directory history file
+		do
+			CDHIST[i=i+1]=$t
+		done <$CDHISTFILE
+	fi
+	
+	[ "${CDHIST[0]}" != "$PWD" -a "$PWD" != "" ] && _cdins
+	
+	cdlen=${#CDHIST[*]}			# number of elements in history
+	
+	case "$@" in
+	-)					# cd to new dir
+		if [ "$OLDPWD" = "" ] && ((cdlen>1))
+		then
+			'_cdprint' ${CDHIST[1]}
+			builtin cd -P "${CDHIST[1]}"
+			pwd
+		else
+			builtin cd -P "$@"
+			# pwd
+		fi ;;
+	-l)					# _cdprint directory list
+		((i=cdlen))
+		while (((i=i-1)>=0))
+		do
+			num=$i
+			'_cdprint' "$num ${CDHIST[i]}"
+		done
+		return ;;
+
+	-[0-9]|-[0-9][0-9])			# cd to dir in list
+		if (((i=${1#-})<cdlen))
+		then
+			'_cdprint' ${CDHIST[i]}
+			builtin cd -P "${CDHIST[i]}"
+			pwd
+		else
+			builtin cd -P "$@"
+			# pwd
+		fi ;;
+	-*)					# cd to matched dir in list
+		t=${1#-}
+		i=1
+		while ((i<cdlen))
+		do
+			case ${CDHIST[i]} in
+			*$t*)
+				'_cdprint' ${CDHIST[i]}
+				builtin cd -P "${CDHIST[i]}"
+				# pwd
+				break
+				;;
+			esac
+			((i=i+1))
+		done
+		if ((i>=cdlen))
+		then
+			# builtin cd -P $@
+			echo "-$@ not in list"
+			# pwd
+		fi ;;
+	*)					# cd to new dir
+		builtin cd -P "$@"
+		# pwd
+		;;
+	esac
+
+	_cdins					# insert $PWD into cd history
+	
+	if [ "$CDHISTFILE" ]
+	then
+		cdlen=${#CDHIST[*]}		# number of elements in history
+
+		i=0
+		while ((i<cdlen))
+		do
+			echo ${CDHIST[i]}	# update directory history
+			((i=i+1))
+		done >$CDHISTFILE
+	fi
+}
+	
+_cdins() {					# insert $PWD into cd history
+						# meant to be called only by cd
+	typeset -i i
+
+	i=0
+
+	while (( i < ${#CDHIST[*]} ))		# see if dir is already in list
+	do
+		if [ "${CDHIST[$i]}" = "$PWD" ]
+		then
+			break
+		fi
+		((i=i+1))
+	done
+
+	(( i>102 )) && i=102			# limit max size of list
+
+	while (((i=i-1)>=0))			# bump old dirs in list
+	do
+		CDHIST[i+1]=${CDHIST[i]}
+	done
+
+	CDHIST[0]=$PWD				# insert new directory in list
+}

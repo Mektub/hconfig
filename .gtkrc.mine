@@ -1,0 +1,135 @@
+#
+
+#gtk-icon-theme-name = "Tango"
+
+#gtk-icon-sizes = "gtk-menu=16,16:gtk-button=16,16:gtk-small-toolbar=16,16:gtk-large-toolbar=16,16:gtk-dnd=16,16:gtk-dialog=16,16"
+
+#gtk-toolbar-style = GTK_TOOLBAR_ICONS
+
+# $(datadir)/gtkrc
+
+style "default"
+{
+ fontset="-microsoft-tahoma-medium-r-normal-*-*-80-*-*-p-*-iso8859-2"
+ 
+}
+widget_class "*" style "default"
+ 
+#gtk-font-name="Tahoma 8"
+
+style "user-font" {
+#       font_name = "Tahoma Bold 13"
+        font = "-*-verdana-bold-r-normal-*-16-*-*-*-p-*-iso8859-1"
+}
+
+widget_class "*" style "user-font"
+gtk-enable-event-sounds = 1
+gtk-enable-input-feedback-sounds=1
+
+### gtk-icon-theme-name = "[name-of-icon-theme]"
+
+### Note: The icon theme name is the name of the folder in /usr/share/icons/ 
+
+#gtk-font-name="Tahoma Bold 13"
+
+#style "list" {
+#    font = "-adobe-helvetica-bold-r-normal--18-180-*-*-p-*-iso8859-1"
+#    base[ACTIVE]       = "#6775bf"
+#    base[NORMAL]       = "#6775bf"
+#}     
+
+#style "menu" {
+#    font = "-adobe-helvetica-bold-r-normal--18-180-*-*-p-*-iso8859-1"
+#    bg[PRELIGHT]        = "#cdcccb"
+#}   
+
+## style "GnomeScores_CurrentPlayer_style"
+## {
+##   fg[NORMAL] = {1.0, 0.0, 0.0}
+## }
+## 
+## style "GnomeScores_Logo_style"
+## {
+##   font = "-adobe-helvetica-bold-r-normal-*-20-*-*-*-*-*-*-*"
+##   fg[NORMAL] = {0.0, 0.0, 1.0}
+## }
+## 
+## style "GnomeAbout_DrawingArea_style"
+## {
+##   bg[NORMAL] = {1.0, 1.0, 1.0}
+## }
+## 
+## style "GnomeAbout_Title_style"
+## {
+##   font = "-adobe-helvetica-bold-r-normal-*-20-*-*-*-*-*-*-*"
+## }
+## 
+## style "GnomeAbout_Copyright_style"
+## {
+##   font = "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"
+## }
+## 
+## style "GnomeAbout_Author_style"
+## {
+##   font = "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
+## }
+## 
+## style "GnomeAbout_Names_style"
+## {
+##   font = "-adobe-helvetica-bold-r-normal-*-12-*-*-*-*-*-*-*"
+## }
+## 
+## style "GnomeAbout_Comments_style"
+## {
+##   font = "-adobe-helvetica-bold-r-normal-*-10-*-*-*-*-*-*-*"
+## }
+## 
+## style "GnomeHRef_Label_style"
+## {
+##   fg[NORMAL] = { 0.0, 0.0, 1.0 }
+##   fg[PRELIGHT] = { 0.0, 0.0, 1.0 }
+##   fg[INSENSITIVE] = { 0.5, 0.5, 1.0 }
+##   fg[ACTIVE] = { 1.0, 0.0, 0.0 }
+## }
+## 
+## style "GnomeGuru_PageTitle_style" 
+## {
+##  font = "-adobe-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*"	
+## }
+## 
+## widget "*GnomeScores*.CurrentPlayer" style "GnomeScores_CurrentPlayer_style"
+## widget "*GnomeScores*.Logo" style "GnomeScores_Logo_style"
+## widget "*GnomeAbout*.DrawingArea" style "GnomeAbout_DrawingArea_style"
+## widget "*GnomeAbout*.Author" style "GnomeAbout_Author_style"
+## widget "*GnomeAbout*.Comments" style "GnomeAbout_Comments_style"
+## widget "*GnomeAbout*.Copyright" style "GnomeAbout_Copyright_style"
+## widget "*GnomeAbout*.Names" style "GnomeAbout_Names_style"
+## widget "*GnomeAbout*.Title" style "GnomeAbout_Title_style"
+## widget "*GnomeHRef.GtkLabel" style "GnomeHRef_Label_style"
+## widget "*GnomeGuru*.PageTitle" style "GnomeGuru_PageTitle_style"
+
+#class "GtkList"                 style "list"
+#class "GtkTree"                 style "list"
+#class "GtkCList"                style "list" 
+#class "GtkCTree"                style "list" 
+
+#class "GtkMenuItem"             style "menu"
+#class "GtkMenu"                 style "menu" 
+
+
+#style "xpto"
+#{
+#  engine "clean"
+#  {
+#  }
+#}
+
+#widget "*"              style "xpto"
+
+##style "gtk-default-iso-8859-15" {
+##       fontset = "-*-helvetica-medium-r-normal--18-*-*-*-*-*-iso8859-1,\
+##                  -*-arial-medium-r-normal--18-*-*-*-*-*-iso8859-1,\
+##                  -*-helvetica-medium-r-normal--18-*-*-*-*-*-iso8859-15,\
+##                  -*-arial-medium-r-normal--18-*-*-*-*-*-iso8859-15,*-r-*"
+##}
+##class "GtkWidget" style "gtk-default-iso-8859-15" 

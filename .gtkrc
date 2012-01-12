@@ -1,0 +1,7 @@
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+#include "/usr/share/themes/ThinIce/gtk/gtkrc"
+include "/usr/share/themes/Simple-Orange/gtk/gtkrc"
+
+include "/root/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT

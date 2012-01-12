@@ -1,0 +1,9 @@
+# Auto-written by gtk2_prefs. Do not edit.
+
+gtk-theme-name = "Xfce-redmondxp"
+style "user-font"
+{
+	font_name="Verdana Bold 13"
+}
+widget_class "*" style "user-font"
+gtk-icon-theme-name="Tango"

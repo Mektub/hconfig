@@ -1,0 +1,14 @@
+#
+
+gtk-icon-theme-name="Tango"
+gtk-icon-sizes="gtk-menu=16,16:
+                gtk-button=16,16:
+                gtk-small-toolbar=16,16:
+                gtk-large-toolbar=16,16:
+                gtk-dnd=16,16:
+                gtk-dialog=16,16"
+gtk-toolbar-style = GTK_TOOLBAR_ICONS
+
+gtk-xft-hinting = 1
+gtk-xft-hintstyle = hintfull
+gtk-xft-rgba = rgb

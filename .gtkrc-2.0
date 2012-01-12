@@ -1,0 +1,9 @@
+# Auto-written by gtk2_prefs. Do not edit.
+
+gtk-theme-name = "Raleigh"
+style "user-font"
+{
+	font_name="Droid Sans Bold 11"
+}
+widget_class "*" style "user-font"
+gtk-enable-event-sounds = 1

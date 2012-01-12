@@ -1,0 +1,119 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+
+# Executed by startx (run your window manager from here)
+
+CRT=`xrandr | grep "HDMI-0 connected"`
+if [ "x${CRT}x" != "xx" ]; then
+##  xrandr --output LVDS --off --output DFP1 --mode 1680x1050 --pos 0x0 --rotate normal
+#   xrandr --output LVDS --mode 1366x768 --pos 0x0 --rotate normal  --output DFP1 --mode 1680x1050 --pos 0x0 --rotate normal 
+    xrandr --output LVDS --mode 1366x768 --pos 0x0 --rotate normal  --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal
+fi
+
+[ -f ~/.xprofile ] && . ~/.xprofile
+
+xhost + &
+setxkbmap pt &
+xfsettingsd &
+(sleep 30; xmodmap ~/.Xmodmap) &
+xbindkeys &
+nitrogen --restore
+
+lxpanel &
+aplay /opt/MyDocs/Sounds/katapum.wav &
+adeskbar &
+gnote --note-path=/root/Dropbox/Gnote &
+##checkgmail &
+archassistant &
+/usr/bin/dropboxd &
+xcompmgr &
+devilspie &
+
+Terminal --geometry=95x26+100+100 --hide-menubar -T Everything \
+	     --command "tail -f /var/log/everything.log" \
+		 --tab -T "Shell 1" --tab -T "Shell 2" --tab -T "Shell 3" &
+xset s 1800
+xset dpms 1800 1800 1800
+#wicd &
+wicd-gtk &
+#xrdb $HOME/.Xdefaults &                     # load Xdefaults
+#xset fp+ /usr/share/fonts/local &           # add local fonts
+#xset s 1200 1200 &                          # set monitor to sleep 20 mins
+#xfdesktop &
+#lxpanel &
+#gnome-panel &
+#xfce4-panel &
+####hsetroot -fill /root/Appls/moreblue-orbit-wallpaper-widescreen.png
+#gkrellm &
+#idesk &
+#autocutsel -fork &
+
+#pidof adeskbar
+#if [ $? -ne 0 ] 
+#   then
+#      /usr/bin/adeskbar &
+#   else
+#      echo "AdeskBar Already Started"
+#fi
+
+## pidof Xtightvnc
+## if [ $? -ne 0 ]
+##    then
+## #        vncserver -geometry 1680x1050 -alwaysshared -dpi 96 :1 &
+##          vncserver -geometry 1848x1155 -alwaysshared -dpi 96 :1 &
+##    else
+## 	      echo "VncServer Already Started"
+## fi
+## 
+## pidof boinc
+## if [ $? -ne 0 ] 
+##    then
+##       /usr/bin/boinc &
+##    else
+##       echo "Boinc Already Started"
+## fi
+## 
+pidof synergyc
+if [ $? -ne 0 ] 
+   then
+      /root/bin/SynergyStart &
+   else
+      echo "Synergy Already Started"
+fi
+## 
+## #sakura -l -c 97 -r 27 -n 3 &
+## 
+## # case $1 in
+## #     jwm)
+## #          exec ck-launch-session jwm ;;
+## #     pekwm)
+## #          exec ck-launch-session pekwm ;;
+## #     icewm)
+## #          exec ck-launch-session icewm-session ;;
+## #     fluxbox)
+## #          exec ck-launch-session startfluxbox ;;
+## #     openbox)
+## #          exec ck-launch-session openbox ;;
+## #     gnome)
+## #          exec ck-launch-session gnome-session ;;
+## #     xfce)
+## #          exec ck-launch-session startxfce4 ;;
+## #     lxde)
+## #          exec ck-launch-session startlxde ;;
+## #     dwm)
+## #          exec ck-launch-session dwm ;;
+## #       *)
+## #          echo "\n\nPlease choose a WM: jwm, icewm, pekwm, openbox, dwm, fluxbox, xfce, lxde, gnome" ;;
+## # esac
+## 
+## exec jwm
+## # exec icewm
+## # exec gnome-session
+## # exec pekwm
+## # exec startfluxbox
+## # exec startxfce4
+## # exec xfce4-session
+## # exec openbox-session
+## # exec startlxde
+## 

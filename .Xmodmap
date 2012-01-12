@@ -1,0 +1,31 @@
+!  Xmodmap
+
+keycode 66 = ISO_Level3_Shift
+!keycode 66 = Mode_switch
+!keycode 66 = backslash
+!keycode 66 = 0x01
+!keycode 66 = Super_L
+
+!clear lock
+!add mod4 = Caps_Lock
+!
+!Set ALT to Alt_R from ISO_level3_Shift (Why?)
+!
+keycode 108 = ISO_Level3_Shift
+!keycode 108 = Alt_R
+
+keycode  51 = Return bar
+!keycode  118 = backslash
+keycode  118 = acute
+
+!!!keycode  75 = backslash
+!!!keycode  76 = EuroSign
+keycode  107 = ordfeminine masculine
+keycode  78 = ccedilla Ccedilla
+
+
+! C cedille
+keycode 54 = c C ccedilla Ccedilla
+!keycode 134 = colon
+keycode 134 = quotedbl
+keycode 135 = backslash

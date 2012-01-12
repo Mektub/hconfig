@@ -1,0 +1,130 @@
+
+!             .Xresources file
+
+Xcursor.size: 48
+!Xcursor.theme: redglass
+Xcursor.theme: Oxygen_Zion
+!Xcursor.theme: Oxygen_Zion_Big
+!Xcursor.theme: Vanilla-DMZ
+!Xcursor.theme: Chameleon-Anthracite-Regular
+!Xcursor.theme: aero-large
+!Xcursor.theme: scalable
+!Xcursor.theme: Oxygen_Yellow
+!Xcursor.theme: HighContrast
+!Xcursor.theme: aero-large
+!Xcursor.theme: Neutral
+ 
+ 
+!  Xft
+ 
+Xft.rgba: 	rgb
+Xft.dpi:	96
+Xft.antialias:	true
+Xft.hinting:	true
+Xft.hintstyle:	hintmedium
+
+Xft.lcdfilter:  lcddefault
+!Xft.hintstyle:  hintslight
+
+Xft.autohint: 0
+Xft.hintstyle:  hintfull
+
+! !---!! xterm !!---!
+
+xterm*savesLines: 1000
+xterm*font: -misc-fixed-*-*-*-*-*-200-*-*-*-*-*
+xterm*cursorBlink: true
+
+xtermloginShell:true
+xterm*background:Black
+xterm*foreground:White
+xterm*scrollBar_left:true
+
+!        URXVT
+
+!URxvt*font:      9x15bold
+!URxvt*boldFont:  9x15bold
+URxvt*font:      10x16bold
+URxvt*boldFont:  10x16bold
+URxvt.iconFile:    /usr/share/pixmaps/rxvt-unicode.png
+!URxvt*font:      12x24bold
+!URxvt*boldFont:  12x24bold
+!urxvt*font:xft:Terminus:dpi=96
+!urxvt*boldFont:xft:Terminus:bold:dpi=96
+
+!urxvt*font: xft:Monospace:pixelsize=14
+!urxvt*boldFont: xft:Monospace:pixelsize=14
+
+!URxvt.font: xft:Terminus:pixelsize=14:antialias=false
+!URxvt.boldFont: xft:Terminus:bold:pixelsize=14:antialias=false
+
+! URxvt*font: xft:DejaVu Sans Mono:antialias=true:pixelsize=12
+! URxvt*boldFont: xft:DejaVu Sans Mono:style=bold:antialias=true:pixelsize=12
+! URxvt*italicFont: xft:DejaVu Sans Mono:style=italic:antialias=true:pixelsize=12
+! URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=bolditalic:antialias=true:pixelsize=12
+
+URxvt*geometry:           100x32
+Urxvt-tabbed*geometry:    100x32
+
+URxvt*background:	#000000
+!URxvt*foreground:	#00C000
+!URxvt*foreground:	#00C0C0
+!URxvt*foreground:	#88DF33
+!URxvt*foreground:	white
+URxvt*foreground:	#00FFFF
+
+URxvt.perl-lib:           /usr/lib/urxvt/perl
+URxvt*perl-ext-common:    default,matcher,tabbed
+URxvt*urlLauncher:        /usr/bin/firefox
+URxvt*matcher.button:	  1
+URxvt*cursorBlink:        true
+URxvt*cutchars:           "()*,<>[]{}|"
+
+URxvt*saveLines:          4000
+URxvt*visualBell:         true
+URxvt*scrollTtyKeypress:  true
+URxvt*scrollWithBuffer:   false
+URxvt*scrollTtyOutput:    false
+URxvt*scrollBar:          true
+URxvt*scrollstyle:        rxvt
+URxvt*scrollBar_right:    true
+URxvt*scrollColor:        #777777
+URxvt*cursorColor:        #ffcc00
+URxvt*underlinrColor:     yellow
+URxvt*loginShell:         true
+! URxvt*termName:           rxvt
+URxvt*termName:           rxvt-256color
+
+! URxvt*depth: 32
+!  
+! URxvt*shading: 25
+! URxvt*matcher.pattern.1: \bwww\.[\w-]+\.[\w./?&@#-]*[\w/-]
+! URxvt*visualBell:   0
+! URxvt*keysym.C-r: perl:matcher
+!  
+! ! Colors
+! urxvt*cursorColor: #919191
+! urxvt*cursorColor2: white
+! urxvt*pointerColor: #919191
+!  
+! ! Tango colors {{{
+! URxvt.color0: #2E3436
+! URxvt.color1: #CC0000
+! URxvt.color2: #4E9A06
+! URxvt.color3: #C4A000
+! URxvt.color4: #3465A4
+! URxvt.color5: #75507B
+! URxvt.color6: #16989A
+! URxvt.color7: #D3D7CF
+! URxvt.color8: #555753
+! URxvt.color9: #EF2929
+! URxvt.color10: #8AE234
+! URxvt.color11: #FCE94F
+! URxvt.color12: #729FCF
+! URxvt.color13: #AD7FA8
+! URxvt.color14: #34E2E2
+! URxvt.color15: #EEEEEC
+! !}}}
+! 
+!
+

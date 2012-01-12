@@ -1,0 +1,99 @@
+
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+# Directory for storing procmail configuration and log files
+
+MAILDIR=/var/spool/mail
+LOGFILE=/var/log/procmail.log
+VERBOSE=yes
+
+# Insert a blank line between each message's log entry
+
+LOG="
+"
+
+LOCKFILE=$MAILDIR/lockfile.lock
+#JUNKMAIL=$MAILDIR/.junkmail
+
+:0:
+* ^Subject.*aur-general*
+AurGeneral
+
+:0:
+* ^From.*aur-general*
+AurGeneral
+
+:0:
+* ^Subject.*aur-dev*
+AurDev
+
+:0:
+* ^From.*aur-dev*
+AurDev
+
+:0:
+* ^From.*arch-dev-public*
+ArchNews
+
+:0:
+* ^To:.*tansodasilva@gmail.com
+TansoDaSilva
+
+:0:
+* ^To:.*joao.pena@netcabo.pt
+Netcabo
+
+:0:
+* ^To:.*archnews@joaopena.com
+ArchNews
+
+:0:
+* ^To:.*maillist+slitaz@joaopena.com
+MailList
+
+:0:
+* ^To:.*slitaz@
+MailList
+
+:0:
+* ^To:.*maillist@joaopena.com
+MailList
+
+# Separate mail from Foruns
+
+## :0:
+## * ^From:.*forum
+## Foruns
+## 
+## :0:
+## * ^From:.*zwame.pt|^From:.*networkedmediatank.com|^From:.*virtualbox.org|^From:.*avforums|^From:.*archlinux.org
+## Foruns
+## 
+## :0:
+## * ^From:.*freshmeat.net|^From:.*sourceforge.net|^From:.*asusforum.net|^From:.*networkedmediatank.com
+## Foruns
+## 
+## :0:
+## * ^From:.*hardware.com.pt|^From:.*wireless.com.pt|^From:.*bandalarga.org|^From:.*fedoraforum.org|^From:.*@pipocas.tv
+## Foruns
+## 
+## :0:
+## * ^From:.*skyscrapercity.info|^From:.*@tomtom |^From:.*ne-miguelito.com|^From:.*extremeboard.support@
+## Foruns
+## 
+## :0:
+## * ^From:.*adultfriendfinder.com|^From:.*@alt.com
+## Friends
+## 
+## :0:
+## * ^From:.*@telecom.pt|^From:.*@zon.pt|^From:.*@viaverde.pt|^From:.*@ctt.pt|^From:.*@epal.pt|^From:.*zapp.pt|^From:.*edp.pt
+## Servicos
+## 
+## :0:
+## * ^From:.*@aktuell.conrad.de|^From:.*@auchan.pt|^From:.*@epal.pt
+## Servicos
+
+#:0
+#* ^X-Spam-Flag: YES
+#$JUNKMAIL
+

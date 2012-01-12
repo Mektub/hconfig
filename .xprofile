@@ -1,0 +1,23 @@
+#
+
+#echo "TEST xprofile" >> /tmp/XPRO
+
+export LANG="en_IE.utf-8"
+export LANGUAGE="en"
+
+#export SYSFONT="latarcyrheb-sun16"
+
+export SUPPORTED="en_IE.utf-8:en_US.utf-8:en_US:en:pt_PT.utf-8:pt_PT:pt"
+export LC_COLLATE="C"
+export LC_TIME="pt_PT.utf-8"
+export LC_ADDRESS="pt_PT.utf-8"
+export LC_NAME="pt_PT.utf-8"
+export LC_NUMERIC="pt_PT.utf-8"
+export LC_MEASUREMENT="pt_PT.utf-8"
+export LC_MESSAGES="en_IE.utf-8"
+export LC_CTYPE="en_IE.utf-8"
+export LC_TELEPHONE="pt_PT.utf-8"
+export LC_MONETARY="pt_PT.utf-8"
+export LC_PAPER="pt_PT.utf-8"
+
+##MOZ_ACCELERATED=1 MOZ_GLX_IGNORE_BLACKLIST=1 firefox
